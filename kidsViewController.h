@@ -23,10 +23,12 @@
 
 
 }
+
+- (IBAction)enableEditButton:(id)sender;
+
 @property (weak, nonatomic) IBOutlet UIView *mainView;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-- (IBAction)enableEditButton:(id)sender;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *editButton;
 
 @end
