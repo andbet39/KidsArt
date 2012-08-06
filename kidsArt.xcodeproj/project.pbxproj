@@ -145,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				65FA975215D0420900AC0CCD /* ThirdParty */,
-				65FA96D915CE57B800AC0CCD /* CoreData.framework */,
 				65FA96D215CE561900AC0CCD /* sketchkidModel.xcdatamodeld */,
 				65FA968A15CD2AF200AC0CCD /* images */,
 				65FA967115CD263900AC0CCD /* sketchkid_Beta */,
@@ -165,6 +164,7 @@
 		65FA966A15CD263900AC0CCD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				65FA96D915CE57B800AC0CCD /* CoreData.framework */,
 				65FA96AD15CD7A4900AC0CCD /* QuartzCore.framework */,
 				65FA966B15CD263900AC0CCD /* UIKit.framework */,
 				65FA966D15CD263900AC0CCD /* Foundation.framework */,
