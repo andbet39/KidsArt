@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="12A269" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="YUd-oz-idr">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="VVq-fG-c2C">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Be-Fd-RAn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="6YJ-xl-Uxc" customClass="HomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0eA-4o-xhg">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Hq1-X0-9Cs">
+                                <rect key="frame" x="234" y="361" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="back">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeInfoButtonAction:" destination="6YJ-xl-Uxc" eventType="touchUpInside" id="UqM-EH-gh3"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="BQM-jG-pYI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="backHome@2x.png" id="b32-Iw-b8a">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="493"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="nAg-mr-rQs">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <items>
+                                            <barButtonItem id="Pyw-QW-2IB"/>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="cum-wU-yZg"/>
+                                            <barButtonItem systemItem="pageCurl" id="qqV-zM-Izj">
+                                                <connections>
+                                                    <action selector="infoButtonAction:" destination="6YJ-xl-Uxc" id="fa7-P1-cYi"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </items>
+                                    </toolbar>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="6rg-Sr-2yn">
+                                        <rect key="frame" x="49" y="0.0" width="222" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="23"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="63l-qj-RVh">
+                                <rect key="frame" x="0.0" y="186" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem id="d9H-Fg-bdD">
+                                        <connections>
+                                            <action selector="kidButtonAction:" destination="6YJ-xl-Uxc" id="DQc-BF-PRZ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="M8Q-ua-JQ4"/>
+                                    <barButtonItem id="Abm-57-RCn">
+                                        <connections>
+                                            <action selector="cameraButtonAction:" destination="6YJ-xl-Uxc" id="6kV-rm-26P"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ca9-JF-2ed"/>
+                                    <barButtonItem id="MqH-ga-SrH"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2ZK-u0-qjk"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <connections>
+                        <outlet property="addFavoriteButton" destination="Pyw-QW-2IB" id="CMi-f3-EPf"/>
+                        <outlet property="albumButton" destination="MqH-ga-SrH" id="awP-PC-7gz"/>
+                        <outlet property="albumTitleLabel" destination="6rg-Sr-2yn" id="mYT-zR-VCY"/>
+                        <outlet property="albumToolbar" destination="nAg-mr-rQs" id="Koy-xP-vNI"/>
+                        <outlet property="cameraButton" destination="Abm-57-RCn" id="jcK-E8-cZ8"/>
+                        <outlet property="infoButton" destination="qqV-zM-Izj" id="gcB-k4-7nn"/>
+                        <outlet property="kidsButton" destination="d9H-Fg-bdD" id="Q3v-0V-LD1"/>
+                        <outlet property="mainView" destination="BQM-jG-pYI" id="84R-qS-N5H"/>
+                        <outlet property="removeInfoButton" destination="Hq1-X0-9Cs" id="alC-j9-0fe"/>
+                        <outlet property="toolBar" destination="63l-qj-RVh" id="lzl-Tt-Rnw"/>
+                        <segue destination="8Ea-gE-c9f" kind="push" identifier="kidSegue" id="IAU-qj-6Qa"/>
+                        <segue destination="2" kind="modal" id="3gc-rx-i6q"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="88" y="-42"/>
+        </scene>
+        <!--New Kid View Controller-->
+        <scene sceneID="mL3-Ci-bm4">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NAE-S7-gc0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="9oc-5O-Z59" customClass="newKidViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mcZ-iJ-dbw">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bckInserimento@2x.png" id="n1K-fL-NTd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="corniceBimbo@2x.png" id="igL-BJ-GyD">
+                                <rect key="frame" x="20" y="169" width="140" height="158"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="d82-ec-k9b">
+                                <rect key="frame" x="163" y="175" width="137" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Salva" backgroundImage="bottoneSalva@2x.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButtonAction:" destination="9oc-5O-Z59" eventType="touchUpInside" id="3Kr-O9-dow"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="evidenzia@2x.png" id="ont-gW-y4d">
+                                <rect key="frame" x="25" y="63" width="261" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Aggiungi Bambino" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="4f5-2L-Hl3">
+                                <rect key="frame" x="48" y="69" width="214" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome del Bambino" minimumFontSize="17" clearButtonMode="whileEditing" id="FEc-tv-BU1">
+                                <rect key="frame" x="20" y="125" width="280" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9oc-5O-Z59" id="9PA-b8-gQc"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bambinoDefault@2x.png" id="lAA-5U-xc3">
+                                <rect key="frame" x="32" y="184" width="117" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" id="KQr-sd-D0C">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="n5v-Gn-NoU"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="nomeText" destination="FEc-tv-BU1" id="XG0-2Y-PN1"/>
+                        <outlet property="toolBar" destination="KQr-sd-D0C" id="zrP-oP-hMP"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1157" y="336"/>
+        </scene>
+        <!--Kids View Controller-->
+        <scene sceneID="aCG-Kb-aPj">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2tE-8O-mIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="8Ea-gE-c9f" customClass="kidsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KIl-es-cYL">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="backKidsViola.png" id="rhU-ho-vu8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="Ghb-Z4-Ddc">
+                                <rect key="frame" x="0.0" y="98" width="320" height="266"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="spO-uS-01s">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Edit" id="nvH-fd-8oe">
+                                        <connections>
+                                            <action selector="enableEditButton:" destination="8Ea-gE-c9f" id="mXR-jI-nJx"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="KAJ-UO-enb"/>
+                                    <barButtonItem systemItem="add" id="Hwk-jA-j6J">
+                                        <connections>
+                                            <segue destination="9oc-5O-Z59" kind="modal" identifier="newKid" modalTransitionStyle="flipHorizontal" id="fln-kR-sOm"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="EoZ-Mr-orh">
+                                <rect key="frame" x="49" y="1" width="222" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="strisciaGialla@2x.png" id="nda-nE-Gwd">
+                                <rect key="frame" x="14" y="46" width="292" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Click on a kid photo to see all the picture from him" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="gMr-cY-hPM">
+                                <rect key="frame" x="44" y="46" width="243" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="l8d-AB-2xj"/>
+                    <connections>
+                        <outlet property="editButton" destination="nvH-fd-8oe" id="Sc8-p3-onp"/>
+                        <outlet property="mainView" destination="Ghb-Z4-Ddc" id="SQ6-Xp-fWi"/>
+                        <outlet property="titleLabel" destination="EoZ-Mr-orh" id="kv4-9h-1f6"/>
+                        <outlet property="toolBar" destination="spO-uS-01s" id="hKe-fL-ZPh"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="627" y="331"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="AIm-Tm-5C5">
+                                <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem width="32" id="x2R-SK-fwW"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="IvG-u7-iAA"/>
+                                    <barButtonItem width="32" id="qK1-AL-3Wd"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="4G1-rZ-pi4"/>
+                                    <barButtonItem width="32" id="BLl-K3-hrN"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="uLH-KC-77r"/>
+                                    <barButtonItem width="32" id="kxh-tU-vA4"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="xac-Mt-XYL"/>
+                                    <barButtonItem width="32" id="4ps-fe-V97"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <connections>
+                        <outlet property="adjustButton" destination="BLl-K3-hrN" id="Fgs-BJ-ISU"/>
+                        <outlet property="frameButton" destination="kxh-tU-vA4" id="wsc-7A-bIq"/>
+                        <outlet property="penButton" destination="qK1-AL-3Wd" id="PIm-hq-b3P"/>
+                        <outlet property="shareButton" destination="x2R-SK-fwW" id="0ml-H7-cFF"/>
+                        <outlet property="toolBar" destination="AIm-Tm-5C5" id="mDC-4X-Sxk"/>
+                        <outlet property="trashButton" destination="4ps-fe-V97" id="OsC-zN-SJ9"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="808" y="-424"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GtL-zg-LBc">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gxc-bA-VnT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="YUd-oz-idr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OY8-Fs-fPo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6YJ-xl-Uxc" kind="relationship" relationship="rootViewController" id="ejC-75-Pzl"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-396" y="2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backHome@2x.png" width="640" height="960"/>
+        <image name="backKidsViola.png" width="640" height="748"/>
+        <image name="bambinoDefault@2x.png" width="145" height="134"/>
+        <image name="bckInserimento@2x.png" width="640" height="617"/>
+        <image name="bottoneSalva@2x.png" width="275" height="80"/>
+        <image name="corniceBimbo@2x.png" width="186" height="191"/>
+        <image name="evidenzia@2x.png" width="400" height="65"/>
+        <image name="strisciaGialla@2x.png" width="617" height="66"/>
+    </resources>
+    <classes>
+        <class className="HomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cameraButtonAction:"/>
+                <relationship kind="action" name="infoButtonAction:"/>
+                <relationship kind="action" name="kidButtonAction:"/>
+                <relationship kind="action" name="removeInfoButtonAction:"/>
+                <relationship kind="outlet" name="addFavoriteButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="albumButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="albumTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="albumToolbar" candidateClass="UIToolbar"/>
+                <relationship kind="outlet" name="cameraButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="infoButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="kidsButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="mainView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="navigationBar" candidateClass="UINavigationBar"/>
+                <relationship kind="outlet" name="removeInfoButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="toolBar" candidateClass="UIToolbar"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="adjustButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="frameButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="penButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="shareButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="toolBar" candidateClass="UIToolbar"/>
+                <relationship kind="outlet" name="trashButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="kidsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/kidsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="enableEditButton:"/>
+                <relationship kind="outlet" name="editButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="mainView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="toolBar" candidateClass="UIToolbar"/>
+            </relationships>
+        </class>
+        <class className="newKidViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/newKidViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="saveButtonAction:"/>
+                <relationship kind="outlet" name="nomeText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="toolBar" candidateClass="UINavigationBar"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,259 @@
+Tsketchkid_Beta
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/Info.plist sketchkid_Beta/sketchkid_Beta-Info.plist
+cProcessPCH /var/folders/sv/2_vrrchj7978cgnc9q4djfqm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/sketchkid_Beta-Prefix-bqsddmzlxgnhofcazdnbypuyvxqq/sketchkid_Beta-Prefix.pch.pth sketchkid_Beta/sketchkid_Beta-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/AppDelegate.o /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/main.o /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/ViewController.o /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/sketchkid_Beta normal i386
+cGenerateDSYMFile /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app.dSYM /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/sketchkid_Beta
+cCompileStoryboard /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/en.lproj/MainStoryboard.storyboard
+cCopyStringsFile /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/en.lproj/InfoPlist.strings sketchkid_Beta/en.lproj/InfoPlist.strings
+cCpResource sketchkid_Beta/toolbarBackGround@2x.png build/Debug-iphonesimulator/sketchkid_Beta.app/toolbarBackGround@2x.png
+cTouch /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk
+c000000004F453DF80000000000000110
+t1329937912
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c0000000050117E670000000000244490
+t1343323751
+s2376848
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c0000000050117E680000000000353830
+t1343323752
+s3487792
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c0000000050117E6C0000000000905E40
+t1343323756
+s9461312
+
+N/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app
+t2
+s0
+
+N/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app.dSYM
+t2
+s0
+
+N/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/Info.plist
+t2
+s0
+
+N/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/PkgInfo
+t2
+s0
+
+N/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/en.lproj/MainStoryboard.storyboardc
+t2
+s0
+
+N/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/sketchkid_Beta
+t2
+s0
+
+N/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/toolbarBackGround@2x.png
+t2
+s0
+
+N/Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/AppDelegate.o
+t2
+s0
+
+N/Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/ViewController.o
+t2
+s0
+
+N/Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/sketchkid_Beta.LinkFileList
+c00000000501CF5DC00000000000001A3
+t1344075228
+s419
+
+N/Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/AppDelegate.m
+c00000000501CEEB900000000000007E5
+t1344073401
+s2021
+
+N/Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/ViewController.m
+c00000000501CF5DC0000000000000316
+t1344075228
+s790
+
+N/Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/en.lproj/InfoPlist.strings
+c00000000501CEEB9000000000000002D
+t1344073401
+s45
+
+N/Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/en.lproj/MainStoryboard.storyboard
+c00000000501CF4B90000000000000D81
+t1344074937
+s3457
+
+N/Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/main.m
+c00000000501CEEB9000000000000015E
+t1344073401
+s350
+
+N/Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/sketchkid_Beta-Prefix.pch
+c00000000501CEEB9000000000000014B
+t1344073401
+s331
+
+N/Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/toolbarBackGround@2x.png
+c00000000501CF354000000000000A0D6
+t1344074580
+s41174
+
+N/var/folders/sv/2_vrrchj7978cgnc9q4djfqm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/sketchkid_Beta-Prefix-bqsddmzlxgnhofcazdnbypuyvxqq/sketchkid_Beta-Prefix.pch.pth
+t2
+s0
+
+Nsketchkid_Beta/sketchkid_Beta-Info.plist
+c00000000501CEEB900000000000004D0
+t1344073401
+s1232
+
+CBuild AST from /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/AppDelegate.m
+r0
+
+CBuild AST from /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/ViewController.m
+r0
+
+CBuild AST from /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesaa48d15c2dcdb541^eca5195d2dcdb541^---0#1#0#--18"Check dependencies36"2DA20593-63C7-47FA-8A2D-5C7C7BB71D75-
+
+CCompileC build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/AppDelegate.o /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s365768029.941729
+e365768030.179602
+r1
+xCompileC
+xbuild/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/AppDelegate.o
+x/Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/AppDelegate.m9831f15d2dcdb541^75022e5e2dcdb541^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/AppDelegate.m0000000000000000^3545"CompileC build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/AppDelegate.o sketchkid_Beta/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andrea/Desktop/sketchkid_Beta    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50100 -iquote /Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/sketchkid_Beta-generated-files.hmap -I/Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/sketchkid_Beta-own-target-headers.hmap -I/Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/sketchkid_Beta-all-target-headers.hmap -iquote /Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/sketchkid_Beta-project-headers.hmap -I/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/DerivedSources/i386 -I/Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/DerivedSources -F/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator -include /var/folders/sv/2_vrrchj7978cgnc9q4djfqm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/sketchkid_Beta-Prefix-bqsddmzlxgnhofcazdnbypuyvxqq/sketchkid_Beta-Prefix.pch -MMD -MT dependencies -MF /Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/AppDelegate.dia -c /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/AppDelegate.m -o /Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/AppDelegate.o36"A7A070B8-04F0-482A-9B61-CCEABCABE2C7-
+
+CCompileC build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/ViewController.o /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s365768029.942343
+e365768030.179469
+r1
+xCompileC
+xbuild/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/ViewController.o
+x/Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/ViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/ViewController.m9758f15d2dcdb541^aaf22d5e2dcdb541^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/ViewController.m0000000000000000^3563"CompileC build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/ViewController.o sketchkid_Beta/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andrea/Desktop/sketchkid_Beta    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50100 -iquote /Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/sketchkid_Beta-generated-files.hmap -I/Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/sketchkid_Beta-own-target-headers.hmap -I/Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/sketchkid_Beta-all-target-headers.hmap -iquote /Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/sketchkid_Beta-project-headers.hmap -I/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/DerivedSources/i386 -I/Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/DerivedSources -F/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator -include /var/folders/sv/2_vrrchj7978cgnc9q4djfqm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/sketchkid_Beta-Prefix-bqsddmzlxgnhofcazdnbypuyvxqq/sketchkid_Beta-Prefix.pch -MMD -MT dependencies -MF /Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/ViewController.d --serialize-diagnostics /Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/ViewController.dia -c /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/ViewController.m -o /Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/ViewController.o36"3EA0A855-A109-42A7-94F0-49F55E617C18-
+
+CCompileC build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/main.o /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s365768029.941735
+e365768030.178300
+r1
+xCompileC
+xbuild/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/main.o
+x/Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/main.m5132f15d2dcdb541^98a52d5e2dcdb541^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/main.m0000000000000000^3503"CompileC build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/main.o sketchkid_Beta/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andrea/Desktop/sketchkid_Beta    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50100 -iquote /Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/sketchkid_Beta-generated-files.hmap -I/Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/sketchkid_Beta-own-target-headers.hmap -I/Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/sketchkid_Beta-all-target-headers.hmap -iquote /Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/sketchkid_Beta-project-headers.hmap -I/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/DerivedSources/i386 -I/Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/DerivedSources -F/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator -include /var/folders/sv/2_vrrchj7978cgnc9q4djfqm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/sketchkid_Beta-Prefix-bqsddmzlxgnhofcazdnbypuyvxqq/sketchkid_Beta-Prefix.pch -MMD -MT dependencies -MF /Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/main.dia -c /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/main.m -o /Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/main.o36"C1F2A40F-5E7D-48F8-9D81-22447139029E-
+
+CCompileStoryboard /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/en.lproj/MainStoryboard.storyboard
+s365768031.153881
+e365768039.163940
+r1
+xCompileStoryboard
+x/Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/en.lproj/MainStoryboard.storyboard
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"CompileStoryboard sketchkid_Beta/en.lproj/MainStoryboard.storyboard4488275f2dcdb541^33fa29672dcdb541^---0#0#0#-19%DVTDocumentLocation2@102"file://localhost/Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/en.lproj/MainStoryboard.storyboard0000000000000000^959"CompileStoryboard sketchkid_Beta/en.lproj/MainStoryboard.storyboard    cd /Users/andrea/Desktop/sketchkid_Beta    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/en.lproj/MainStoryboard.storyboardc /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/en.lproj/MainStoryboard.storyboard --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk36"08A3CAC8-582F-4D73-9A80-829528893FC1-
+
+CCopyStringsFile /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/en.lproj/InfoPlist.strings sketchkid_Beta/en.lproj/InfoPlist.strings
+s365768031.153882
+e365768031.199865
+r1
+xCopyStringsFile
+x/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/en.lproj/InfoPlist.strings
+xsketchkid_Beta/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Copy sketchkid_Beta/en.lproj/InfoPlist.stringsb988275f2dcdb541^302c335f2dcdb541^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/en.lproj/InfoPlist.strings0000000000000000^599"CopyStringsFile build/Debug-iphonesimulator/sketchkid_Beta.app/en.lproj/InfoPlist.strings sketchkid_Beta/en.lproj/InfoPlist.strings    cd /Users/andrea/Desktop/sketchkid_Beta    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/en.lproj -- sketchkid_Beta/en.lproj/InfoPlist.strings36"A7125334-75D5-4F3A-8051-63FE14552E73-
+
+CCpResource sketchkid_Beta/toolbarBackGround@2x.png build/Debug-iphonesimulator/sketchkid_Beta.app/toolbarBackGround@2x.png
+s365768031.153885
+e365768031.184962
+r1
+xCpResource
+xsketchkid_Beta/toolbarBackGround@2x.png
+xbuild/Debug-iphonesimulator/sketchkid_Beta.app/toolbarBackGround@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Copy build/Debug-iphonesimulator/sketchkid_Beta.app/toolbarBackGround@2x.png2288275f2dcdb541^925b2f5f2dcdb541^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/toolbarBackGround@2x.png000000000080d041^641"CpResource "sketchkid_Beta/toolbarBackGround@2x.png" "build/Debug-iphonesimulator/sketchkid_Beta.app/toolbarBackGround@2x.png"    cd /Users/andrea/Desktop/sketchkid_Beta    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/toolbarBackGround@2x.png" /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app36"C918721E-38EB-468A-A8FA-4DBAA92269CD-
+
+CGenerateDSYMFile /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app.dSYM /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/sketchkid_Beta
+s365768031.069673
+e365768031.145832
+r1
+xGenerateDSYMFile
+x/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app.dSYM
+x/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/sketchkid_Beta
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Generating /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app.dSYM5ce5115f2dcdb541^9355255f2dcdb541^---0#0#0#-19%DVTDocumentLocation2@104"file://localhost/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app.dSYM000000000080d041^661"GenerateDSYMFile build/Debug-iphonesimulator/sketchkid_Beta.app.dSYM build/Debug-iphonesimulator/sketchkid_Beta.app/sketchkid_Beta    cd /Users/andrea/Desktop/sketchkid_Beta    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/sketchkid_Beta -o /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app.dSYM36"210BF969-7079-4EE5-A255-A9D418156506-
+
+CLd /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/sketchkid_Beta normal i386
+s365768030.185994
+e365768031.062880
+r1
+xLd
+x/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/sketchkid_Beta
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Link /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/sketchkid_Betaa7af2f5e2dcdb541^5d19105f2dcdb541^---0#0#0#--1220"Ld build/Debug-iphonesimulator/sketchkid_Beta.app/sketchkid_Beta normal i386    cd /Users/andrea/Desktop/sketchkid_Beta    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -L/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator -F/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator -filelist /Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/Objects-normal/i386/sketchkid_Beta.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -D__IPHONE_OS_VERSION_MIN_REQUIRED=50100 -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/sketchkid_Beta36"4355007E-A94C-4D1E-ADFB-F4BF5C48288A-
+
+CProcessInfoPlistFile /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/Info.plist sketchkid_Beta/sketchkid_Beta-Info.plist
+s365768028.925520
+e365768028.998568
+r1
+xProcessInfoPlistFile
+x/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/Info.plist
+xsketchkid_Beta/sketchkid_Beta-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Process sketchkid_Beta/sketchkid_Beta-Info.plistfda0f25c2dcdb541^dd062d5d2dcdb541^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/sketchkid_Beta-Info.plist0000000000000000^693"ProcessInfoPlistFile build/Debug-iphonesimulator/sketchkid_Beta.app/Info.plist sketchkid_Beta/sketchkid_Beta-Info.plist    cd /Users/andrea/Desktop/sketchkid_Beta    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility sketchkid_Beta/sketchkid_Beta-Info.plist -genpkginfo /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app/Info.plist36"22F05A4E-A163-461D-A2A3-4C95E27C4E5A-
+
+CProcessPCH /Users/andrea/Desktop/duildBamBam/sketchkid_Beta-aubexhicztpdsdbgzagpfrhlyosn/Index/PrecompiledHeaders/sketchkid_Beta-Prefix-dvuqidacbtomsednkmmsvcadmtbg_ast/sketchkid_Beta-Prefix.pch.pth sketchkid_Beta/sketchkid_Beta-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/sv/2_vrrchj7978cgnc9q4djfqm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/sketchkid_Beta-Prefix-bqsddmzlxgnhofcazdnbypuyvxqq/sketchkid_Beta-Prefix.pch.pth sketchkid_Beta/sketchkid_Beta-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s365768029.009779
+e365768029.934922
+r1
+xProcessPCH
+x/var/folders/sv/2_vrrchj7978cgnc9q4djfqm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/sketchkid_Beta-Prefix-bqsddmzlxgnhofcazdnbypuyvxqq/sketchkid_Beta-Prefix.pch.pth
+xsketchkid_Beta/sketchkid_Beta-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Precompile sketchkid_Beta/sketchkid_Beta-Prefix.pch02f1025d2dcdb541^fc56ef5d2dcdb541^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/sketchkid_Beta-Prefix.pch0000000000000000^3567"ProcessPCH /var/folders/sv/2_vrrchj7978cgnc9q4djfqm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/sketchkid_Beta-Prefix-bqsddmzlxgnhofcazdnbypuyvxqq/sketchkid_Beta-Prefix.pch.pth sketchkid_Beta/sketchkid_Beta-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andrea/Desktop/sketchkid_Beta    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50100 -iquote /Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/sketchkid_Beta-generated-files.hmap -I/Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/sketchkid_Beta-own-target-headers.hmap -I/Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/sketchkid_Beta-all-target-headers.hmap -iquote /Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/sketchkid_Beta-project-headers.hmap -I/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/DerivedSources/i386 -I/Users/andrea/Desktop/sketchkid_Beta/build/sketchkid_Beta.build/Debug-iphonesimulator/sketchkid_Beta.build/DerivedSources -F/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator --serialize-diagnostics /var/folders/sv/2_vrrchj7978cgnc9q4djfqm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/sketchkid_Beta-Prefix-bqsddmzlxgnhofcazdnbypuyvxqq/sketchkid_Beta-Prefix.pch.dia -c /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/sketchkid_Beta-Prefix.pch -o /var/folders/sv/2_vrrchj7978cgnc9q4djfqm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/sketchkid_Beta-Prefix-bqsddmzlxgnhofcazdnbypuyvxqq/sketchkid_Beta-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/sv/2_vrrchj7978cgnc9q4djfqm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/sketchkid_Beta-Prefix-bqsddmzlxgnhofcazdnbypuyvxqq/sketchkid_Beta-Prefix.pch.d36"070A43B5-22C0-4EC7-A972-E93E99C906EF-
+
+CTouch /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app
+s365768039.171987
+e365768039.262482
+r1
+xTouch
+x/Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Touch /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.appe71c2c672dcdb541^b53443672dcdb541^---0#0#0#--398"Touch build/Debug-iphonesimulator/sketchkid_Beta.app    cd /Users/andrea/Desktop/sketchkid_Beta    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/andrea/Desktop/sketchkid_Beta/build/Debug-iphonesimulator/sketchkid_Beta.app36"05A6F471-3D31-43F0-9C8E-584737E42251-
+

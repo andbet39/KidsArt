@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65FA966C15CD263900AC0CCD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA966B15CD263900AC0CCD /* UIKit.framework */; };
+		65FA966E15CD263900AC0CCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA966D15CD263900AC0CCD /* Foundation.framework */; };
+		65FA967015CD263900AC0CCD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA966F15CD263900AC0CCD /* CoreGraphics.framework */; };
+		65FA967615CD263900AC0CCD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65FA967415CD263900AC0CCD /* InfoPlist.strings */; };
+		65FA967815CD263900AC0CCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA967715CD263900AC0CCD /* main.m */; };
+		65FA967C15CD263900AC0CCD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA967B15CD263900AC0CCD /* AppDelegate.m */; };
+		65FA967F15CD263900AC0CCD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65FA967D15CD263900AC0CCD /* MainStoryboard.storyboard */; };
+		65FA968215CD263A00AC0CCD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA968115CD263A00AC0CCD /* ViewController.m */; };
+		65FA968D15CD2F7100AC0CCD /* UIToolbar+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA968C15CD2F7100AC0CCD /* UIToolbar+extension.m */; };
+		65FA969115CD32A900AC0CCD /* toolBarBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA969015CD32A900AC0CCD /* toolBarBack@2x.png */; };
+		65FA969315CD335300AC0CCD /* pen_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA969215CD335300AC0CCD /* pen_icon@2x.png */; };
+		65FA969615CD3A0700AC0CCD /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA969515CD3A0700AC0CCD /* HomeViewController.m */; };
+		65FA969815CD3BC300AC0CCD /* toolBackHome@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA969715CD3BC300AC0CCD /* toolBackHome@2x.png */; };
+		65FA969A15CD3C8900AC0CCD /* backHome@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA969915CD3C8900AC0CCD /* backHome@2x.png */; };
+		65FA969F15CD3E2200AC0CCD /* cameraIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA969C15CD3E2200AC0CCD /* cameraIcon@2x.png */; };
+		65FA96A315CD411F00AC0CCD /* albumIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA96A115CD411F00AC0CCD /* albumIcon@2x.png */; };
+		65FA96A415CD411F00AC0CCD /* kidsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA96A215CD411F00AC0CCD /* kidsIcon@2x.png */; };
+		65FA96A815CD770900AC0CCD /* navigationBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA96A715CD770900AC0CCD /* navigationBar@2x.png */; };
+		65FA96AE15CD7A4900AC0CCD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA96AD15CD7A4900AC0CCD /* QuartzCore.framework */; };
+		65FA96B115CD7A9600AC0CCD /* UIImage+Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA96B015CD7A9600AC0CCD /* UIImage+Scale.m */; };
+		65FA96B315CD7CAE00AC0CCD /* sampleSketch.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA96B215CD7CAE00AC0CCD /* sampleSketch.png */; };
+		65FA96B715CD835D00AC0CCD /* albumBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA96B615CD835D00AC0CCD /* albumBar@2x.png */; };
+		65FA96B915CD867800AC0CCD /* addFavorites@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA96B815CD867800AC0CCD /* addFavorites@2x.png */; };
+		65FA96C415CD8F0D00AC0CCD /* UIView+PartialCurl.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA96C315CD8F0D00AC0CCD /* UIView+PartialCurl.m */; };
+		65FA96C915CE478F00AC0CCD /* kidsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA96C815CE478F00AC0CCD /* kidsViewController.m */; };
+		65FA96CB15CE49D300AC0CCD /* greyBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA96CA15CE49D300AC0CCD /* greyBar@2x.png */; };
+		65FA96CD15CE4DCD00AC0CCD /* backKidsViola.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA96CC15CE4DCD00AC0CCD /* backKidsViola.png */; };
+		65FA96CF15CE514200AC0CCD /* strisciaGialla@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA96CE15CE514200AC0CCD /* strisciaGialla@2x.png */; };
+		65FA96D115CE53DC00AC0CCD /* corniceBimbo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA96D015CE53DC00AC0CCD /* corniceBimbo@2x.png */; };
+		65FA96D415CE561900AC0CCD /* sketchkidModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65FA96D215CE561900AC0CCD /* sketchkidModel.xcdatamodeld */; };
+		65FA96DA15CE57B800AC0CCD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA96D915CE57B800AC0CCD /* CoreData.framework */; };
+		65FA96DD15D0281E00AC0CCD /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA96DC15D0281E00AC0CCD /* DataManager.m */; };
+		65FA96E015D0290300AC0CCD /* newKidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA96DF15D0290300AC0CCD /* newKidViewController.m */; };
+		65FA96E215D02B2900AC0CCD /* bckInserimento@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA96E115D02B2900AC0CCD /* bckInserimento@2x.png */; };
+		65FA96E415D02C5E00AC0CCD /* bottoneSalva@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA96E315D02C5E00AC0CCD /* bottoneSalva@2x.png */; };
+		65FA96E615D02DCE00AC0CCD /* evidenzia@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA96E515D02DCE00AC0CCD /* evidenzia@2x.png */; };
+		65FA96E815D02ED200AC0CCD /* bambinoDefault@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA96E715D02ED200AC0CCD /* bambinoDefault@2x.png */; };
+		65FA96EB15D030CC00AC0CCD /* Kid.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA96EA15D030CC00AC0CCD /* Kid.m */; };
+		65FA975E15D042C200AC0CCD /* libGMGridView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA975B15D0423E00AC0CCD /* libGMGridView.a */; };
+		65FA97A415D05EAC00AC0CCD /* close_x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA97A315D05EAC00AC0CCD /* close_x.png */; };
+		65FA97A615D0697B00AC0CCD /* bambinoDefault2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA97A515D0697B00AC0CCD /* bambinoDefault2@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65FA975A15D0423E00AC0CCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65FA975315D0423E00AC0CCD /* GMGridView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 78509312149FAC2E000787E4;
+			remoteInfo = GMGridView;
+		};
+		65FA975C15D042BC00AC0CCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65FA975315D0423E00AC0CCD /* GMGridView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78509311149FAC2E000787E4;
+			remoteInfo = GMGridView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65FA966715CD263900AC0CCD /* kidsArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kidsArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65FA966B15CD263900AC0CCD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		65FA966D15CD263900AC0CCD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		65FA966F15CD263900AC0CCD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		65FA967315CD263900AC0CCD /* kidsArt-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kidsArt-Info.plist"; sourceTree = "<group>"; };
+		65FA967515CD263900AC0CCD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		65FA967715CD263900AC0CCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		65FA967915CD263900AC0CCD /* kidsArt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kidsArt-Prefix.pch"; sourceTree = "<group>"; };
+		65FA967A15CD263900AC0CCD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		65FA967B15CD263900AC0CCD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		65FA967E15CD263900AC0CCD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		65FA968015CD263A00AC0CCD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = sketchkid_Beta/ViewController.h; sourceTree = "<group>"; };
+		65FA968115CD263A00AC0CCD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = sketchkid_Beta/ViewController.m; sourceTree = "<group>"; };
+		65FA968B15CD2F7100AC0CCD /* UIToolbar+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+extension.h"; sourceTree = "<group>"; };
+		65FA968C15CD2F7100AC0CCD /* UIToolbar+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+extension.m"; sourceTree = "<group>"; };
+		65FA969015CD32A900AC0CCD /* toolBarBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolBarBack@2x.png"; sourceTree = "<group>"; };
+		65FA969215CD335300AC0CCD /* pen_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pen_icon@2x.png"; sourceTree = "<group>"; };
+		65FA969415CD3A0700AC0CCD /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = sketchkid_Beta/HomeViewController.h; sourceTree = "<group>"; };
+		65FA969515CD3A0700AC0CCD /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = sketchkid_Beta/HomeViewController.m; sourceTree = "<group>"; };
+		65FA969715CD3BC300AC0CCD /* toolBackHome@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolBackHome@2x.png"; sourceTree = "<group>"; };
+		65FA969915CD3C8900AC0CCD /* backHome@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backHome@2x.png"; sourceTree = "<group>"; };
+		65FA969C15CD3E2200AC0CCD /* cameraIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraIcon@2x.png"; sourceTree = "<group>"; };
+		65FA96A115CD411F00AC0CCD /* albumIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "albumIcon@2x.png"; sourceTree = "<group>"; };
+		65FA96A215CD411F00AC0CCD /* kidsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kidsIcon@2x.png"; sourceTree = "<group>"; };
+		65FA96A715CD770900AC0CCD /* navigationBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationBar@2x.png"; sourceTree = "<group>"; };
+		65FA96AD15CD7A4900AC0CCD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		65FA96AF15CD7A9600AC0CCD /* UIImage+Scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Scale.h"; sourceTree = "<group>"; };
+		65FA96B015CD7A9600AC0CCD /* UIImage+Scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Scale.m"; sourceTree = "<group>"; };
+		65FA96B215CD7CAE00AC0CCD /* sampleSketch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sampleSketch.png; sourceTree = "<group>"; };
+		65FA96B615CD835D00AC0CCD /* albumBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "albumBar@2x.png"; sourceTree = "<group>"; };
+		65FA96B815CD867800AC0CCD /* addFavorites@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addFavorites@2x.png"; sourceTree = "<group>"; };
+		65FA96C215CD8F0D00AC0CCD /* UIView+PartialCurl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PartialCurl.h"; sourceTree = "<group>"; };
+		65FA96C315CD8F0D00AC0CCD /* UIView+PartialCurl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PartialCurl.m"; sourceTree = "<group>"; };
+		65FA96C715CE478F00AC0CCD /* kidsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kidsViewController.h; sourceTree = "<group>"; };
+		65FA96C815CE478F00AC0CCD /* kidsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kidsViewController.m; sourceTree = "<group>"; };
+		65FA96CA15CE49D300AC0CCD /* greyBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greyBar@2x.png"; sourceTree = "<group>"; };
+		65FA96CC15CE4DCD00AC0CCD /* backKidsViola.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backKidsViola.png; sourceTree = "<group>"; };
+		65FA96CE15CE514200AC0CCD /* strisciaGialla@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "strisciaGialla@2x.png"; sourceTree = "<group>"; };
+		65FA96D015CE53DC00AC0CCD /* corniceBimbo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corniceBimbo@2x.png"; sourceTree = "<group>"; };
+		65FA96D315CE561900AC0CCD /* sketchkidModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = sketchkidModel.xcdatamodel; sourceTree = "<group>"; };
+		65FA96D915CE57B800AC0CCD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		65FA96DB15D0281E00AC0CCD /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		65FA96DC15D0281E00AC0CCD /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		65FA96DE15D0290300AC0CCD /* newKidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newKidViewController.h; sourceTree = "<group>"; };
+		65FA96DF15D0290300AC0CCD /* newKidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newKidViewController.m; sourceTree = "<group>"; };
+		65FA96E115D02B2900AC0CCD /* bckInserimento@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bckInserimento@2x.png"; sourceTree = "<group>"; };
+		65FA96E315D02C5E00AC0CCD /* bottoneSalva@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bottoneSalva@2x.png"; sourceTree = "<group>"; };
+		65FA96E515D02DCE00AC0CCD /* evidenzia@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "evidenzia@2x.png"; sourceTree = "<group>"; };
+		65FA96E715D02ED200AC0CCD /* bambinoDefault@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bambinoDefault@2x.png"; sourceTree = "<group>"; };
+		65FA96E915D030CC00AC0CCD /* Kid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Kid.h; path = ../Kid.h; sourceTree = "<group>"; };
+		65FA96EA15D030CC00AC0CCD /* Kid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Kid.m; path = ../Kid.m; sourceTree = "<group>"; };
+		65FA975315D0423E00AC0CCD /* GMGridView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GMGridView.xcodeproj; path = "../gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridView.xcodeproj"; sourceTree = "<group>"; };
+		65FA97A315D05EAC00AC0CCD /* close_x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_x.png; sourceTree = "<group>"; };
+		65FA97A515D0697B00AC0CCD /* bambinoDefault2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bambinoDefault2@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65FA966415CD263900AC0CCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65FA975E15D042C200AC0CCD /* libGMGridView.a in Frameworks */,
+				65FA96DA15CE57B800AC0CCD /* CoreData.framework in Frameworks */,
+				65FA96AE15CD7A4900AC0CCD /* QuartzCore.framework in Frameworks */,
+				65FA967015CD263900AC0CCD /* CoreGraphics.framework in Frameworks */,
+				65FA966C15CD263900AC0CCD /* UIKit.framework in Frameworks */,
+				65FA966E15CD263900AC0CCD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65FA965C15CD263900AC0CCD = {
+			isa = PBXGroup;
+			children = (
+				65FA975215D0420900AC0CCD /* ThirdParty */,
+				65FA96D915CE57B800AC0CCD /* CoreData.framework */,
+				65FA96D215CE561900AC0CCD /* sketchkidModel.xcdatamodeld */,
+				65FA968A15CD2AF200AC0CCD /* images */,
+				65FA967115CD263900AC0CCD /* sketchkid_Beta */,
+				65FA966A15CD263900AC0CCD /* Frameworks */,
+				65FA966815CD263900AC0CCD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65FA966815CD263900AC0CCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65FA966715CD263900AC0CCD /* kidsArt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65FA966A15CD263900AC0CCD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65FA96AD15CD7A4900AC0CCD /* QuartzCore.framework */,
+				65FA966B15CD263900AC0CCD /* UIKit.framework */,
+				65FA966D15CD263900AC0CCD /* Foundation.framework */,
+				65FA966F15CD263900AC0CCD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65FA967115CD263900AC0CCD /* sketchkid_Beta */ = {
+			isa = PBXGroup;
+			children = (
+				65FA96EC15D030D500AC0CCD /* model */,
+				65FA96DB15D0281E00AC0CCD /* DataManager.h */,
+				65FA96DC15D0281E00AC0CCD /* DataManager.m */,
+				65FA96C615CE473400AC0CCD /* helper */,
+				65FA96C515CE471300AC0CCD /* viewController */,
+				65FA967A15CD263900AC0CCD /* AppDelegate.h */,
+				65FA967B15CD263900AC0CCD /* AppDelegate.m */,
+				65FA967D15CD263900AC0CCD /* MainStoryboard.storyboard */,
+				65FA967215CD263900AC0CCD /* Supporting Files */,
+			);
+			path = sketchkid_Beta;
+			sourceTree = "<group>";
+		};
+		65FA967215CD263900AC0CCD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65FA967315CD263900AC0CCD /* kidsArt-Info.plist */,
+				65FA967415CD263900AC0CCD /* InfoPlist.strings */,
+				65FA967715CD263900AC0CCD /* main.m */,
+				65FA967915CD263900AC0CCD /* kidsArt-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65FA968A15CD2AF200AC0CCD /* images */ = {
+			isa = PBXGroup;
+			children = (
+				65FA97A315D05EAC00AC0CCD /* close_x.png */,
+				65FA96E115D02B2900AC0CCD /* bckInserimento@2x.png */,
+				65FA97A515D0697B00AC0CCD /* bambinoDefault2@2x.png */,
+				65FA96E515D02DCE00AC0CCD /* evidenzia@2x.png */,
+				65FA96E715D02ED200AC0CCD /* bambinoDefault@2x.png */,
+				65FA96D015CE53DC00AC0CCD /* corniceBimbo@2x.png */,
+				65FA96B815CD867800AC0CCD /* addFavorites@2x.png */,
+				65FA96CE15CE514200AC0CCD /* strisciaGialla@2x.png */,
+				65FA969C15CD3E2200AC0CCD /* cameraIcon@2x.png */,
+				65FA96A115CD411F00AC0CCD /* albumIcon@2x.png */,
+				65FA96A215CD411F00AC0CCD /* kidsIcon@2x.png */,
+				65FA96E315D02C5E00AC0CCD /* bottoneSalva@2x.png */,
+				65FA969915CD3C8900AC0CCD /* backHome@2x.png */,
+				65FA96A715CD770900AC0CCD /* navigationBar@2x.png */,
+				65FA96CC15CE4DCD00AC0CCD /* backKidsViola.png */,
+				65FA96B615CD835D00AC0CCD /* albumBar@2x.png */,
+				65FA96CA15CE49D300AC0CCD /* greyBar@2x.png */,
+				65FA96B215CD7CAE00AC0CCD /* sampleSketch.png */,
+				65FA969715CD3BC300AC0CCD /* toolBackHome@2x.png */,
+				65FA969015CD32A900AC0CCD /* toolBarBack@2x.png */,
+				65FA969215CD335300AC0CCD /* pen_icon@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		65FA96C515CE471300AC0CCD /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				65FA969415CD3A0700AC0CCD /* HomeViewController.h */,
+				65FA969515CD3A0700AC0CCD /* HomeViewController.m */,
+				65FA968015CD263A00AC0CCD /* ViewController.h */,
+				65FA968115CD263A00AC0CCD /* ViewController.m */,
+				65FA96C715CE478F00AC0CCD /* kidsViewController.h */,
+				65FA96C815CE478F00AC0CCD /* kidsViewController.m */,
+				65FA96DE15D0290300AC0CCD /* newKidViewController.h */,
+				65FA96DF15D0290300AC0CCD /* newKidViewController.m */,
+			);
+			name = viewController;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		65FA96C615CE473400AC0CCD /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				65FA968B15CD2F7100AC0CCD /* UIToolbar+extension.h */,
+				65FA968C15CD2F7100AC0CCD /* UIToolbar+extension.m */,
+				65FA96AF15CD7A9600AC0CCD /* UIImage+Scale.h */,
+				65FA96B015CD7A9600AC0CCD /* UIImage+Scale.m */,
+				65FA96C215CD8F0D00AC0CCD /* UIView+PartialCurl.h */,
+				65FA96C315CD8F0D00AC0CCD /* UIView+PartialCurl.m */,
+			);
+			name = helper;
+			sourceTree = "<group>";
+		};
+		65FA96EC15D030D500AC0CCD /* model */ = {
+			isa = PBXGroup;
+			children = (
+				65FA96E915D030CC00AC0CCD /* Kid.h */,
+				65FA96EA15D030CC00AC0CCD /* Kid.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		65FA975215D0420900AC0CCD /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				65FA975315D0423E00AC0CCD /* GMGridView.xcodeproj */,
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		65FA975415D0423E00AC0CCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65FA975B15D0423E00AC0CCD /* libGMGridView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65FA966615CD263900AC0CCD /* kidsArt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65FA968515CD263A00AC0CCD /* Build configuration list for PBXNativeTarget "kidsArt" */;
+			buildPhases = (
+				65FA966315CD263900AC0CCD /* Sources */,
+				65FA966415CD263900AC0CCD /* Frameworks */,
+				65FA966515CD263900AC0CCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65FA975D15D042BC00AC0CCD /* PBXTargetDependency */,
+			);
+			name = kidsArt;
+			productName = sketchkid_Beta;
+			productReference = 65FA966715CD263900AC0CCD /* kidsArt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65FA965E15CD263900AC0CCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Andrea Terzani";
+			};
+			buildConfigurationList = 65FA966115CD263900AC0CCD /* Build configuration list for PBXProject "kidsArt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 65FA965C15CD263900AC0CCD;
+			productRefGroup = 65FA966815CD263900AC0CCD /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 65FA975415D0423E00AC0CCD /* Products */;
+					ProjectRef = 65FA975315D0423E00AC0CCD /* GMGridView.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				65FA966615CD263900AC0CCD /* kidsArt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		65FA975B15D0423E00AC0CCD /* libGMGridView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGMGridView.a;
+			remoteRef = 65FA975A15D0423E00AC0CCD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65FA966515CD263900AC0CCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65FA967615CD263900AC0CCD /* InfoPlist.strings in Resources */,
+				65FA967F15CD263900AC0CCD /* MainStoryboard.storyboard in Resources */,
+				65FA969115CD32A900AC0CCD /* toolBarBack@2x.png in Resources */,
+				65FA969315CD335300AC0CCD /* pen_icon@2x.png in Resources */,
+				65FA969815CD3BC300AC0CCD /* toolBackHome@2x.png in Resources */,
+				65FA969A15CD3C8900AC0CCD /* backHome@2x.png in Resources */,
+				65FA969F15CD3E2200AC0CCD /* cameraIcon@2x.png in Resources */,
+				65FA96A315CD411F00AC0CCD /* albumIcon@2x.png in Resources */,
+				65FA96A415CD411F00AC0CCD /* kidsIcon@2x.png in Resources */,
+				65FA96A815CD770900AC0CCD /* navigationBar@2x.png in Resources */,
+				65FA96B315CD7CAE00AC0CCD /* sampleSketch.png in Resources */,
+				65FA96B715CD835D00AC0CCD /* albumBar@2x.png in Resources */,
+				65FA96B915CD867800AC0CCD /* addFavorites@2x.png in Resources */,
+				65FA96CB15CE49D300AC0CCD /* greyBar@2x.png in Resources */,
+				65FA96CD15CE4DCD00AC0CCD /* backKidsViola.png in Resources */,
+				65FA96CF15CE514200AC0CCD /* strisciaGialla@2x.png in Resources */,
+				65FA96D115CE53DC00AC0CCD /* corniceBimbo@2x.png in Resources */,
+				65FA96E215D02B2900AC0CCD /* bckInserimento@2x.png in Resources */,
+				65FA96E415D02C5E00AC0CCD /* bottoneSalva@2x.png in Resources */,
+				65FA96E615D02DCE00AC0CCD /* evidenzia@2x.png in Resources */,
+				65FA96E815D02ED200AC0CCD /* bambinoDefault@2x.png in Resources */,
+				65FA97A415D05EAC00AC0CCD /* close_x.png in Resources */,
+				65FA97A615D0697B00AC0CCD /* bambinoDefault2@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65FA966315CD263900AC0CCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65FA967815CD263900AC0CCD /* main.m in Sources */,
+				65FA967C15CD263900AC0CCD /* AppDelegate.m in Sources */,
+				65FA968215CD263A00AC0CCD /* ViewController.m in Sources */,
+				65FA968D15CD2F7100AC0CCD /* UIToolbar+extension.m in Sources */,
+				65FA969615CD3A0700AC0CCD /* HomeViewController.m in Sources */,
+				65FA96B115CD7A9600AC0CCD /* UIImage+Scale.m in Sources */,
+				65FA96C415CD8F0D00AC0CCD /* UIView+PartialCurl.m in Sources */,
+				65FA96C915CE478F00AC0CCD /* kidsViewController.m in Sources */,
+				65FA96D415CE561900AC0CCD /* sketchkidModel.xcdatamodeld in Sources */,
+				65FA96DD15D0281E00AC0CCD /* DataManager.m in Sources */,
+				65FA96E015D0290300AC0CCD /* newKidViewController.m in Sources */,
+				65FA96EB15D030CC00AC0CCD /* Kid.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65FA975D15D042BC00AC0CCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GMGridView;
+			targetProxy = 65FA975C15D042BC00AC0CCD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65FA967415CD263900AC0CCD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65FA967515CD263900AC0CCD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		65FA967D15CD263900AC0CCD /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65FA967E15CD263900AC0CCD /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65FA968315CD263A00AC0CCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		65FA968415CD263A00AC0CCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65FA968615CD263A00AC0CCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sketchkid_Beta/kidsArt-Prefix.pch";
+				HEADER_SEARCH_PATHS = "GMGridView/**";
+				INFOPLIST_FILE = "sketchkid_Beta/kidsArt-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = kidsArt;
+				USER_HEADER_SEARCH_PATHS = "/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		65FA968715CD263A00AC0CCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sketchkid_Beta/kidsArt-Prefix.pch";
+				HEADER_SEARCH_PATHS = "GMGridView/**";
+				INFOPLIST_FILE = "sketchkid_Beta/kidsArt-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = kidsArt;
+				USER_HEADER_SEARCH_PATHS = "/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65FA966115CD263900AC0CCD /* Build configuration list for PBXProject "kidsArt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65FA968315CD263A00AC0CCD /* Debug */,
+				65FA968415CD263A00AC0CCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65FA968515CD263A00AC0CCD /* Build configuration list for PBXNativeTarget "kidsArt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65FA968615CD263A00AC0CCD /* Debug */,
+				65FA968715CD263A00AC0CCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		65FA96D215CE561900AC0CCD /* sketchkidModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				65FA96D315CE561900AC0CCD /* sketchkidModel.xcdatamodel */,
+			);
+			currentVersion = 65FA96D315CE561900AC0CCD /* sketchkidModel.xcdatamodel */;
+			path = sketchkidModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 65FA965E15CD263900AC0CCD /* Project object */;
+}

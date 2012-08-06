@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1487" systemVersion="12A269" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Album" syncable="YES">
+        <attribute name="copertinaPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dataCreazione" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="titolo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="album2sketch" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Sketch" syncable="YES"/>
+    </entity>
+    <entity name="Kid" representedClassName="Kid" syncable="YES">
+        <attribute name="cognome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nascita" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoPath" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="kid2Sketch" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Sketch" syncable="YES"/>
+    </entity>
+    <entity name="Sketch" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="isPrefered" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="nota" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pathFull" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pathSmall" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Kid" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Album" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Sketch" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>
