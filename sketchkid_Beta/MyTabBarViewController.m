@@ -180,11 +180,11 @@
 -(void)TakePictureViewControllerDidCancel:(TakePictureViewController *)controller{
 
     [self dismissModalViewControllerAnimated:NO];
-
+    
 }
 
 
--(void)TakePictureViewController:(TakePictureViewController *)controller DidAddSketch:(Sketch *)Sketch{
+-(void)TakePictureViewControllerDidAddSomePhoto:(TakePictureViewController *)controller{
     
     [self dismissModalViewControllerAnimated:NO];
     [self setSelectedIndex:1];

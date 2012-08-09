@@ -17,13 +17,16 @@
 
 @protocol TakePictureViewControllerDelegate <NSObject>
 - (void)TakePictureViewControllerDidCancel:(TakePictureViewController *)controller;
-- (void)TakePictureViewController: (TakePictureViewController *)controller DidAddSketch:(Sketch *)Sketch;
+- (void)TakePictureViewControllerDidAddSomePhoto: (TakePictureViewController *)controller;
 @end
 
 @interface TakePictureViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate,CustomOverlayViewDelegate>{
 
 
     CustomOverlayView * overlay;
+    NSMutableArray *tempPictureArray;
+    
+    
     BOOL didCancel;
 
 }
@@ -35,7 +38,7 @@
 @property (strong,nonatomic) id <TakePictureViewControllerDelegate> delegate;
 
 
-- (void)takePicture;
+- (void)CustomOverlaytakePicture;
 
 
 @end

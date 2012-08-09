@@ -93,30 +93,9 @@
 }
 
 -(void)scattaFoto{
-    
-    
-    /*
-    imagePickerController = [[UIImagePickerController alloc] init];
-    
-    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
-    {
-        [imagePickerController setSourceType:UIImagePickerControllerSourceTypeCamera];
-    }
-    else
-    {
-        [imagePickerController setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
-    }
-    
-    [imagePickerController setDelegate:self];
-    */
-    
-    
-    
-    
+
     [self showCamera];
 
-    
-    
 }
 
 - (void) showCamera
@@ -141,10 +120,37 @@
     }   
 }
 
-//Delegate dell overlay
-- (void)takePicture
+#pragma mark CustomOverlayViewDelegate
+- (void)CustomOverlaytakePicture
 {
     [picker takePicture];
+}
+
+-(void)CustomOverlaydidCancel
+{
+    [self dismissModalViewControllerAnimated:NO];
+    [self.delegate TakePictureViewControllerDidCancel:self];
+
+}
+
+
+//Salva tutte le immagini fatte fino a questo momento e chiude il controller
+
+-(void)CustomOverlaydidDone{
+    
+    [overlay startSpinner];
+    
+    //Salva tutte le immagini
+    for (UIImage * i in tempPictureArray) {
+        
+        [self saveSketch:i];
+    }
+    
+    [overlay stopSpinner];
+    
+    [self dismissModalViewControllerAnimated:NO];
+    [self.delegate TakePictureViewControllerDidCancel:self];
+
 }
 
 
@@ -153,13 +159,12 @@
 {
     UIImage * capturedImage = [info objectForKey:UIImagePickerControllerOriginalImage];
     
-    
-    [self dismissModalViewControllerAnimated:NO];
+    [tempPictureArray addObject:capturedImage];
+    //[self dismissModalViewControllerAnimated:NO];
     
     //Salva l' immagine e la ripassa all al delegato (MytabbarViewController) che dovrà mostrare l' album di default con la nuova immagine per prima
-    [self saveSketch:capturedImage];
-    
-    [self.delegate TakePictureViewController:self DidAddSketch:[self saveSketch:capturedImage]];
+    //[self saveSketch:capturedImage];
+    //[self.delegate TakePictureViewController:self DidAddSketch:[self saveSketch:capturedImage]];
     
 }
 
@@ -173,9 +178,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     overlay = [[CustomOverlayView alloc] initWithFrame:CGRectMake(0, 0, 320  , 480)];
-    
-    
     overlay.delegate = self;
     
     
@@ -186,6 +191,9 @@
     self.picker.wantsFullScreenLayout = YES;
     
     self.isCameraOn=FALSE;
+    
+    
+    tempPictureArray = [[NSMutableArray alloc]init];
     [self scattaFoto];
     
        
@@ -199,9 +207,7 @@
     if (self.isCameraOn) {
         
     }else{
-    
-       // [self presentModalViewController:imagePickerController animated:NO];
-        
+            
         [self scattaFoto];
         self.isCameraOn=TRUE;
 

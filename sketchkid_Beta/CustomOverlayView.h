@@ -11,13 +11,19 @@
 @class CustomOverlayView;
 
 @protocol CustomOverlayViewDelegate <NSObject>
-- (void)takePicture;
+- (void)CustomOverlaytakePicture;
+-(void)CustomOverlaydidCancel;
+-(void)CustomOverlaydidDone;
+
 @end
 
 @interface CustomOverlayView : UIView
 
 @property (strong,nonatomic) id <CustomOverlayViewDelegate>   delegate;
 @property (nonatomic, weak) UIButton *pictureButton;
+@property (nonatomic,weak)UIActivityIndicatorView * spinner;
+-(void)startSpinner;
 
+-(void)stopSpinner;
 
 @end
