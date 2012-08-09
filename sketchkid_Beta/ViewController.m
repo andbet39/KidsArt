@@ -51,13 +51,12 @@
 }
 
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     [self creaToolBar];
-
+    
 
 }
 
@@ -73,9 +72,6 @@
     // Release any retained subviews of the main view.
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-}
+
 
 @end

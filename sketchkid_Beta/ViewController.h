@@ -9,6 +9,16 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+
+
+
+
+
+
+}
+
+
 @property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *penButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *shareButton;

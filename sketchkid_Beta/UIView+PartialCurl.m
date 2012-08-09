@@ -58,6 +58,7 @@
 
 -(void)animationPartialCurlUp
 {
+    
 	[self setAlpha:0];
 	[UIView beginAnimations:@"partialPageCurlUp" context:nil];
 	[UIView setAnimationDuration:[self partialCurlDuration]];
@@ -70,6 +71,8 @@
 	[UIView
 	 setAnimationTransition:UIViewAnimationTransitionCurlUp
 	 forView:self cache:YES];
+    
+    
 	[UIView commitAnimations];
 	
 	[self performSelector:@selector(animationPartialCurlJustStarted)

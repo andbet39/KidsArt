@@ -9,25 +9,27 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 #import "UIImage+Scale.h"
-
+#import "DataManager.h"
+#import "Album.h"
+#import "AlbumManager.h"
+#import "Sketch.h"
 
 @interface HomeViewController : UIViewController
 {
 
     UIScrollView *photoShowView;
-
+    Album* currentAlbum;
+    
+    NSMutableArray * sketchArray;
     
 
 }
 - (IBAction)removeInfoButtonAction:(id)sender;
 - (IBAction)infoButtonAction:(id)sender;
-- (IBAction)kidButtonAction:(id)sender;
-- (IBAction)cameraButtonAction:(id)sender;
+- (IBAction)creaDefaultAlbum:(id)sender;
+
 @property (weak, nonatomic) IBOutlet UIButton *removeInfoButton;
-@property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *kidsButton;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *cameraButton;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *albumButton;
+
 @property (weak, nonatomic) IBOutlet UIView *mainView;
 @property (weak, nonatomic) IBOutlet UIToolbar *albumToolbar;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *infoButton;

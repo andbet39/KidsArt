@@ -15,10 +15,7 @@
 
 @implementation HomeViewController
 @synthesize removeInfoButton;
-@synthesize toolBar;
-@synthesize kidsButton;
-@synthesize cameraButton;
-@synthesize albumButton;
+
 @synthesize mainView;
 @synthesize albumToolbar;
 @synthesize infoButton;
@@ -36,29 +33,14 @@
     [addFavoriteButton setBackgroundVerticalPositionAdjustment:0.0f forBarMetrics:UIBarMetricsDefault];
     [addFavoriteButton setBackgroundImage:[UIImage imageNamed:@"addFavorites.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     
-    [albumTitleLabel setText:@"Album Principale"];
+    [albumTitleLabel setText:currentAlbum.titolo];
     
 }
 
 -(void)creaToolBar{
     
     int toolbarheight=84;
-    
-    [toolBar setFrame:CGRectMake(0, self.view.frame.size.height-toolbarheight, 320, toolbarheight)];
-    [toolBar setBackgroundImage:[UIImage imageNamed:@"toolBackHome.png"] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
-    
-    [cameraButton setBackgroundVerticalPositionAdjustment:1.0f forBarMetrics:UIBarMetricsDefault];
-    [cameraButton setBackgroundImage:[UIImage imageNamed:@"cameraIcon.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
- 
-    [kidsButton setBackgroundVerticalPositionAdjustment:7.0f forBarMetrics:UIBarMetricsDefault];
-    [kidsButton setBackgroundImage:[UIImage imageNamed:@"kidsIcon.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    
-    
-    [albumButton setBackgroundVerticalPositionAdjustment:9.0f forBarMetrics:UIBarMetricsDefault];
-    
-    [albumButton setBackgroundImage:[UIImage imageNamed:@"albumIcon.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    
-    
+        
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationBar.png"] forBarMetrics:UIBarMetricsDefault];
 }
 
@@ -92,12 +74,12 @@
         
     }
     
-    //for(Sketch * sk in sketchs){
-    for(int s=0;s<10;s++){
+    for(Sketch * sk in sketchArray){
+    //for(int s=0;s<10;s++){
         
-        //NSData *data = [[NSData alloc] initWithContentsOfFile:sk.smallpath];
-        UIImage *currentSketch = [UIImage imageNamed:@"sampleSketch.png"];
+        NSData *data = [[NSData alloc] initWithContentsOfFile:sk.pathSmall];
         
+        UIImage *currentSketch = [[UIImage alloc] initWithData:data];        
         int image_size_x=currentSketch.size.width;
         int image_size_y=currentSketch.size.height;
         
@@ -159,22 +141,29 @@
 
 }
 
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-     [self creaAlbumScrollView];
+    
+    AlbumManager *am = [AlbumManager sharedAlbumManager];
+    currentAlbum = am.selectedAlbum;
+
+    sketchArray= [NSMutableArray arrayWithArray:[currentAlbum.album2sketch allObjects]];
+
+    
+    [self creaAlbumScrollView];
     [self creaToolBar];
    
+    
     [self creaAlbumToolBar];
     
 }
 
 - (void)viewDidUnload
 {
-    [self setToolBar:nil];
-    [self setKidsButton:nil];
-    [self setCameraButton:nil];
-    [self setAlbumButton:nil];
+   
     [self setNavigationBar:nil];
     [self setMainView:nil];
     [self setAlbumToolbar:nil];
@@ -203,13 +192,30 @@
     mainView.partialCurlDuration=1;
     mainView.partialCurlPercent=0.60;
     
+    
     [mainView animationPartialCurlUp];
 }
 
-- (IBAction)kidButtonAction:(id)sender {
-    [self performSegueWithIdentifier:@"kidSegue" sender:self];
+- (IBAction)creaDefaultAlbum:(id)sender {
+    
+    DataManager *dm =[DataManager sharedDataManager];
+    
+    Album *defaultAlbum = (Album *)[NSEntityDescription insertNewObjectForEntityForName:@"Album" inManagedObjectContext:dm.managedObjectContext];
+    
+    
+    [defaultAlbum setTitolo:@"Default"];
+    [defaultAlbum setOrder:[NSDecimalNumber numberWithInt:0]];
+    [defaultAlbum setDataCreazione:[NSDate date]];
+    //[defaultAlbum setCopertinaPath:]
+    NSManagedObjectContext *context = [dm managedObjectContext];
+
+    // Save the context.
+    NSError *error = nil;
+    if (![context save:&error]){
+    
+    }
+    
 }
 
-- (IBAction)cameraButtonAction:(id)sender {
-}
+
 @end

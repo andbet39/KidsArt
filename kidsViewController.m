@@ -25,7 +25,7 @@
     
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationBar.png"] forBarMetrics:UIBarMetricsDefault];
 
-    [toolBar setFrame:CGRectMake(0, 44, 320, toolbarheight)];
+    [toolBar setFrame:CGRectMake(0, 0, 320, toolbarheight)];
     [toolBar setBackgroundImage:[UIImage imageNamed:@"greyBar.png"] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
     
     [titleLabel setText:@"Kids"];
@@ -75,9 +75,9 @@
 -(void)NewKidViewController:(newKidViewController *)controller DidAddKid:(Kid *)kid
 {
     
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissModalViewControllerAnimated:YES];
     
-    [self dismissViewControllerAnimated:YES completion:nil];
+    
     [kidsArray addObject:kid];
     [_gmGridView reloadData];
 
@@ -102,8 +102,9 @@
 
 -(void)NewKidViewControllerDidCancel:(newKidViewController *)controller{
     
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
+    //[self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissModalViewControllerAnimated:YES];
+
     
 }
 
@@ -310,10 +311,6 @@
     // Release any retained subviews of the main view.
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
 
 - (IBAction)enableEditButton:(id)sender {
     

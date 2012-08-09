@@ -1,2 +1,1 @@
-dependencies: \
-  /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/../Kid.m Kid.h
+dependencies: /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../Kid.m Kid.h

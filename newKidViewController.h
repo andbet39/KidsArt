@@ -26,4 +26,5 @@
 @property (weak, nonatomic) IBOutlet UINavigationBar *toolBar;
 
 - (IBAction)saveButtonAction:(id)sender;
+- (IBAction)cancelButtonAction:(id)sender;
 @end

@@ -66,4 +66,9 @@
     
     [self.delegate NewKidViewController:self DidAddKid:kid];
 }
+
+- (IBAction)cancelButtonAction:(id)sender {
+    
+    [self.delegate NewKidViewControllerDidCancel:self];
+}
 @end

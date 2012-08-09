@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/UIToolbar+extension.m \
-  /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/UIToolbar+extension.h
+  /Users/andrea/Desktop/kidsArt/sketchkid_Beta/UIToolbar+extension.m \
+  /Users/andrea/Desktop/kidsArt/sketchkid_Beta/UIToolbar+extension.h

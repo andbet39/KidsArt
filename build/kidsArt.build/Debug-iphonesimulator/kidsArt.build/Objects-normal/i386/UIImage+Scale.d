@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/UIImage+Scale.m \
-  /Users/andrea/Desktop/sketchkid_Beta/sketchkid_Beta/UIImage+Scale.h
+  /Users/andrea/Desktop/kidsArt/sketchkid_Beta/UIImage+Scale.m \
+  /Users/andrea/Desktop/kidsArt/sketchkid_Beta/UIImage+Scale.h

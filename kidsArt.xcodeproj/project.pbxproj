@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65D461DC15D1882F00B79679 /* MyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461DB15D1882F00B79679 /* MyTabBarViewController.m */; };
+		65D461EC15D2D15700B79679 /* TakePictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461EB15D2D15700B79679 /* TakePictureViewController.m */; };
+		65D461EF15D2DDD800B79679 /* SegueWithNoAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461EE15D2DDD800B79679 /* SegueWithNoAnimation.m */; };
+		65D461F515D2E9A500B79679 /* Sketch.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461F415D2E9A500B79679 /* Sketch.m */; };
+		65D461F815D2E9B600B79679 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461F715D2E9B600B79679 /* Album.m */; };
+		65D461FB15D2EC7800B79679 /* AlbumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461FA15D2EC7800B79679 /* AlbumManager.m */; };
+		65D4620415D2F66300B79679 /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4620315D2F66200B79679 /* AlbumViewController.m */; };
+		65D4624515D2F85900B79679 /* AlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4624415D2F85900B79679 /* AlbumCell.m */; };
+		65D4624715D302FE00B79679 /* backAlbumCell.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D4624615D302FE00B79679 /* backAlbumCell.png */; };
+		65D4625815D3108100B79679 /* tick.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 65D4625715D3108100B79679 /* tick.aiff */; };
+		65D4625E15D31CCE00B79679 /* CustomOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4625D15D31CCE00B79679 /* CustomOverlayView.m */; };
 		65FA966C15CD263900AC0CCD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA966B15CD263900AC0CCD /* UIKit.framework */; };
 		65FA966E15CD263900AC0CCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA966D15CD263900AC0CCD /* Foundation.framework */; };
 		65FA967015CD263900AC0CCD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA966F15CD263900AC0CCD /* CoreGraphics.framework */; };
@@ -68,6 +79,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65D461DA15D1882F00B79679 /* MyTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBarViewController.h; sourceTree = "<group>"; };
+		65D461DB15D1882F00B79679 /* MyTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarViewController.m; sourceTree = "<group>"; };
+		65D461EA15D2D15700B79679 /* TakePictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePictureViewController.h; sourceTree = "<group>"; };
+		65D461EB15D2D15700B79679 /* TakePictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePictureViewController.m; sourceTree = "<group>"; };
+		65D461ED15D2DDD800B79679 /* SegueWithNoAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegueWithNoAnimation.h; sourceTree = "<group>"; };
+		65D461EE15D2DDD800B79679 /* SegueWithNoAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegueWithNoAnimation.m; sourceTree = "<group>"; };
+		65D461F315D2E9A500B79679 /* Sketch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sketch.h; sourceTree = "<group>"; };
+		65D461F415D2E9A500B79679 /* Sketch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sketch.m; sourceTree = "<group>"; };
+		65D461F615D2E9B600B79679 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		65D461F715D2E9B600B79679 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		65D461F915D2EC7700B79679 /* AlbumManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumManager.h; sourceTree = "<group>"; };
+		65D461FA15D2EC7800B79679 /* AlbumManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumManager.m; sourceTree = "<group>"; };
+		65D4620215D2F66200B79679 /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
+		65D4620315D2F66200B79679 /* AlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
+		65D4624315D2F85900B79679 /* AlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCell.h; sourceTree = "<group>"; };
+		65D4624415D2F85900B79679 /* AlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCell.m; sourceTree = "<group>"; };
+		65D4624615D302FE00B79679 /* backAlbumCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backAlbumCell.png; sourceTree = "<group>"; };
+		65D4625715D3108100B79679 /* tick.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = tick.aiff; sourceTree = "<group>"; };
+		65D4625C15D31CCD00B79679 /* CustomOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomOverlayView.h; sourceTree = "<group>"; };
+		65D4625D15D31CCE00B79679 /* CustomOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomOverlayView.m; sourceTree = "<group>"; };
 		65FA966715CD263900AC0CCD /* kidsArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kidsArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65FA966B15CD263900AC0CCD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		65FA966D15CD263900AC0CCD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -141,11 +172,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65D4624215D2F83800B79679 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				65D4624315D2F85900B79679 /* AlbumCell.h */,
+				65D4624415D2F85900B79679 /* AlbumCell.m */,
+			);
+			name = TableCell;
+			sourceTree = "<group>";
+		};
+		65D4625F15D3927600B79679 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				65FA96DB15D0281E00AC0CCD /* DataManager.h */,
+				65FA96DC15D0281E00AC0CCD /* DataManager.m */,
+				65D461F915D2EC7700B79679 /* AlbumManager.h */,
+				65D461FA15D2EC7800B79679 /* AlbumManager.m */,
+			);
+			name = Singleton;
+			sourceTree = "<group>";
+		};
 		65FA965C15CD263900AC0CCD = {
 			isa = PBXGroup;
 			children = (
 				65FA975215D0420900AC0CCD /* ThirdParty */,
-				65FA96D215CE561900AC0CCD /* sketchkidModel.xcdatamodeld */,
 				65FA968A15CD2AF200AC0CCD /* images */,
 				65FA967115CD263900AC0CCD /* sketchkid_Beta */,
 				65FA966A15CD263900AC0CCD /* Frameworks */,
@@ -176,9 +226,9 @@
 		65FA967115CD263900AC0CCD /* sketchkid_Beta */ = {
 			isa = PBXGroup;
 			children = (
+				65D4625F15D3927600B79679 /* Singleton */,
+				65D4624215D2F83800B79679 /* TableCell */,
 				65FA96EC15D030D500AC0CCD /* model */,
-				65FA96DB15D0281E00AC0CCD /* DataManager.h */,
-				65FA96DC15D0281E00AC0CCD /* DataManager.m */,
 				65FA96C615CE473400AC0CCD /* helper */,
 				65FA96C515CE471300AC0CCD /* viewController */,
 				65FA967A15CD263900AC0CCD /* AppDelegate.h */,
@@ -203,6 +253,7 @@
 		65FA968A15CD2AF200AC0CCD /* images */ = {
 			isa = PBXGroup;
 			children = (
+				65D4624615D302FE00B79679 /* backAlbumCell.png */,
 				65FA97A315D05EAC00AC0CCD /* close_x.png */,
 				65FA96E115D02B2900AC0CCD /* bckInserimento@2x.png */,
 				65FA97A515D0697B00AC0CCD /* bambinoDefault2@2x.png */,
@@ -222,6 +273,7 @@
 				65FA96CA15CE49D300AC0CCD /* greyBar@2x.png */,
 				65FA96B215CD7CAE00AC0CCD /* sampleSketch.png */,
 				65FA969715CD3BC300AC0CCD /* toolBackHome@2x.png */,
+				65D4625715D3108100B79679 /* tick.aiff */,
 				65FA969015CD32A900AC0CCD /* toolBarBack@2x.png */,
 				65FA969215CD335300AC0CCD /* pen_icon@2x.png */,
 			);
@@ -239,6 +291,10 @@
 				65FA96C815CE478F00AC0CCD /* kidsViewController.m */,
 				65FA96DE15D0290300AC0CCD /* newKidViewController.h */,
 				65FA96DF15D0290300AC0CCD /* newKidViewController.m */,
+				65D461EA15D2D15700B79679 /* TakePictureViewController.h */,
+				65D461EB15D2D15700B79679 /* TakePictureViewController.m */,
+				65D4620215D2F66200B79679 /* AlbumViewController.h */,
+				65D4620315D2F66200B79679 /* AlbumViewController.m */,
 			);
 			name = viewController;
 			path = ..;
@@ -247,12 +303,18 @@
 		65FA96C615CE473400AC0CCD /* helper */ = {
 			isa = PBXGroup;
 			children = (
+				65D4625C15D31CCD00B79679 /* CustomOverlayView.h */,
+				65D4625D15D31CCE00B79679 /* CustomOverlayView.m */,
+				65D461DA15D1882F00B79679 /* MyTabBarViewController.h */,
+				65D461DB15D1882F00B79679 /* MyTabBarViewController.m */,
 				65FA968B15CD2F7100AC0CCD /* UIToolbar+extension.h */,
 				65FA968C15CD2F7100AC0CCD /* UIToolbar+extension.m */,
 				65FA96AF15CD7A9600AC0CCD /* UIImage+Scale.h */,
 				65FA96B015CD7A9600AC0CCD /* UIImage+Scale.m */,
 				65FA96C215CD8F0D00AC0CCD /* UIView+PartialCurl.h */,
 				65FA96C315CD8F0D00AC0CCD /* UIView+PartialCurl.m */,
+				65D461ED15D2DDD800B79679 /* SegueWithNoAnimation.h */,
+				65D461EE15D2DDD800B79679 /* SegueWithNoAnimation.m */,
 			);
 			name = helper;
 			sourceTree = "<group>";
@@ -260,8 +322,13 @@
 		65FA96EC15D030D500AC0CCD /* model */ = {
 			isa = PBXGroup;
 			children = (
+				65FA96D215CE561900AC0CCD /* sketchkidModel.xcdatamodeld */,
 				65FA96E915D030CC00AC0CCD /* Kid.h */,
 				65FA96EA15D030CC00AC0CCD /* Kid.m */,
+				65D461F315D2E9A500B79679 /* Sketch.h */,
+				65D461F415D2E9A500B79679 /* Sketch.m */,
+				65D461F615D2E9B600B79679 /* Album.h */,
+				65D461F715D2E9B600B79679 /* Album.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -373,6 +440,8 @@
 				65FA96E815D02ED200AC0CCD /* bambinoDefault@2x.png in Resources */,
 				65FA97A415D05EAC00AC0CCD /* close_x.png in Resources */,
 				65FA97A615D0697B00AC0CCD /* bambinoDefault2@2x.png in Resources */,
+				65D4624715D302FE00B79679 /* backAlbumCell.png in Resources */,
+				65D4625815D3108100B79679 /* tick.aiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +464,15 @@
 				65FA96DD15D0281E00AC0CCD /* DataManager.m in Sources */,
 				65FA96E015D0290300AC0CCD /* newKidViewController.m in Sources */,
 				65FA96EB15D030CC00AC0CCD /* Kid.m in Sources */,
+				65D461DC15D1882F00B79679 /* MyTabBarViewController.m in Sources */,
+				65D461EC15D2D15700B79679 /* TakePictureViewController.m in Sources */,
+				65D461EF15D2DDD800B79679 /* SegueWithNoAnimation.m in Sources */,
+				65D461F515D2E9A500B79679 /* Sketch.m in Sources */,
+				65D461F815D2E9B600B79679 /* Album.m in Sources */,
+				65D461FB15D2EC7800B79679 /* AlbumManager.m in Sources */,
+				65D4620415D2F66300B79679 /* AlbumViewController.m in Sources */,
+				65D4624515D2F85900B79679 /* AlbumCell.m in Sources */,
+				65D4625E15D31CCE00B79679 /* CustomOverlayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,7 +619,8 @@
 				65FA96D315CE561900AC0CCD /* sketchkidModel.xcdatamodel */,
 			);
 			currentVersion = 65FA96D315CE561900AC0CCD /* sketchkidModel.xcdatamodel */;
-			path = sketchkidModel.xcdatamodeld;
+			name = sketchkidModel.xcdatamodeld;
+			path = ../sketchkidModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
