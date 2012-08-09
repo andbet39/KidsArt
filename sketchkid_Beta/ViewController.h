@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Sketch.h"
 @interface ViewController : UIViewController
 {
 
@@ -25,5 +25,12 @@
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *trashButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *frameButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *adjustButton;
+
+@property (weak, nonatomic) IBOutlet UINavigationBar *fintaNavigationBar;
+
+@property (strong,nonatomic)Sketch * currentSketch;
+
+@property (weak, nonatomic) IBOutlet UIImageView *mainImageView;
+
 
 @end

@@ -10,7 +10,6 @@
 		65D461DC15D1882F00B79679 /* MyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461DB15D1882F00B79679 /* MyTabBarViewController.m */; };
 		65D461EC15D2D15700B79679 /* TakePictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461EB15D2D15700B79679 /* TakePictureViewController.m */; };
 		65D461EF15D2DDD800B79679 /* SegueWithNoAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461EE15D2DDD800B79679 /* SegueWithNoAnimation.m */; };
-		65D461F515D2E9A500B79679 /* Sketch.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461F415D2E9A500B79679 /* Sketch.m */; };
 		65D461F815D2E9B600B79679 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461F715D2E9B600B79679 /* Album.m */; };
 		65D461FB15D2EC7800B79679 /* AlbumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461FA15D2EC7800B79679 /* AlbumManager.m */; };
 		65D4620415D2F66300B79679 /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4620315D2F66200B79679 /* AlbumViewController.m */; };
@@ -18,6 +17,8 @@
 		65D4624715D302FE00B79679 /* backAlbumCell.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D4624615D302FE00B79679 /* backAlbumCell.png */; };
 		65D4625815D3108100B79679 /* tick.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 65D4625715D3108100B79679 /* tick.aiff */; };
 		65D4625E15D31CCE00B79679 /* CustomOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4625D15D31CCE00B79679 /* CustomOverlayView.m */; };
+		65D4627815D42B6A00B79679 /* Sketch.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4627715D42B6A00B79679 /* Sketch.m */; };
+		65D4627A15D450D400B79679 /* home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65D4627915D450D400B79679 /* home.jpg */; };
 		65FA966C15CD263900AC0CCD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA966B15CD263900AC0CCD /* UIKit.framework */; };
 		65FA966E15CD263900AC0CCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA966D15CD263900AC0CCD /* Foundation.framework */; };
 		65FA967015CD263900AC0CCD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA966F15CD263900AC0CCD /* CoreGraphics.framework */; };
@@ -85,8 +86,6 @@
 		65D461EB15D2D15700B79679 /* TakePictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePictureViewController.m; sourceTree = "<group>"; };
 		65D461ED15D2DDD800B79679 /* SegueWithNoAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegueWithNoAnimation.h; sourceTree = "<group>"; };
 		65D461EE15D2DDD800B79679 /* SegueWithNoAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegueWithNoAnimation.m; sourceTree = "<group>"; };
-		65D461F315D2E9A500B79679 /* Sketch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sketch.h; sourceTree = "<group>"; };
-		65D461F415D2E9A500B79679 /* Sketch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sketch.m; sourceTree = "<group>"; };
 		65D461F615D2E9B600B79679 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
 		65D461F715D2E9B600B79679 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
 		65D461F915D2EC7700B79679 /* AlbumManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumManager.h; sourceTree = "<group>"; };
@@ -99,6 +98,9 @@
 		65D4625715D3108100B79679 /* tick.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = tick.aiff; sourceTree = "<group>"; };
 		65D4625C15D31CCD00B79679 /* CustomOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomOverlayView.h; sourceTree = "<group>"; };
 		65D4625D15D31CCE00B79679 /* CustomOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomOverlayView.m; sourceTree = "<group>"; };
+		65D4627615D42B6A00B79679 /* Sketch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sketch.h; sourceTree = "<group>"; };
+		65D4627715D42B6A00B79679 /* Sketch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sketch.m; sourceTree = "<group>"; };
+		65D4627915D450D400B79679 /* home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home.jpg; sourceTree = "<group>"; };
 		65FA966715CD263900AC0CCD /* kidsArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kidsArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65FA966B15CD263900AC0CCD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		65FA966D15CD263900AC0CCD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -270,6 +272,7 @@
 				65FA96A715CD770900AC0CCD /* navigationBar@2x.png */,
 				65FA96CC15CE4DCD00AC0CCD /* backKidsViola.png */,
 				65FA96B615CD835D00AC0CCD /* albumBar@2x.png */,
+				65D4627915D450D400B79679 /* home.jpg */,
 				65FA96CA15CE49D300AC0CCD /* greyBar@2x.png */,
 				65FA96B215CD7CAE00AC0CCD /* sampleSketch.png */,
 				65FA969715CD3BC300AC0CCD /* toolBackHome@2x.png */,
@@ -325,10 +328,10 @@
 				65FA96D215CE561900AC0CCD /* sketchkidModel.xcdatamodeld */,
 				65FA96E915D030CC00AC0CCD /* Kid.h */,
 				65FA96EA15D030CC00AC0CCD /* Kid.m */,
-				65D461F315D2E9A500B79679 /* Sketch.h */,
-				65D461F415D2E9A500B79679 /* Sketch.m */,
 				65D461F615D2E9B600B79679 /* Album.h */,
 				65D461F715D2E9B600B79679 /* Album.m */,
+				65D4627615D42B6A00B79679 /* Sketch.h */,
+				65D4627715D42B6A00B79679 /* Sketch.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				65FA97A615D0697B00AC0CCD /* bambinoDefault2@2x.png in Resources */,
 				65D4624715D302FE00B79679 /* backAlbumCell.png in Resources */,
 				65D4625815D3108100B79679 /* tick.aiff in Resources */,
+				65D4627A15D450D400B79679 /* home.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,12 +471,12 @@
 				65D461DC15D1882F00B79679 /* MyTabBarViewController.m in Sources */,
 				65D461EC15D2D15700B79679 /* TakePictureViewController.m in Sources */,
 				65D461EF15D2DDD800B79679 /* SegueWithNoAnimation.m in Sources */,
-				65D461F515D2E9A500B79679 /* Sketch.m in Sources */,
 				65D461F815D2E9B600B79679 /* Album.m in Sources */,
 				65D461FB15D2EC7800B79679 /* AlbumManager.m in Sources */,
 				65D4620415D2F66300B79679 /* AlbumViewController.m in Sources */,
 				65D4624515D2F85900B79679 /* AlbumCell.m in Sources */,
 				65D4625E15D31CCE00B79679 /* CustomOverlayView.m in Sources */,
+				65D4627815D42B6A00B79679 /* Sketch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

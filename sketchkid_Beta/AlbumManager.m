@@ -13,7 +13,7 @@ static AlbumManager *sharedAlbumManager = nil;
 
 @synthesize selectedAlbum;
 @synthesize  isSelectedAlbumUpdated;
-
+@synthesize istanceOfHomeViewController;
 
 
 #pragma mark Singleton Methods

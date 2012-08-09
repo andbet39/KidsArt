@@ -115,7 +115,8 @@
 
     AlbumManager *am = [AlbumManager sharedAlbumManager];
     [am setSelectedAlbum:[albumArray objectAtIndex:indexPath.row]];
-    
+    [am.istanceOfHomeViewController reloadAlbumData];
+
     [self.tabBarController setSelectedIndex:1];
 }
 

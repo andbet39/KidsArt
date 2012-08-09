@@ -187,7 +187,17 @@
 -(void)TakePictureViewControllerDidAddSomePhoto:(TakePictureViewController *)controller{
     
     [self dismissModalViewControllerAnimated:NO];
+    
+   
+    AlbumManager *am = [AlbumManager sharedAlbumManager];
+    
+    [am setSelectedAlbum:[am defaultAlbum]];
+    
+    [am.istanceOfHomeViewController reloadAlbumData];
+    
     [self setSelectedIndex:1];
+    
+
 
 }
 

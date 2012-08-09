@@ -16,9 +16,12 @@
 @synthesize trashButton;
 @synthesize frameButton;
 @synthesize adjustButton;
+@synthesize fintaNavigationBar;
 @synthesize toolBar;
 @synthesize penButton;
 @synthesize shareButton;
+@synthesize currentSketch;
+@synthesize mainImageView;
 
 
 
@@ -48,6 +51,11 @@
     [adjustButton setBackgroundImage:[UIImage imageNamed:@"pen_icon.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     [adjustButton setBackgroundVerticalPositionAdjustment:15.0f forBarMetrics:UIBarMetricsDefault];
     
+    
+    
+    [fintaNavigationBar setBackgroundImage:[UIImage imageNamed:@"navigationBar.png"] forBarMetrics:UIBarMetricsDefault];
+
+    
 }
 
 
@@ -56,6 +64,8 @@
     [super viewDidLoad];
     
     [self creaToolBar];
+    
+    
     
 
 }
@@ -68,6 +78,8 @@
     [self setTrashButton:nil];
     [self setFrameButton:nil];
     [self setAdjustButton:nil];
+    [self setFintaNavigationBar:nil];
+    [self setMainImageView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

@@ -80,6 +80,7 @@
     [sketch setPathSmall:fullPathToFileSmall];
     [sketch setNota:@""];
     [sketch setData:[NSDate date]];
+    [sketch setSaveDate:[NSDate date]];
     
     NSError *error = nil;
     
@@ -149,7 +150,7 @@
     [overlay stopSpinner];
     
     [self dismissModalViewControllerAnimated:NO];
-    [self.delegate TakePictureViewControllerDidCancel:self];
+    [self.delegate TakePictureViewControllerDidAddSomePhoto:self];
 
 }
 

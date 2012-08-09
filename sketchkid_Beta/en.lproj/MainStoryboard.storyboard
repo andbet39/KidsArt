@@ -14,6 +14,37 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" id="BQM-jG-pYI">
+                                <rect key="frame" x="0.0" y="36" width="320" height="331"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="backHome@2x.png" id="PXx-NX-sWy">
+                                        <rect key="frame" x="0.0" y="-18" width="320" height="367"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="nAg-mr-rQs">
+                                <rect key="frame" x="0.0" y="120" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <barButtonItem id="Pyw-QW-2IB"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="cum-wU-yZg"/>
+                                    <barButtonItem systemItem="pageCurl" id="qqV-zM-Izj">
+                                        <connections>
+                                            <action selector="infoButtonAction:" destination="6YJ-xl-Uxc" id="fa7-P1-cYi"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="6rg-Sr-2yn">
+                                <rect key="frame" x="49" y="0.0" width="222" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Hq1-X0-9Cs">
                                 <rect key="frame" x="234" y="361" width="72" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -29,37 +60,6 @@
                                     <action selector="removeInfoButtonAction:" destination="6YJ-xl-Uxc" eventType="touchUpInside" id="UqM-EH-gh3"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" id="BQM-jG-pYI">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="backHome@2x.png" id="b32-Iw-b8a">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="493"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="nAg-mr-rQs">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                        <items>
-                                            <barButtonItem id="Pyw-QW-2IB"/>
-                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="cum-wU-yZg"/>
-                                            <barButtonItem systemItem="pageCurl" id="qqV-zM-Izj">
-                                                <connections>
-                                                    <action selector="infoButtonAction:" destination="6YJ-xl-Uxc" id="fa7-P1-cYi"/>
-                                                </connections>
-                                            </barButtonItem>
-                                        </items>
-                                    </toolbar>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="6rg-Sr-2yn">
-                                        <rect key="frame" x="49" y="0.0" width="222" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="23"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -78,6 +78,7 @@
                         <outlet property="infoButton" destination="qqV-zM-Izj" id="gcB-k4-7nn"/>
                         <outlet property="mainView" destination="BQM-jG-pYI" id="84R-qS-N5H"/>
                         <outlet property="removeInfoButton" destination="Hq1-X0-9Cs" id="alC-j9-0fe"/>
+                        <segue destination="2" kind="modal" identifier="editSketch" id="IIr-5x-cbm"/>
                     </connections>
                 </viewController>
             </objects>
@@ -254,13 +255,32 @@
                                     <barButtonItem width="32" id="4ps-fe-V97"/>
                                 </items>
                             </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="y0T-7h-sbY">
+                                <rect key="frame" x="0.0" y="44" width="320" height="372"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" id="7nF-OL-zmj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="IB3-GD-2kg">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="bVd-cG-1bN">
+                                            <connections>
+                                                <action selector="cancelButtonAction:" destination="9oc-5O-Z59" id="ajG-Hc-StR"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                     <connections>
                         <outlet property="adjustButton" destination="BLl-K3-hrN" id="Fgs-BJ-ISU"/>
+                        <outlet property="fintaNavigationBar" destination="7nF-OL-zmj" id="WMn-mr-0xP"/>
                         <outlet property="frameButton" destination="kxh-tU-vA4" id="wsc-7A-bIq"/>
+                        <outlet property="mainImageView" destination="y0T-7h-sbY" id="AH3-Xe-2Gd"/>
                         <outlet property="penButton" destination="qK1-AL-3Wd" id="PIm-hq-b3P"/>
                         <outlet property="shareButton" destination="x2R-SK-fwW" id="0ml-H7-cFF"/>
                         <outlet property="toolBar" destination="AIm-Tm-5C5" id="mDC-4X-Sxk"/>
@@ -268,7 +288,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="309" y="1150"/>
+            <point key="canvasLocation" x="931" y="-33"/>
         </scene>
         <!--Navigation Controller - Bambini-->
         <scene sceneID="xQa-OT-9y2">

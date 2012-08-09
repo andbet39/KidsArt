@@ -21,6 +21,7 @@
         <attribute name="order" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="pathFull" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="pathSmall" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="saveDate" optional="YES" attributeType="Date" syncable="YES"/>
     </entity>
     <elements>
         <element name="Album" positionX="0" positionY="0" width="0" height="0"/>

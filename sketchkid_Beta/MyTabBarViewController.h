@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 #import "TakePictureViewController.h"
-
+#import "HomeViewController.h"
+#import "AlbumManager.h"
 @interface MyTabBarViewController : UITabBarController <TakePictureViewControllerDelegate>
 
 

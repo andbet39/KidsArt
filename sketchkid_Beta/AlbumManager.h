@@ -9,13 +9,24 @@
 #import <Foundation/Foundation.h>
 #import "Album.h"
 #import "DataManager.h"
+#import "HomeViewController.h"
 
 @interface AlbumManager : NSObject
+{
+    
+    
+
+}
+
+
 
 
 + (id)sharedAlbumManager ;
 
+
+
 @property(nonatomic,strong)Album* selectedAlbum;
+@property(nonatomic,strong)HomeViewController * istanceOfHomeViewController;
 @property(readwrite)bool isSelectedAlbumUpdated;
 
 

@@ -11,10 +11,11 @@
 #import "UIImage+Scale.h"
 #import "DataManager.h"
 #import "Album.h"
-#import "AlbumManager.h"
+//#import "AlbumManager.h"
 #import "Sketch.h"
+#import "GMGridView.h"
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController <GMGridViewDataSource, GMGridViewActionDelegate>
 {
 
     UIScrollView *photoShowView;
@@ -22,11 +23,26 @@
     
     NSMutableArray * sketchArray;
     
+    
+    GMGridView *_gmGridView;
+    
+    NSInteger _lastDeleteItemIndexAsked;
+    
+    bool isPageRolled;
+    
+    
+    Sketch * selectedSketch;
+    
 
 }
 - (IBAction)removeInfoButtonAction:(id)sender;
 - (IBAction)infoButtonAction:(id)sender;
 - (IBAction)creaDefaultAlbum:(id)sender;
+
+
+-(void)reloadAlbumData;
+
+
 
 @property (weak, nonatomic) IBOutlet UIButton *removeInfoButton;
 
@@ -37,4 +53,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *albumTitleLabel;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *addFavoriteButton;
 @property (weak, nonatomic) IBOutlet UINavigationBar *navigationBar;
+
+
 @end
