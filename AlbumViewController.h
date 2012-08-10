@@ -12,12 +12,20 @@
 #import "AlbumManager.h"
 #import "AlbumCell.h"
 #import "Album.h"
-@interface AlbumViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+#import "newAlbumViewController.h"
+
+
+
+@interface AlbumViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,newAlbumViewControllerDelegate>
 {
 
     NSMutableArray * albumArray;
 
 
 }
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *addAlbumButtonAction;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *addAlbumAction;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+- (IBAction)addAlbumAction:(id)sender;
 
 @end

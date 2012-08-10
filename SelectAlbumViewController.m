@@ -1,35 +1,32 @@
 //
-//  AlbumViewController.m
+//  SelectAlbumViewController.m
 //  kidsArt
 //
-//  Created by Andrea Terzani on 08/08/12.
+//  Created by Andrea Terzani on 10/08/12.
 //  Copyright (c) 2012 Andrea Terzani. All rights reserved.
 //
 
-#import "AlbumViewController.h"
+#import "SelectAlbumViewController.h"
 
-@interface AlbumViewController ()
+@interface SelectAlbumViewController ()
 
 @end
 
-@implementation AlbumViewController
-@synthesize addAlbumButtonAction;
-@synthesize addAlbumAction;
-@synthesize tableView;
-
-
+@implementation SelectAlbumViewController
 
 -(void)creaToolBar{
     
-    int toolbarheight=84;
+    int toolbarheight=82;
+
     
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationBar.png"] forBarMetrics:UIBarMetricsDefault];
 }
 
 
+
 -(void)caricaAlbum{
-
-
+    
+    
     albumArray = [[NSMutableArray alloc]init];
     
     DataManager *dm = [DataManager sharedDataManager];
@@ -60,44 +57,32 @@
     
     [albumArray addObjectsFromArray:array];
     
-
-
-}
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-	
     
-    if ([segue.identifier isEqualToString:@"newAlbum"])
-    {
-        newAlbumViewController * newAlbumView=(newAlbumViewController*) [segue destinationViewController];
-        [newAlbumView setDelegate:self];
-    }
+    
 }
-
 
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     [self caricaAlbum];
     [self creaToolBar];
-
 }
 
 - (void)viewDidUnload
 {
-    [self setAddAlbumButtonAction:nil];
-    [self setAddAlbumAction:nil];
-    [self setTableView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -108,7 +93,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-        return [albumArray count];
+    return [albumArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -124,7 +109,7 @@
     Album * t = [albumArray objectAtIndex:indexPath.row];
     
     [cell initWithAlbum:t];
-
+    
     
     return cell;
 }
@@ -134,53 +119,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
-    AlbumManager *am = [AlbumManager sharedAlbumManager];
-    [am setSelectedAlbum:[albumArray objectAtIndex:indexPath.row]];
-    [am.istanceOfHomeViewController reloadAlbumData];
-
-    [self.tabBarController setSelectedIndex:1];
-}
-
-#pragma mark - NewAlbum view delegate
-
-
-- (void)newAlbumViewControllerDidCancel:(newAlbumViewController *)controller
-{
-    [self dismissModalViewControllerAnimated:YES];
-
-}
-
-- (void)newAlbumViewController: (newAlbumViewController *)controller DidAddAlbum:(Album *)album
-{
-    [self dismissModalViewControllerAnimated:YES];
-    [albumArray addObject:album];
-    [tableView reloadData];
-    
-    DataManager *dm = [DataManager sharedDataManager];
-    
-    
-    NSManagedObjectContext *context = [dm managedObjectContext];
-    
-    // Save the context.
-    NSError *error = nil;
-    if (![context save:&error]) {
-        // Replace this implementation with code to handle the error appropriately.
-        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        abort();
-    }
-
-    
-    
+    [self.delegate SelectAlbumViewController:self DidSelectAlbum:[albumArray objectAtIndex:indexPath.row]];
     
     
 }
-
-
-- (IBAction)addAlbumAction:(id)sender {
-    
-    [self performSegueWithIdentifier:@"newAlbum" sender:self];
-}
-
 @end

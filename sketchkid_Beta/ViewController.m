@@ -59,6 +59,20 @@
 }
 
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+	
+    
+    if ([segue.identifier isEqualToString:@"editInfo"])
+    {
+        EditSketchInfoViewController * editSketchView=(EditSketchInfoViewController*) [segue destinationViewController];
+        
+        [editSketchView setEditSketch:currentSketch];
+    }
+    
+    
+}
+
 -(void)loadSketch{
 
     NSData *data = [[NSData alloc] initWithContentsOfFile:currentSketch.pathFull];
@@ -105,4 +119,36 @@
 
 
 
+- (IBAction)editInfoButton:(id)sender {
+    
+    [self performSegueWithIdentifier:@"editInfo" sender:self];
+}
+
+
+
+//Commit di tutte le modifiche nel database
+- (IBAction)saveButtonAction:(id)sender {
+        
+    DataManager *dm = [DataManager  sharedDataManager];
+    
+    
+    NSManagedObjectContext *context = [dm managedObjectContext];
+    
+    // Save the context.
+    NSError *error = nil;
+    if (![context save:&error]){
+        
+    }
+
+        
+    [self.navigationController dismissModalViewControllerAnimated:YES];
+    
+    
+}
+
+- (IBAction)cancelButtonAction:(id)sender {
+    [self.navigationController dismissModalViewControllerAnimated:YES];
+    
+    
+}
 @end

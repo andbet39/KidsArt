@@ -31,6 +31,7 @@
 
 
 -(Album*)defaultAlbum;
+-(int)getMaxOrder;
 
 
 @end
