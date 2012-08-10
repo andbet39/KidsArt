@@ -10,7 +10,6 @@
 		65D461DC15D1882F00B79679 /* MyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461DB15D1882F00B79679 /* MyTabBarViewController.m */; };
 		65D461EC15D2D15700B79679 /* TakePictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461EB15D2D15700B79679 /* TakePictureViewController.m */; };
 		65D461EF15D2DDD800B79679 /* SegueWithNoAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461EE15D2DDD800B79679 /* SegueWithNoAnimation.m */; };
-		65D461F815D2E9B600B79679 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461F715D2E9B600B79679 /* Album.m */; };
 		65D461FB15D2EC7800B79679 /* AlbumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461FA15D2EC7800B79679 /* AlbumManager.m */; };
 		65D4620415D2F66300B79679 /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4620315D2F66200B79679 /* AlbumViewController.m */; };
 		65D4624515D2F85900B79679 /* AlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4624415D2F85900B79679 /* AlbumCell.m */; };
@@ -19,6 +18,9 @@
 		65D4625E15D31CCE00B79679 /* CustomOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4625D15D31CCE00B79679 /* CustomOverlayView.m */; };
 		65D4627815D42B6A00B79679 /* Sketch.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4627715D42B6A00B79679 /* Sketch.m */; };
 		65D4627A15D450D400B79679 /* home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65D4627915D450D400B79679 /* home.jpg */; };
+		65D4628015D543A500B79679 /* SketchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4627F15D543A500B79679 /* SketchManager.m */; };
+		65D4628315D5451600B79679 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4628215D5451600B79679 /* Album.m */; };
+		65D4628A15D5519500B79679 /* EditSketchInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4628915D5519500B79679 /* EditSketchInfoViewController.m */; };
 		65FA966C15CD263900AC0CCD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA966B15CD263900AC0CCD /* UIKit.framework */; };
 		65FA966E15CD263900AC0CCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA966D15CD263900AC0CCD /* Foundation.framework */; };
 		65FA967015CD263900AC0CCD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA966F15CD263900AC0CCD /* CoreGraphics.framework */; };
@@ -86,8 +88,6 @@
 		65D461EB15D2D15700B79679 /* TakePictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePictureViewController.m; sourceTree = "<group>"; };
 		65D461ED15D2DDD800B79679 /* SegueWithNoAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegueWithNoAnimation.h; sourceTree = "<group>"; };
 		65D461EE15D2DDD800B79679 /* SegueWithNoAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegueWithNoAnimation.m; sourceTree = "<group>"; };
-		65D461F615D2E9B600B79679 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
-		65D461F715D2E9B600B79679 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
 		65D461F915D2EC7700B79679 /* AlbumManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumManager.h; sourceTree = "<group>"; };
 		65D461FA15D2EC7800B79679 /* AlbumManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumManager.m; sourceTree = "<group>"; };
 		65D4620215D2F66200B79679 /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
@@ -101,6 +101,12 @@
 		65D4627615D42B6A00B79679 /* Sketch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sketch.h; sourceTree = "<group>"; };
 		65D4627715D42B6A00B79679 /* Sketch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sketch.m; sourceTree = "<group>"; };
 		65D4627915D450D400B79679 /* home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home.jpg; sourceTree = "<group>"; };
+		65D4627E15D543A500B79679 /* SketchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchManager.h; sourceTree = "<group>"; };
+		65D4627F15D543A500B79679 /* SketchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SketchManager.m; sourceTree = "<group>"; };
+		65D4628115D5451600B79679 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		65D4628215D5451600B79679 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		65D4628815D5519500B79679 /* EditSketchInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditSketchInfoViewController.h; sourceTree = "<group>"; };
+		65D4628915D5519500B79679 /* EditSketchInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditSketchInfoViewController.m; sourceTree = "<group>"; };
 		65FA966715CD263900AC0CCD /* kidsArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kidsArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65FA966B15CD263900AC0CCD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		65FA966D15CD263900AC0CCD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -190,8 +196,19 @@
 				65FA96DC15D0281E00AC0CCD /* DataManager.m */,
 				65D461F915D2EC7700B79679 /* AlbumManager.h */,
 				65D461FA15D2EC7800B79679 /* AlbumManager.m */,
+				65D4627E15D543A500B79679 /* SketchManager.h */,
+				65D4627F15D543A500B79679 /* SketchManager.m */,
 			);
 			name = Singleton;
+			sourceTree = "<group>";
+		};
+		65D4628415D550D100B79679 /* edtiViewController */ = {
+			isa = PBXGroup;
+			children = (
+				65D4628815D5519500B79679 /* EditSketchInfoViewController.h */,
+				65D4628915D5519500B79679 /* EditSketchInfoViewController.m */,
+			);
+			name = edtiViewController;
 			sourceTree = "<group>";
 		};
 		65FA965C15CD263900AC0CCD = {
@@ -286,6 +303,7 @@
 		65FA96C515CE471300AC0CCD /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				65D4628415D550D100B79679 /* edtiViewController */,
 				65FA969415CD3A0700AC0CCD /* HomeViewController.h */,
 				65FA969515CD3A0700AC0CCD /* HomeViewController.m */,
 				65FA968015CD263A00AC0CCD /* ViewController.h */,
@@ -328,10 +346,10 @@
 				65FA96D215CE561900AC0CCD /* sketchkidModel.xcdatamodeld */,
 				65FA96E915D030CC00AC0CCD /* Kid.h */,
 				65FA96EA15D030CC00AC0CCD /* Kid.m */,
-				65D461F615D2E9B600B79679 /* Album.h */,
-				65D461F715D2E9B600B79679 /* Album.m */,
 				65D4627615D42B6A00B79679 /* Sketch.h */,
 				65D4627715D42B6A00B79679 /* Sketch.m */,
+				65D4628115D5451600B79679 /* Album.h */,
+				65D4628215D5451600B79679 /* Album.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -471,12 +489,14 @@
 				65D461DC15D1882F00B79679 /* MyTabBarViewController.m in Sources */,
 				65D461EC15D2D15700B79679 /* TakePictureViewController.m in Sources */,
 				65D461EF15D2DDD800B79679 /* SegueWithNoAnimation.m in Sources */,
-				65D461F815D2E9B600B79679 /* Album.m in Sources */,
 				65D461FB15D2EC7800B79679 /* AlbumManager.m in Sources */,
 				65D4620415D2F66300B79679 /* AlbumViewController.m in Sources */,
 				65D4624515D2F85900B79679 /* AlbumCell.m in Sources */,
 				65D4625E15D31CCE00B79679 /* CustomOverlayView.m in Sources */,
 				65D4627815D42B6A00B79679 /* Sketch.m in Sources */,
+				65D4628015D543A500B79679 /* SketchManager.m in Sources */,
+				65D4628315D5451600B79679 /* Album.m in Sources */,
+				65D4628A15D5519500B79679 /* EditSketchInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
