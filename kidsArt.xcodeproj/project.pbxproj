@@ -21,6 +21,7 @@
 		65D4628015D543A500B79679 /* SketchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4627F15D543A500B79679 /* SketchManager.m */; };
 		65D4628315D5451600B79679 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4628215D5451600B79679 /* Album.m */; };
 		65D4628A15D5519500B79679 /* EditSketchInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4628915D5519500B79679 /* EditSketchInfoViewController.m */; };
+		65D4629F15D556B900B79679 /* libGMGridView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D4629E15D556A000B79679 /* libGMGridView.a */; };
 		65FA966C15CD263900AC0CCD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA966B15CD263900AC0CCD /* UIKit.framework */; };
 		65FA966E15CD263900AC0CCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA966D15CD263900AC0CCD /* Foundation.framework */; };
 		65FA967015CD263900AC0CCD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA966F15CD263900AC0CCD /* CoreGraphics.framework */; };
@@ -59,24 +60,16 @@
 		65FA96E615D02DCE00AC0CCD /* evidenzia@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA96E515D02DCE00AC0CCD /* evidenzia@2x.png */; };
 		65FA96E815D02ED200AC0CCD /* bambinoDefault@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA96E715D02ED200AC0CCD /* bambinoDefault@2x.png */; };
 		65FA96EB15D030CC00AC0CCD /* Kid.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA96EA15D030CC00AC0CCD /* Kid.m */; };
-		65FA975E15D042C200AC0CCD /* libGMGridView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA975B15D0423E00AC0CCD /* libGMGridView.a */; };
 		65FA97A415D05EAC00AC0CCD /* close_x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA97A315D05EAC00AC0CCD /* close_x.png */; };
 		65FA97A615D0697B00AC0CCD /* bambinoDefault2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA97A515D0697B00AC0CCD /* bambinoDefault2@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		65FA975A15D0423E00AC0CCD /* PBXContainerItemProxy */ = {
+		65D4629D15D556A000B79679 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 65FA975315D0423E00AC0CCD /* GMGridView.xcodeproj */;
+			containerPortal = 65D4629615D556A000B79679 /* GMGridView.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 78509312149FAC2E000787E4;
-			remoteInfo = GMGridView;
-		};
-		65FA975C15D042BC00AC0CCD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 65FA975315D0423E00AC0CCD /* GMGridView.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 78509311149FAC2E000787E4;
 			remoteInfo = GMGridView;
 		};
 /* End PBXContainerItemProxy section */
@@ -107,6 +100,7 @@
 		65D4628215D5451600B79679 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
 		65D4628815D5519500B79679 /* EditSketchInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditSketchInfoViewController.h; sourceTree = "<group>"; };
 		65D4628915D5519500B79679 /* EditSketchInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditSketchInfoViewController.m; sourceTree = "<group>"; };
+		65D4629615D556A000B79679 /* GMGridView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GMGridView.xcodeproj; path = GMGridView/GMGridView.xcodeproj; sourceTree = "<group>"; };
 		65FA966715CD263900AC0CCD /* kidsArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kidsArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65FA966B15CD263900AC0CCD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		65FA966D15CD263900AC0CCD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -158,7 +152,6 @@
 		65FA96E715D02ED200AC0CCD /* bambinoDefault@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bambinoDefault@2x.png"; sourceTree = "<group>"; };
 		65FA96E915D030CC00AC0CCD /* Kid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Kid.h; path = ../Kid.h; sourceTree = "<group>"; };
 		65FA96EA15D030CC00AC0CCD /* Kid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Kid.m; path = ../Kid.m; sourceTree = "<group>"; };
-		65FA975315D0423E00AC0CCD /* GMGridView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GMGridView.xcodeproj; path = "../gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridView.xcodeproj"; sourceTree = "<group>"; };
 		65FA97A315D05EAC00AC0CCD /* close_x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_x.png; sourceTree = "<group>"; };
 		65FA97A515D0697B00AC0CCD /* bambinoDefault2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bambinoDefault2@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,7 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65FA975E15D042C200AC0CCD /* libGMGridView.a in Frameworks */,
+				65D4629F15D556B900B79679 /* libGMGridView.a in Frameworks */,
 				65FA96DA15CE57B800AC0CCD /* CoreData.framework in Frameworks */,
 				65FA96AE15CD7A4900AC0CCD /* QuartzCore.framework in Frameworks */,
 				65FA967015CD263900AC0CCD /* CoreGraphics.framework in Frameworks */,
@@ -209,6 +202,14 @@
 				65D4628915D5519500B79679 /* EditSketchInfoViewController.m */,
 			);
 			name = edtiViewController;
+			sourceTree = "<group>";
+		};
+		65D4629715D556A000B79679 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65D4629E15D556A000B79679 /* libGMGridView.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		65FA965C15CD263900AC0CCD = {
@@ -357,17 +358,9 @@
 		65FA975215D0420900AC0CCD /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
-				65FA975315D0423E00AC0CCD /* GMGridView.xcodeproj */,
+				65D4629615D556A000B79679 /* GMGridView.xcodeproj */,
 			);
 			name = ThirdParty;
-			sourceTree = "<group>";
-		};
-		65FA975415D0423E00AC0CCD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				65FA975B15D0423E00AC0CCD /* libGMGridView.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,7 +377,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				65FA975D15D042BC00AC0CCD /* PBXTargetDependency */,
 			);
 			name = kidsArt;
 			productName = sketchkid_Beta;
@@ -412,8 +404,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 65FA975415D0423E00AC0CCD /* Products */;
-					ProjectRef = 65FA975315D0423E00AC0CCD /* GMGridView.xcodeproj */;
+					ProductGroup = 65D4629715D556A000B79679 /* Products */;
+					ProjectRef = 65D4629615D556A000B79679 /* GMGridView.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -424,11 +416,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		65FA975B15D0423E00AC0CCD /* libGMGridView.a */ = {
+		65D4629E15D556A000B79679 /* libGMGridView.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libGMGridView.a;
-			remoteRef = 65FA975A15D0423E00AC0CCD /* PBXContainerItemProxy */;
+			remoteRef = 65D4629D15D556A000B79679 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -501,14 +493,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		65FA975D15D042BC00AC0CCD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GMGridView;
-			targetProxy = 65FA975C15D042BC00AC0CCD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		65FA967415CD263900AC0CCD /* InfoPlist.strings */ = {
