@@ -137,10 +137,13 @@
     // Save the context.
     NSError *error = nil;
     if (![context save:&error]){
-        
+        NSLog(@"Error on save");
     }
 
-        
+    AlbumManager *am =[AlbumManager sharedAlbumManager];
+    [am.istanceOfAlbumViewController reloadData];
+    
+    
     [self.navigationController dismissModalViewControllerAnimated:YES];
     
     

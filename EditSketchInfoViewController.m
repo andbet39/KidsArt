@@ -60,6 +60,18 @@
 -(void)SelectAlbumViewController:(SelectAlbumViewController*)sender DidSelectAlbum:(Album*)album{
 
     [album addAlbum2sketchObject:editSketch];
+
+    DataManager *dm = [DataManager  sharedDataManager];
+
+    NSManagedObjectContext *context = [dm managedObjectContext];
+
+    // Save the context.
+    NSError *error = nil;
+    if (![context save:&error]){
+        NSLog(@"Error on save");
+    }
+
+    
     [self.navigationController popViewControllerAnimated:YES];
     
 }

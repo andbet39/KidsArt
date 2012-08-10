@@ -7,34 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Album.h"
+
 #import "DataManager.h"
 #import "HomeViewController.h"
-#import "AlbumViewControler.h"
+#import "AlbumViewController.h"
+#import "Album.h"
 
 @interface AlbumManager : NSObject
-{
-    
-    
-
-}
-
-
-
 
 + (id)sharedAlbumManager ;
 
 
 
-
+@property(nonatomic,strong)AlbumViewController * istanceOfAlbumViewController;
 @property(nonatomic,strong)HomeViewController * istanceOfHomeViewController;
-@property(nonatomic,strong)AlbumViewControler * istanceOfAlbumViewController;
-
-
 @property(nonatomic,strong)Album* selectedAlbum;
-
-
-
 @property(readwrite)bool isSelectedAlbumUpdated;
 
 

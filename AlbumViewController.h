@@ -7,9 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
-#import "DataManager.h"
-#import "AlbumManager.h"
 #import "AlbumCell.h"
 #import "Album.h"
 #import "newAlbumViewController.h"
@@ -27,5 +24,9 @@
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *addAlbumAction;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 - (IBAction)addAlbumAction:(id)sender;
+
+
+-(void)reloadData;
+
 
 @end

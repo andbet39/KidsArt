@@ -30,7 +30,7 @@
 -(void)caricaAlbum{
 
 
-    albumArray = [[NSMutableArray alloc]init];
+    
     
     DataManager *dm = [DataManager sharedDataManager];
     
@@ -57,10 +57,18 @@
     {
         // Deal with error...
     }
+
+    for (Album *a in array) {
+        NSLog(@"Fetched : Disegni %u in Album : %@ ",[a.album2sketch count],a.titolo);
+        
+    }
     
+    
+    [albumArray removeAllObjects];
+
     [albumArray addObjectsFromArray:array];
     
-
+    
 
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -75,10 +83,22 @@
 }
 
 
+-(void)reloadData{
+    
+    [self caricaAlbum];
+    [tableView reloadData];
+    
+}
 
 
 - (void)viewDidLoad
 {
+    AlbumManager *am =[AlbumManager sharedAlbumManager];
+    
+    [am setIstanceOfAlbumViewController:self];
+    
+    albumArray = [[NSMutableArray alloc]init];
+    
     [super viewDidLoad];
     [self caricaAlbum];
     [self creaToolBar];
