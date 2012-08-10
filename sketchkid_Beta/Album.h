@@ -2,7 +2,7 @@
 //  Album.h
 //  kidsArt
 //
-//  Created by Andrea Terzani on 08/08/12.
+//  Created by Andrea Terzani on 10/08/12.
 //  Copyright (c) 2012 Andrea Terzani. All rights reserved.
 //
 
@@ -15,8 +15,9 @@
 
 @property (nonatomic, retain) NSString * copertinaPath;
 @property (nonatomic, retain) NSDate * dataCreazione;
-@property (nonatomic, retain) NSString * titolo;
 @property (nonatomic, retain) NSDecimalNumber * order;
+@property (nonatomic, retain) NSString * titolo;
+@property (nonatomic, retain) NSNumber * isDefault;
 @property (nonatomic, retain) NSSet *album2sketch;
 @end
 

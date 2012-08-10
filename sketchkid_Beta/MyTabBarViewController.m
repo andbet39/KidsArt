@@ -41,6 +41,14 @@
     [self hideExistingTabBar];
     [self addCustomElements];
 
+    
+    AlbumManager *am = [AlbumManager sharedAlbumManager];
+    
+    [am setSelectedAlbum:[am defaultAlbum]];
+    
+    [am.istanceOfHomeViewController reloadAlbumData];
+    
+    [self setSelectedIndex:1];
 
 }
 

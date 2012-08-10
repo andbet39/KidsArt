@@ -11,7 +11,6 @@
 #import "UIImage+Scale.h"
 #import "DataManager.h"
 #import "Album.h"
-//#import "AlbumManager.h"
 #import "Sketch.h"
 #import "GMGridView.h"
 
@@ -39,6 +38,7 @@
 - (IBAction)infoButtonAction:(id)sender;
 - (IBAction)creaDefaultAlbum:(id)sender;
 
+- (IBAction)selectPreferitiAction:(id)sender;
 
 -(void)reloadAlbumData;
 

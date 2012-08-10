@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "UIView+PartialCurl.h"
 #import "ViewController.h"
+#import "SketchManager.h"
 
 
 @interface HomeViewController ()
@@ -78,10 +79,12 @@
     
     if ([segue.identifier isEqualToString:@"editSketch"])
     {
-        ViewController * editSketchView=(ViewController*) [segue destinationViewController];
-        [editSketchView setCurrentSketch:selectedSketch];
-        //[editSketchView setDelegate:self];
+        //ViewController * editSketchView=(ViewController*) [segue destinationViewController];
+        SketchManager *sm = [SketchManager sharedSketchManager];
+        [sm setEditedSketch:selectedSketch];
     }
+    
+    
 }
 
 
@@ -118,6 +121,8 @@
    
     
     [self creaAlbumToolBar];
+    
+    
     
 }
 
@@ -164,7 +169,16 @@
     
 }
 
+- (IBAction)selectPreferitiAction:(id)sender{
 
+    if ([_gmGridView isEditing]) {
+        _gmGridView.editing=TRUE;
+
+    }else{
+        _gmGridView.editing=TRUE;
+    }
+
+}
 
 
 
@@ -267,11 +281,8 @@
 
 - (void)GMGridView:(GMGridView *)gridView processDeleteActionForItemAtIndex:(NSInteger)index
 {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Confirm" message:@"Are you sure you want to delete this item?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Delete", nil];
     
-    [alert show];
-    
-    _lastDeleteItemIndexAsked = index;
+ 
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
@@ -392,6 +403,7 @@
     [defaultAlbum setTitolo:@"Default"];
     [defaultAlbum setOrder:[NSDecimalNumber numberWithInt:0]];
     [defaultAlbum setDataCreazione:[NSDate date]];
+    [defaultAlbum setIsDefault:[NSNumber numberWithInt:1]];
     //[defaultAlbum setCopertinaPath:]
     
     UIImage *firsrImage=[UIImage imageNamed:@"home.jpg"];

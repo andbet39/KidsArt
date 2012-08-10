@@ -39,6 +39,7 @@ static AlbumManager *sharedAlbumManager = nil;
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entityDescription];
     
+    [request setPredicate:[NSPredicate predicateWithFormat:@"isDefault == 1"]];
     
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc]
                                         initWithKey:@"order" ascending:YES];

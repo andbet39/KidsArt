@@ -161,12 +161,7 @@
     UIImage * capturedImage = [info objectForKey:UIImagePickerControllerOriginalImage];
     
     [tempPictureArray addObject:capturedImage];
-    //[self dismissModalViewControllerAnimated:NO];
-    
-    //Salva l' immagine e la ripassa all al delegato (MytabbarViewController) che dovrà mostrare l' album di default con la nuova immagine per prima
-    //[self saveSketch:capturedImage];
-    //[self.delegate TakePictureViewController:self DidAddSketch:[self saveSketch:capturedImage]];
-    
+   
 }
 
 -(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Sketch.h"
+#import "SketchManager.h"
 @interface ViewController : UIViewController
 {
 

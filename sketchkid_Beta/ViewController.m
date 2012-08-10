@@ -30,7 +30,7 @@
     int toolbarheight=82;
 
     [toolBar setFrame:CGRectMake(0, self.view.frame.size.height-toolbarheight, 320, toolbarheight)];
-    [toolBar setBackgroundImage:[UIImage imageNamed:@"toolbarBack.png"] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
+    [toolBar setBackgroundImage:[UIImage imageNamed:@"toolBarBack.png"] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
     
     
     
@@ -53,19 +53,38 @@
     
     
     
-    [fintaNavigationBar setBackgroundImage:[UIImage imageNamed:@"navigationBar.png"] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationBar.png"] forBarMetrics:UIBarMetricsDefault];
 
     
 }
 
 
+-(void)loadSketch{
+
+    NSData *data = [[NSData alloc] initWithContentsOfFile:currentSketch.pathFull];
+    
+    UIImage *mainImageLarge = [[UIImage alloc] initWithData:data];
+
+    [mainImageView setImage:mainImageLarge];
+    
+    
+
+
+}
+
 - (void)viewDidLoad
 {
+    
+    
     [super viewDidLoad];
     
+    
     [self creaToolBar];
+    SketchManager *sm =[SketchManager sharedSketchManager];
     
+    currentSketch=sm.editedSketch;
     
+    [self loadSketch];
     
 
 }
