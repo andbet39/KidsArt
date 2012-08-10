@@ -10,6 +10,7 @@
 #import "Album.h"
 #import "DataManager.h"
 #import "HomeViewController.h"
+#import "AlbumViewControler.h"
 
 @interface AlbumManager : NSObject
 {
@@ -25,8 +26,15 @@
 
 
 
-@property(nonatomic,strong)Album* selectedAlbum;
+
 @property(nonatomic,strong)HomeViewController * istanceOfHomeViewController;
+@property(nonatomic,strong)AlbumViewControler * istanceOfAlbumViewController;
+
+
+@property(nonatomic,strong)Album* selectedAlbum;
+
+
+
 @property(readwrite)bool isSelectedAlbumUpdated;
 
 
