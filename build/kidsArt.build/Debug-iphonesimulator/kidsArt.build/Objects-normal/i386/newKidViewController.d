@@ -1,4 +1,4 @@
 dependencies: \
   /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../newKidViewController.m \
-  newKidViewController.h Kid.h \
-  /Users/andrea/Desktop/kidsArt/sketchkid_Beta/DataManager.h
+  /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../newKidViewController.h \
+  /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../Kid.h

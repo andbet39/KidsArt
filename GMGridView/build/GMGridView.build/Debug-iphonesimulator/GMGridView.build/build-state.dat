@@ -1,0 +1,490 @@
+TGMGridView
+v5
+r1
+cCheck dependencies
+cCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewCell.o /Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.o /Users/andrea/Desktop/kidsArt/GMGridView/GMGridView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIGestureRecognizer+GMGridViewAdditions.o /Users/andrea/Desktop/kidsArt/GMGridView/UIGestureRecognizer+GMGridViewAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewLayoutStrategies.o /Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewLayoutStrategies.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIView+GMGridViewAdditions.o /Users/andrea/Desktop/kidsArt/GMGridView/UIView+GMGridViewAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/libGMGridView.a normal i386
+cCpHeader GMGridView-Constants.h build/Debug-iphonesimulator/usr/local/include/GMGridView-Constants.h
+cCpHeader GMGridViewCell.h build/Debug-iphonesimulator/usr/local/include/GMGridViewCell.h
+cCpHeader GMGridView.h build/Debug-iphonesimulator/usr/local/include/GMGridView.h
+cCpHeader GMGridViewCell+Extended.h build/Debug-iphonesimulator/usr/local/include/GMGridViewCell+Extended.h
+cCpHeader GMGridViewLayoutStrategies.h build/Debug-iphonesimulator/usr/local/include/GMGridViewLayoutStrategies.h
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk
+c000000004F453DF80000000000000110
+t1329937912
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c0000000050117E670000000000244490
+t1343323751
+s2376848
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c0000000050117E680000000000353830
+t1343323752
+s3487792
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c0000000050117E6A00000000001AB190
+t1343323754
+s1749392
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c0000000050117E6C0000000000905E40
+t1343323756
+s9461312
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridView-Constants.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridView.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridView.m
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridViewCell+Extended.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridViewCell.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridViewCell.m
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridViewLayoutStrategies.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridViewLayoutStrategies.m
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/UIGestureRecognizer+GMGridViewAdditions.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/UIGestureRecognizer+GMGridViewAdditions.m
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/UIView+GMGridViewAdditions.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/UIView+GMGridViewAdditions.m
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/libGMGridView.a
+t1344277318
+s601056
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/usr/local/include/GMGridView-Constants.h
+t1344277318
+s1796
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/usr/local/include/GMGridView.h
+t1344277318
+s8982
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/usr/local/include/GMGridViewCell+Extended.h
+t1344277318
+s2523
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/usr/local/include/GMGridViewCell.h
+t1344277318
+s1909
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/usr/local/include/GMGridViewLayoutStrategies.h
+t1344277318
+s6539
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.LinkFileList
+c0000000050200B450000000000000352
+t1344277317
+s850
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.o
+t1344277318
+s268464
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewCell.o
+t1344277317
+s117292
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewLayoutStrategies.o
+t1344277317
+s74436
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIGestureRecognizer+GMGridViewAdditions.o
+t1344277317
+s63704
+
+N/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIView+GMGridViewAdditions.o
+t1344277318
+s71564
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/GMGridView-Constants.h
+c000000004FA505280000000000000704
+t1336214824
+s1796
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/GMGridView.h
+c000000004FA505280000000000002316
+t1336214824
+s8982
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/GMGridView.m
+c000000004FA50528000000000000FD26
+t1336214824
+s64806
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewCell+Extended.h
+c000000004FA5052800000000000009DB
+t1336214824
+s2523
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewCell.h
+c000000004FA505280000000000000775
+t1336214824
+s1909
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewCell.m
+c000000004FA505280000000000002BA6
+t1336214824
+s11174
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewLayoutStrategies.h
+c000000004FA50528000000000000198B
+t1336214824
+s6539
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewLayoutStrategies.m
+c000000004FA505280000000000004999
+t1336214824
+s18841
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/UIGestureRecognizer+GMGridViewAdditions.h
+c000000004FA5052800000000000005F0
+t1336214824
+s1520
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/UIGestureRecognizer+GMGridViewAdditions.m
+c000000004FA5052800000000000006C2
+t1336214824
+s1730
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/UIView+GMGridViewAdditions.h
+c000000004FA505280000000000000615
+t1336214824
+s1557
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/UIView+GMGridViewAdditions.m
+c000000004FA505280000000000000A16
+t1336214824
+s2582
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/libGMGridView.a
+t1344610108
+s600720
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/usr/local/include/GMGridView-Constants.h
+t1344277318
+s1796
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/usr/local/include/GMGridView.h
+t1344277318
+s8982
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/usr/local/include/GMGridViewCell+Extended.h
+t1344277318
+s2523
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/usr/local/include/GMGridViewCell.h
+t1344277318
+s1909
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/usr/local/include/GMGridViewLayoutStrategies.h
+t1344277318
+s6539
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.LinkFileList
+c0000000050251F3B00000000000002E9
+t1344610107
+s745
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.o
+t1344610108
+s268384
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewCell.o
+t1344610107
+s117228
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewLayoutStrategies.o
+t1344610107
+s74372
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIGestureRecognizer+GMGridViewAdditions.o
+t1344610107
+s63640
+
+N/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIView+GMGridViewAdditions.o
+t1344610108
+s71500
+
+CBuild AST from /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridView.m
+r0
+
+CBuild AST from /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridViewCell.m
+r0
+
+CBuild AST from /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridViewLayoutStrategies.m
+r0
+
+CBuild AST from /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/UIGestureRecognizer+GMGridViewAdditions.m
+r0
+
+CBuild AST from /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/UIView+GMGridViewAdditions.m
+r0
+
+CBuild AST from /Users/andrea/Desktop/kidsArt/GMGridView/GMGridView.m
+r0
+
+CBuild AST from /Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewCell.m
+r0
+
+CBuild AST from /Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewLayoutStrategies.m
+r0
+
+CBuild AST from /Users/andrea/Desktop/kidsArt/GMGridView/UIGestureRecognizer+GMGridViewAdditions.m
+r0
+
+CBuild AST from /Users/andrea/Desktop/kidsArt/GMGridView/UIView+GMGridViewAdditions.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies9b742ff156d5b541^d31130f156d5b541^---0#1#0#--18"Check dependencies36"1E52EC11-DEA9-4A2A-A2CC-3FAD915DD6C4-
+
+CCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.o /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s365970117.662103
+e365970118.012515
+r1
+xCompileC
+xbuild/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.o
+x/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridView.m3998a9c542d0b541^e73403c642d0b541^---0#0#0#-19%DVTDocumentLocation2@90"file://localhost/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridView.m0000000000000000^3533"CompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.o GMGridView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-generated-files.hmap -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-own-target-headers.hmap -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-all-target-headers.hmap -iquote /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-project-headers.hmap -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/DerivedSources/i386 -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/DerivedSources -F/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator -MMD -MT dependencies -MF /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.d --serialize-diagnostics /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.dia -c /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridView.m -o /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.o36"43930445-5400-483D-8467-05D460B239D2-
+
+CCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.o /Users/andrea/Desktop/kidsArt/GMGridView/GMGridView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s366302907.683105
+e366302908.015217
+r1
+xCompileC
+xbuild/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.o
+x/Users/andrea/Desktop/kidsArt/GMGridView/GMGridView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Compile /Users/andrea/Desktop/kidsArt/GMGridView/GMGridView.m38f8aebb56d5b541^86e503bc56d5b541^---0#0#0#-19%DVTDocumentLocation2@69"file://localhost/Users/andrea/Desktop/kidsArt/GMGridView/GMGridView.m0000000000000000^3260"CompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.o GMGridView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andrea/Desktop/kidsArt/GMGridView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-generated-files.hmap -I/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-own-target-headers.hmap -I/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-all-target-headers.hmap -iquote /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-project-headers.hmap -I/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/DerivedSources/i386 -I/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/DerivedSources -F/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator -MMD -MT dependencies -MF /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.d --serialize-diagnostics /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.dia -c /Users/andrea/Desktop/kidsArt/GMGridView/GMGridView.m -o /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.o36"D7A0C2ED-A4BA-42F7-8249-3A56C26B8F86-
+
+CCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewCell.o /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s365970117.662108
+e365970117.948044
+r1
+xCompileC
+xbuild/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewCell.o
+x/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridViewCell.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridViewCell.md098a9c542d0b541^29b2f2c542d0b541^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridViewCell.m0000000000000000^3557"CompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewCell.o GMGridViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-generated-files.hmap -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-own-target-headers.hmap -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-all-target-headers.hmap -iquote /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-project-headers.hmap -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/DerivedSources/i386 -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/DerivedSources -F/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator -MMD -MT dependencies -MF /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewCell.d --serialize-diagnostics /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewCell.dia -c /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridViewCell.m -o /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewCell.o36"6545F502-B0EC-464E-922E-2644AB76EB09-
+
+CCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewCell.o /Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s366302907.683115
+e366302907.914074
+r1
+xCompileC
+xbuild/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewCell.o
+x/Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewCell.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewCell.mc2f7aebb56d5b541^7901eabb56d5b541^---0#0#0#-19%DVTDocumentLocation2@73"file://localhost/Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewCell.m0000000000000000^3284"CompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewCell.o GMGridViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andrea/Desktop/kidsArt/GMGridView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-generated-files.hmap -I/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-own-target-headers.hmap -I/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-all-target-headers.hmap -iquote /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-project-headers.hmap -I/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/DerivedSources/i386 -I/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/DerivedSources -F/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator -MMD -MT dependencies -MF /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewCell.d --serialize-diagnostics /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewCell.dia -c /Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewCell.m -o /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewCell.o36"76A034DC-984F-4A79-A4F8-7DDF425C2380-
+
+CCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewLayoutStrategies.o /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridViewLayoutStrategies.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s365970117.662115
+e365970117.974746
+r1
+xCompileC
+xbuild/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewLayoutStrategies.o
+x/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridViewLayoutStrategies.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Compile /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridViewLayoutStrategies.m5b98a9c542d0b541^4889f9c542d0b541^---0#0#0#-19%DVTDocumentLocation2@106"file://localhost/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridViewLayoutStrategies.m0000000000000000^3629"CompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewLayoutStrategies.o GMGridViewLayoutStrategies.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-generated-files.hmap -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-own-target-headers.hmap -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-all-target-headers.hmap -iquote /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-project-headers.hmap -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/DerivedSources/i386 -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/DerivedSources -F/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator -MMD -MT dependencies -MF /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewLayoutStrategies.d --serialize-diagnostics /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewLayoutStrategies.dia -c /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridViewLayoutStrategies.m -o /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewLayoutStrategies.o36"F3EE6ACC-9B77-4C13-AB95-26F8034523ED-
+
+CCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewLayoutStrategies.o /Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewLayoutStrategies.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s366302907.683145
+e366302907.929188
+r1
+xCompileC
+xbuild/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewLayoutStrategies.o
+x/Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewLayoutStrategies.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewLayoutStrategies.m1efaaebb56d5b541^e7e0edbb56d5b541^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewLayoutStrategies.m0000000000000000^3356"CompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewLayoutStrategies.o GMGridViewLayoutStrategies.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andrea/Desktop/kidsArt/GMGridView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-generated-files.hmap -I/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-own-target-headers.hmap -I/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-all-target-headers.hmap -iquote /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-project-headers.hmap -I/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/DerivedSources/i386 -I/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/DerivedSources -F/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator -MMD -MT dependencies -MF /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewLayoutStrategies.d --serialize-diagnostics /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewLayoutStrategies.dia -c /Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewLayoutStrategies.m -o /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewLayoutStrategies.o36"E31D1C8D-BAEA-40E0-BA35-D70BF8FDB3A1-
+
+CCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIGestureRecognizer+GMGridViewAdditions.o /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/UIGestureRecognizer+GMGridViewAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s365970117.662517
+e365970117.920960
+r1
+xCompileC
+xbuild/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIGestureRecognizer+GMGridViewAdditions.o
+x/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/UIGestureRecognizer+GMGridViewAdditions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Compile /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/UIGestureRecognizer+GMGridViewAdditions.m57b0a9c542d0b541^1ac4ebc542d0b541^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/UIGestureRecognizer+GMGridViewAdditions.m0000000000000000^3707"CompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIGestureRecognizer+GMGridViewAdditions.o UIGestureRecognizer+GMGridViewAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-generated-files.hmap -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-own-target-headers.hmap -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-all-target-headers.hmap -iquote /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-project-headers.hmap -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/DerivedSources/i386 -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/DerivedSources -F/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator -MMD -MT dependencies -MF /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIGestureRecognizer+GMGridViewAdditions.d --serialize-diagnostics /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIGestureRecognizer+GMGridViewAdditions.dia -c /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/UIGestureRecognizer+GMGridViewAdditions.m -o /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIGestureRecognizer+GMGridViewAdditions.o36"B31065B1-6C34-49FC-BEAC-D5215342EE4B-
+
+CCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIGestureRecognizer+GMGridViewAdditions.o /Users/andrea/Desktop/kidsArt/GMGridView/UIGestureRecognizer+GMGridViewAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s366302907.683353
+e366302907.857696
+r1
+xCompileC
+xbuild/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIGestureRecognizer+GMGridViewAdditions.o
+x/Users/andrea/Desktop/kidsArt/GMGridView/UIGestureRecognizer+GMGridViewAdditions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/andrea/Desktop/kidsArt/GMGridView/UIGestureRecognizer+GMGridViewAdditions.m0707afbb56d5b541^8dd4dbbb56d5b541^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/andrea/Desktop/kidsArt/GMGridView/UIGestureRecognizer+GMGridViewAdditions.m0000000000000000^3434"CompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIGestureRecognizer+GMGridViewAdditions.o UIGestureRecognizer+GMGridViewAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andrea/Desktop/kidsArt/GMGridView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-generated-files.hmap -I/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-own-target-headers.hmap -I/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-all-target-headers.hmap -iquote /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-project-headers.hmap -I/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/DerivedSources/i386 -I/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/DerivedSources -F/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator -MMD -MT dependencies -MF /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIGestureRecognizer+GMGridViewAdditions.d --serialize-diagnostics /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIGestureRecognizer+GMGridViewAdditions.dia -c /Users/andrea/Desktop/kidsArt/GMGridView/UIGestureRecognizer+GMGridViewAdditions.m -o /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIGestureRecognizer+GMGridViewAdditions.o36"4F9B4D46-3661-48CD-BF3B-32664F704A09-
+
+CCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIView+GMGridViewAdditions.o /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/UIView+GMGridViewAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s365970117.922242
+e365970118.136152
+r1
+xCompileC
+xbuild/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIView+GMGridViewAdditions.o
+x/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/UIView+GMGridViewAdditions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Compile /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/UIView+GMGridViewAdditions.mba32ecc542d0b541^ecda22c642d0b541^---0#0#0#-19%DVTDocumentLocation2@106"file://localhost/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/UIView+GMGridViewAdditions.m0000000000000000^3629"CompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIView+GMGridViewAdditions.o UIView+GMGridViewAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-generated-files.hmap -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-own-target-headers.hmap -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-all-target-headers.hmap -iquote /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-project-headers.hmap -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/DerivedSources/i386 -I/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/DerivedSources -F/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator -MMD -MT dependencies -MF /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIView+GMGridViewAdditions.d --serialize-diagnostics /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIView+GMGridViewAdditions.dia -c /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/UIView+GMGridViewAdditions.m -o /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIView+GMGridViewAdditions.o36"E49F6C74-FC08-485F-AA8C-B3074DA80316-
+
+CCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIView+GMGridViewAdditions.o /Users/andrea/Desktop/kidsArt/GMGridView/UIView+GMGridViewAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s366302907.858931
+e366302908.008435
+r1
+xCompileC
+xbuild/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIView+GMGridViewAdditions.o
+x/Users/andrea/Desktop/kidsArt/GMGridView/UIView+GMGridViewAdditions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/andrea/Desktop/kidsArt/GMGridView/UIView+GMGridViewAdditions.m3ffddbbb56d5b541^842902bc56d5b541^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Users/andrea/Desktop/kidsArt/GMGridView/UIView+GMGridViewAdditions.m0000000000000000^3356"CompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIView+GMGridViewAdditions.o UIView+GMGridViewAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andrea/Desktop/kidsArt/GMGridView    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-generated-files.hmap -I/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-own-target-headers.hmap -I/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-all-target-headers.hmap -iquote /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/GMGridView-project-headers.hmap -I/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/DerivedSources/i386 -I/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/DerivedSources -F/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator -MMD -MT dependencies -MF /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIView+GMGridViewAdditions.d --serialize-diagnostics /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIView+GMGridViewAdditions.dia -c /Users/andrea/Desktop/kidsArt/GMGridView/UIView+GMGridViewAdditions.m -o /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIView+GMGridViewAdditions.o36"339C00F6-7C07-418D-9343-A94E72AC368B-
+
+CCpHeader GMGridView-Constants.h build/Debug-iphonesimulator/usr/local/include/GMGridView-Constants.h
+s365970118.217634
+e365970118.220829
+r1
+xCpHeader
+xGMGridView-Constants.h
+xbuild/Debug-iphonesimulator/usr/local/include/GMGridView-Constants.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Copy build/Debug-iphonesimulator/usr/local/include/GMGridView-Constants.hfcc637c642d0b541^f08a38c642d0b541^---0#0#0#-19%DVTDocumentLocation2@146"file://localhost/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/usr/local/include/GMGridView-Constants.h000000000080d041^670"CpHeader GMGridView-Constants.h build/Debug-iphonesimulator/usr/local/include/GMGridView-Constants.h    cd /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridView-Constants.h /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/usr/local/include36"A063CA08-15E3-4B77-8D5A-AC6DE4E1BA97-
+
+CCpHeader GMGridView.h build/Debug-iphonesimulator/usr/local/include/GMGridView.h
+s365970118.217650
+e365970118.219781
+r1
+xCpHeader
+xGMGridView.h
+xbuild/Debug-iphonesimulator/usr/local/include/GMGridView.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Copy build/Debug-iphonesimulator/usr/local/include/GMGridView.hb9c637c642d0b541^394438c642d0b541^---0#0#0#-19%DVTDocumentLocation2@136"file://localhost/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/usr/local/include/GMGridView.h000000000080d041^640"CpHeader GMGridView.h build/Debug-iphonesimulator/usr/local/include/GMGridView.h    cd /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridView.h /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/usr/local/include36"32A353AE-2452-4E65-8E7D-0F57C87F6147-
+
+CCpHeader GMGridViewCell+Extended.h build/Debug-iphonesimulator/usr/local/include/GMGridViewCell+Extended.h
+s365970118.217893
+e365970118.223091
+r1
+xCpHeader
+xGMGridViewCell+Extended.h
+xbuild/Debug-iphonesimulator/usr/local/include/GMGridViewCell+Extended.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Copy build/Debug-iphonesimulator/usr/local/include/GMGridViewCell+Extended.h8dd437c642d0b541^b01c39c642d0b541^---0#0#0#-19%DVTDocumentLocation2@149"file://localhost/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/usr/local/include/GMGridViewCell+Extended.h000000000080d041^679"CpHeader GMGridViewCell+Extended.h build/Debug-iphonesimulator/usr/local/include/GMGridViewCell+Extended.h    cd /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridViewCell+Extended.h /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/usr/local/include36"97E59946-7415-4066-87B9-AC7BDABBE98E-
+
+CCpHeader GMGridViewCell.h build/Debug-iphonesimulator/usr/local/include/GMGridViewCell.h
+s365970118.217645
+e365970118.221948
+r1
+xCpHeader
+xGMGridViewCell.h
+xbuild/Debug-iphonesimulator/usr/local/include/GMGridViewCell.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Copy build/Debug-iphonesimulator/usr/local/include/GMGridViewCell.h50c737c642d0b541^91d238c642d0b541^---0#0#0#-19%DVTDocumentLocation2@140"file://localhost/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/usr/local/include/GMGridViewCell.h000000000080d041^652"CpHeader GMGridViewCell.h build/Debug-iphonesimulator/usr/local/include/GMGridViewCell.h    cd /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridViewCell.h /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/usr/local/include36"1D27C699-88A8-48A7-9C8A-C54E64C73B11-
+
+CCpHeader GMGridViewLayoutStrategies.h build/Debug-iphonesimulator/usr/local/include/GMGridViewLayoutStrategies.h
+s365970118.220894
+e365970118.224492
+r1
+xCpHeader
+xGMGridViewLayoutStrategies.h
+xbuild/Debug-iphonesimulator/usr/local/include/GMGridViewLayoutStrategies.h
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Copy build/Debug-iphonesimulator/usr/local/include/GMGridViewLayoutStrategies.he59838c642d0b541^927839c642d0b541^---0#0#0#-19%DVTDocumentLocation2@152"file://localhost/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/usr/local/include/GMGridViewLayoutStrategies.h000000000080d041^688"CpHeader GMGridViewLayoutStrategies.h build/Debug-iphonesimulator/usr/local/include/GMGridViewLayoutStrategies.h    cd /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridViewLayoutStrategies.h /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/usr/local/include36"26BBA384-47EB-4A9C-9E6A-02FB30F6EFA6-
+
+CLibtool /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/libGMGridView.a normal i386
+s365970118.143020
+e365970118.209405
+r1
+xLibtool
+x/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/libGMGridView.a
+xnormal
+xi386
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Libtool build/Debug-iphonesimulator/libGMGridView.a normal i38668b124c642d0b541^889d35c642d0b541^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#0#--1090"Libtool build/Debug-iphonesimulator/libGMGridView.a normal i386    cd /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -L/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator -filelist /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.LinkFileList -ObjC -framework Foundation -framework QuartzCore -framework UIKit -framework CoreGraphics -o /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/libGMGridView.a36"234A545F-D327-4022-8E81-947568E0B1FD-
+
+CLibtool /Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/libGMGridView.a normal i386
+s366302908.022008
+e366302908.048059
+r1
+xLibtool
+x/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/libGMGridView.a
+xnormal
+xi386
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Libtool build/Debug-iphonesimulator/libGMGridView.a normal i386bbb405bc56d5b541^807d0cbc56d5b541^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#0#--1006"Libtool build/Debug-iphonesimulator/libGMGridView.a normal i386    cd /Users/andrea/Desktop/kidsArt/GMGridView    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -L/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator -filelist /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.LinkFileList -ObjC -framework Foundation -framework QuartzCore -framework UIKit -framework CoreGraphics -o /Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/libGMGridView.a36"4DEB2CEE-6BE9-4F68-8B53-46D3C59EF8CD-
+
