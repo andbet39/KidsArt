@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65B7289A15D564AF0025D692 /* SelectAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B7289915D564AF0025D692 /* SelectAlbumViewController.m */; };
+		65B7289D15D569E50025D692 /* newAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B7289C15D569E50025D692 /* newAlbumViewController.m */; };
 		65D461DC15D1882F00B79679 /* MyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461DB15D1882F00B79679 /* MyTabBarViewController.m */; };
 		65D461EC15D2D15700B79679 /* TakePictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461EB15D2D15700B79679 /* TakePictureViewController.m */; };
 		65D461EF15D2DDD800B79679 /* SegueWithNoAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461EE15D2DDD800B79679 /* SegueWithNoAnimation.m */; };
@@ -75,6 +77,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65B7289815D564AF0025D692 /* SelectAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectAlbumViewController.h; sourceTree = "<group>"; };
+		65B7289915D564AF0025D692 /* SelectAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectAlbumViewController.m; sourceTree = "<group>"; };
+		65B7289B15D569E50025D692 /* newAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newAlbumViewController.h; sourceTree = "<group>"; };
+		65B7289C15D569E50025D692 /* newAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newAlbumViewController.m; sourceTree = "<group>"; };
 		65D461DA15D1882F00B79679 /* MyTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBarViewController.h; sourceTree = "<group>"; };
 		65D461DB15D1882F00B79679 /* MyTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarViewController.m; sourceTree = "<group>"; };
 		65D461EA15D2D15700B79679 /* TakePictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePictureViewController.h; sourceTree = "<group>"; };
@@ -195,15 +201,6 @@
 			name = Singleton;
 			sourceTree = "<group>";
 		};
-		65D4628415D550D100B79679 /* edtiViewController */ = {
-			isa = PBXGroup;
-			children = (
-				65D4628815D5519500B79679 /* EditSketchInfoViewController.h */,
-				65D4628915D5519500B79679 /* EditSketchInfoViewController.m */,
-			);
-			name = edtiViewController;
-			sourceTree = "<group>";
-		};
 		65D4629715D556A000B79679 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,7 +301,8 @@
 		65FA96C515CE471300AC0CCD /* viewController */ = {
 			isa = PBXGroup;
 			children = (
-				65D4628415D550D100B79679 /* edtiViewController */,
+				65D4628815D5519500B79679 /* EditSketchInfoViewController.h */,
+				65D4628915D5519500B79679 /* EditSketchInfoViewController.m */,
 				65FA969415CD3A0700AC0CCD /* HomeViewController.h */,
 				65FA969515CD3A0700AC0CCD /* HomeViewController.m */,
 				65FA968015CD263A00AC0CCD /* ViewController.h */,
@@ -317,6 +315,10 @@
 				65D461EB15D2D15700B79679 /* TakePictureViewController.m */,
 				65D4620215D2F66200B79679 /* AlbumViewController.h */,
 				65D4620315D2F66200B79679 /* AlbumViewController.m */,
+				65B7289815D564AF0025D692 /* SelectAlbumViewController.h */,
+				65B7289915D564AF0025D692 /* SelectAlbumViewController.m */,
+				65B7289B15D569E50025D692 /* newAlbumViewController.h */,
+				65B7289C15D569E50025D692 /* newAlbumViewController.m */,
 			);
 			name = viewController;
 			path = ..;
@@ -489,6 +491,8 @@
 				65D4628015D543A500B79679 /* SketchManager.m in Sources */,
 				65D4628315D5451600B79679 /* Album.m in Sources */,
 				65D4628A15D5519500B79679 /* EditSketchInfoViewController.m in Sources */,
+				65B7289A15D564AF0025D692 /* SelectAlbumViewController.m in Sources */,
+				65B7289D15D569E50025D692 /* newAlbumViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

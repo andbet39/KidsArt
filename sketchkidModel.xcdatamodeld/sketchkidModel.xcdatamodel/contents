@@ -6,7 +6,7 @@
         <attribute name="isDefault" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="order" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="titolo" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="album2sketch" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Sketch" syncable="YES"/>
+        <relationship name="album2sketch" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Sketch" inverseName="album" inverseEntity="Sketch" syncable="YES"/>
     </entity>
     <entity name="Kid" representedClassName="Kid" syncable="YES">
         <attribute name="cognome" optional="YES" attributeType="String" syncable="YES"/>
@@ -23,10 +23,11 @@
         <attribute name="pathFull" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="pathSmall" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="saveDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="album" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Album" inverseName="album2sketch" inverseEntity="Album" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Album" positionX="0" positionY="0" width="128" height="135"/>
-        <element name="Kid" positionX="0" positionY="0" width="128" height="120"/>
-        <element name="Sketch" positionX="0" positionY="0" width="128" height="150"/>
+        <element name="Album" positionX="0" positionY="0" width="128" height="133"/>
+        <element name="Kid" positionX="-146" positionY="-180" width="128" height="120"/>
+        <element name="Sketch" positionX="-423" positionY="27" width="128" height="163"/>
     </elements>
 </model>

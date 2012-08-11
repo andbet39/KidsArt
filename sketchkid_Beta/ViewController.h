@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "Sketch.h"
 #import "SketchManager.h"
+#import "EditSketchInfoViewController.h"
+
+
+
 @interface ViewController : UIViewController
 {
 
@@ -33,5 +37,8 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *mainImageView;
 
+- (IBAction)editInfoButton:(id)sender;
+- (IBAction)saveButtonAction:(id)sender;
+- (IBAction)cancelButtonAction:(id)sender;
 
 @end

@@ -7,8 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SketchManager.h"
+#import "Sketch.h"
+#import "SelectAlbumViewController.h"
 
-@interface EditSketchInfoViewController : UIViewController
+@interface EditSketchInfoViewController : UIViewController <SelectAlbumViewControllerDelegate>
+{
+
+    Sketch * editSketch;
+    
+}
+
+@property (nonatomic,strong)  Sketch * editSketch;
 
 @property (weak, nonatomic) IBOutlet UILabel *albumNameLabel;
+
+- (IBAction)addToAlbumAction:(id)sender;
 @end

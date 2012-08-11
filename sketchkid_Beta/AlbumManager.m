@@ -14,7 +14,7 @@ static AlbumManager *sharedAlbumManager = nil;
 @synthesize selectedAlbum;
 @synthesize  isSelectedAlbumUpdated;
 @synthesize istanceOfHomeViewController;
-
+@synthesize istanceOfAlbumViewController;
 
 #pragma mark Singleton Methods
 + (id)sharedAlbumManager {
@@ -25,6 +25,40 @@ static AlbumManager *sharedAlbumManager = nil;
     return sharedAlbumManager;
 }
 
+-(int)getMaxOrder
+{
+    DataManager *dm = [DataManager sharedDataManager];
+    
+    
+    NSManagedObjectContext *moc = [dm managedObjectContext];
+    
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSEntityDescription *res = [NSEntityDescription entityForName:@"Album" inManagedObjectContext:moc];
+    [request setEntity:res];
+    
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"order" ascending:NO];
+    NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+    [request setSortDescriptors:sortDescriptors];
+ 
+
+    [request setFetchLimit:1];
+    
+    NSError *error = nil;
+    NSArray *results = [moc executeFetchRequest:request error:&error];
+
+    if (results == nil) {
+        NSLog(@"error fetching the results: %@",error);
+    }
+    
+    NSInteger maximumValue = 0;
+    if (results.count == 1) {
+        Album *result = (Album*)[results objectAtIndex:0];
+        maximumValue =  [result.order integerValue];
+    }
+
+    return maximumValue;
+
+}
 
 
 -(Album*)defaultAlbum{

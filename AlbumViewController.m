@@ -13,6 +13,12 @@
 @end
 
 @implementation AlbumViewController
+@synthesize addAlbumButtonAction;
+@synthesize addAlbumAction;
+@synthesize tableView;
+
+
+
 -(void)creaToolBar{
     
     int toolbarheight=84;
@@ -24,7 +30,7 @@
 -(void)caricaAlbum{
 
 
-    albumArray = [[NSMutableArray alloc]init];
+    
     
     DataManager *dm = [DataManager sharedDataManager];
     
@@ -51,15 +57,48 @@
     {
         // Deal with error...
     }
+
+    for (Album *a in array) {
+        NSLog(@"Fetched : Disegni %u in Album : %@ ",[a.album2sketch count],a.titolo);
+        
+    }
     
+    
+    [albumArray removeAllObjects];
+
     [albumArray addObjectsFromArray:array];
     
-
+    
 
 }
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+	
+    
+    if ([segue.identifier isEqualToString:@"newAlbum"])
+    {
+        newAlbumViewController * newAlbumView=(newAlbumViewController*) [segue destinationViewController];
+        [newAlbumView setDelegate:self];
+    }
+}
+
+
+-(void)reloadData{
+    
+    [self caricaAlbum];
+    [tableView reloadData];
+    
+}
+
 
 - (void)viewDidLoad
 {
+    AlbumManager *am =[AlbumManager sharedAlbumManager];
+    
+    [am setIstanceOfAlbumViewController:self];
+    
+    albumArray = [[NSMutableArray alloc]init];
+    
     [super viewDidLoad];
     [self caricaAlbum];
     [self creaToolBar];
@@ -68,6 +107,9 @@
 
 - (void)viewDidUnload
 {
+    [self setAddAlbumButtonAction:nil];
+    [self setAddAlbumAction:nil];
+    [self setTableView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -118,6 +160,47 @@
     [am.istanceOfHomeViewController reloadAlbumData];
 
     [self.tabBarController setSelectedIndex:1];
+}
+
+#pragma mark - NewAlbum view delegate
+
+
+- (void)newAlbumViewControllerDidCancel:(newAlbumViewController *)controller
+{
+    [self dismissModalViewControllerAnimated:YES];
+
+}
+
+- (void)newAlbumViewController: (newAlbumViewController *)controller DidAddAlbum:(Album *)album
+{
+    [self dismissModalViewControllerAnimated:YES];
+    [albumArray addObject:album];
+    [tableView reloadData];
+    
+    DataManager *dm = [DataManager sharedDataManager];
+    
+    
+    NSManagedObjectContext *context = [dm managedObjectContext];
+    
+    // Save the context.
+    NSError *error = nil;
+    if (![context save:&error]) {
+        // Replace this implementation with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        abort();
+    }
+
+    
+    
+    
+    
+}
+
+
+- (IBAction)addAlbumAction:(id)sender {
+    
+    [self performSegueWithIdentifier:@"newAlbum" sender:self];
 }
 
 @end
