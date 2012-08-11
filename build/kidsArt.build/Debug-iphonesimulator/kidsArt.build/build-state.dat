@@ -5,28 +5,28 @@ cCheck dependencies
 cProcessInfoPlistFile /Users/andrea/Desktop/kidsArt/build/Debug-iphonesimulator/kidsArt.app/Info.plist sketchkid_Beta/kidsArt-Info.plist
 cProcessPCH /var/folders/sv/2_vrrchj7978cgnc9q4djfqm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/kidsArt-Prefix-ebjaqxvcpaidynattfcsviqjmicc/kidsArt-Prefix.pch.pth sketchkid_Beta/kidsArt-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cDataModelVersionCompile /Users/andrea/Desktop/kidsArt/build/Debug-iphonesimulator/kidsArt.app/sketchkidModel.momd /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../sketchkidModel.xcdatamodeld
+cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/TakePictureViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../TakePictureViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/AlbumViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../AlbumViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/CustomOverlayView.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/CustomOverlayView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/DataManager.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/DataManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/main.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/AppDelegate.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/ViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../sketchkid_Beta/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/UIToolbar+extension.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/UIToolbar+extension.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/HomeViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../sketchkid_Beta/HomeViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/AppDelegate.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/UIImage+Scale.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/UIImage+Scale.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/UIView+PartialCurl.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/UIView+PartialCurl.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/HomeViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../sketchkid_Beta/HomeViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/kidsViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../kidsViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/newKidViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../newKidViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/DataManager.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/DataManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/Kid.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../Kid.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/MyTabBarViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/MyTabBarViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/SegueWithNoAnimation.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/SegueWithNoAnimation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/TakePictureViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../TakePictureViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/AlbumManager.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/AlbumManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/AlbumViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../AlbumViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/CustomOverlayView.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/CustomOverlayView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/AlbumCell.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/AlbumCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/Sketch.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/Sketch.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/SketchManager.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/SketchManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/Album.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/Album.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/EditSketchInfoViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../EditSketchInfoViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/Album.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/Album.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cLd /Users/andrea/Desktop/kidsArt/build/Debug-iphonesimulator/kidsArt.app/kidsArt normal i386
 cGenerateDSYMFile /Users/andrea/Desktop/kidsArt/build/Debug-iphonesimulator/kidsArt.app.dSYM /Users/andrea/Desktop/kidsArt/build/Debug-iphonesimulator/kidsArt.app/kidsArt
 cCopyStringsFile /Users/andrea/Desktop/kidsArt/build/Debug-iphonesimulator/kidsArt.app/en.lproj/InfoPlist.strings sketchkid_Beta/en.lproj/InfoPlist.strings
@@ -39,22 +39,22 @@ cCpResource cameraIcon@2x.png build/Debug-iphonesimulator/kidsArt.app/cameraIcon
 cCpResource albumIcon@2x.png build/Debug-iphonesimulator/kidsArt.app/albumIcon@2x.png
 cCpResource navigationBar@2x.png build/Debug-iphonesimulator/kidsArt.app/navigationBar@2x.png
 cCpResource kidsIcon@2x.png build/Debug-iphonesimulator/kidsArt.app/kidsIcon@2x.png
-cCpResource albumBar@2x.png build/Debug-iphonesimulator/kidsArt.app/albumBar@2x.png
 cCpResource sampleSketch.png build/Debug-iphonesimulator/kidsArt.app/sampleSketch.png
+cCpResource albumBar@2x.png build/Debug-iphonesimulator/kidsArt.app/albumBar@2x.png
 cCpResource addFavorites@2x.png build/Debug-iphonesimulator/kidsArt.app/addFavorites@2x.png
 cCpResource greyBar@2x.png build/Debug-iphonesimulator/kidsArt.app/greyBar@2x.png
 cCpResource backKidsViola.png build/Debug-iphonesimulator/kidsArt.app/backKidsViola.png
 cCpResource strisciaGialla@2x.png build/Debug-iphonesimulator/kidsArt.app/strisciaGialla@2x.png
 cCpResource corniceBimbo@2x.png build/Debug-iphonesimulator/kidsArt.app/corniceBimbo@2x.png
 cCpResource bckInserimento@2x.png build/Debug-iphonesimulator/kidsArt.app/bckInserimento@2x.png
-cCpResource evidenzia@2x.png build/Debug-iphonesimulator/kidsArt.app/evidenzia@2x.png
 cCpResource bottoneSalva@2x.png build/Debug-iphonesimulator/kidsArt.app/bottoneSalva@2x.png
-cCpResource bambinoDefault@2x.png build/Debug-iphonesimulator/kidsArt.app/bambinoDefault@2x.png
+cCpResource evidenzia@2x.png build/Debug-iphonesimulator/kidsArt.app/evidenzia@2x.png
 cCpResource close_x.png build/Debug-iphonesimulator/kidsArt.app/close_x.png
 cCpResource bambinoDefault2@2x.png build/Debug-iphonesimulator/kidsArt.app/bambinoDefault2@2x.png
 cCpResource backAlbumCell.png build/Debug-iphonesimulator/kidsArt.app/backAlbumCell.png
-cCpResource home.jpg build/Debug-iphonesimulator/kidsArt.app/home.jpg
+cCpResource bambinoDefault@2x.png build/Debug-iphonesimulator/kidsArt.app/bambinoDefault@2x.png
 cCpResource tick.aiff build/Debug-iphonesimulator/kidsArt.app/tick.aiff
+cCpResource home.jpg build/Debug-iphonesimulator/kidsArt.app/home.jpg
 cTouch /Users/andrea/Desktop/kidsArt/build/Debug-iphonesimulator/kidsArt.app
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk
@@ -1326,7 +1326,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies12f54af156d5b541^4c354bf156d5b541^---0#1#0#--18"Check dependencies36"46DE1B2C-171B-44E7-87F9-ED0EC72FD80A-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies9f907deb5bd5b541^f609a0eb5bd5b541^---0#1#0#--18"Check dependencies36"A5A5067D-DC42-4D9A-86D6-3B107FACD2E5-
 
 CCompileC build/kidsArt.build/Debug-iphonesimulator/kidsArt.build/Objects-normal/i386/Album.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/Album.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s366302887.849864
