@@ -1,33 +1,23 @@
 //
-//  SelectAlbumViewController.m
+//  SeletKidViewController.m
 //  kidsArt
 //
-//  Created by Andrea Terzani on 10/08/12.
+//  Created by Andrea Terzani on 11/08/12.
 //  Copyright (c) 2012 Andrea Terzani. All rights reserved.
 //
 
-#import "SelectAlbumViewController.h"
+#import "SelectKidViewController.h"
 
-@interface SelectAlbumViewController ()
+@interface SelectKidViewController ()
 
 @end
 
-@implementation SelectAlbumViewController
+@implementation SelectKidViewController
 
--(void)creaToolBar{
-    
-    int toolbarheight=82;
-
-    
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationBar.png"] forBarMetrics:UIBarMetricsDefault];
-}
-
-
-
--(void)caricaAlbum{
+-(void)caricaKid{
     
     
-    albumArray = [[NSMutableArray alloc]init];
+    kidsArray = [[NSMutableArray alloc]init];
     
     DataManager *dm = [DataManager sharedDataManager];
     
@@ -35,13 +25,13 @@
     NSManagedObjectContext *moc = [dm managedObjectContext];
     
     NSEntityDescription *entityDescription = [NSEntityDescription
-                                              entityForName:@"Album" inManagedObjectContext:moc];
+                                              entityForName:@"Kid" inManagedObjectContext:moc];
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entityDescription];
     
     
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc]
-                                        initWithKey:@"order" ascending:YES];
+                                        initWithKey:@"nome" ascending:YES];
     
     [request setSortDescriptors:[NSArray arrayWithObject:sortDescriptor]];
     
@@ -55,27 +45,29 @@
         // Deal with error...
     }
     
-    [albumArray addObjectsFromArray:array];
+    [kidsArray addObjectsFromArray:array];
     
     
     
 }
-
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
-    [self caricaAlbum];
-    [self creaToolBar];
+    [self caricaKid];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 
@@ -89,22 +81,22 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [albumArray count];
+    return [kidsArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"AlbumCell";
+    static NSString *CellIdentifier = @"kidCell";
     
-    AlbumCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    kidCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil) {
-        cell = [[AlbumCell alloc] init];
+        cell = [[kidCell alloc] init];
     }
     
-    Album * t = [albumArray objectAtIndex:indexPath.row];
+    Kid * t = [kidsArray objectAtIndex:indexPath.row];
     
-    [cell initWithAlbum:t];
+    [cell initWithKid:t];
     
     
     return cell;
@@ -115,8 +107,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self.delegate SelectAlbumViewController:self DidSelectAlbum:[albumArray objectAtIndex:indexPath.row]];
+    [self.delegate SelectKidViewControllerr:self DidSelectKid:[kidsArray objectAtIndex:indexPath.row]];
     
     
 }
+
 @end

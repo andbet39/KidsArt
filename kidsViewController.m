@@ -207,6 +207,45 @@
 - (void)GMGridView:(GMGridView *)gridView didTapOnItemAtIndex:(NSInteger)position
 {
     NSLog(@"Did tap at index %d", position);
+    
+    
+    //Crea un album temporaneo inserendo tutti i disegni del bambino selezinato, lo passa alla vista e lo cancella
+    
+    DataManager *dm =[DataManager sharedDataManager];
+    Kid * selectedKid= [kidsArray objectAtIndex:position];
+    
+    Album *disegniDiAlbum = (Album *)[NSEntityDescription insertNewObjectForEntityForName:@"Album" inManagedObjectContext:dm.managedObjectContext];
+    disegniDiAlbum.titolo=[NSString stringWithFormat:@"Disegni di %@",selectedKid.nome];
+    disegniDiAlbum.order=[NSDecimalNumber numberWithInt:1000];
+    disegniDiAlbum.dataCreazione=[NSDate date];
+    
+    
+    NSManagedObjectContext *moc = [dm managedObjectContext];
+    
+    NSEntityDescription *entityDescription = [NSEntityDescription
+                                              entityForName:@"Sketch" inManagedObjectContext:moc];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    
+    [request setPredicate:[NSPredicate predicateWithFormat:@"kid == %@",selectedKid]];
+    
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc]
+                                        initWithKey:@"data" ascending:NO];
+    
+    [request setSortDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+    
+    NSError *error = nil;
+    NSArray *array = [moc executeFetchRequest:request error:&error];
+    
+    [disegniDiAlbum addAlbum2sketch:[NSSet setWithArray:array]];
+    
+    AlbumManager *am = [AlbumManager sharedAlbumManager];
+    [am setSelectedAlbum:disegniDiAlbum];
+    [am.istanceOfHomeViewController reloadAlbumData];
+    
+    [dm.managedObjectContext deleteObject:disegniDiAlbum];
+    [self.tabBarController setSelectedIndex:1];
+    
 }
 
 - (void)GMGridViewDidTapOnEmptySpace:(GMGridView *)gridView
