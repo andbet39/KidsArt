@@ -33,28 +33,34 @@
         
         
         UIButton *cancelButton=[UIButton buttonWithType:UIButtonTypeCustom];
-        cancelButton.frame=CGRectMake(10, 385, 130, 100);
-        UIImage *buttonImageCancel=[UIImage imageNamed:@"close_x.png"];
+        cancelButton.frame=CGRectMake(3, 403, 100, 90);
+        UIImage *buttonImageCancel=[UIImage imageNamed:@"cancelCameraIcon.png"];
         [cancelButton setImage:buttonImageCancel forState:UIControlStateNormal];
         [cancelButton setImage:buttonImageCancel forState:UIControlStateDisabled];
         [cancelButton addTarget:self action:@selector(cancelButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:cancelButton];
         
         UIButton *doneButton=[UIButton buttonWithType:UIButtonTypeCustom];
-        doneButton.frame=CGRectMake(190, 385, 130, 100);
-        UIImage *doneButtonImage=[UIImage imageNamed:@"close_x.png"];
+        doneButton.frame=CGRectMake(203, 395, 130, 100);
+        UIImage *doneButtonImage=[UIImage imageNamed:@"savePhotosIcon.png"];
         [doneButton setImage:doneButtonImage forState:UIControlStateNormal];
         [doneButton setImage:doneButtonImage forState:UIControlStateDisabled];
         [doneButton addTarget:self action:@selector(doneButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:doneButton];
         
         
+        CGRect badgeFrame = CGRectMake(248, 397, 40, 40);
+        
+        self.counterBadge = [[MKNumberBadgeView alloc]initWithFrame:badgeFrame];
+        [self.counterBadge setValue:0];
+        [self addSubview:self.counterBadge];
+        
         //TODO: L' indicatore non è visibile! Da correggere...
         
         self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
         self.spinner.alpha = 1.0;
-        self.spinner.center = CGPointMake(160, 240);
-        self.spinner.hidesWhenStopped = YES;
+        self.spinner.frame=badgeFrame;
+        self.spinner.hidesWhenStopped = NO;
 
         [self addSubview:self.spinner];
 
@@ -91,6 +97,7 @@
 
 - (void)takePicture:(id)sender
 {
+    [self.counterBadge setValue:self.counterBadge.value+1];
     [self.delegate CustomOverlaytakePicture];
 }
 

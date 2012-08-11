@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MKNumberBadgeView.h"
+
 
 @class CustomOverlayView;
 
@@ -22,6 +24,7 @@
 @property (strong,nonatomic) id <CustomOverlayViewDelegate>   delegate;
 @property (nonatomic, weak) UIButton *pictureButton;
 @property (nonatomic,weak)UIActivityIndicatorView * spinner;
+@property (nonatomic,retain)MKNumberBadgeView *counterBadge;
 -(void)startSpinner;
 
 -(void)stopSpinner;

@@ -64,6 +64,9 @@
 		65FA96EB15D030CC00AC0CCD /* Kid.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA96EA15D030CC00AC0CCD /* Kid.m */; };
 		65FA97A415D05EAC00AC0CCD /* close_x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA97A315D05EAC00AC0CCD /* close_x.png */; };
 		65FA97A615D0697B00AC0CCD /* bambinoDefault2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA97A515D0697B00AC0CCD /* bambinoDefault2@2x.png */; };
+		B5FF1BFB15D63F0A004D42AF /* cancelCameraIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5FF1BF915D63F0A004D42AF /* cancelCameraIcon@2x.png */; };
+		B5FF1BFC15D63F0A004D42AF /* savePhotosIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5FF1BFA15D63F0A004D42AF /* savePhotosIcon@2x.png */; };
+		B5FF1C0215D6431C004D42AF /* MKNumberBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FF1C0115D6431B004D42AF /* MKNumberBadgeView.m */; settings = {COMPILER_FLAGS = " -fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,6 +163,10 @@
 		65FA96EA15D030CC00AC0CCD /* Kid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Kid.m; path = ../Kid.m; sourceTree = "<group>"; };
 		65FA97A315D05EAC00AC0CCD /* close_x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_x.png; sourceTree = "<group>"; };
 		65FA97A515D0697B00AC0CCD /* bambinoDefault2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bambinoDefault2@2x.png"; sourceTree = "<group>"; };
+		B5FF1BF915D63F0A004D42AF /* cancelCameraIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancelCameraIcon@2x.png"; sourceTree = "<group>"; };
+		B5FF1BFA15D63F0A004D42AF /* savePhotosIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "savePhotosIcon@2x.png"; sourceTree = "<group>"; };
+		B5FF1C0015D6431B004D42AF /* MKNumberBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNumberBadgeView.h; sourceTree = "<group>"; };
+		B5FF1C0115D6431B004D42AF /* MKNumberBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNumberBadgeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +277,8 @@
 		65FA968A15CD2AF200AC0CCD /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B5FF1BF915D63F0A004D42AF /* cancelCameraIcon@2x.png */,
+				B5FF1BFA15D63F0A004D42AF /* savePhotosIcon@2x.png */,
 				65D4624615D302FE00B79679 /* backAlbumCell.png */,
 				65FA97A315D05EAC00AC0CCD /* close_x.png */,
 				65FA96E115D02B2900AC0CCD /* bckInserimento@2x.png */,
@@ -327,6 +336,8 @@
 		65FA96C615CE473400AC0CCD /* helper */ = {
 			isa = PBXGroup;
 			children = (
+				B5FF1C0015D6431B004D42AF /* MKNumberBadgeView.h */,
+				B5FF1C0115D6431B004D42AF /* MKNumberBadgeView.m */,
 				65D4625C15D31CCD00B79679 /* CustomOverlayView.h */,
 				65D4625D15D31CCE00B79679 /* CustomOverlayView.m */,
 				65D461DA15D1882F00B79679 /* MyTabBarViewController.h */,
@@ -458,6 +469,8 @@
 				65D4624715D302FE00B79679 /* backAlbumCell.png in Resources */,
 				65D4625815D3108100B79679 /* tick.aiff in Resources */,
 				65D4627A15D450D400B79679 /* home.jpg in Resources */,
+				B5FF1BFB15D63F0A004D42AF /* cancelCameraIcon@2x.png in Resources */,
+				B5FF1BFC15D63F0A004D42AF /* savePhotosIcon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +506,7 @@
 				65D4628A15D5519500B79679 /* EditSketchInfoViewController.m in Sources */,
 				65B7289A15D564AF0025D692 /* SelectAlbumViewController.m in Sources */,
 				65B7289D15D569E50025D692 /* newAlbumViewController.m in Sources */,
+				B5FF1C0215D6431C004D42AF /* MKNumberBadgeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
