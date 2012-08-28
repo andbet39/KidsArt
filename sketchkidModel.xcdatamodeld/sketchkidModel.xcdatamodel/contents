@@ -27,8 +27,8 @@
         <relationship name="kid" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Kid" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Album" positionX="0" positionY="0" width="128" height="133"/>
-        <element name="Kid" positionX="-146" positionY="-180" width="128" height="118"/>
-        <element name="Sketch" positionX="-423" positionY="27" width="128" height="178"/>
+        <element name="Album" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Kid" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Sketch" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>
