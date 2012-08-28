@@ -16,6 +16,10 @@
 		<data>
 		3+OTl7+szu8GvQCIXPPrnqpSi+A=
 		</data>
+		<key>adjustView.nib</key>
+		<data>
+		ias/HzevpgrOLHWNjwfl2ae+os0=
+		</data>
 		<key>albumBar@2x.png</key>
 		<data>
 		en/ANX1gblGrkP8Wbq0iJuTVOFg=
@@ -36,6 +40,10 @@
 		<data>
 		SOV31JSpMHaNHA+jZOgp/P7+0jM=
 		</data>
+		<key>backgroundSubView@2x.png</key>
+		<data>
+		Ey0KRt68UxIWMRMFSZgmATJsG3g=
+		</data>
 		<key>bambinoDefault2@2x.png</key>
 		<data>
 		6pe1FSfKXxLGs3O/Ut73HHBytfw=
@@ -52,17 +60,33 @@
 		<data>
 		Fy/fxneUQYXPDIp2TCxuNcVExW0=
 		</data>
+		<key>brightnessIcon@2x.png</key>
+		<data>
+		DsZ8bb8ipMSTKoWuhjQ8FAVKvrI=
+		</data>
 		<key>cameraIcon@2x.png</key>
 		<data>
 		MPyXQ9PNMe1lUrbgYEWEGg29pmE=
+		</data>
+		<key>cancelCameraIcon@2x.png</key>
+		<data>
+		jPLec8LjBLkXJU9HAAgHTiV04eQ=
 		</data>
 		<key>close_x.png</key>
 		<data>
 		lEkCIti9ufuC9bOWjmpd3L1x1pU=
 		</data>
+		<key>colorIcon@2x.png</key>
+		<data>
+		6qNhL+3idAd2G6fKXeZda3KbXEQ=
+		</data>
 		<key>corniceBimbo@2x.png</key>
 		<data>
 		vQ1RztuRFYWgU6ZQrJ1wi1E3DLY=
+		</data>
+		<key>deleteIcon@2x.png</key>
+		<data>
+		97jqKgCNcxdM7pAS0vO6tvra3YM=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -74,71 +98,75 @@
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/2-view-3.nib</key>
 		<data>
-		94rJwEAI3/FWB+DM8STXa+5X8s0=
+		qkJnNqA238mP2ZdbzEHsSSKDoGY=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/6YJ-xl-Uxc-view-0eA-4o-xhg.nib</key>
 		<data>
-		5otIm75vHy8wg971KiIPKgYxO8w=
+		+H+8XJE4zdTG6S7jK4rWYWy/lzA=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/8Ea-gE-c9f-view-KIl-es-cYL.nib</key>
 		<data>
-		cdwdfXztr4WDuYmtScmv7Z0EOU0=
+		MgDNgB8SoO+O96k6s5FwgwzhcQs=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/9oc-5O-Z59-view-mcZ-iJ-dbw.nib</key>
 		<data>
-		0EKPQKzLMAlgcMnWt3xwVECDQQU=
+		Qp17LGn7F15drEvCpao4ASawUd8=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/DZX-cU-oRx-view-zpu-WO-3o2.nib</key>
 		<data>
-		BUbRQLpvD58NU1UmLUZ6eL+izmg=
+		Rc/752MzRarfvWCOHVJQQB9QLTI=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/E14-3j-3Bj-view-hhX-6V-Xp1.nib</key>
 		<data>
-		1PX1YeEoxMplMx6xXNW5B0f3iH8=
+		MritTs2KIPaKs4D9ZZphwtievJ0=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/FG6-eg-QOy-view-IvM-tn-I0j.nib</key>
 		<data>
-		ij6jRI47drkNZXNv+CZa4Mu/WQM=
+		8FG09XehviFmZ29yImEBkd61UsE=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/IeE-Hz-Y0C-view-jj7-XM-dGt.nib</key>
 		<data>
-		x2/peLYg9skHphsd72WITze5peU=
+		tVZGTIk2TQHaFGg1ENeUmyydrH8=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-9oc-5O-Z59.nib</key>
 		<data>
-		Fqsc+FkKOfHnMw4MipMgRKmclOc=
+		SluVhEIMry7l0QANTh6aZkR3uC0=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-E14-3j-3Bj.nib</key>
 		<data>
-		zJWm6opuR6sAgurVl9IO6NU5n5c=
+		oRH62Tvc4vowjpny68gqQU4mhHQ=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-EkR-17-Hb7.nib</key>
 		<data>
-		gW+HRO4NmZA3N30vYQkR+laaZfs=
+		FCaTnkLURCLTemTNlNeadqFgekc=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-FG6-eg-QOy.nib</key>
 		<data>
-		7Bv0hTCE7nen9IrbSxN3w84ideg=
+		tSfutPjeULf5nBebE4ja8/IXaY0=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-IeE-Hz-Y0C.nib</key>
 		<data>
-		rKG1BGv045VHDPU1WxQWa3bcpNk=
+		FCvekt77oLEtBDOfUHsyAQCc6gM=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-eCh-QQ-g85.nib</key>
 		<data>
-		+7uD8UtyM4NskTZ5JVVvFlxFE2c=
+		ns7OqLr6DTkGZEW4Ja3m4qls+ZU=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-roJ-jj-mcN.nib</key>
 		<data>
-		3yAYE8PfacAZglNfZ30SeswI85U=
+		AGWbqIIQoYUFEzpGEnG47mWmg70=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/roJ-jj-mcN-view-Z9s-6F-yIR.nib</key>
 		<data>
-		+XB9l9B6I4biNFIGhafHOb6qZMM=
+		q1pVZP/y2L8I/A+7MUyrhiwIePo=
 		</data>
 		<key>evidenzia@2x.png</key>
 		<data>
 		3JWeDuJcBMT3p89vwst3uNc9waw=
+		</data>
+		<key>frameIcon@2x.png</key>
+		<data>
+		r6jXaAA6l2PaN+G4GnV4FQ+e5yU=
 		</data>
 		<key>greyBar@2x.png</key>
 		<data>
@@ -163,6 +191,14 @@
 		<key>sampleSketch.png</key>
 		<data>
 		FTcnUGi5qccBm2YwgMmZlusbzpw=
+		</data>
+		<key>savePhotosIcon@2x.png</key>
+		<data>
+		u817Io8Rgz0omZUSXkdt8Pr3iaU=
+		</data>
+		<key>shareIcon@2x.png</key>
+		<data>
+		Td4S9R6bQZIVzCCDWzpSAzjO/sg=
 		</data>
 		<key>sketchkidModel.momd/sketchkidModel.mom</key>
 		<data>

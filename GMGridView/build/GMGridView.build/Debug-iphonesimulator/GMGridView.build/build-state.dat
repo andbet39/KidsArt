@@ -3,20 +3,20 @@ v5
 r1
 cCheck dependencies
 cCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.o /Users/andrea/Desktop/kidsArt/GMGridView/GMGridView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewLayoutStrategies.o /Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewLayoutStrategies.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewCell.o /Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewLayoutStrategies.o /Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewLayoutStrategies.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIGestureRecognizer+GMGridViewAdditions.o /Users/andrea/Desktop/kidsArt/GMGridView/UIGestureRecognizer+GMGridViewAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIView+GMGridViewAdditions.o /Users/andrea/Desktop/kidsArt/GMGridView/UIView+GMGridViewAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cLibtool /Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/libGMGridView.a normal i386
 cCpHeader GMGridView-Constants.h build/Debug-iphonesimulator/usr/local/include/GMGridView-Constants.h
-cCpHeader GMGridView.h build/Debug-iphonesimulator/usr/local/include/GMGridView.h
 cCpHeader GMGridViewCell.h build/Debug-iphonesimulator/usr/local/include/GMGridViewCell.h
+cCpHeader GMGridView.h build/Debug-iphonesimulator/usr/local/include/GMGridView.h
 cCpHeader GMGridViewCell+Extended.h build/Debug-iphonesimulator/usr/local/include/GMGridViewCell+Extended.h
 cCpHeader GMGridViewLayoutStrategies.h build/Debug-iphonesimulator/usr/local/include/GMGridViewLayoutStrategies.h
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk
-c000000004F453DF80000000000000110
-t1329937912
+c000000005031FABA0000000000000110
+t1345452730
 s272
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
@@ -209,7 +209,7 @@ t1336214824
 s2582
 
 N/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/libGMGridView.a
-t1344610108
+t1346143958
 s600720
 
 N/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/usr/local/include/GMGridView-Constants.h
@@ -289,7 +289,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies376df2ea5bd5b541^309d7aeb5bd5b541^---0#1#0#--18"Check dependencies36"99186842-6B46-4FAB-953E-6DA5FAEBE901-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies92e7c2fbdbecb541^7e1ac3fbdbecb541^---0#1#0#--18"Check dependencies36"2436E0AA-BC92-4BDF-857F-54B9170CF02C-
 
 CCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.o /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s365970117.662103
@@ -478,13 +478,13 @@ o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Libtool build/Debug-iphonesimulator/libGMGridView.a normal i38668b124c642d0b541^889d35c642d0b541^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#0#--1090"Libtool build/Debug-iphonesimulator/libGMGridView.a normal i386    cd /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -L/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator -filelist /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.LinkFileList -ObjC -framework Foundation -framework QuartzCore -framework UIKit -framework CoreGraphics -o /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphonesimulator/libGMGridView.a36"234A545F-D327-4022-8E81-947568E0B1FD-
 
 CLibtool /Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/libGMGridView.a normal i386
-s366302908.022008
-e366302908.048059
+s367836757.341165
+e367836758.083810
 r1
 xLibtool
 x/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/libGMGridView.a
 xnormal
 xi386
 o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Libtool build/Debug-iphonesimulator/libGMGridView.a normal i386bbb405bc56d5b541^807d0cbc56d5b541^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#0#--1006"Libtool build/Debug-iphonesimulator/libGMGridView.a normal i386    cd /Users/andrea/Desktop/kidsArt/GMGridView    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -L/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator -filelist /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.LinkFileList -ObjC -framework Foundation -framework QuartzCore -framework UIKit -framework CoreGraphics -o /Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/libGMGridView.a36"4DEB2CEE-6BE9-4F68-8B53-46D3C59EF8CD-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Libtool build/Debug-iphonesimulator/libGMGridView.a normal i386fe9e5855beecb541^92971556beecb541^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#0#--1006"Libtool build/Debug-iphonesimulator/libGMGridView.a normal i386    cd /Users/andrea/Desktop/kidsArt/GMGridView    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -L/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator -filelist /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.LinkFileList -ObjC -framework Foundation -framework QuartzCore -framework UIKit -framework CoreGraphics -o /Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/libGMGridView.a36"01ACF620-2148-47CD-81B2-8958DCE803BC-
 

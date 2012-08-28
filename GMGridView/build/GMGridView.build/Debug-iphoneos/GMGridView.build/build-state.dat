@@ -7,11 +7,11 @@ cCompileC build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/
 cCompileC build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/GMGridViewLayoutStrategies.o /Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewLayoutStrategies.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/UIGestureRecognizer+GMGridViewAdditions.o /Users/andrea/Desktop/kidsArt/GMGridView/UIGestureRecognizer+GMGridViewAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/UIView+GMGridViewAdditions.o /Users/andrea/Desktop/kidsArt/GMGridView/UIView+GMGridViewAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/GMGridView.o /Users/andrea/Desktop/kidsArt/GMGridView/GMGridView.m normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/GMGridViewCell.o /Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewCell.m normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/GMGridView.o /Users/andrea/Desktop/kidsArt/GMGridView/GMGridView.m normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/GMGridViewLayoutStrategies.o /Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewLayoutStrategies.m normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/UIView+GMGridViewAdditions.o /Users/andrea/Desktop/kidsArt/GMGridView/UIView+GMGridViewAdditions.m normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/UIGestureRecognizer+GMGridViewAdditions.o /Users/andrea/Desktop/kidsArt/GMGridView/UIGestureRecognizer+GMGridViewAdditions.m normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/UIView+GMGridViewAdditions.o /Users/andrea/Desktop/kidsArt/GMGridView/UIView+GMGridViewAdditions.m normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cLibtool /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/libGMGridView.a normal armv7
 cLibtool /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/libGMGridView.a normal armv6
 cCreateUniversalBinary /Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphoneos/libGMGridView.a normal "armv7 armv6"
@@ -22,8 +22,8 @@ cCpHeader GMGridViewCell+Extended.h build/Debug-iphoneos/usr/local/include/GMGri
 cCpHeader GMGridViewLayoutStrategies.h build/Debug-iphoneos/usr/local/include/GMGridViewLayoutStrategies.h
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk
-c000000004F453DF20000000000000110
-t1329937906
+c000000005031FA6C0000000000000110
+t1345452652
 s272
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
@@ -249,7 +249,7 @@ t1336214824
 s2582
 
 N/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphoneos/libGMGridView.a
-t1344617979
+t1346151682
 s1148224
 
 N/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphoneos/usr/local/include/GMGridView-Constants.h
@@ -298,7 +298,7 @@ t1344617979
 s70960
 
 N/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/libGMGridView.a
-t1344617979
+t1346151682
 s568992
 
 N/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/GMGridView.LinkFileList
@@ -327,7 +327,7 @@ t1344617978
 s70788
 
 N/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/libGMGridView.a
-t1344617979
+t1346151682
 s579184
 
 CBuild AST from /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridView.m
@@ -362,7 +362,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesd385b4128ed5b541^55bdb4128ed5b541^---0#1#0#--18"Check dependencies36"2648717D-D16A-4DE8-B65A-AC39022F8440-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies261b3b9edcecb541^3dee439edcecb541^---0#1#0#--18"Check dependencies36"2F9DF7E6-5B30-4D4D-B663-32AA0D3E1621-
 
 CCompileC build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/GMGridView.o /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridView.m normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s365982960.419839
@@ -680,14 +680,14 @@ xarmv7 armv6
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection122"Create universal binary /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphoneos/libGMGridView.afab303f174d0b541^69e512f174d0b541^---0#0#0#-19%DVTDocumentLocation2@114"file://localhost/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphoneos/libGMGridView.a000000000080d041^767"CreateUniversalBinary build/Debug-iphoneos/libGMGridView.a normal "armv7 armv6"    cd /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    libtool -static /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/libGMGridView.a /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/libGMGridView.a -o /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphoneos/libGMGridView.a36"5FFBA61E-59CA-476B-B4F6-8CEFC5EF8D8F-
 
 CCreateUniversalBinary /Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphoneos/libGMGridView.a normal "armv7 armv6"
-s366310779.329536
-e366310779.865122
+s367844482.720198
+e367844482.809686
 r1
 xCreateUniversalBinary
 x/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphoneos/libGMGridView.a
 xnormal
 xarmv7 armv6
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Create universal binary /Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphoneos/libGMGridView.a596b547b75d5b541^6078dd7b75d5b541^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphoneos/libGMGridView.a0000000000000000^683"CreateUniversalBinary build/Debug-iphoneos/libGMGridView.a normal "armv7 armv6"    cd /Users/andrea/Desktop/kidsArt/GMGridView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    libtool -static /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/libGMGridView.a /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/libGMGridView.a -o /Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphoneos/libGMGridView.a36"A86AEDE3-3062-46B5-B090-B73FD93BA2B5-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Create universal binary /Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphoneos/libGMGridView.ac16eb882dcecb541^e947cf82dcecb541^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphoneos/libGMGridView.a0000000000000000^683"CreateUniversalBinary build/Debug-iphoneos/libGMGridView.a normal "armv7 armv6"    cd /Users/andrea/Desktop/kidsArt/GMGridView    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    libtool -static /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/libGMGridView.a /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/libGMGridView.a -o /Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphoneos/libGMGridView.a36"A679133C-2B53-4B19-AF72-8540FD597963-
 
 CLibtool /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/libGMGridView.a normal armv6
 s365982960.997217
@@ -712,24 +712,24 @@ o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Libtool build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/libGMGridView.a normal armv7e59de7f074d0b541^3068f9f074d0b541^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#0#--1155"Libtool build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/libGMGridView.a normal armv7    cd /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -L/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/Debug-iphoneos -filelist /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/GMGridView.LinkFileList -ObjC -framework Foundation -framework QuartzCore -framework UIKit -framework CoreGraphics -o /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/libGMGridView.a36"2EE630D3-B434-4115-9853-D36CC923D0F9-
 
 CLibtool /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/libGMGridView.a normal armv6
-s366310779.152241
-e366310779.322887
+s367844482.647307
+e367844482.713689
 r1
 xLibtool
 x/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/libGMGridView.a
 xnormal
 xarmv6
 o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Libtool build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/libGMGridView.a normal armv6c30e277b75d5b541^8aab527b75d5b541^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#0#--1071"Libtool build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/libGMGridView.a normal armv6    cd /Users/andrea/Desktop/kidsArt/GMGridView    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv6 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -L/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphoneos -filelist /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/GMGridView.LinkFileList -ObjC -framework Foundation -framework QuartzCore -framework UIKit -framework CoreGraphics -o /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/libGMGridView.a36"BDE93F0C-EE04-4126-AAD3-8643A1AE726B-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Libtool build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/libGMGridView.a normal armv626c7a582dcecb541^c4b5b682dcecb541^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#0#--1071"Libtool build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/libGMGridView.a normal armv6    cd /Users/andrea/Desktop/kidsArt/GMGridView    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv6 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -L/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphoneos -filelist /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/GMGridView.LinkFileList -ObjC -framework Foundation -framework QuartzCore -framework UIKit -framework CoreGraphics -o /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv6/libGMGridView.a36"D24777B7-17D6-475F-824A-B70BE21AF93E-
 
 CLibtool /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/libGMGridView.a normal armv7
-s366310778.954073
-e366310779.083582
+s367844482.647044
+e367844482.712612
 r1
 xLibtool
 x/Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/libGMGridView.a
 xnormal
 xarmv7
 o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Libtool build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/libGMGridView.a normal armv7e34ff47a75d5b541^f166157b75d5b541^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#0#--1071"Libtool build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/libGMGridView.a normal armv7    cd /Users/andrea/Desktop/kidsArt/GMGridView    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -L/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphoneos -filelist /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/GMGridView.LinkFileList -ObjC -framework Foundation -framework QuartzCore -framework UIKit -framework CoreGraphics -o /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/libGMGridView.a36"330AC5A8-4773-4720-AE1F-D8E44F3034A7-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Libtool build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/libGMGridView.a normal armv780baa582dcecb541^6a6db682dcecb541^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#0#--1071"Libtool build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/libGMGridView.a normal armv7    cd /Users/andrea/Desktop/kidsArt/GMGridView    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -L/Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphoneos -filelist /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/GMGridView.LinkFileList -ObjC -framework Foundation -framework QuartzCore -framework UIKit -framework CoreGraphics -o /Users/andrea/Desktop/kidsArt/GMGridView/build/GMGridView.build/Debug-iphoneos/GMGridView.build/Objects-normal/armv7/libGMGridView.a36"AC3A883F-13D8-4302-816D-4FA698DD4B48-
 
