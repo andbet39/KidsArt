@@ -14,4 +14,8 @@
     #import <CoreData/CoreData.h>
     #import "AlbumManager.h"
     #import "DataManager.h"
+
+#define scale_factor 5
+
 #endif
+

@@ -8,7 +8,7 @@
 
 #import "TakePictureViewController.h"
 
-#define scale_factor 15
+#define scale_factor 5
 
 @interface TakePictureViewController ()
 {
@@ -33,7 +33,7 @@
     Sketch *sketch = (Sketch *)[NSEntityDescription insertNewObjectForEntityForName:@"Sketch" inManagedObjectContext:dm.managedObjectContext];
     
     
-    UIImage *image = finalImage;
+    UIImage *image = [finalImage scaleToSize:CGSizeMake(1024/1.15,768/1.15 )];
     NSData *imageData = UIImageJPEGRepresentation(image, 0.8);
     
     NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
@@ -59,7 +59,7 @@
     
     //Salva il file dell' immmagine piccola
     UIImage *smallSketch = [image scaleToSize:CGSizeMake(image.size.width/scale_factor, image.size.height/scale_factor)];
-    NSData *imageDataSmall = UIImageJPEGRepresentation(smallSketch, 0.6);
+    NSData *imageDataSmall = UIImageJPEGRepresentation(smallSketch, 0.5);
     
     NSString *imageNameSmall = [NSString stringWithFormat:@"sketch-%@-small.png",
                                 [dateFormatter stringFromDate:[NSDate date]]];
