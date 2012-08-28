@@ -28,7 +28,6 @@
 		65D4624715D302FE00B79679 /* backAlbumCell.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D4624615D302FE00B79679 /* backAlbumCell.png */; };
 		65D4625815D3108100B79679 /* tick.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 65D4625715D3108100B79679 /* tick.aiff */; };
 		65D4625E15D31CCE00B79679 /* CustomOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4625D15D31CCE00B79679 /* CustomOverlayView.m */; };
-		65D4627815D42B6A00B79679 /* Sketch.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4627715D42B6A00B79679 /* Sketch.m */; };
 		65D4627A15D450D400B79679 /* home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65D4627915D450D400B79679 /* home.jpg */; };
 		65D4628015D543A500B79679 /* SketchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4627F15D543A500B79679 /* SketchManager.m */; };
 		65D4628315D5451600B79679 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D4628215D5451600B79679 /* Album.m */; };
@@ -74,6 +73,9 @@
 		65FA96EB15D030CC00AC0CCD /* Kid.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA96EA15D030CC00AC0CCD /* Kid.m */; };
 		65FA97A415D05EAC00AC0CCD /* close_x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA97A315D05EAC00AC0CCD /* close_x.png */; };
 		65FA97A615D0697B00AC0CCD /* bambinoDefault2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FA97A515D0697B00AC0CCD /* bambinoDefault2@2x.png */; };
+		B5075FB615D6BCC400B28FA1 /* SelectKidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5075FB515D6BCC400B28FA1 /* SelectKidViewController.m */; };
+		B5075FB915D6BDFB00B28FA1 /* kidCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5075FB815D6BDFB00B28FA1 /* kidCell.m */; };
+		B5075FBC15D6C0E900B28FA1 /* Sketch.m in Sources */ = {isa = PBXBuildFile; fileRef = B5075FBB15D6C0E900B28FA1 /* Sketch.m */; };
 		B5FF1BFB15D63F0A004D42AF /* cancelCameraIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5FF1BF915D63F0A004D42AF /* cancelCameraIcon@2x.png */; };
 		B5FF1BFC15D63F0A004D42AF /* savePhotosIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5FF1BFA15D63F0A004D42AF /* savePhotosIcon@2x.png */; };
 		B5FF1C0215D6431C004D42AF /* MKNumberBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FF1C0115D6431B004D42AF /* MKNumberBadgeView.m */; settings = {COMPILER_FLAGS = " -fno-objc-arc"; }; };
@@ -122,8 +124,6 @@
 		65D4625715D3108100B79679 /* tick.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = tick.aiff; sourceTree = "<group>"; };
 		65D4625C15D31CCD00B79679 /* CustomOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomOverlayView.h; sourceTree = "<group>"; };
 		65D4625D15D31CCE00B79679 /* CustomOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomOverlayView.m; sourceTree = "<group>"; };
-		65D4627615D42B6A00B79679 /* Sketch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sketch.h; sourceTree = "<group>"; };
-		65D4627715D42B6A00B79679 /* Sketch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sketch.m; sourceTree = "<group>"; };
 		65D4627915D450D400B79679 /* home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home.jpg; sourceTree = "<group>"; };
 		65D4627E15D543A500B79679 /* SketchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchManager.h; sourceTree = "<group>"; };
 		65D4627F15D543A500B79679 /* SketchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SketchManager.m; sourceTree = "<group>"; };
@@ -185,6 +185,12 @@
 		65FA96EA15D030CC00AC0CCD /* Kid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Kid.m; path = ../Kid.m; sourceTree = "<group>"; };
 		65FA97A315D05EAC00AC0CCD /* close_x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_x.png; sourceTree = "<group>"; };
 		65FA97A515D0697B00AC0CCD /* bambinoDefault2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bambinoDefault2@2x.png"; sourceTree = "<group>"; };
+		B5075FB415D6BCC400B28FA1 /* SelectKidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectKidViewController.h; sourceTree = "<group>"; };
+		B5075FB515D6BCC400B28FA1 /* SelectKidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectKidViewController.m; sourceTree = "<group>"; };
+		B5075FB715D6BDFB00B28FA1 /* kidCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kidCell.h; sourceTree = "<group>"; };
+		B5075FB815D6BDFB00B28FA1 /* kidCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kidCell.m; sourceTree = "<group>"; };
+		B5075FBA15D6C0E900B28FA1 /* Sketch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sketch.h; sourceTree = "<group>"; };
+		B5075FBB15D6C0E900B28FA1 /* Sketch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sketch.m; sourceTree = "<group>"; };
 		B5FF1BF915D63F0A004D42AF /* cancelCameraIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancelCameraIcon@2x.png"; sourceTree = "<group>"; };
 		B5FF1BFA15D63F0A004D42AF /* savePhotosIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "savePhotosIcon@2x.png"; sourceTree = "<group>"; };
 		B5FF1C0015D6431B004D42AF /* MKNumberBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNumberBadgeView.h; sourceTree = "<group>"; };
@@ -237,6 +243,8 @@
 			children = (
 				65D4624315D2F85900B79679 /* AlbumCell.h */,
 				65D4624415D2F85900B79679 /* AlbumCell.m */,
+				B5075FB715D6BDFB00B28FA1 /* kidCell.h */,
+				B5075FB815D6BDFB00B28FA1 /* kidCell.m */,
 			);
 			name = TableCell;
 			sourceTree = "<group>";
@@ -377,6 +385,8 @@
 				65B7289915D564AF0025D692 /* SelectAlbumViewController.m */,
 				65B7289B15D569E50025D692 /* newAlbumViewController.h */,
 				65B7289C15D569E50025D692 /* newAlbumViewController.m */,
+				B5075FB415D6BCC400B28FA1 /* SelectKidViewController.h */,
+				B5075FB515D6BCC400B28FA1 /* SelectKidViewController.m */,
 			);
 			name = viewController;
 			path = ..;
@@ -411,10 +421,10 @@
 				65FA96D215CE561900AC0CCD /* sketchkidModel.xcdatamodeld */,
 				65FA96E915D030CC00AC0CCD /* Kid.h */,
 				65FA96EA15D030CC00AC0CCD /* Kid.m */,
-				65D4627615D42B6A00B79679 /* Sketch.h */,
-				65D4627715D42B6A00B79679 /* Sketch.m */,
 				65D4628115D5451600B79679 /* Album.h */,
 				65D4628215D5451600B79679 /* Album.m */,
+				B5075FBA15D6C0E900B28FA1 /* Sketch.h */,
+				B5075FBB15D6C0E900B28FA1 /* Sketch.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -558,7 +568,6 @@
 				65D4620415D2F66300B79679 /* AlbumViewController.m in Sources */,
 				65D4624515D2F85900B79679 /* AlbumCell.m in Sources */,
 				65D4625E15D31CCE00B79679 /* CustomOverlayView.m in Sources */,
-				65D4627815D42B6A00B79679 /* Sketch.m in Sources */,
 				65D4628015D543A500B79679 /* SketchManager.m in Sources */,
 				65D4628315D5451600B79679 /* Album.m in Sources */,
 				65D4628A15D5519500B79679 /* EditSketchInfoViewController.m in Sources */,

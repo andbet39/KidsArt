@@ -229,7 +229,7 @@
 
 
     
-    CGRect corniceRect= CGRectMake(5, size.height-150, size.width-5, 135);
+    CGRect corniceRect= CGRectMake(0, 0, 140, 150);
     
     
     UIImageView *cornice =[[UIImageView alloc]initWithFrame:corniceRect];
@@ -239,7 +239,7 @@
     
     
     
-    CGRect fotoRect= CGRectMake(22, size.height-135, size.width-38, 90);
+    CGRect fotoRect= CGRectMake(13,15, 114, 102);
     
     
     NSData *data = [[NSData alloc] initWithContentsOfFile:currentSketch.pathSmall];

@@ -10,7 +10,7 @@
 #import "SketchManager.h"
 #import "Sketch.h"
 #import "SelectAlbumViewController.h"
-
+#import "SelectKidViewController.h"
 @interface EditSketchInfoViewController : UIViewController <SelectAlbumViewControllerDelegate>
 {
 
@@ -18,9 +18,11 @@
     
 }
 
+@property (weak, nonatomic) IBOutlet UIButton *addBambinoButton;
 @property (nonatomic,strong)  Sketch * editSketch;
 
 @property (weak, nonatomic) IBOutlet UILabel *albumNameLabel;
 
 - (IBAction)addToAlbumAction:(id)sender;
+- (IBAction)selectKidButtonAction:(id)sender;
 @end
