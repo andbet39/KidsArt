@@ -17,6 +17,7 @@
 @synthesize frameButton;
 @synthesize adjustButton;
 @synthesize fintaNavigationBar;
+@synthesize mainView;
 @synthesize toolBar;
 @synthesize penButton;
 @synthesize shareButton;
@@ -37,18 +38,18 @@
     [penButton setBackgroundVerticalPositionAdjustment:15.0f forBarMetrics:UIBarMetricsDefault];
     [penButton setBackgroundImage:[UIImage imageNamed:@"pen_icon.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     
-    [shareButton setBackgroundImage:[UIImage imageNamed:@"pen_icon.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [shareButton setBackgroundImage:[UIImage imageNamed:@"shareIcon.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     [shareButton setBackgroundVerticalPositionAdjustment:15.0f forBarMetrics:UIBarMetricsDefault];
     
-    [trashButton setBackgroundImage:[UIImage imageNamed:@"pen_icon.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [trashButton setBackgroundImage:[UIImage imageNamed:@"deleteIcon.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     [trashButton setBackgroundVerticalPositionAdjustment:15.0f forBarMetrics:UIBarMetricsDefault];
     
     
-    [frameButton setBackgroundImage:[UIImage imageNamed:@"pen_icon.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [frameButton setBackgroundImage:[UIImage imageNamed:@"frameIcon.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     [frameButton setBackgroundVerticalPositionAdjustment:15.0f forBarMetrics:UIBarMetricsDefault];
     
     
-    [adjustButton setBackgroundImage:[UIImage imageNamed:@"pen_icon.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [adjustButton setBackgroundImage:[UIImage imageNamed:@"colorIcon.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     [adjustButton setBackgroundVerticalPositionAdjustment:15.0f forBarMetrics:UIBarMetricsDefault];
     
     
@@ -100,6 +101,28 @@
     
     [self loadSketch];
     
+    
+    //Carica il viewController delle regolazioni e lo mette fuori schermo
+    isAdjustVisible=FALSE;
+    
+    if (adjustView==nil) {
+        adjustView= [[AdjustView alloc]   initWithFrame:CGRectMake(0, 500, 320, 170)];
+        
+        [adjustView setDelegate:self];
+        
+        [mainView addSubview:adjustView];
+
+    }
+    
+    
+    //Crea i filtri da utilizzare
+    
+    context = [CIContext contextWithOptions:nil];
+
+    CIImage * filterPreviewImage =[[CIImage alloc]initWithImage:mainImageView.image];
+    
+    controlFilter = [CIFilter filterWithName:@"CIColorControls" keysAndValues:kCIInputImageKey,filterPreviewImage,nil];
+    
 
 }
 
@@ -113,6 +136,7 @@
     [self setAdjustButton:nil];
     [self setFintaNavigationBar:nil];
     [self setMainImageView:nil];
+    [self setMainView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -143,6 +167,8 @@
     AlbumManager *am =[AlbumManager sharedAlbumManager];
     [am.istanceOfAlbumViewController reloadData];
     
+    //TODO: deve salvare anche l' immagine
+    
     
     [self.navigationController dismissModalViewControllerAnimated:YES];
     
@@ -154,4 +180,51 @@
     
     
 }
+
+- (IBAction)adjustButtonAction:(id)sender {
+    
+    
+    if (isAdjustVisible) {
+        
+        [adjustView moveTo:CGPointMake(0, 500) duration:0.5 option:UIViewAnimationCurveEaseOut];
+        isAdjustVisible=FALSE;
+    }else{
+    
+        [adjustView moveTo:CGPointMake(0, 290) duration:0.5 option:UIViewAnimationCurveEaseOut];
+        isAdjustVisible=TRUE;
+    }
+    
+    
+}
+
+
+
+#pragma mark AdjustViewControllerDelegate method
+
+
+-(void)AdjustView:(AdjustView *)sender didChangedBrightness:(NSNumber *)value
+{
+    [controlFilter setValue:value forKey:@"inputBrightness"];
+    CIImage *outputImage = [controlFilter outputImage];
+    
+    CGImageRef cgimg =[context createCGImage:outputImage fromRect:[outputImage extent]];
+    
+    [mainImageView setImage: [UIImage imageWithCGImage:cgimg]];
+
+
+}
+
+-(void)AdjustView:(AdjustView *)sender didChangedContrast:(NSNumber *)value
+{
+    [controlFilter setValue:value forKey:@"inputContrast"];
+    CIImage *outputImage = [controlFilter outputImage];
+    
+    CGImageRef cgimg =[context createCGImage:outputImage fromRect:[outputImage extent]];
+    
+    [mainImageView setImage: [UIImage imageWithCGImage:cgimg]];
+}
+
+
+
+
 @end

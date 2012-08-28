@@ -248,6 +248,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="372"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" id="i3x-Nm-T6v">
+                                <rect key="frame" x="0.0" y="-44" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="AIm-Tm-5C5">
                                 <rect key="frame" x="0.0" y="372" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -260,7 +265,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="4G1-rZ-pi4"/>
-                                    <barButtonItem width="32" id="BLl-K3-hrN"/>
+                                    <barButtonItem width="32" id="BLl-K3-hrN">
+                                        <connections>
+                                            <action selector="adjustButtonAction:" destination="2" id="9s0-od-k1e"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="uLH-KC-77r"/>
                                     <barButtonItem width="32" id="kxh-tU-vA4"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="xac-Mt-XYL"/>
@@ -287,6 +296,7 @@
                         <outlet property="adjustButton" destination="BLl-K3-hrN" id="Fgs-BJ-ISU"/>
                         <outlet property="frameButton" destination="kxh-tU-vA4" id="wsc-7A-bIq"/>
                         <outlet property="mainImageView" destination="y0T-7h-sbY" id="AH3-Xe-2Gd"/>
+                        <outlet property="mainView" destination="i3x-Nm-T6v" id="SOb-xA-lh0"/>
                         <outlet property="penButton" destination="qK1-AL-3Wd" id="PIm-hq-b3P"/>
                         <outlet property="shareButton" destination="x2R-SK-fwW" id="0ml-H7-cFF"/>
                         <outlet property="toolBar" destination="AIm-Tm-5C5" id="mDC-4X-Sxk"/>
@@ -683,6 +693,103 @@
         <image name="evidenzia@2x.png" width="400" height="65"/>
         <image name="strisciaGialla@2x.png" width="617" height="66"/>
     </resources>
+    <classes>
+        <class className="AlbumCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AlbumCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="copertinaImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="countLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="AlbumViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AlbumViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addAlbumAction:"/>
+                <relationship kind="outlet" name="addAlbumAction" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="addAlbumButtonAction" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="EditSketchInfoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditSketchInfoViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addToAlbumAction:"/>
+                <relationship kind="outlet" name="albumNameLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="HomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="creaDefaultAlbum:"/>
+                <relationship kind="action" name="infoButtonAction:"/>
+                <relationship kind="action" name="removeInfoButtonAction:"/>
+                <relationship kind="action" name="selectPreferitiAction:"/>
+                <relationship kind="outlet" name="addFavoriteButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="albumTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="albumToolbar" candidateClass="UIToolbar"/>
+                <relationship kind="outlet" name="infoButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="mainView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="navigationBar" candidateClass="UINavigationBar"/>
+                <relationship kind="outlet" name="removeInfoButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="MyTabBarViewController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MyTabBarViewController.h"/>
+        </class>
+        <class className="SelectAlbumViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SelectAlbumViewController.h"/>
+        </class>
+        <class className="TakePictureViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TakePictureViewController.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="adjustButtonAction:"/>
+                <relationship kind="action" name="cancelButtonAction:"/>
+                <relationship kind="action" name="editInfoButton:"/>
+                <relationship kind="action" name="saveButtonAction:"/>
+                <relationship kind="outlet" name="adjustButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="fintaNavigationBar" candidateClass="UINavigationBar"/>
+                <relationship kind="outlet" name="frameButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="mainImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="mainView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="penButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="shareButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="toolBar" candidateClass="UIToolbar"/>
+                <relationship kind="outlet" name="trashButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="kidsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/kidsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="enableEditButton:"/>
+                <relationship kind="outlet" name="editButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="mainView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="toolBar" candidateClass="UIToolbar"/>
+            </relationships>
+        </class>
+        <class className="newAlbumViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/newAlbumViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancelButtonAction:"/>
+                <relationship kind="action" name="saveButtonAction:"/>
+                <relationship kind="outlet" name="titoloText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="toolBar" candidateClass="UINavigationBar"/>
+            </relationships>
+        </class>
+        <class className="newKidViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/newKidViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancelButtonAction:"/>
+                <relationship kind="action" name="saveButtonAction:"/>
+                <relationship kind="outlet" name="nomeText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="toolBar" candidateClass="UINavigationBar"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

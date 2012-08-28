@@ -10,20 +10,24 @@
 #import "Sketch.h"
 #import "SketchManager.h"
 #import "EditSketchInfoViewController.h"
+#import "AdjustView.h"
+#import "UIView+Animation.h"
 
-
-
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<AdjustViewDelegate>
 {
 
 
+    bool isAdjustVisible;
+    AdjustView * adjustView;
 
-
-
+    CIContext *context;
+    CIFilter * controlFilter;
+    
 
 }
 
 
+@property (weak, nonatomic) IBOutlet UIView *mainView;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *penButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *shareButton;
@@ -40,5 +44,6 @@
 - (IBAction)editInfoButton:(id)sender;
 - (IBAction)saveButtonAction:(id)sender;
 - (IBAction)cancelButtonAction:(id)sender;
+- (IBAction)adjustButtonAction:(id)sender;
 
 @end

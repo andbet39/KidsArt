@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		655C7A8D15ECBB4E00FEEFF4 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 655C7A8C15ECBB4E00FEEFF4 /* UIView+Animation.m */; };
+		655C7A9215ECBDF700FEEFF4 /* colorIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C7A8E15ECBDF700FEEFF4 /* colorIcon@2x.png */; };
+		655C7A9315ECBDF700FEEFF4 /* deleteIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C7A8F15ECBDF700FEEFF4 /* deleteIcon@2x.png */; };
+		655C7A9415ECBDF700FEEFF4 /* frameIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C7A9015ECBDF700FEEFF4 /* frameIcon@2x.png */; };
+		655C7A9515ECBDF700FEEFF4 /* shareIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C7A9115ECBDF700FEEFF4 /* shareIcon@2x.png */; };
+		655C7A9915ECC01900FEEFF4 /* adjustView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655C7A9815ECC01900FEEFF4 /* adjustView.xib */; };
+		655C7A9E15ECC6EC00FEEFF4 /* backgroundSubView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C7A9D15ECC6EC00FEEFF4 /* backgroundSubView@2x.png */; };
+		655C7AA415ECCBEE00FEEFF4 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655C7AA315ECCBEE00FEEFF4 /* CoreImage.framework */; };
+		655C7AA615ECCC6A00FEEFF4 /* brightnessIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C7AA515ECCC6A00FEEFF4 /* brightnessIcon@2x.png */; };
+		655C7AA915ECD0E200FEEFF4 /* AdjustView.m in Sources */ = {isa = PBXBuildFile; fileRef = 655C7AA815ECD0E200FEEFF4 /* AdjustView.m */; };
 		65B7289A15D564AF0025D692 /* SelectAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B7289915D564AF0025D692 /* SelectAlbumViewController.m */; };
 		65B7289D15D569E50025D692 /* newAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B7289C15D569E50025D692 /* newAlbumViewController.m */; };
 		65D461DC15D1882F00B79679 /* MyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461DB15D1882F00B79679 /* MyTabBarViewController.m */; };
@@ -80,6 +90,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		655C7A8B15ECBB4E00FEEFF4 /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		655C7A8C15ECBB4E00FEEFF4 /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
+		655C7A8E15ECBDF700FEEFF4 /* colorIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "colorIcon@2x.png"; sourceTree = "<group>"; };
+		655C7A8F15ECBDF700FEEFF4 /* deleteIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "deleteIcon@2x.png"; sourceTree = "<group>"; };
+		655C7A9015ECBDF700FEEFF4 /* frameIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "frameIcon@2x.png"; sourceTree = "<group>"; };
+		655C7A9115ECBDF700FEEFF4 /* shareIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shareIcon@2x.png"; sourceTree = "<group>"; };
+		655C7A9815ECC01900FEEFF4 /* adjustView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = adjustView.xib; sourceTree = "<group>"; };
+		655C7A9D15ECC6EC00FEEFF4 /* backgroundSubView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backgroundSubView@2x.png"; sourceTree = "<group>"; };
+		655C7AA315ECCBEE00FEEFF4 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		655C7AA515ECCC6A00FEEFF4 /* brightnessIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brightnessIcon@2x.png"; sourceTree = "<group>"; };
+		655C7AA715ECD0E200FEEFF4 /* AdjustView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustView.h; sourceTree = "<group>"; };
+		655C7AA815ECD0E200FEEFF4 /* AdjustView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdjustView.m; sourceTree = "<group>"; };
 		65B7289815D564AF0025D692 /* SelectAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectAlbumViewController.h; sourceTree = "<group>"; };
 		65B7289915D564AF0025D692 /* SelectAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectAlbumViewController.m; sourceTree = "<group>"; };
 		65B7289B15D569E50025D692 /* newAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newAlbumViewController.h; sourceTree = "<group>"; };
@@ -174,6 +196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655C7AA415ECCBEE00FEEFF4 /* CoreImage.framework in Frameworks */,
 				65D4629F15D556B900B79679 /* libGMGridView.a in Frameworks */,
 				65FA96DA15CE57B800AC0CCD /* CoreData.framework in Frameworks */,
 				65FA96AE15CD7A4900AC0CCD /* QuartzCore.framework in Frameworks */,
@@ -186,6 +209,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		655C7A9615ECBDFC00FEEFF4 /* editIcon */ = {
+			isa = PBXGroup;
+			children = (
+				655C7A8E15ECBDF700FEEFF4 /* colorIcon@2x.png */,
+				655C7A8F15ECBDF700FEEFF4 /* deleteIcon@2x.png */,
+				655C7A9015ECBDF700FEEFF4 /* frameIcon@2x.png */,
+				655C7A9115ECBDF700FEEFF4 /* shareIcon@2x.png */,
+				65FA969215CD335300AC0CCD /* pen_icon@2x.png */,
+			);
+			name = editIcon;
+			sourceTree = "<group>";
+		};
+		655C7A9715ECBFEE00FEEFF4 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				65FA967D15CD263900AC0CCD /* MainStoryboard.storyboard */,
+				655C7A9815ECC01900FEEFF4 /* adjustView.xib */,
+				655C7AA715ECD0E200FEEFF4 /* AdjustView.h */,
+				655C7AA815ECD0E200FEEFF4 /* AdjustView.m */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
 		65D4624215D2F83800B79679 /* TableCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +265,7 @@
 		65FA965C15CD263900AC0CCD = {
 			isa = PBXGroup;
 			children = (
+				655C7AA315ECCBEE00FEEFF4 /* CoreImage.framework */,
 				65FA975215D0420900AC0CCD /* ThirdParty */,
 				65FA968A15CD2AF200AC0CCD /* images */,
 				65FA967115CD263900AC0CCD /* sketchkid_Beta */,
@@ -250,6 +297,7 @@
 		65FA967115CD263900AC0CCD /* sketchkid_Beta */ = {
 			isa = PBXGroup;
 			children = (
+				655C7A9715ECBFEE00FEEFF4 /* Interface */,
 				65D4625F15D3927600B79679 /* Singleton */,
 				65D4624215D2F83800B79679 /* TableCell */,
 				65FA96EC15D030D500AC0CCD /* model */,
@@ -257,7 +305,6 @@
 				65FA96C515CE471300AC0CCD /* viewController */,
 				65FA967A15CD263900AC0CCD /* AppDelegate.h */,
 				65FA967B15CD263900AC0CCD /* AppDelegate.m */,
-				65FA967D15CD263900AC0CCD /* MainStoryboard.storyboard */,
 				65FA967215CD263900AC0CCD /* Supporting Files */,
 			);
 			path = sketchkid_Beta;
@@ -277,6 +324,7 @@
 		65FA968A15CD2AF200AC0CCD /* images */ = {
 			isa = PBXGroup;
 			children = (
+				655C7A9615ECBDFC00FEEFF4 /* editIcon */,
 				B5FF1BF915D63F0A004D42AF /* cancelCameraIcon@2x.png */,
 				B5FF1BFA15D63F0A004D42AF /* savePhotosIcon@2x.png */,
 				65D4624615D302FE00B79679 /* backAlbumCell.png */,
@@ -302,7 +350,8 @@
 				65FA969715CD3BC300AC0CCD /* toolBackHome@2x.png */,
 				65D4625715D3108100B79679 /* tick.aiff */,
 				65FA969015CD32A900AC0CCD /* toolBarBack@2x.png */,
-				65FA969215CD335300AC0CCD /* pen_icon@2x.png */,
+				655C7A9D15ECC6EC00FEEFF4 /* backgroundSubView@2x.png */,
+				655C7AA515ECCC6A00FEEFF4 /* brightnessIcon@2x.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -346,6 +395,8 @@
 				65FA968C15CD2F7100AC0CCD /* UIToolbar+extension.m */,
 				65FA96AF15CD7A9600AC0CCD /* UIImage+Scale.h */,
 				65FA96B015CD7A9600AC0CCD /* UIImage+Scale.m */,
+				655C7A8B15ECBB4E00FEEFF4 /* UIView+Animation.h */,
+				655C7A8C15ECBB4E00FEEFF4 /* UIView+Animation.m */,
 				65FA96C215CD8F0D00AC0CCD /* UIView+PartialCurl.h */,
 				65FA96C315CD8F0D00AC0CCD /* UIView+PartialCurl.m */,
 				65D461ED15D2DDD800B79679 /* SegueWithNoAnimation.h */,
@@ -471,6 +522,13 @@
 				65D4627A15D450D400B79679 /* home.jpg in Resources */,
 				B5FF1BFB15D63F0A004D42AF /* cancelCameraIcon@2x.png in Resources */,
 				B5FF1BFC15D63F0A004D42AF /* savePhotosIcon@2x.png in Resources */,
+				655C7A9215ECBDF700FEEFF4 /* colorIcon@2x.png in Resources */,
+				655C7A9315ECBDF700FEEFF4 /* deleteIcon@2x.png in Resources */,
+				655C7A9415ECBDF700FEEFF4 /* frameIcon@2x.png in Resources */,
+				655C7A9515ECBDF700FEEFF4 /* shareIcon@2x.png in Resources */,
+				655C7A9915ECC01900FEEFF4 /* adjustView.xib in Resources */,
+				655C7A9E15ECC6EC00FEEFF4 /* backgroundSubView@2x.png in Resources */,
+				655C7AA615ECCC6A00FEEFF4 /* brightnessIcon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +565,8 @@
 				65B7289A15D564AF0025D692 /* SelectAlbumViewController.m in Sources */,
 				65B7289D15D569E50025D692 /* newAlbumViewController.m in Sources */,
 				B5FF1C0215D6431C004D42AF /* MKNumberBadgeView.m in Sources */,
+				655C7A8D15ECBB4E00FEEFF4 /* UIView+Animation.m in Sources */,
+				655C7AA915ECD0E200FEEFF4 /* AdjustView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
