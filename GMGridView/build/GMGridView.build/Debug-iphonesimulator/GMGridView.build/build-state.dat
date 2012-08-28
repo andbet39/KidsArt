@@ -2,15 +2,15 @@ TGMGridView
 v5
 r1
 cCheck dependencies
-cCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.o /Users/andrea/Desktop/kidsArt/GMGridView/GMGridView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewCell.o /Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.o /Users/andrea/Desktop/kidsArt/GMGridView/GMGridView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridViewLayoutStrategies.o /Users/andrea/Desktop/kidsArt/GMGridView/GMGridViewLayoutStrategies.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIGestureRecognizer+GMGridViewAdditions.o /Users/andrea/Desktop/kidsArt/GMGridView/UIGestureRecognizer+GMGridViewAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/UIView+GMGridViewAdditions.o /Users/andrea/Desktop/kidsArt/GMGridView/UIView+GMGridViewAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cLibtool /Users/andrea/Desktop/kidsArt/GMGridView/build/Debug-iphonesimulator/libGMGridView.a normal i386
-cCpHeader GMGridView-Constants.h build/Debug-iphonesimulator/usr/local/include/GMGridView-Constants.h
-cCpHeader GMGridViewCell.h build/Debug-iphonesimulator/usr/local/include/GMGridViewCell.h
 cCpHeader GMGridView.h build/Debug-iphonesimulator/usr/local/include/GMGridView.h
+cCpHeader GMGridViewCell.h build/Debug-iphonesimulator/usr/local/include/GMGridViewCell.h
+cCpHeader GMGridView-Constants.h build/Debug-iphonesimulator/usr/local/include/GMGridView-Constants.h
 cCpHeader GMGridViewCell+Extended.h build/Debug-iphonesimulator/usr/local/include/GMGridViewCell+Extended.h
 cCpHeader GMGridViewLayoutStrategies.h build/Debug-iphonesimulator/usr/local/include/GMGridViewLayoutStrategies.h
 
@@ -289,7 +289,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies92e7c2fbdbecb541^7e1ac3fbdbecb541^---0#1#0#--18"Check dependencies36"2436E0AA-BC92-4BDF-857F-54B9170CF02C-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesa1136ee7dfecb541^f6cf73e7dfecb541^---0#1#0#--18"Check dependencies36"DD7355BD-125D-47FD-9A6A-C2C5F78E13D6-
 
 CCompileC build/GMGridView.build/Debug-iphonesimulator/GMGridView.build/Objects-normal/i386/GMGridView.o /Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/GMGridView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s365970117.662103
