@@ -149,7 +149,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem id="n5v-Gn-NoU">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" id="UJ3-ce-KPf">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="UJ3-ce-KPf">
                                             <connections>
                                                 <action selector="cancelButtonAction:" destination="9oc-5O-Z59" id="onH-Gr-yv0"/>
                                             </connections>
@@ -271,7 +271,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="uLH-KC-77r"/>
-                                    <barButtonItem width="32" id="kxh-tU-vA4"/>
+                                    <barButtonItem width="32" id="kxh-tU-vA4">
+                                        <connections>
+                                            <action selector="frameButtonAction:" destination="2" id="1V3-Ow-P9b"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="xac-Mt-XYL"/>
                                     <barButtonItem width="32" id="4ps-fe-V97"/>
                                 </items>
@@ -426,9 +430,33 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="VWk-MM-vmB">
+                                <rect key="frame" x="-1" y="-22" width="322" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <barButtonItem title="Edit" id="a0C-tb-MLt">
+                                        <connections>
+                                            <action selector="enableEditButton:" destination="8Ea-gE-c9f" id="dfX-Pd-HKm"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Tew-JF-4KK"/>
+                                    <barButtonItem systemItem="add" id="S2w-Ir-Ie5">
+                                        <connections>
+                                            <action selector="addAlbumAction:" destination="DZX-cU-oRx" id="NS5-UF-Nk8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="K9l-1l-RAg">
+                                <rect key="frame" x="49" y="0.0" width="222" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="106" sectionHeaderHeight="22" sectionFooterHeight="22" id="vyq-y4-Qal">
-                                <rect key="frame" x="0.0" y="7" width="320" height="360"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="frame" x="0.0" y="29" width="320" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="AlbumCell" rowHeight="106" id="KYh-Eg-aiG" customClass="AlbumCell">
@@ -478,17 +506,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="IoV-eB-0fh">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="FIJ-7L-N6V">
-                            <connections>
-                                <action selector="addAlbumAction:" destination="DZX-cU-oRx" id="SfE-GG-yOr"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="IoV-eB-0fh"/>
                     <connections>
-                        <outlet property="addAlbumAction" destination="FIJ-7L-N6V" id="tfN-sx-hth"/>
-                        <outlet property="addAlbumButtonAction" destination="FIJ-7L-N6V" id="R82-TE-WIu"/>
+                        <outlet property="addAlbumAction" destination="S2w-Ir-Ie5" id="8yx-JN-aDU"/>
                         <outlet property="tableView" destination="vyq-y4-Qal" id="xfD-RD-qbE"/>
+                        <outlet property="titleLabel" destination="K9l-1l-RAg" id="Swv-kG-hVc"/>
+                        <outlet property="toolBar" destination="VWk-MM-vmB" id="i50-Nj-zM6"/>
                         <segue destination="IeE-Hz-Y0C" kind="modal" identifier="newAlbum" id="BV8-a2-axl"/>
                     </connections>
                 </viewController>
@@ -780,12 +803,16 @@
                 <relationship kind="outlet" name="addAlbumAction" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="addAlbumButtonAction" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="toolBar" candidateClass="UIToolbar"/>
             </relationships>
         </class>
         <class className="EditSketchInfoViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EditSketchInfoViewController.h"/>
             <relationships>
                 <relationship kind="action" name="addToAlbumAction:"/>
+                <relationship kind="action" name="selectKidButtonAction:"/>
+                <relationship kind="outlet" name="addBambinoButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="albumNameLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
@@ -811,6 +838,9 @@
         <class className="SelectAlbumViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SelectAlbumViewController.h"/>
         </class>
+        <class className="SelectKidViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SelectKidViewController.h"/>
+        </class>
         <class className="TakePictureViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TakePictureViewController.h"/>
         </class>
@@ -820,6 +850,7 @@
                 <relationship kind="action" name="adjustButtonAction:"/>
                 <relationship kind="action" name="cancelButtonAction:"/>
                 <relationship kind="action" name="editInfoButton:"/>
+                <relationship kind="action" name="frameButtonAction:"/>
                 <relationship kind="action" name="saveButtonAction:"/>
                 <relationship kind="outlet" name="adjustButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="fintaNavigationBar" candidateClass="UINavigationBar"/>
@@ -830,6 +861,13 @@
                 <relationship kind="outlet" name="shareButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="toolBar" candidateClass="UIToolbar"/>
                 <relationship kind="outlet" name="trashButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="kidCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/kidCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="fotoImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="nomeLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="kidsViewController" superclassName="UIViewController">

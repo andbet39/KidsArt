@@ -11,6 +11,7 @@
 #import "SketchManager.h"
 #import "EditSketchInfoViewController.h"
 #import "AdjustView.h"
+#import "FrameSelectView.h"
 #import "UIView+Animation.h"
 
 @interface ViewController : UIViewController<AdjustViewDelegate>
@@ -18,8 +19,10 @@
 
 
     bool isAdjustVisible;
+    bool isFrameVisible;
     AdjustView * adjustView;
-
+    FrameSelectView * frameView;
+    
     CIContext *context;
     CIFilter * controlFilter;
     
@@ -45,5 +48,6 @@
 - (IBAction)saveButtonAction:(id)sender;
 - (IBAction)cancelButtonAction:(id)sender;
 - (IBAction)adjustButtonAction:(id)sender;
+- (IBAction)frameButtonAction:(id)sender;
 
 @end

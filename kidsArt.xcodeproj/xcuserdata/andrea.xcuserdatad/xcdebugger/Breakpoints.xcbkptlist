@@ -13,7 +13,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "258"
          endingLineNumber = "258"
-         landmarkName = "-popolaArraykid"
+         landmarkName = "-GMGridView:processDeleteActionForItemAtIndex:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -60,12 +60,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "AlbumViewController.m"
-         timestampString = "366313385.604605"
+         timestampString = "367963304.29213"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "136"
-         endingLineNumber = "136"
-         landmarkName = "-tableView:cellForRowAtIndexPath:"
+         startingLineNumber = "139"
+         endingLineNumber = "139"
+         landmarkName = "-tableView:numberOfRowsInSection:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -73,12 +73,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "AlbumViewController.m"
-         timestampString = "366313385.604605"
+         timestampString = "367963304.29213"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "130"
-         endingLineNumber = "130"
-         landmarkName = "-tableView:numberOfRowsInSection:"
+         startingLineNumber = "133"
+         endingLineNumber = "133"
+         landmarkName = "-numberOfSectionsInTableView:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -121,17 +121,15 @@
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "AlbumViewController.h"
-         timestampString = "366312625.887989"
+         timestampString = "367963304.29213"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "32"
-         endingLineNumber = "32"
-         landmarkName = "@interface AlbumViewController"
-         landmarkType = "2">
+         startingLineNumber = "38"
+         endingLineNumber = "38">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -164,13 +162,13 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "AlbumViewController.m"
-         timestampString = "366313385.604605"
+         timestampString = "367963304.29213"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "159"
-         endingLineNumber = "159"
-         landmarkName = "-tableView:didSelectRowAtIndexPath:"
-         landmarkType = "5">
+         startingLineNumber = "162"
+         endingLineNumber = "162"
+         landmarkName = "@implementation AlbumViewController"
+         landmarkType = "3">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -229,13 +227,13 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "AlbumViewController.m"
-         timestampString = "366313385.604605"
+         timestampString = "367963304.29213"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "158"
-         endingLineNumber = "158"
-         landmarkName = "-tableView:didSelectRowAtIndexPath:"
-         landmarkType = "5">
+         startingLineNumber = "161"
+         endingLineNumber = "161"
+         landmarkName = "@implementation AlbumViewController"
+         landmarkType = "3">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "Yes"
@@ -255,11 +253,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "sketchkid_Beta/ViewController.m"
-         timestampString = "367849325.177579"
+         timestampString = "367956635.993765"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "233"
-         endingLineNumber = "233"
+         startingLineNumber = "272"
+         endingLineNumber = "272"
          landmarkName = "-AdjustView:didChangedBrightness:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -268,12 +266,25 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "sketchkid_Beta/ViewController.m"
-         timestampString = "367844349.236073"
+         timestampString = "367956505.395566"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "122"
-         endingLineNumber = "122"
+         startingLineNumber = "133"
+         endingLineNumber = "133"
          landmarkName = "-viewDidLoad"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "sketchkid_Beta/FrameSelectView.m"
+         timestampString = "367958326.818561"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "26"
+         endingLineNumber = "26"
+         landmarkName = "-inizializzaLista"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

@@ -33,7 +33,7 @@
     Sketch *sketch = (Sketch *)[NSEntityDescription insertNewObjectForEntityForName:@"Sketch" inManagedObjectContext:dm.managedObjectContext];
     
     
-    UIImage *image = [finalImage scaleToSize:CGSizeMake(1024/1.15,768/1.15 )];
+    UIImage *image = [finalImage scaleToSize:CGSizeMake(890,668)];
     NSData *imageData = UIImageJPEGRepresentation(image, 0.8);
     
     NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];

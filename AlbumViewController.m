@@ -13,6 +13,8 @@
 @end
 
 @implementation AlbumViewController
+@synthesize titleLabel;
+@synthesize toolBar;
 @synthesize addAlbumButtonAction;
 @synthesize addAlbumAction;
 @synthesize tableView;
@@ -21,9 +23,15 @@
 
 -(void)creaToolBar{
     
-    int toolbarheight=84;
+    int toolbarheight=37;
     
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationBar.png"] forBarMetrics:UIBarMetricsDefault];
+    
+    
+    [toolBar setFrame:CGRectMake(0, 0, 320, toolbarheight)];
+    [toolBar setBackgroundImage:[UIImage imageNamed:@"greyBar.png"] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
+    
+    [titleLabel setText:@"Albums"];
 }
 
 
@@ -110,6 +118,8 @@
     [self setAddAlbumButtonAction:nil];
     [self setAddAlbumAction:nil];
     [self setTableView:nil];
+    [self setToolBar:nil];
+    [self setTitleLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

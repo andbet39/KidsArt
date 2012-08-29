@@ -111,7 +111,18 @@
         [adjustView setDelegate:self];
         
         [mainView addSubview:adjustView];
-
+        
+    }
+    //Carica il viewController delle cornici
+    isFrameVisible=FALSE;
+    
+    if (frameView==nil) {
+        frameView= [[FrameSelectView alloc]   initWithFrame:CGRectMake(0, 500, 320, 170)];
+        
+        //[frameView setDelegate:self];
+        [frameView inizializza];
+        [mainView addSubview:frameView];
+        
     }
     
     
@@ -208,8 +219,13 @@
 }
 
 - (IBAction)adjustButtonAction:(id)sender {
-    
-    
+    //nasconde i frame prima di far vedere l altra
+
+    if (isFrameVisible) {
+        
+        [frameView moveTo:CGPointMake(0, 500) duration:0.5 option:UIViewAnimationCurveEaseOut];
+        isFrameVisible=FALSE;
+    }
     if (isAdjustVisible) {
         
         [adjustView moveTo:CGPointMake(0, 500) duration:0.5 option:UIViewAnimationCurveEaseOut];
@@ -219,6 +235,29 @@
         [adjustView moveTo:CGPointMake(0, 290) duration:0.5 option:UIViewAnimationCurveEaseOut];
         isAdjustVisible=TRUE;
     }
+    
+    
+}
+
+- (IBAction)frameButtonAction:(id)sender {
+    
+    //nasconde l' adjust prima di far vedere l altra
+    if (isAdjustVisible) {
+        
+        [adjustView moveTo:CGPointMake(0, 500) duration:0.5 option:UIViewAnimationCurveEaseOut];
+        isAdjustVisible=FALSE;
+    }
+    
+    if (isFrameVisible) {
+        
+        [frameView moveTo:CGPointMake(0, 500) duration:0.5 option:UIViewAnimationCurveEaseOut];
+        isFrameVisible=FALSE;
+    }else{
+        
+        [frameView moveTo:CGPointMake(0, 290) duration:0.5 option:UIViewAnimationCurveEaseOut];
+        isFrameVisible=TRUE;
+    }
+    
     
     
 }

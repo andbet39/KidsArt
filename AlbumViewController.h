@@ -20,6 +20,8 @@
 
 
 }
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *addAlbumButtonAction;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *addAlbumAction;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
