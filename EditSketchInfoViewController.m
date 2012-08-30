@@ -30,15 +30,16 @@
     
     NSString * nomeBimbo = editSketch.kid.nome;
     
-    if([nomeBimbo isEqualToString:@""])
+    if(nomeBimbo == nil)
     {
-        nomeBimbo=@"Di chi è?";
+        nomeBimbo=@"?";
     }else{
     
         
     }
+    NSString * sketchof = [NSString stringWithFormat:@"%@ %@",NSLocalizedString(@"DISEGNO_DI", nil),nomeBimbo];
     
-    [addBambinoButton setTitle:nomeBimbo forState:UIControlStateNormal];
+    [addBambinoButton setTitle:sketchof forState:UIControlStateNormal];
     
     
 }
@@ -115,7 +116,9 @@
         NSLog(@"Error on save");
     }
     
-    [addBambinoButton setTitle:kid.nome forState:UIControlStateNormal];
+    NSString * sketchof = [NSString stringWithFormat:@"%@ %@",NSLocalizedString(@"DISEGNO_DI", nil),kid.nome];
+
+    [addBambinoButton setTitle:sketchof forState:UIControlStateNormal];
 
     [self.navigationController popViewControllerAnimated:YES];
 }
