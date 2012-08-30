@@ -16,6 +16,7 @@
 @property(nonatomic,weak)IBOutlet UILabel *nameLabel;
 @property(nonatomic,weak)IBOutlet UILabel *countLabel;
 @property(nonatomic,weak)IBOutlet UIImageView *copertinaImage;
+@property(nonatomic,weak)IBOutlet UILabel *dateLabel;
 
 -(void)initWithAlbum:(Album*)album;
 @end
