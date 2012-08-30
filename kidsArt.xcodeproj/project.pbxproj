@@ -10,6 +10,8 @@
 		6509B17315ECE47C00D2697C /* adjustView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 655C7A9815ECC01900FEEFF4 /* adjustView.xib */; };
 		6509B17415ECE47C00D2697C /* AdjustView.m in Sources */ = {isa = PBXBuildFile; fileRef = 655C7AA815ECD0E200FEEFF4 /* AdjustView.m */; };
 		6509B17515ECE52900D2697C /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 655C7A8C15ECBB4E00FEEFF4 /* UIView+Animation.m */; };
+		65148E1415EFD1FC00D8458C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65148E1615EFD1FC00D8458C /* Localizable.strings */; };
+		65148E1915EFD5AD00D8458C /* Snickles.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65148E1815EFD5AD00D8458C /* Snickles.ttf */; };
 		655C7A9215ECBDF700FEEFF4 /* colorIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C7A8E15ECBDF700FEEFF4 /* colorIcon@2x.png */; };
 		655C7A9315ECBDF700FEEFF4 /* deleteIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C7A8F15ECBDF700FEEFF4 /* deleteIcon@2x.png */; };
 		655C7A9415ECBDF700FEEFF4 /* frameIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C7A9015ECBDF700FEEFF4 /* frameIcon@2x.png */; };
@@ -101,6 +103,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65148E1515EFD1FC00D8458C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		65148E1715EFD42C00D8458C /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		65148E1815EFD5AD00D8458C /* Snickles.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Snickles.ttf; sourceTree = "<group>"; };
 		655C7A8B15ECBB4E00FEEFF4 /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
 		655C7A8C15ECBB4E00FEEFF4 /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
 		655C7A8E15ECBDF700FEEFF4 /* colorIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "colorIcon@2x.png"; sourceTree = "<group>"; };
@@ -339,6 +344,7 @@
 		65FA967115CD263900AC0CCD /* sketchkid_Beta */ = {
 			isa = PBXGroup;
 			children = (
+				65148E1615EFD1FC00D8458C /* Localizable.strings */,
 				655C7A9715ECBFEE00FEEFF4 /* Interface */,
 				65D4625F15D3927600B79679 /* Singleton */,
 				65D4624215D2F83800B79679 /* TableCell */,
@@ -366,6 +372,7 @@
 		65FA968A15CD2AF200AC0CCD /* images */ = {
 			isa = PBXGroup;
 			children = (
+				65148E1815EFD5AD00D8458C /* Snickles.ttf */,
 				6563084115EE9F740007A36B /* frame */,
 				655C7A9615ECBDFC00FEEFF4 /* editIcon */,
 				B5FF1BF915D63F0A004D42AF /* cancelCameraIcon@2x.png */,
@@ -507,6 +514,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				it,
 			);
 			mainGroup = 65FA965C15CD263900AC0CCD;
 			productRefGroup = 65FA966815CD263900AC0CCD /* Products */;
@@ -581,6 +589,8 @@
 				6563084515EEA2740007A36B /* stelle.png in Resources */,
 				6563084715EEA27B0007A36B /* stelle_sample.png in Resources */,
 				6563084915EEA2F80007A36B /* niente.png in Resources */,
+				65148E1415EFD1FC00D8458C /* Localizable.strings in Resources */,
+				65148E1915EFD5AD00D8458C /* Snickles.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,6 +639,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		65148E1615EFD1FC00D8458C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65148E1515EFD1FC00D8458C /* en */,
+				65148E1715EFD42C00D8458C /* it */,
+			);
+			name = Localizable.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		65FA967415CD263900AC0CCD /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

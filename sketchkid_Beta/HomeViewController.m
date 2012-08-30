@@ -37,7 +37,7 @@
     [addFavoriteButton setBackgroundImage:[UIImage imageNamed:@"addFavorites.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     
     [albumTitleLabel setText:currentAlbum.titolo];
-    
+    [albumTitleLabel setFont:[UIFont fontWithName:@"Snickles" size:28]];
 }
 
 -(void)creaToolBar{

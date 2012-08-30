@@ -31,7 +31,10 @@
     [toolBar setFrame:CGRectMake(0, 0, 320, toolbarheight)];
     [toolBar setBackgroundImage:[UIImage imageNamed:@"greyBar.png"] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
     
-    [titleLabel setText:@"Albums"];
+    [titleLabel setText:NSLocalizedString(@"ALBUMS", nil)];
+    
+    [titleLabel setFont:[UIFont fontWithName:@"Snickles" size:28]];
+    
 }
 
 

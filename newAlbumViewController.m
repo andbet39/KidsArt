@@ -13,17 +13,36 @@
 @end
 
 @implementation newAlbumViewController
+@synthesize saveButton;
+@synthesize titleLable;
 @synthesize titoloText;
 @synthesize toolBar;
 
 
+
+-(void) configuraView
+{
+
+    [toolBar setBackgroundImage:[UIImage imageNamed:@"navigationBar.png"] forBarMetrics:UIBarMetricsDefault];
+
+    [titleLable setText:NSLocalizedString(@"NUOVO_ALBUM", nil)];
+
+    [titleLable setFont:[UIFont fontWithName:@"Snickles" size:32]];
+
+
+
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self configuraView];
+
 }
 
 - (void)viewDidUnload
 {
+    [self setSaveButton:nil];
+    [self setTitleLable:nil];
     [super viewDidUnload];
 }
 

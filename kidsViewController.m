@@ -14,6 +14,8 @@
 
 @implementation kidsViewController
 @synthesize editButton;
+@synthesize hintLabel;
+@synthesize hint2Label;
 @synthesize mainView;
 @synthesize toolBar;
 @synthesize titleLabel;
@@ -28,7 +30,13 @@
     [toolBar setFrame:CGRectMake(0, 0, 320, toolbarheight)];
     [toolBar setBackgroundImage:[UIImage imageNamed:@"greyBar.png"] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
     
-    [titleLabel setText:@"Kids"];
+    [titleLabel setText:NSLocalizedString(@"BAMBINI", nil)];
+    [hintLabel setText:NSLocalizedString(@"HINT_KID", nil)];
+    [hint2Label setText:NSLocalizedString(@"HINT2_KID", nil)];
+    
+    [titleLabel setFont:[UIFont fontWithName:@"Snickles" size:28]];
+    [hintLabel setFont:[UIFont fontWithName:@"Snickles" size:20]];
+    [hint2Label setFont:[UIFont fontWithName:@"Snickles" size:20]];
     
 
 }
@@ -346,6 +354,8 @@
     [self setToolBar:nil];
     [self setTitleLabel:nil];
     [self setEditButton:nil];
+    [self setHintLabel:nil];
+    [self setHint2Label:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

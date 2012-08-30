@@ -5,3 +5,15 @@
   Created by Andrea Terzani on 30/08/12.
   Copyright (c) 2012 Andrea Terzani. All rights reserved.
 */
+
+
+"BAMBINI" = "Kids";
+"DISEGNO" = "Sketch";
+"ALBUM" = "Album";
+"ALBUMS" = "Albums";
+
+"HINT_KID" = "Click on a kid photo to see";
+"HINT2_KID" = "all the picture from him";
+
+
+"NUOVO_ALBUM" = "Make a new album";

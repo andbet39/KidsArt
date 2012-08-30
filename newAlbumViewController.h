@@ -16,6 +16,8 @@
 
 @interface newAlbumViewController : UIViewController<UITextFieldDelegate>
 
+@property (weak, nonatomic) IBOutlet UIButton *saveButton;
+@property (weak, nonatomic) IBOutlet UILabel *titleLable;
 
 @property (strong,nonatomic) id <newAlbumViewControllerDelegate> delegate;
 

@@ -43,10 +43,10 @@
                                 </items>
                             </toolbar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="6rg-Sr-2yn">
-                                <rect key="frame" x="49" y="0.0" width="222" height="44"/>
+                                <rect key="frame" x="49" y="4" width="222" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="23"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Hq1-X0-9Cs">
@@ -109,7 +109,7 @@
                                 <rect key="frame" x="163" y="175" width="137" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Salva" backgroundImage="bottoneSalva@2x.png">
+                                <state key="normal" title="Save Kid" backgroundImage="bottoneSalva@2x.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -131,7 +131,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome del Bambino" minimumFontSize="17" clearButtonMode="whileEditing" id="FEc-tv-BU1">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kid name" minimumFontSize="17" clearButtonMode="whileEditing" id="FEc-tv-BU1">
                                 <rect key="frame" x="20" y="125" width="280" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -150,6 +150,7 @@
                                 <items>
                                     <navigationItem id="n5v-Gn-NoU">
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="UJ3-ce-KPf">
+                                            <color key="tintColor" red="0.46274509800000002" green="0.078431372550000003" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <action selector="cancelButtonAction:" destination="9oc-5O-Z59" id="onH-Gr-yv0"/>
                                             </connections>
@@ -182,7 +183,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" id="Ghb-Z4-Ddc">
-                                <rect key="frame" x="0.0" y="66" width="320" height="266"/>
+                                <rect key="frame" x="0.0" y="70" width="320" height="266"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -204,21 +205,28 @@
                                 </items>
                             </toolbar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="EoZ-Mr-orh">
-                                <rect key="frame" x="49" y="0.0" width="222" height="44"/>
+                                <rect key="frame" x="49" y="4" width="222" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="23"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="strisciaGialla@2x.png" id="nda-nE-Gwd">
                                 <rect key="frame" x="14" y="46" width="292" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Click on a kid photo to see all the picture from him" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="gMr-cY-hPM">
-                                <rect key="frame" x="44" y="46" width="243" height="44"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Click on a kid photo to see all the picture from him" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="gMr-cY-hPM">
+                                <rect key="frame" x="44" y="45" width="243" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.25098040699958801" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Click on a kid photo to see all the picture from him" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Jgd-mu-Iek">
+                                <rect key="frame" x="44" y="63" width="243" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="14"/>
+                                <color key="textColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -227,6 +235,8 @@
                     <navigationItem key="navigationItem" id="l8d-AB-2xj"/>
                     <connections>
                         <outlet property="editButton" destination="nvH-fd-8oe" id="Sc8-p3-onp"/>
+                        <outlet property="hint2Label" destination="Jgd-mu-Iek" id="JQn-pz-N7I"/>
+                        <outlet property="hintLabel" destination="gMr-cY-hPM" id="nOE-Op-r2S"/>
                         <outlet property="mainView" destination="Ghb-Z4-Ddc" id="SQ6-Xp-fWi"/>
                         <outlet property="titleLabel" destination="EoZ-Mr-orh" id="kv4-9h-1f6"/>
                         <outlet property="toolBar" destination="spO-uS-01s" id="hKe-fL-ZPh"/>
@@ -448,10 +458,10 @@
                                 </items>
                             </toolbar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="K9l-1l-RAg">
-                                <rect key="frame" x="49" y="0.0" width="222" height="44"/>
+                                <rect key="frame" x="49" y="3" width="222" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="23"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="106" sectionHeaderHeight="22" sectionFooterHeight="22" id="vyq-y4-Qal">
@@ -473,8 +483,8 @@
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="vhh-c2-Fwm">
                                                     <rect key="frame" x="148" y="20" width="134" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="zl3-jh-2Yy">
@@ -538,8 +548,8 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="msU-SQ-Ttl">
                                 <rect key="frame" x="163" y="175" width="137" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Salva" backgroundImage="bottoneSalva@2x.png">
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Save Album" backgroundImage="bottoneSalva@2x.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -556,13 +566,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Aggiungi Album" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Aqm-Gb-MVf">
-                                <rect key="frame" x="48" y="69" width="214" height="33"/>
+                                <rect key="frame" x="43" y="76" width="233" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Titolo dell' album" minimumFontSize="17" clearButtonMode="whileEditing" id="bTD-LU-R0Q">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Album title" minimumFontSize="17" clearButtonMode="whileEditing" id="bTD-LU-R0Q">
                                 <rect key="frame" x="20" y="125" width="280" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -577,6 +587,7 @@
                                 <items>
                                     <navigationItem id="eYg-yC-3ja">
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="AAt-eb-s68">
+                                            <color key="tintColor" red="0.46274509800000002" green="0.078431372550000003" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <action selector="cancelButtonAction:" destination="IeE-Hz-Y0C" id="nZF-6R-K8g"/>
                                             </connections>
@@ -588,6 +599,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="saveButton" destination="msU-SQ-Ttl" id="S7y-Yd-eV7"/>
+                        <outlet property="titleLable" destination="Aqm-Gb-MVf" id="CMQ-6y-TKf"/>
                         <outlet property="titoloText" destination="bTD-LU-R0Q" id="e00-02-aIa"/>
                         <outlet property="toolBar" destination="uz7-LS-yko" id="6ed-7o-8ZV"/>
                     </connections>
@@ -875,6 +888,8 @@
             <relationships>
                 <relationship kind="action" name="enableEditButton:"/>
                 <relationship kind="outlet" name="editButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="hint2Label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hintLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="mainView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="toolBar" candidateClass="UIToolbar"/>
@@ -885,6 +900,8 @@
             <relationships>
                 <relationship kind="action" name="cancelButtonAction:"/>
                 <relationship kind="action" name="saveButtonAction:"/>
+                <relationship kind="outlet" name="saveButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="titleLable" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="titoloText" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="toolBar" candidateClass="UINavigationBar"/>
             </relationships>

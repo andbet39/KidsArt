@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  kidsArt
+
+  Created by Andrea Terzani on 30/08/12.
+  Copyright (c) 2012 Andrea Terzani. All rights reserved.
+*/
+
+"BAMBINI" = "Bambini";
+"DISEGNO" = "Disegno";
+"ALBUM" = "Raccolta";
+"ALBUMS" = "Raccolte";
+
+
+
+"HINT_KID" = "Clicca sulla foto di un bambino";
+"HINT2_KID" = "per vedere tutti i suoi disegni";
+
+
+
+"NUOVO_ALBUM" = "Crea un nuovo album";
