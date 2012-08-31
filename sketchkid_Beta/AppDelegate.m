@@ -10,9 +10,29 @@
 
 @implementation AppDelegate
 
+
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    // attempt to extract a token from the url
+    return [FBSession.activeSession handleOpenURL:url];
+}
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    
+    bool value;
+    value = [prefs boolForKey:@"isFirstRun"];
+    
+    if (value==0) {
+        [self creaDefaultAlbum];
+        [prefs setBool:1 forKey:@"isFirstRun"];
+        [prefs synchronize];
+    }
     return YES;
 }
 							
@@ -35,12 +55,116 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    /*
+    if (FBSession.activeSession.state == FBSessionStateCreatedOpening) {
+        [FBSession.activeSession close]; // so we close our session and start over
+    }*/
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [FBSession.activeSession close];
+
+}
+
+
+
+- (void)creaDefaultAlbum {
+    
+    DataManager *dm =[DataManager sharedDataManager];
+    
+    Album *defaultAlbum = (Album *)[NSEntityDescription insertNewObjectForEntityForName:@"Album" inManagedObjectContext:dm.managedObjectContext];
+    
+    
+    [defaultAlbum setTitolo:@"Default"];
+    [defaultAlbum setOrder:[NSDecimalNumber numberWithInt:0]];
+    [defaultAlbum setDataCreazione:[NSDate date]];
+    [defaultAlbum setIsDefault:[NSNumber numberWithInt:1]];
+    //[defaultAlbum setCopertinaPath:]
+    
+    UIImage *firsrImage=[UIImage imageNamed:@"home.jpg"];
+    
+    
+    
+    
+    NSManagedObjectContext *context = [dm managedObjectContext];
+    
+    // Save the context.
+    NSError *error = nil;
+    if (![context save:&error]){
+        
+    }
+    
+    Sketch* save =[self saveSketch:firsrImage];
+    
+}
+
+-(Sketch*)saveSketch:(UIImage*)finalImage
+{
+    
+    DataManager *dm =[DataManager sharedDataManager];
+    
+    Sketch *sketch = (Sketch *)[NSEntityDescription insertNewObjectForEntityForName:@"Sketch" inManagedObjectContext:dm.managedObjectContext];
+    
+    
+    UIImage *image = finalImage;
+    NSData *imageData = UIImageJPEGRepresentation(image, 0.8);
+    
+    NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setLocale:locale];
+    [dateFormatter setDateFormat:@"yyyyMMdd-HHmmss"];
+    [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
+    
+    NSString *imageName = [NSString stringWithFormat:@"sketch-%@.png",
+                           [dateFormatter stringFromDate:[NSDate date]]];
+    
+    
+    // Find the path to the documents directory
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    // Now we get the full path to the file
+    NSString *fullPathToFile = [documentsDirectory stringByAppendingPathComponent:imageName];
+    
+    // Write out the data.
+    [imageData writeToFile:fullPathToFile atomically:NO];
+    
+    
+    //Salva il file dell' immmagine piccola
+    UIImage *smallSketch = [image scaleToSize:CGSizeMake(image.size.width/15, image.size.height/15)];
+    NSData *imageDataSmall = UIImageJPEGRepresentation(smallSketch, 0.6);
+    
+    NSString *imageNameSmall = [NSString stringWithFormat:@"sketch-%@-small.png",
+                                [dateFormatter stringFromDate:[NSDate date]]];
+    
+    NSString *fullPathToFileSmall = [documentsDirectory stringByAppendingPathComponent:imageNameSmall];
+    [imageDataSmall writeToFile:fullPathToFileSmall atomically:NO];
+    
+    
+    
+    //Prende istanza dell' album di default
+    AlbumManager *am =[AlbumManager sharedAlbumManager];
+    
+    Album * defaultAlbum= [am defaultAlbum];
+    
+    
+    //prepara il modello da salvare
+    [sketch setPathFull:fullPathToFile];
+    [sketch setPathSmall:fullPathToFileSmall];
+    [sketch setNota:@""];
+    [sketch setData:[NSDate date]];
+    [sketch setSaveDate:[NSDate date]];
+    
+    NSError *error = nil;
+    
+    
+    [defaultAlbum addAlbum2sketchObject:sketch];
+    
+    [[dm managedObjectContext] save:&error];
+    
+    return sketch;
+    
 }
 
 @end

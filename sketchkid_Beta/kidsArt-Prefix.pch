@@ -16,6 +16,7 @@
     #import "DataManager.h"
 
 #define scale_factor 5
+#define FBscale_factor 1.7
 
 #endif
 

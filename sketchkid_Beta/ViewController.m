@@ -17,6 +17,7 @@
 @synthesize frameButton;
 @synthesize adjustButton;
 @synthesize fintaNavigationBar;
+@synthesize activityIndicator;
 @synthesize mainView;
 @synthesize toolBar;
 @synthesize penButton;
@@ -126,6 +127,19 @@
     }
     
     
+    //Carica il viewController della condivisione
+    isShareVisible=FALSE;
+    
+    if (shareView==nil) {
+        shareView = [[ShareView alloc]   initWithFrame:CGRectMake(0, 500, 320, 170)];
+        
+        [shareView setDelegate:self];
+        [mainView addSubview:shareView];
+        
+    }
+    
+    
+    
     //Crea i filtri da utilizzare
     
     context = [CIContext contextWithOptions:nil];
@@ -148,6 +162,7 @@
     [self setFintaNavigationBar:nil];
     [self setMainImageView:nil];
     [self setMainView:nil];
+    [self setActivityIndicator:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -226,6 +241,13 @@
         [frameView moveTo:CGPointMake(0, 500) duration:0.5 option:UIViewAnimationCurveEaseOut];
         isFrameVisible=FALSE;
     }
+    if (isShareVisible) {
+        
+        [shareView moveTo:CGPointMake(0, 500) duration:0.5 option:UIViewAnimationCurveEaseOut];
+        isShareVisible=FALSE;
+    }
+    
+    
     if (isAdjustVisible) {
         
         [adjustView moveTo:CGPointMake(0, 500) duration:0.5 option:UIViewAnimationCurveEaseOut];
@@ -247,6 +269,11 @@
         [adjustView moveTo:CGPointMake(0, 500) duration:0.5 option:UIViewAnimationCurveEaseOut];
         isAdjustVisible=FALSE;
     }
+    if (isShareVisible) {
+        
+        [shareView moveTo:CGPointMake(0, 500) duration:0.5 option:UIViewAnimationCurveEaseOut];
+        isShareVisible=FALSE;
+    }
     
     if (isFrameVisible) {
         
@@ -260,6 +287,31 @@
     
     
     
+}
+
+- (IBAction)sharebuttonAction:(id)sender {
+    
+    //nasconde l' adjust prima di far vedere l altra
+    if (isAdjustVisible) {
+        
+        [adjustView moveTo:CGPointMake(0, 500) duration:0.5 option:UIViewAnimationCurveEaseOut];
+        isAdjustVisible=FALSE;
+    }
+    if (isFrameVisible) {
+        
+        [frameView moveTo:CGPointMake(0, 500) duration:0.5 option:UIViewAnimationCurveEaseOut];
+        isShareVisible=FALSE;
+    }
+    
+    if (isShareVisible) {
+        
+        [shareView moveTo:CGPointMake(0, 500) duration:0.5 option:UIViewAnimationCurveEaseOut];
+        isShareVisible=FALSE;
+    }else{
+        
+        [shareView moveTo:CGPointMake(0, 290) duration:0.5 option:UIViewAnimationCurveEaseOut];
+        isShareVisible=TRUE;
+    }
 }
 
 
@@ -293,6 +345,145 @@
 }
 
 
+#pragma mark shareViewDelegate method
+-(void)shareViewdidFacebook:(ShareView *)sender{
+    
+    if (FBSession.activeSession.isOpen) {
+        // login is integrated with the send button -- so if open, we send
+        [self sendFBRequests];
+
+    } else {
+        [FBSession openActiveSessionWithPermissions:nil
+                                       allowLoginUI:YES
+                                  completionHandler:^(FBSession *session,
+                                                      FBSessionState status,
+                                                      NSError *error) {
+                                      // if login fails for any reason, we alert
+                                      if (error) {
+                                          UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                                                          message:error.localizedDescription
+                                                                                         delegate:nil
+                                                                                cancelButtonTitle:@"OK"
+                                                                                otherButtonTitles:nil];
+                                          [alert show];
+                                          // if otherwise we check to see if the session is open, an alternative to
+                                          // to the FB_ISSESSIONOPENWITHSTATE helper-macro would be to check the isOpen
+                                          // property of the session object; the macros are useful, however, for more
+                                          // detailed state checking for FBSession objects
+                                      } else  {
+                                          // send our requests if we successfully logged in
+                                          [self sendFBRequests];
+                                      }
+                                  }];
+    }
+
+}
+
+
+
+-(void)shareViewdidTwitter:(ShareView *)sender{
+   
+    TWTweetComposeViewController *twitter = [[TWTweetComposeViewController alloc] init];
+    NSString *mess;
+    
+    if (currentSketch.kid==nil) {
+        mess = NSLocalizedString(@"DISEGNO_KIDART", nil );
+        
+    }else{
+        mess = [NSString stringWithFormat:@"%@ %@",NSLocalizedString(@"DISEGNO_FATTO_DA", nil),currentSketch.kid.nome];
+    }
+    [twitter setInitialText:mess];
+    
+    [twitter addImage:[mainImageView.image scaleToSize:CGSizeMake(mainImageView.image.size.width/FBscale_factor, mainImageView.image.size.height/FBscale_factor)]];
+                        
+    [self presentViewController:twitter animated:YES completion:nil];
+                        
+                        
+    twitter.completionHandler = ^(TWTweetComposeViewControllerResult res) {
+                            
+        if(res == TWTweetComposeViewControllerResultDone) {
+                        
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Success" message:@"The Tweet was posted successfully." delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles: nil];
+                                                      
+                [alert show];
+                                                      
+        }
+       if(res == TWTweetComposeViewControllerResultCancelled) {
+       
+           UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Cancelled" message:@"You Cancelled posting the Tweet." delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles: nil];
+                                                                                
+        [alert show];    
+                                                                                
+       }
+    [self dismissModalViewControllerAnimated:YES];
+                                                                                
+                                                                                };
+                                                                                
+
+}
+
+#pragma mark Facebook method
+- (void)sendFBRequests {
+
+    
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.mode = MBProgressHUDModeIndeterminate;
+    hud.labelText = NSLocalizedString(@"CONDIVIDENDO", nil);
+    
+    UIImage  * FBImage = [mainImageView.image scaleToSize:CGSizeMake(mainImageView.image.size.width/FBscale_factor, mainImageView.image.size.height/FBscale_factor)];
+    NSString *mess;
+    
+    if (currentSketch.kid==nil) {
+        mess = NSLocalizedString(@"DISEGNO_KIDART", nil );
+
+    }else{
+        mess = [NSString stringWithFormat:@"%@ %@",NSLocalizedString(@"DISEGNO_FATTO_DA", nil),currentSketch.kid.nome];
+    }
+    
+    NSMutableDictionary* params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+								   FBImage ,@"source",
+                                   mess, @"message",
+								   nil];
+	
+     
+    [FBRequestConnection startWithGraphPath:@"me/photos" parameters:params HTTPMethod:@"POST" completionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+        
+        //Nasconde la finestra di avanzamento
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        
+        //Nasconde il pannello di sharing
+        [shareView moveTo:CGPointMake(0, 500) duration:0.5 option:UIViewAnimationCurveEaseOut];
+        isShareVisible=FALSE;
+        
+        //Mostra un allert
+        [self showAlert:NSLocalizedString(@"FOTOSHARED", nil) result:result error:error];
+    }];
+     
+}
+
+// UIAlertView helper for post buttons
+- (void)showAlert:(NSString *)message
+           result:(id)result
+            error:(NSError *)error {
+    
+    NSString *alertMsg;
+    NSString *alertTitle;
+    if (error) {
+        alertMsg = error.localizedDescription;
+        alertTitle =NSLocalizedString(@"ERRORE", nil);
+    } else {
+        NSDictionary *resultDict = (NSDictionary *)result;
+        alertMsg =NSLocalizedString(@"SUCCESSOFBPOST", nil);
+        alertTitle = NSLocalizedString(@"SUCCESSO", nil);
+    }
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:alertTitle
+                                                        message:alertMsg
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+    [alertView show];
+}
 
 
 @end
