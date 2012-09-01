@@ -13,7 +13,6 @@
         <attribute name="nascita" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="photoPath" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="kid2Sketch" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Sketch" syncable="YES"/>
     </entity>
     <entity name="Sketch" representedClassName="Sketch" syncable="YES">
         <attribute name="data" optional="YES" attributeType="Date" syncable="YES"/>

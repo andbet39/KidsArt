@@ -113,7 +113,7 @@
     NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setLocale:locale];
-    [dateFormatter setDateFormat:@"yyyyMMdd-HHmmss"];
+    [dateFormatter setDateFormat:@"yyyyMMdd-HHmmssSSS"];
     [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
     
     NSString *imageName = [NSString stringWithFormat:@"sketch-%@.png",

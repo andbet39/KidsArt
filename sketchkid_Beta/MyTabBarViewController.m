@@ -202,6 +202,7 @@
     [am setSelectedAlbum:[am defaultAlbum]];
     
     [am.istanceOfHomeViewController reloadAlbumData];
+    [am.istanceOfAlbumViewController reloadData];
     
     [self setSelectedIndex:1];
     

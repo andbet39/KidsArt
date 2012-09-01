@@ -292,7 +292,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="xac-Mt-XYL"/>
-                                    <barButtonItem width="32" id="4ps-fe-V97"/>
+                                    <barButtonItem width="32" id="4ps-fe-V97">
+                                        <connections>
+                                            <action selector="deleteButtonAction:" destination="2" id="QcW-uZ-phC"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -883,6 +887,7 @@
             <relationships>
                 <relationship kind="action" name="adjustButtonAction:"/>
                 <relationship kind="action" name="cancelButtonAction:"/>
+                <relationship kind="action" name="deleteButtonAction:"/>
                 <relationship kind="action" name="editInfoButton:"/>
                 <relationship kind="action" name="frameButtonAction:"/>
                 <relationship kind="action" name="saveButtonAction:"/>

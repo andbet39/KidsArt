@@ -59,5 +59,6 @@
 - (IBAction)adjustButtonAction:(id)sender;
 - (IBAction)frameButtonAction:(id)sender;
 - (IBAction)sharebuttonAction:(id)sender;
+- (IBAction)deleteButtonAction:(id)sender;
 
 @end

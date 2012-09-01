@@ -152,8 +152,8 @@
 		65B7289915D564AF0025D692 /* SelectAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectAlbumViewController.m; sourceTree = "<group>"; };
 		65B7289B15D569E50025D692 /* newAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newAlbumViewController.h; sourceTree = "<group>"; };
 		65B7289C15D569E50025D692 /* newAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newAlbumViewController.m; sourceTree = "<group>"; };
-		65D461DA15D1882F00B79679 /* MyTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBarViewController.h; sourceTree = "<group>"; };
-		65D461DB15D1882F00B79679 /* MyTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarViewController.m; sourceTree = "<group>"; };
+		65D461DA15D1882F00B79679 /* MyTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyTabBarViewController.h; path = sketchkid_Beta/MyTabBarViewController.h; sourceTree = "<group>"; };
+		65D461DB15D1882F00B79679 /* MyTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyTabBarViewController.m; path = sketchkid_Beta/MyTabBarViewController.m; sourceTree = "<group>"; };
 		65D461EA15D2D15700B79679 /* TakePictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePictureViewController.h; sourceTree = "<group>"; };
 		65D461EB15D2D15700B79679 /* TakePictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePictureViewController.m; sourceTree = "<group>"; };
 		65D461ED15D2DDD800B79679 /* SegueWithNoAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegueWithNoAnimation.h; sourceTree = "<group>"; };
@@ -441,6 +441,8 @@
 		65FA96C515CE471300AC0CCD /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				65D461DA15D1882F00B79679 /* MyTabBarViewController.h */,
+				65D461DB15D1882F00B79679 /* MyTabBarViewController.m */,
 				65D4628815D5519500B79679 /* EditSketchInfoViewController.h */,
 				65D4628915D5519500B79679 /* EditSketchInfoViewController.m */,
 				65FA969415CD3A0700AC0CCD /* HomeViewController.h */,
@@ -475,8 +477,6 @@
 				B5FF1C0115D6431B004D42AF /* MKNumberBadgeView.m */,
 				65D4625C15D31CCD00B79679 /* CustomOverlayView.h */,
 				65D4625D15D31CCE00B79679 /* CustomOverlayView.m */,
-				65D461DA15D1882F00B79679 /* MyTabBarViewController.h */,
-				65D461DB15D1882F00B79679 /* MyTabBarViewController.m */,
 				65FA968B15CD2F7100AC0CCD /* UIToolbar+extension.h */,
 				65FA968C15CD2F7100AC0CCD /* UIToolbar+extension.m */,
 				65FA96AF15CD7A9600AC0CCD /* UIImage+Scale.h */,

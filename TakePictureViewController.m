@@ -39,7 +39,7 @@
     NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setLocale:locale];
-    [dateFormatter setDateFormat:@"yyyyMMdd-HHmmss"];
+    [dateFormatter setDateFormat:@"yyyyMMdd-HHmmssSSS"];
     [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
     
     NSString *imageName = [NSString stringWithFormat:@"sketch-%@.png",
@@ -139,7 +139,6 @@
 
 -(void)CustomOverlaydidDone{
     
-    [overlay startSpinner];
     
     //Salva tutte le immagini
     for (UIImage * i in tempPictureArray) {
@@ -147,7 +146,6 @@
         [self saveSketch:i];
     }
     
-    [overlay stopSpinner];
     
     [self dismissModalViewControllerAnimated:NO];
     [self.delegate TakePictureViewControllerDidAddSomePhoto:self];

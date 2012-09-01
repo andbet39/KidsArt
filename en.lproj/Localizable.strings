@@ -30,3 +30,8 @@
 
 "DISEGNO_KIDART" = "This sketch is made with KidsArt for iPhone";
 "DISEGNO_FATTO_DA"= "This sketch was made by ";
+
+"ALLERT_CANCELLA_DISEGNO"="Are you sure delete this sketch ?";
+"ALLERT"="Alert";
+
+"ANNULLA"="Cancel";

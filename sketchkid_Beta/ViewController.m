@@ -194,10 +194,12 @@
     }
 
     AlbumManager *am =[AlbumManager sharedAlbumManager];
+    
     [am.istanceOfAlbumViewController reloadData];
+    [am.istanceOfHomeViewController reloadAlbumData];
     
-    //TODO: deve salvare anche l' immagine
     
+
     
     [self.navigationController dismissModalViewControllerAnimated:YES];
     
@@ -314,7 +316,53 @@
     }
 }
 
+- (IBAction)deleteButtonAction:(id)sender {
+    
+    UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"ALLERT", nil) message:NSLocalizedString(@"ALLERT_CANCELLA_DISEGNO", nil) delegate:self cancelButtonTitle:NSLocalizedString(@"ANNULLA", nil) otherButtonTitles:@"OK", nil];
+    [alertView show];
+}
 
+
+#pragma mark allertview delegate
+
+
+- (void)alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex{
+    if(buttonIndex == 0){
+        // È stato premuto il bottone Cancel
+    } else if (buttonIndex == 1){
+
+        
+        
+        DataManager *dm = [DataManager sharedDataManager];
+        
+        
+        NSManagedObjectContext *moc = [dm managedObjectContext];
+        
+        [moc deleteObject:currentSketch];
+        
+        // Save the context.
+        NSError *error = nil;
+        if (![moc save:&error]) {
+            // Replace this implementation with code to handle the error appropriately.
+            // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+            abort();
+        }
+        
+        
+        
+        AlbumManager *am = [AlbumManager sharedAlbumManager];
+        
+        //[am setSelectedAlbum:[am defaultAlbum]];
+        
+        [am.istanceOfHomeViewController reloadAlbumData];
+        [am.istanceOfAlbumViewController reloadData];
+        
+        [self.navigationController dismissModalViewControllerAnimated:YES];
+
+        
+    }
+}
 
 #pragma mark AdjustViewControllerDelegate method
 

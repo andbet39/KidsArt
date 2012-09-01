@@ -41,8 +41,6 @@
 -(void)caricaAlbum{
 
 
-    
-    
     DataManager *dm = [DataManager sharedDataManager];
     
     
@@ -84,7 +82,6 @@
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-	
     
     if ([segue.identifier isEqualToString:@"newAlbum"])
     {
@@ -104,13 +101,16 @@
 
 - (void)viewDidLoad
 {
+    
+    
+    [super viewDidLoad];
+    
     AlbumManager *am =[AlbumManager sharedAlbumManager];
     
     [am setIstanceOfAlbumViewController:self];
     
     albumArray = [[NSMutableArray alloc]init];
     
-    [super viewDidLoad];
     [self caricaAlbum];
     [self creaToolBar];
 
@@ -127,10 +127,8 @@
     // Release any retained subviews of the main view.
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
+
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -144,15 +142,15 @@
         return [albumArray count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)_tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"AlbumCell";
     
-    AlbumCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    AlbumCell *cell = (AlbumCell*)[_tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    if (cell == nil) {
+    /*if (cell == nil) {
         cell = [[AlbumCell alloc] init];
-    }
+    }*/
     
     Album * t = [albumArray objectAtIndex:indexPath.row];
     
@@ -162,6 +160,12 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	if (editingStyle == UITableViewCellEditingStyleDelete)
+	{
+	}
+}
 
 #pragma mark - Table view delegate
 
@@ -186,6 +190,7 @@
 
 - (void)newAlbumViewController: (newAlbumViewController *)controller DidAddAlbum:(Album *)album
 {
+    
     [self dismissModalViewControllerAnimated:YES];
     [albumArray addObject:album];
     [tableView reloadData];
@@ -198,15 +203,12 @@
     // Save the context.
     NSError *error = nil;
     if (![context save:&error]) {
-        // Replace this implementation with code to handle the error appropriately.
-        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+        
+        
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
     }
 
-    
-    
-    
     
 }
 

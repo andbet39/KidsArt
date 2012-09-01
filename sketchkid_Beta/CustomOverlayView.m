@@ -55,31 +55,11 @@
         [self.counterBadge setValue:0];
         [self addSubview:self.counterBadge];
         
-        //TODO: L' indicatore non è visibile! Da correggere...
-        
-        self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-        self.spinner.alpha = 1.0;
-        self.spinner.frame=badgeFrame;
-        self.spinner.hidesWhenStopped = NO;
-
-        [self addSubview:self.spinner];
-
 
     }
     return self;
 }
 
--(void)startSpinner{
-    [self.spinner startAnimating];
-    
-    
-}
-
--(void)stopSpinner{
-
-    [self.spinner stopAnimating];
-    
-}
 -(void)doneButtonAction:(id)sender
 {
 
@@ -97,8 +77,9 @@
 
 - (void)takePicture:(id)sender
 {
-    [self.counterBadge setValue:self.counterBadge.value+1];
     [self.delegate CustomOverlaytakePicture];
+    [self.counterBadge setValue:self.counterBadge.value+1];
+
 }
 
 
