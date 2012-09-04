@@ -248,21 +248,16 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="y0T-7h-sbY">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="372"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
                             <view contentMode="scaleToFill" id="i3x-Nm-T6v">
-                                <rect key="frame" x="0.0" y="-44" width="320" height="460"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="-64" width="320" height="482"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" id="Q4B-TR-0Bq">
-                                        <rect key="frame" x="142" y="162" width="37" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="color" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                    </activityIndicatorView>
+                                    <imageView contentMode="scaleToFill" id="vCS-Pv-nQN">
+                                        <rect key="frame" x="0.0" y="421" width="320" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.46274509800000002" green="0.078431372550000003" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="AIm-Tm-5C5">
                                 <rect key="frame" x="0.0" y="372" width="320" height="44"/>
@@ -318,10 +313,9 @@
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                     <connections>
-                        <outlet property="activityIndicator" destination="Q4B-TR-0Bq" id="uNS-cP-xDf"/>
                         <outlet property="adjustButton" destination="BLl-K3-hrN" id="Fgs-BJ-ISU"/>
                         <outlet property="frameButton" destination="kxh-tU-vA4" id="wsc-7A-bIq"/>
-                        <outlet property="mainImageView" destination="y0T-7h-sbY" id="AH3-Xe-2Gd"/>
+                        <outlet property="mainImageView" destination="vCS-Pv-nQN" id="fVu-wG-SVZ"/>
                         <outlet property="mainView" destination="i3x-Nm-T6v" id="SOb-xA-lh0"/>
                         <outlet property="penButton" destination="qK1-AL-3Wd" id="PIm-hq-b3P"/>
                         <outlet property="shareButton" destination="x2R-SK-fwW" id="0ml-H7-cFF"/>

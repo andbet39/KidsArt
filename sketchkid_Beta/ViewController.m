@@ -18,12 +18,15 @@
 @synthesize adjustButton;
 @synthesize fintaNavigationBar;
 @synthesize activityIndicator;
+@synthesize scrollView;
 @synthesize mainView;
 @synthesize toolBar;
 @synthesize penButton;
 @synthesize shareButton;
 @synthesize currentSketch;
 @synthesize mainImageView;
+
+
 
 
 
@@ -88,6 +91,15 @@
 
 }
 
+
+
+
+
+
+
+
+
+
 - (void)viewDidLoad
 {
     
@@ -101,6 +113,20 @@
     currentSketch=sm.editedSketch;
     
     [self loadSketch];
+    
+    AlbumManager *am =[AlbumManager sharedAlbumManager];
+    
+    currentAlbum = am.selectedAlbum;
+    self.wantsFullScreenLayout=TRUE;
+
+    CGRect screenFrame = [UIScreen mainScreen].bounds;
+    [mainView setFrame:screenFrame];
+    scrollView = [[ATScrollView alloc]initWithFrame:CGRectMake(0, 0, 320, 480)];
+    
+    [scrollView initATScrollviewWithSketchArray:currentAlbum.album2sketch];
+    [scrollView setUserInteractionEnabled:TRUE];
+    [scrollView setDelegate:self];
+    [mainView addSubview:scrollView];
     
     
     //Carica il viewController delle regolazioni e lo mette fuori schermo
@@ -138,6 +164,7 @@
         
     }
     
+    isInterfaceVisible=TRUE;
     
     
     //Crea i filtri da utilizzare
@@ -148,8 +175,10 @@
     
     controlFilter = [CIFilter filterWithName:@"CIColorControls" keysAndValues:kCIInputImageKey,filterPreviewImage,nil];
     
-
+   
+        
 }
+
 
 - (void)viewDidUnload
 {
@@ -163,6 +192,7 @@
     [self setMainImageView:nil];
     [self setMainView:nil];
     [self setActivityIndicator:nil];
+    [self setScrollView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -256,7 +286,7 @@
         isAdjustVisible=FALSE;
     }else{
     
-        [adjustView moveTo:CGPointMake(0, 290) duration:0.5 option:UIViewAnimationCurveEaseOut];
+        [adjustView moveTo:CGPointMake(0, 245) duration:0.5 option:UIViewAnimationCurveEaseOut];
         isAdjustVisible=TRUE;
     }
     
@@ -283,7 +313,7 @@
         isFrameVisible=FALSE;
     }else{
         
-        [frameView moveTo:CGPointMake(0, 290) duration:0.5 option:UIViewAnimationCurveEaseOut];
+        [frameView moveTo:CGPointMake(0, 245) duration:0.5 option:UIViewAnimationCurveEaseOut];
         isFrameVisible=TRUE;
     }
     
@@ -311,7 +341,7 @@
         isShareVisible=FALSE;
     }else{
         
-        [shareView moveTo:CGPointMake(0, 290) duration:0.5 option:UIViewAnimationCurveEaseOut];
+        [shareView moveTo:CGPointMake(0, 245) duration:0.5 option:UIViewAnimationCurveEaseOut];
         isShareVisible=TRUE;
     }
 }
@@ -321,6 +351,50 @@
     UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"ALLERT", nil) message:NSLocalizedString(@"ALLERT_CANCELLA_DISEGNO", nil) delegate:self cancelButtonTitle:NSLocalizedString(@"ANNULLA", nil) otherButtonTitles:@"OK", nil];
     [alertView show];
 }
+
+
+
+#pragma mark ATScrollView Delegate
+
+-(void)ATScrollViewDidTapOnView:(ATScrollView *)sender
+{
+    if (isInterfaceVisible) {
+
+        //nascondo tutti i pannelli
+        isInterfaceVisible=FALSE;
+        [adjustView moveTo:CGPointMake(0, 500) duration:0.1 option:UIViewAnimationCurveEaseOut];
+        isAdjustVisible=FALSE;
+        [frameView moveTo:CGPointMake(0, 500) duration:0.1 option:UIViewAnimationCurveEaseOut];
+        isShareVisible=FALSE;
+        [shareView moveTo:CGPointMake(0, 500) duration:0.1 option:UIViewAnimationCurveEaseOut];
+        isShareVisible=FALSE;
+        
+        
+        
+        [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
+        [self showBars:FALSE animated:NO];
+
+        [scrollView.scrollView setContentInset:UIEdgeInsetsMake(64, 0, 0, 0)];
+
+        [scrollView.scrollView setScrollEnabled:TRUE];
+        
+        
+        
+    }else{
+        [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
+        [self showBars:TRUE animated:NO];
+
+        [scrollView.scrollView setContentInset:UIEdgeInsetsMake(0, 0, 0, 0)];
+
+        isInterfaceVisible=TRUE;
+
+        [scrollView.scrollView setScrollEnabled:false];
+
+        
+    }
+    
+}
+
 
 
 #pragma mark allertview delegate
@@ -533,5 +607,50 @@
     [alertView show];
 }
 
+- (void)showBars:(BOOL)show animated:(BOOL)animated {
+    
+    CGFloat alpha = show ? 1 : 0;
+    if (alpha == toolBar.alpha)
+        return;
+    
+    if (animated) {
+        [UIView beginAnimations:nil context:nil];
+        [UIView setAnimationDuration:0.2];
+        [UIView setAnimationDelegate:self];
+        if (show) {
+            [UIView setAnimationDidStopSelector:@selector(showBarsAnimationDidStop)];
+            
+        } else {
+            [UIView setAnimationDidStopSelector:@selector(hideBarsAnimationDidStop)];
+        }
+        
+    } else {
+        if (show) {
+            [self showBarsAnimationDidStop];
+            
+        } else {
+            [self hideBarsAnimationDidStop];
+        }
+    }
+    
+    //[self showCaptions:show];
+    
+    toolBar.alpha = alpha;
+    
+    if (animated) {
+        [UIView commitAnimations];
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)showBarsAnimationDidStop {
+    self.navigationController.navigationBarHidden = NO;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)hideBarsAnimationDidStop {
+    self.navigationController.navigationBarHidden = YES;
+}
 
 @end

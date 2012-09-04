@@ -16,28 +16,37 @@
 #import "ShareView.h"
 #import "AppDelegate.h"
 #import "MBProgressHUD.h"
+#import "ATScrollView.h"
+#import "AppDelegate.h"
 
-@interface ViewController : UIViewController<AdjustViewDelegate,ShareViewDelegate>
+
+@interface ViewController : UIViewController<AdjustViewDelegate,ShareViewDelegate,ATScrollViewDelegate>
 {
 
 
     bool isAdjustVisible;
     bool isFrameVisible;
     bool isShareVisible;
+    bool isInterfaceVisible;
+    
     
     AdjustView * adjustView;
     FrameSelectView * frameView;
     ShareView * shareView;
     
+    Album * currentAlbum;
+    NSMutableArray * sketchArray;
+    
     
     CIContext *context;
     CIFilter * controlFilter;
     
-
+ 
 }
 
 @property (strong, nonatomic) FBRequestConnection *requestConnection;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (strong, nonatomic) IBOutlet ATScrollView *scrollView;
 
 @property (weak, nonatomic) IBOutlet UIView *mainView;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
@@ -52,6 +61,7 @@
 @property (strong,nonatomic)Sketch * currentSketch;
 
 @property (weak, nonatomic) IBOutlet UIImageView *mainImageView;
+
 
 - (IBAction)editInfoButton:(id)sender;
 - (IBAction)saveButtonAction:(id)sender;

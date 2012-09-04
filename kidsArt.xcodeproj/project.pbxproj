@@ -39,6 +39,7 @@
 		6563084915EEA2F80007A36B /* niente.png in Resources */ = {isa = PBXBuildFile; fileRef = 6563084815EEA2F80007A36B /* niente.png */; };
 		65B7289A15D564AF0025D692 /* SelectAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B7289915D564AF0025D692 /* SelectAlbumViewController.m */; };
 		65B7289D15D569E50025D692 /* newAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B7289C15D569E50025D692 /* newAlbumViewController.m */; };
+		65BFC25615F6B5D2001B61D5 /* ATScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BFC25515F6B5D2001B61D5 /* ATScrollView.m */; };
 		65D461DC15D1882F00B79679 /* MyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461DB15D1882F00B79679 /* MyTabBarViewController.m */; };
 		65D461EC15D2D15700B79679 /* TakePictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461EB15D2D15700B79679 /* TakePictureViewController.m */; };
 		65D461EF15D2DDD800B79679 /* SegueWithNoAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D461EE15D2DDD800B79679 /* SegueWithNoAnimation.m */; };
@@ -122,7 +123,6 @@
 		65148E4815F1366300D8458C /* ShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareView.m; sourceTree = "<group>"; };
 		65148E6A15F15E1300D8458C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		65148E6B15F15E1300D8458C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		65148E6D15F1626700D8458C /* it */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = it; path = it.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		65148E7C15F16B5600D8458C /* shareFB@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shareFB@2x.png"; sourceTree = "<group>"; };
 		65148E7D15F16B5600D8458C /* shareMail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shareMail@2x.png"; sourceTree = "<group>"; };
 		65148E7E15F16B5600D8458C /* shareTwitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shareTwitter@2x.png"; sourceTree = "<group>"; };
@@ -152,6 +152,8 @@
 		65B7289915D564AF0025D692 /* SelectAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectAlbumViewController.m; sourceTree = "<group>"; };
 		65B7289B15D569E50025D692 /* newAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newAlbumViewController.h; sourceTree = "<group>"; };
 		65B7289C15D569E50025D692 /* newAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newAlbumViewController.m; sourceTree = "<group>"; };
+		65BFC25415F6B5D2001B61D5 /* ATScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATScrollView.h; sourceTree = "<group>"; };
+		65BFC25515F6B5D2001B61D5 /* ATScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATScrollView.m; sourceTree = "<group>"; };
 		65D461DA15D1882F00B79679 /* MyTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyTabBarViewController.h; path = sketchkid_Beta/MyTabBarViewController.h; sourceTree = "<group>"; };
 		65D461DB15D1882F00B79679 /* MyTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyTabBarViewController.m; path = sketchkid_Beta/MyTabBarViewController.m; sourceTree = "<group>"; };
 		65D461EA15D2D15700B79679 /* TakePictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePictureViewController.h; sourceTree = "<group>"; };
@@ -487,6 +489,8 @@
 				65FA96C315CD8F0D00AC0CCD /* UIView+PartialCurl.m */,
 				65D461ED15D2DDD800B79679 /* SegueWithNoAnimation.h */,
 				65D461EE15D2DDD800B79679 /* SegueWithNoAnimation.m */,
+				65BFC25415F6B5D2001B61D5 /* ATScrollView.h */,
+				65BFC25515F6B5D2001B61D5 /* ATScrollView.m */,
 			);
 			name = helper;
 			sourceTree = "<group>";
@@ -674,6 +678,7 @@
 				6563083415EE8C480007A36B /* FrameSelectView.m in Sources */,
 				65148E4915F1366300D8458C /* ShareView.m in Sources */,
 				65148E6C15F15E1300D8458C /* MBProgressHUD.m in Sources */,
+				65BFC25615F6B5D2001B61D5 /* ATScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,7 +707,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				65FA967E15CD263900AC0CCD /* en */,
-				65148E6D15F1626700D8458C /* it */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
