@@ -11,7 +11,7 @@
 @implementation FrameSelectView
 @synthesize frameScrollView;
 @synthesize selfView;
-
+@synthesize delegate;
 
 
 -(void) inizializzaLista
@@ -23,16 +23,18 @@
     NSDictionary * rootDictionary = [NSDictionary dictionaryWithContentsOfFile:finalPath] ;
     
     
-    NSDictionary *frameList = (NSDictionary*) [rootDictionary objectForKey:@"frames"];
+    NSDictionary * frameList = (NSDictionary*) [rootDictionary objectForKey:@"frames"];
+    frameName=[[NSMutableArray alloc]init];
     int offsetX =10;
     
     int maxX=0;
     
-    
+    int index=0;
     
     for(NSString * key in frameList)
     {
         
+        [frameName addObject:key];
         
         NSDictionary * frame = (NSDictionary*) [frameList objectForKey:key];
         UIView *frameView = [[UIView alloc] initWithFrame:CGRectMake(offsetX, 0, 60, 60)];
@@ -63,10 +65,11 @@
         framePreviewImageView.layer.masksToBounds = YES;
         framePreviewImageView.frame = CGRectMake(0, 0, 60, 60);
         
-//        frameView.tag = index;
-
+        framePreviewImageView.tag= index;
+        index++;
+        
             
-        //[self applyGesturesToFilterPreviewImageView:filterView];
+        [self applyGesturesToFilterPreviewImageView:framePreviewImageView];
         
         [frameView addSubview:framePreviewImageView];
         [frameView addSubview:frameNameLabel];
@@ -75,12 +78,52 @@
         
         offsetX += frameView.bounds.size.width + 10;
         maxX+=70;
+        
+        
     }
     
     [self.frameScrollView setContentSize:CGSizeMake(maxX, 60)];
     
 }
 
+-(void )applyGesturesToFilterPreviewImageView:(UIImageView *)framePreviewImageView{
+    
+    UITapGestureRecognizer *tap =[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped:)];
+    [framePreviewImageView setUserInteractionEnabled:YES];
+    [framePreviewImageView addGestureRecognizer:tap];
+
+    
+}
+
+
+-(void)viewTapped:(id)sender{
+
+    int index = [(UITapGestureRecognizer *) sender view].tag;
+    
+    NSString *path = [[NSBundle mainBundle] bundlePath];
+    NSString *finalPath = [path stringByAppendingPathComponent:@"frameList.plist"];
+    
+    
+    NSDictionary * rootDictionary = [NSDictionary dictionaryWithContentsOfFile:finalPath] ;
+    
+    
+    NSDictionary * frameList = (NSDictionary*) [rootDictionary objectForKey:@"frames"];
+    
+    
+    NSDictionary * frame = (NSDictionary*) [frameList objectForKey:[frameName objectAtIndex:index]];
+
+    Frame * fr = [[Frame alloc]init];
+    
+    
+    [fr setName:[frame valueForKey:@"name"]];
+    [fr setSample:[frame valueForKey:@"sample"]];
+    [fr setImage_o:[frame valueForKey:@"image_o"]];
+    [fr setImage_v:[frame valueForKey:@"image_v"]];
+    
+    [delegate FrameSelectView:self didSelectFrame:fr];
+    
+    
+}
 
 
 - (id)initWithFrame:(CGRect)frame

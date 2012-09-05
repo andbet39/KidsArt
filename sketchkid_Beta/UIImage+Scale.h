@@ -10,5 +10,10 @@
 
 @interface UIImage (Scale)
 -(UIImage*)scaleToSize:(CGSize)size;
+- (UIImage *)croppedImage:(CGRect)bounds ;
+- (UIImage *)fixOrientation;
+
+- (UIImage *)scaledCopyOfSize:(CGSize)newSize ;
+- (UIImage*)overlayWith:(UIImage*)overlayImage;
 
 @end

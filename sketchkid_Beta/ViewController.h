@@ -18,9 +18,9 @@
 #import "MBProgressHUD.h"
 #import "ATScrollView.h"
 #import "AppDelegate.h"
+#import "ATPhotoScrollView.h"
 
-
-@interface ViewController : UIViewController<AdjustViewDelegate,ShareViewDelegate,ATScrollViewDelegate>
+@interface ViewController : UIViewController<AdjustViewDelegate,ShareViewDelegate,ATPhotoScrollViewDelegate,FrameSelectViewDelegate>
 {
 
 
@@ -46,7 +46,7 @@
 
 @property (strong, nonatomic) FBRequestConnection *requestConnection;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
-@property (strong, nonatomic) IBOutlet ATScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet ATPhotoScrollView *scrollView;
 
 @property (weak, nonatomic) IBOutlet UIView *mainView;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
@@ -61,6 +61,7 @@
 @property (strong,nonatomic)Sketch * currentSketch;
 
 @property (weak, nonatomic) IBOutlet UIImageView *mainImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *frameImageView;
 
 
 - (IBAction)editInfoButton:(id)sender;

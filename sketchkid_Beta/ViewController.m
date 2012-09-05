@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 
+
+#define kVIEW_BASE 290
+
+
 @interface ViewController ()
 
 @end
@@ -25,6 +29,7 @@
 @synthesize shareButton;
 @synthesize currentSketch;
 @synthesize mainImageView;
+@synthesize frameImageView;
 
 
 
@@ -92,14 +97,6 @@
 }
 
 
-
-
-
-
-
-
-
-
 - (void)viewDidLoad
 {
     
@@ -117,26 +114,27 @@
     AlbumManager *am =[AlbumManager sharedAlbumManager];
     
     currentAlbum = am.selectedAlbum;
-    self.wantsFullScreenLayout=TRUE;
+    
+  
+    CGRect fullscreenFrame= CGRectMake(0,-62,320,480);
+    [mainView setFrame: fullscreenFrame];
 
-    CGRect screenFrame = [UIScreen mainScreen].bounds;
-    [mainView setFrame:screenFrame];
-    scrollView = [[ATScrollView alloc]initWithFrame:CGRectMake(0, 0, 320, 480)];
-    
-    [scrollView initATScrollviewWithSketchArray:currentAlbum.album2sketch];
-    [scrollView setUserInteractionEnabled:TRUE];
+    sketchArray = [[NSMutableArray alloc]initWithArray:[currentAlbum.album2sketch allObjects]];
+    scrollView = [[ATPhotoScrollView alloc]init];
+    [scrollView setSketchArray:sketchArray];
     [scrollView setDelegate:self];
-    [mainView addSubview:scrollView];
+
     
-    
+    [mainView addSubview:scrollView.view];
+    [scrollView setToIndex:[sketchArray indexOfObject:currentSketch]];
+    [scrollView disableZoomAndScroll];
+
     //Carica il viewController delle regolazioni e lo mette fuori schermo
     isAdjustVisible=FALSE;
     
     if (adjustView==nil) {
         adjustView= [[AdjustView alloc]   initWithFrame:CGRectMake(0, 500, 320, 170)];
-        
-        [adjustView setDelegate:self];
-        
+        [adjustView setDelegate:self]; 
         [mainView addSubview:adjustView];
         
     }
@@ -144,9 +142,8 @@
     isFrameVisible=FALSE;
     
     if (frameView==nil) {
-        frameView= [[FrameSelectView alloc]   initWithFrame:CGRectMake(0, 500, 320, 170)];
-        
-        //[frameView setDelegate:self];
+        frameView= [[FrameSelectView alloc]   initWithFrame:CGRectMake(0, 500, 320, 170)];   
+        [frameView setDelegate:self];
         [frameView inizializza];
         [mainView addSubview:frameView];
         
@@ -166,16 +163,10 @@
     
     isInterfaceVisible=TRUE;
     
+    mainImageView=[scrollView getCurrentImageView];
     
-    //Crea i filtri da utilizzare
-    
-    context = [CIContext contextWithOptions:nil];
-
-    CIImage * filterPreviewImage =[[CIImage alloc]initWithImage:mainImageView.image];
-    
-    controlFilter = [CIFilter filterWithName:@"CIColorControls" keysAndValues:kCIInputImageKey,filterPreviewImage,nil];
-    
-   
+    [self resetFilter];
+       
         
 }
 
@@ -286,7 +277,7 @@
         isAdjustVisible=FALSE;
     }else{
     
-        [adjustView moveTo:CGPointMake(0, 245) duration:0.5 option:UIViewAnimationCurveEaseOut];
+        [adjustView moveTo:CGPointMake(0, kVIEW_BASE) duration:0.5 option:UIViewAnimationCurveEaseOut];
         isAdjustVisible=TRUE;
     }
     
@@ -313,7 +304,7 @@
         isFrameVisible=FALSE;
     }else{
         
-        [frameView moveTo:CGPointMake(0, 245) duration:0.5 option:UIViewAnimationCurveEaseOut];
+        [frameView moveTo:CGPointMake(0, kVIEW_BASE) duration:0.5 option:UIViewAnimationCurveEaseOut];
         isFrameVisible=TRUE;
     }
     
@@ -341,7 +332,7 @@
         isShareVisible=FALSE;
     }else{
         
-        [shareView moveTo:CGPointMake(0, 245) duration:0.5 option:UIViewAnimationCurveEaseOut];
+        [shareView moveTo:CGPointMake(0, kVIEW_BASE) duration:0.5 option:UIViewAnimationCurveEaseOut];
         isShareVisible=TRUE;
     }
 }
@@ -354,9 +345,9 @@
 
 
 
-#pragma mark ATScrollView Delegate
+#pragma mark ATPhotoScrollView Delegate
 
--(void)ATScrollViewDidTapOnView:(ATScrollView *)sender
+-(void)ATPhotoScrollViewDidTapOnView:(ATPhotoScrollView*)sender withIndex:(NSUInteger)index andImageview:(UIImageView *)photoview;
 {
     if (isInterfaceVisible) {
 
@@ -369,14 +360,13 @@
         [shareView moveTo:CGPointMake(0, 500) duration:0.1 option:UIViewAnimationCurveEaseOut];
         isShareVisible=FALSE;
         
-        
+        [sender enableZoomAndScroll ];
         
         [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
         [self showBars:FALSE animated:NO];
 
-        [scrollView.scrollView setContentInset:UIEdgeInsetsMake(64, 0, 0, 0)];
-
-        [scrollView.scrollView setScrollEnabled:TRUE];
+        CGRect fullscreenFrame= CGRectMake(0,0,320,480);
+        [mainView setFrame: fullscreenFrame];
         
         
         
@@ -384,17 +374,40 @@
         [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
         [self showBars:TRUE animated:NO];
 
-        [scrollView.scrollView setContentInset:UIEdgeInsetsMake(0, 0, 0, 0)];
+        [sender disableZoomAndScroll ];
 
         isInterfaceVisible=TRUE;
 
-        [scrollView.scrollView setScrollEnabled:false];
-
+        CGRect fullscreenFrame= CGRectMake(0,-62,320,480);
+        [mainView setFrame: fullscreenFrame];
+        
+        currentSketch = [sketchArray objectAtIndex:index];
+        
+        SketchManager *sm =[SketchManager sharedSketchManager];
+        
+        sm.editedSketch=currentSketch;
+        
+        mainImageView=photoview;
+        
+        [self resetFilter];
         
     }
     
 }
 
+-(void)resetFilter{
+
+    //Crea i filtri da utilizzare
+    
+    context = [CIContext contextWithOptions:nil];
+    
+    CIImage * filterPreviewImage =[[CIImage alloc]initWithImage:mainImageView.image];
+    
+    controlFilter = [CIFilter filterWithName:@"CIColorControls" keysAndValues:kCIInputImageKey,filterPreviewImage,nil];
+    
+
+
+}
 
 
 #pragma mark allertview delegate
@@ -406,16 +419,24 @@
     } else if (buttonIndex == 1){
 
         
-        
+        NSFileManager *fileMgr = [NSFileManager defaultManager];
+        NSError *error;
+
         DataManager *dm = [DataManager sharedDataManager];
         
         
         NSManagedObjectContext *moc = [dm managedObjectContext];
         
+        
+        if ([fileMgr removeItemAtPath:currentSketch.pathFull error:&error] != YES)
+            NSLog(@"Unable to delete file: %@", [error localizedDescription]);
+        if ([fileMgr removeItemAtPath:currentSketch.pathSmall error:&error] != YES)
+            NSLog(@"Unable to delete file: %@", [error localizedDescription]);
+        
+        
         [moc deleteObject:currentSketch];
         
         // Save the context.
-        NSError *error = nil;
         if (![moc save:&error]) {
             // Replace this implementation with code to handle the error appropriately.
             // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
@@ -466,6 +487,27 @@
 
 }
 
+
+#pragma mark frameSelectviewDelegate
+-(void)FrameSelectView:(FrameSelectView *)sender didSelectFrame:(Frame *)frame
+{
+    //Nasconde la view
+    if (isFrameVisible) {
+        
+        [frameView moveTo:CGPointMake(0, 500) duration:0.5 option:UIViewAnimationCurveEaseOut];
+        isShareVisible=FALSE;
+    }
+    
+    
+    [UIImage imageNamed:frame.image_v];
+    if (mainImageView.image.size.width>mainImageView.image.size.height) {
+        mainImageView.image= [mainImageView.image overlayWith:[UIImage imageNamed:frame.image_o]];
+
+    }else{
+        mainImageView.image= [mainImageView.image overlayWith:[UIImage imageNamed:frame.image_v]];
+    }
+
+}
 
 #pragma mark shareViewDelegate method
 -(void)shareViewdidFacebook:(ShareView *)sender{
@@ -539,7 +581,7 @@
        }
     [self dismissModalViewControllerAnimated:YES];
                                                                                 
-                                                                                };
+                                                                            };
                                                                                 
 
 }

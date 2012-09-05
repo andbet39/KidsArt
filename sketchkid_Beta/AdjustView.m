@@ -42,4 +42,16 @@
     
     [delegate AdjustView:self didChangedBrightness:value];
 }
+
+-(void)setVisible:(bool)isVisible{
+
+    if (isVisible) {
+        [self moveTo:CGPointMake(0, 500) duration:0.5 option:UIViewAnimationCurveEaseOut];
+    }else
+    {
+        [self moveTo:CGPointMake(0, 245) duration:0.5 option:UIViewAnimationCurveEaseOut];
+    
+    }
+
+}
 @end

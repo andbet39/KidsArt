@@ -222,7 +222,7 @@
     DataManager *dm =[DataManager sharedDataManager];
     Kid * selectedKid= [kidsArray objectAtIndex:position];
     
-    Album *disegniDiAlbum = (Album *)[NSEntityDescription insertNewObjectForEntityForName:@"Album" inManagedObjectContext:dm.managedObjectContext];
+    Album *disegniDiAlbum = (Album *)[NSEntityDescription insertNewObjectForEntityForName:@"Album" inManagedObjectContext:dm.TempManagedObjectContext];
     disegniDiAlbum.titolo=[NSString stringWithFormat:@"Disegni di %@",selectedKid.nome];
     disegniDiAlbum.order=[NSDecimalNumber numberWithInt:1000];
     disegniDiAlbum.dataCreazione=[NSDate date];
@@ -249,9 +249,10 @@
     
     AlbumManager *am = [AlbumManager sharedAlbumManager];
     [am setSelectedAlbum:disegniDiAlbum];
+     
     [am.istanceOfHomeViewController reloadAlbumData];
     
-    [dm.managedObjectContext deleteObject:disegniDiAlbum];
+    //[dm.managedObjectContext deleteObject:disegniDiAlbum];
     [self.tabBarController setSelectedIndex:1];
     
 }

@@ -8,8 +8,9 @@ dependencies: \
   /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../Kid.h \
   /Users/andrea/Desktop/kidsArt/sketchkid_Beta/kidCell.h \
   /Users/andrea/Desktop/kidsArt/sketchkid_Beta/AdjustView.h \
-  /Users/andrea/Desktop/kidsArt/sketchkid_Beta/FrameSelectView.h \
   /Users/andrea/Desktop/kidsArt/sketchkid_Beta/UIView+Animation.h \
+  /Users/andrea/Desktop/kidsArt/sketchkid_Beta/FrameSelectView.h \
+  /Users/andrea/Desktop/kidsArt/sketchkid_Beta/Frame.h \
   /Users/andrea/Desktop/kidsArt/sketchkid_Beta/ShareView.h \
   /Users/andrea/Desktop/kidsArt/sketchkid_Beta/AppDelegate.h \
   /Users/andrea/Desktop/kidsArt/../../Documents/FacebookSDK/FacebookSDK.framework/Headers/FacebookSDK.h \
@@ -31,4 +32,6 @@ dependencies: \
   /Users/andrea/Desktop/kidsArt/../../Documents/FacebookSDK/FacebookSDK.framework/Headers/FBFriendPickerViewController.h \
   /Users/andrea/Desktop/kidsArt/../../Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphAction.h \
   /Users/andrea/Desktop/kidsArt/sketchkid_Beta/MBProgressHUD.h \
-  /Users/andrea/Desktop/kidsArt/sketchkid_Beta/ATScrollView.h
+  /Users/andrea/Desktop/kidsArt/sketchkid_Beta/ATScrollView.h \
+  /Users/andrea/Desktop/kidsArt/sketchkid_Beta/ATPhotoScrollView.h \
+  /Users/andrea/Desktop/kidsArt/sketchkid_Beta/ImageScrollView.h

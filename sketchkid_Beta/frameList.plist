@@ -6,27 +6,22 @@
 	<dict>
 		<key>Stelle</key>
 		<dict>
-			<key>image</key>
-			<string>stelle.png</string>
+			<key>image_v</key>
+			<string>stelle_v.png</string>
 			<key>sample</key>
 			<string>stelle_sample.png</string>
 			<key>name</key>
 			<string>Stelle</string>
-		</dict>
-		<key>Nessuna</key>
-		<dict>
-			<key>image</key>
-			<string>nill</string>
-			<key>name</key>
-			<string>Nessuna</string>
-			<key>sample</key>
-			<string>niente.png</string>
+			<key>image_o</key>
+			<string>stelle.png</string>
 		</dict>
 		<key>Verde</key>
 		<dict>
 			<key>name</key>
 			<string>Verde</string>
-			<key>image</key>
+			<key>image_o</key>
+			<string>verde.png</string>
+			<key>image_v</key>
 			<string>verde.png</string>
 			<key>sample</key>
 			<string>verde_sample.png</string>

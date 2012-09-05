@@ -13,6 +13,7 @@ static DataManager *sharedDataManager = nil;
 
 
 @synthesize managedObjectContext = __managedObjectContext;
+@synthesize TempManagedObjectContext = __TempManagedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 
@@ -28,6 +29,20 @@ static DataManager *sharedDataManager = nil;
 
 
 #pragma mark - Core Data stack
+- (NSManagedObjectContext *)TempManagedObjectContext
+{
+    if (__TempManagedObjectContext != nil) {
+        return __TempManagedObjectContext;
+    }
+    
+    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+    if (coordinator != nil) {
+        __TempManagedObjectContext = [[NSManagedObjectContext alloc] init];
+        [__TempManagedObjectContext setPersistentStoreCoordinator:coordinator];
+    }
+    return __TempManagedObjectContext;
+}
+
 
 // Returns the managed object context for the application.
 // If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.

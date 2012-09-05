@@ -7,6 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+
+#import "UIView+Animation.h"
+
+
 @class AdjustView;
 
 @protocol AdjustViewDelegate <NSObject>
@@ -22,6 +26,7 @@
 
 - (IBAction)contrastChanged:(id)sender;
 - (IBAction)brightnessChanged:(id)sender;
+-(void)setVisible:(bool)isVisible;
 
 @property (strong,nonatomic) id <AdjustViewDelegate> delegate;
 

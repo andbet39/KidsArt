@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "kidsViewController.m"
-         timestampString = "368041442.965839"
+         timestampString = "368530594.736433"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "266"
-         endingLineNumber = "266"
+         startingLineNumber = "267"
+         endingLineNumber = "267"
          landmarkName = "-GMGridView:processDeleteActionForItemAtIndex:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "TakePictureViewController.m"
-         timestampString = "368182135.086226"
+         timestampString = "368538710.864632"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "168"
-         endingLineNumber = "168"
+         startingLineNumber = "171"
+         endingLineNumber = "171"
          landmarkName = "-imagePickerControllerDidCancel:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -47,11 +47,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "TakePictureViewController.m"
-         timestampString = "366157750.200666"
+         timestampString = "368538710.864632"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "67"
-         endingLineNumber = "67"
+         startingLineNumber = "70"
+         endingLineNumber = "70"
          landmarkName = "-saveSketch:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -86,11 +86,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "TakePictureViewController.m"
-         timestampString = "366157750.200666"
+         timestampString = "368538710.864632"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "68"
-         endingLineNumber = "68"
+         startingLineNumber = "71"
+         endingLineNumber = "71"
          landmarkName = "-saveSketch:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -112,11 +112,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "TakePictureViewController.m"
-         timestampString = "368182135.086226"
+         timestampString = "368538710.864632"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "191"
-         endingLineNumber = "191"
+         startingLineNumber = "194"
+         endingLineNumber = "194"
          landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>
@@ -201,11 +201,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "sketchkid_Beta/ViewController.m"
-         timestampString = "368490581.426963"
+         timestampString = "368560391.315722"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "73"
-         endingLineNumber = "73"
+         startingLineNumber = "78"
+         endingLineNumber = "78"
          landmarkName = "-prepareForSegue:sender:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -253,11 +253,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "sketchkid_Beta/ViewController.m"
-         timestampString = "368495537.559674"
+         timestampString = "368560391.315722"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "446"
-         endingLineNumber = "446"
+         startingLineNumber = "467"
+         endingLineNumber = "467"
          landmarkName = "-AdjustView:didChangedBrightness:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -265,21 +265,8 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "sketchkid_Beta/ViewController.m"
-         timestampString = "368493896.045534"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "174"
-         endingLineNumber = "174"
-         landmarkName = "-viewDidLoad"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
          filePath = "sketchkid_Beta/FrameSelectView.m"
-         timestampString = "367958326.818561"
+         timestampString = "368558987.989831"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "26"
@@ -292,11 +279,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "sketchkid_Beta/ViewController.m"
-         timestampString = "368495537.559674"
+         timestampString = "368561985.996401"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "472"
-         endingLineNumber = "472"
+         startingLineNumber = "514"
+         endingLineNumber = "514"
          landmarkName = "-shareViewdidFacebook:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -305,11 +292,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "sketchkid_Beta/ViewController.m"
-         timestampString = "368495537.559674"
+         timestampString = "368561985.996401"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "485"
-         endingLineNumber = "485"
+         startingLineNumber = "527"
+         endingLineNumber = "527"
          landmarkName = "-shareViewdidFacebook:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -318,11 +305,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "sketchkid_Beta/ViewController.m"
-         timestampString = "368495537.559674"
+         timestampString = "368561985.996401"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "478"
-         endingLineNumber = "478"
+         startingLineNumber = "520"
+         endingLineNumber = "520"
          landmarkName = "-shareViewdidFacebook:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -331,11 +318,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "sketchkid_Beta/ViewController.m"
-         timestampString = "368495537.559674"
+         timestampString = "368561985.996401"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "498"
-         endingLineNumber = "498"
+         startingLineNumber = "540"
+         endingLineNumber = "540"
          landmarkName = "-shareViewdidFacebook:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -344,11 +331,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "sketchkid_Beta/ViewController.m"
-         timestampString = "368495537.559674"
+         timestampString = "368561985.996401"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "496"
-         endingLineNumber = "496"
+         startingLineNumber = "538"
+         endingLineNumber = "538"
          landmarkName = "-shareViewdidFacebook:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -357,11 +344,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "sketchkid_Beta/ViewController.m"
-         timestampString = "368495537.559674"
+         timestampString = "368561985.996401"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "474"
-         endingLineNumber = "474"
+         startingLineNumber = "516"
+         endingLineNumber = "516"
          landmarkName = "-shareViewdidFacebook:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -370,11 +357,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "sketchkid_Beta/ViewController.m"
-         timestampString = "368495537.559674"
+         timestampString = "368561985.996401"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "475"
-         endingLineNumber = "475"
+         startingLineNumber = "517"
+         endingLineNumber = "517"
          landmarkName = "-shareViewdidFacebook:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -383,11 +370,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "sketchkid_Beta/ViewController.m"
-         timestampString = "368495537.559674"
+         timestampString = "368561985.996401"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "473"
-         endingLineNumber = "473"
+         startingLineNumber = "515"
+         endingLineNumber = "515"
          landmarkName = "-shareViewdidFacebook:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -396,11 +383,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "sketchkid_Beta/ViewController.m"
-         timestampString = "368493896.045534"
+         timestampString = "368560391.315722"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "338"
-         endingLineNumber = "338"
+         startingLineNumber = "329"
+         endingLineNumber = "329"
          landmarkName = "-sharebuttonAction:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -409,11 +396,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "sketchkid_Beta/ViewController.m"
-         timestampString = "368493896.045534"
+         timestampString = "368560391.315722"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "326"
-         endingLineNumber = "326"
+         startingLineNumber = "317"
+         endingLineNumber = "317"
          landmarkName = "-sharebuttonAction:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -429,6 +416,123 @@
          endingLineNumber = "42"
          landmarkName = "@interface ATScrollView"
          landmarkType = "2">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "sketchkid_Beta/ATPhotoScrollView.m"
+         timestampString = "368557189.503262"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "96"
+         endingLineNumber = "96"
+         landmarkName = "-setToIndex:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "sketchkid_Beta/ATPhotoScrollView.m"
+         timestampString = "368531165.497263"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "65"
+         endingLineNumber = "65"
+         landmarkName = "-scrollTapped"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "sketchkid_Beta/ViewController.m"
+         timestampString = "368560391.315722"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "107"
+         endingLineNumber = "107"
+         landmarkName = "-viewDidLoad"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "sketchkid_Beta/ViewController.m"
+         timestampString = "368560391.315722"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "108"
+         endingLineNumber = "108"
+         landmarkName = "-viewDidLoad"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "sketchkid_Beta/ATPhotoScrollView.m"
+         timestampString = "368531375.131285"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "67"
+         endingLineNumber = "67"
+         landmarkName = "-scrollTapped"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "sketchkid_Beta/FrameSelectView.m"
+         timestampString = "368559308.029896"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "123"
+         endingLineNumber = "123"
+         landmarkName = "-viewTapped:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "sketchkid_Beta/ViewController.m"
+         timestampString = "368560391.315722"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "495"
+         endingLineNumber = "495"
+         landmarkName = "-FrameSelectView:didSelectFrame:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "sketchkid_Beta/ViewController.m"
+         timestampString = "368562225.932331"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "503"
+         endingLineNumber = "503"
+         landmarkName = "-FrameSelectView:didSelectFrame:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "sketchkid_Beta/FrameSelectView.m"
+         timestampString = "368562348.580446"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "103"
+         endingLineNumber = "103"
+         landmarkName = "-viewTapped:"
+         landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

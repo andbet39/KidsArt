@@ -14,12 +14,25 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+       
+        /*UIView  * neroView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 80)];
+        [neroView setBackgroundColor:[UIColor blackColor]];
+        [self addSubview:neroView];
+        
+        UIView  * neroViewB = [[UIView alloc]initWithFrame:CGRectMake(0, 380, 320, 80)];
+        [neroViewB setBackgroundColor:[UIColor blackColor]];
+        [self addSubview:neroViewB];
+        */
+        
+        
+        
         // Add the bottom bar
         UIImage *image = [UIImage imageNamed:@"toolBackHome"];
         UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
         imageView.frame = CGRectMake(0, 380, 320, 100);
         [self addSubview:imageView];
         
+      
         
         // Add the capture button
         self.pictureButton = [UIButton buttonWithType:UIButtonTypeCustom];
