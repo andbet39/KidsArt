@@ -16,6 +16,7 @@
 @synthesize saveButton;
 @synthesize titleLable;
 @synthesize titoloText;
+@synthesize noteText;
 @synthesize toolBar;
 
 
@@ -43,6 +44,7 @@
 {
     [self setSaveButton:nil];
     [self setTitleLable:nil];
+    [self setNoteText:nil];
     [super viewDidUnload];
 }
 
@@ -61,6 +63,7 @@
     Album *album = (Album *)[NSEntityDescription insertNewObjectForEntityForName:@"Album" inManagedObjectContext:dm.managedObjectContext];
     
     [album setTitolo:titoloText.text];
+    [album setNote:noteText.text];
     [album setDataCreazione:[NSDate date]];
     [album setOrder:[NSDecimalNumber numberWithInt: [am getMaxOrder]+1]];
     

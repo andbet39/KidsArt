@@ -20,7 +20,6 @@
 @synthesize tableView;
 
 
-
 -(void)creaToolBar{
     
     int toolbarheight=37;
@@ -111,8 +110,12 @@
     
     albumArray = [[NSMutableArray alloc]init];
     
+    isEditing=false;
+    
     [self caricaAlbum];
     [self creaToolBar];
+    
+    
 
 }
 
@@ -148,10 +151,10 @@
     
     AlbumCell *cell = (AlbumCell*)[_tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    /*if (cell == nil) {
-        cell = [[AlbumCell alloc] init];
+  /* if (cell == nil) {
+    cell = [[AlbumCell alloc] init];
     }*/
-    
+
     Album * t = [albumArray objectAtIndex:indexPath.row];
     
     [cell initWithAlbum:t];
@@ -164,7 +167,70 @@
 {
 	if (editingStyle == UITableViewCellEditingStyleDelete)
 	{
-	}
+	
+        toDelete = [albumArray objectAtIndex:indexPath.row];
+        if (toDelete.isDefault) {
+            UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"ALLERT", nil) message:NSLocalizedString(@"ALLERT_CANCELLA_ALBUM_DISEGNO", nil) delegate:self cancelButtonTitle:NSLocalizedString(@"ANNULLA", nil) otherButtonTitles:nil, nil];
+            [alertView show];
+        }else{
+           
+            UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"ALLERT", nil) message:NSLocalizedString(@"TUTTI_DISEGNI_IN_DEFAULT", nil) delegate:self cancelButtonTitle:NSLocalizedString(@"ANNULLA", nil) otherButtonTitles:@"OK", nil];
+            [alertView show];
+        
+        
+        
+        
+        }
+    
+    }
+}
+
+
+- (void)alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex{
+    if(buttonIndex == 0){
+        // È stato premuto il bottone Cancel
+    } else if (buttonIndex == 1){
+        
+        //-------CANCELLA ALBUM
+        
+        
+        NSError *error;
+        
+        DataManager *dm = [DataManager sharedDataManager];
+        AlbumManager *am = [AlbumManager sharedAlbumManager];
+
+        Album * defaullAlbum = am.defaultAlbum;
+        
+        for (Sketch * s in toDelete.album2sketch) {
+            
+            [defaullAlbum addAlbum2sketchObject:s];
+        }
+        
+        
+        NSManagedObjectContext *moc = [dm managedObjectContext];
+        
+        
+        [moc deleteObject:toDelete];
+        
+        // Save the context.
+        if (![moc save:&error]) {
+            // Replace this implementation with code to handle the error appropriately.
+            // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+            abort();
+        }
+        
+        
+        
+        
+        [am setSelectedAlbum:[am defaultAlbum]];
+        
+        [am.istanceOfHomeViewController reloadAlbumData];
+        [am.istanceOfAlbumViewController reloadData];
+        
+        
+        
+    }
 }
 
 #pragma mark - Table view delegate
@@ -216,6 +282,15 @@
 - (IBAction)addAlbumAction:(id)sender {
     
     [self performSegueWithIdentifier:@"newAlbum" sender:self];
+}
+
+- (IBAction)editButtonAction:(id)sender {
+    if (isEditing) {
+        
+        isEditing=FALSE;
+    }else{
+        isEditing=true;
+    }
 }
 
 @end

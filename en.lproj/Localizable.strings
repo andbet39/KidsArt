@@ -35,3 +35,6 @@
 "ALLERT"="Alert";
 
 "ANNULLA"="Cancel";
+
+
+"OPERAZIONE_CANCELLA_DISEGNO" ="This operation will remove definetly the sketch";

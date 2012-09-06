@@ -22,6 +22,7 @@
 @property (strong,nonatomic) id <newAlbumViewControllerDelegate> delegate;
 
 @property (weak, nonatomic) IBOutlet UITextField *titoloText;
+@property (weak, nonatomic) IBOutlet UITextField *noteText;
 @property (weak, nonatomic) IBOutlet UINavigationBar *toolBar;
 
 - (IBAction)saveButtonAction:(id)sender;

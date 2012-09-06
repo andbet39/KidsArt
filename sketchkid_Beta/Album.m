@@ -2,7 +2,7 @@
 //  Album.m
 //  kidsArt
 //
-//  Created by Andrea Terzani on 10/08/12.
+//  Created by Andrea Terzani on 05/09/12.
 //  Copyright (c) 2012 Andrea Terzani. All rights reserved.
 //
 
@@ -14,9 +14,10 @@
 
 @dynamic copertinaPath;
 @dynamic dataCreazione;
+@dynamic isDefault;
 @dynamic order;
 @dynamic titolo;
-@dynamic isDefault;
+@dynamic note;
 @dynamic album2sketch;
 
 @end

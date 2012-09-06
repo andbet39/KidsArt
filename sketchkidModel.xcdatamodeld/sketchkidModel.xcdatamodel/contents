@@ -4,6 +4,7 @@
         <attribute name="copertinaPath" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dataCreazione" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="isDefault" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="order" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="titolo" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="album2sketch" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Sketch" inverseName="album" inverseEntity="Sketch" syncable="YES"/>

@@ -454,11 +454,6 @@
                                 <rect key="frame" x="-1" y="-22" width="322" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <barButtonItem title="Edit" id="a0C-tb-MLt">
-                                        <connections>
-                                            <action selector="enableEditButton:" destination="8Ea-gE-c9f" id="dfX-Pd-HKm"/>
-                                        </connections>
-                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Tew-JF-4KK"/>
                                     <barButtonItem systemItem="add" id="S2w-Ir-Ie5">
                                         <connections>
@@ -474,7 +469,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="106" sectionHeaderHeight="22" sectionFooterHeight="22" id="vyq-y4-Qal">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="106" sectionHeaderHeight="22" sectionFooterHeight="22" id="vyq-y4-Qal">
                                 <rect key="frame" x="0.0" y="29" width="320" height="338"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -486,22 +481,22 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="backAlbumCell.png" id="Rcn-5t-C1Q">
+                                                <imageView contentMode="scaleToFill" image="backAlbumCell.png" id="Rcn-5t-C1Q">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="vhh-c2-Fwm">
-                                                    <rect key="frame" x="139" y="20" width="161" height="17"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                                                    <rect key="frame" x="142" y="20" width="155" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="zl3-jh-2Yy">
-                                                    <rect key="frame" x="139" y="77" width="42" height="21"/>
+                                                    <rect key="frame" x="130" y="42" width="170" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="aoF-o6-bNr">
@@ -509,8 +504,8 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Created on" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="t4B-yn-Q99">
-                                                    <rect key="frame" x="139" y="48" width="161" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <rect key="frame" x="130" y="71" width="161" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -560,11 +555,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="corniceBimbo@2x.png" id="Shk-GH-JKH">
-                                <rect key="frame" x="20" y="169" width="140" height="158"/>
+                                <rect key="frame" x="20" y="225" width="140" height="158"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="msU-SQ-Ttl">
-                                <rect key="frame" x="163" y="175" width="137" height="40"/>
+                                <rect key="frame" x="168" y="231" width="137" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                                 <state key="normal" title="Save Album" backgroundImage="bottoneSalva@2x.png">
@@ -613,10 +608,20 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Note" minimumFontSize="17" id="Mbc-l0-bmE">
+                                <rect key="frame" x="20" y="172" width="280" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="IeE-Hz-Y0C" id="f3F-lK-wnN"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="noteText" destination="Mbc-l0-bmE" id="xTk-BQ-1KK"/>
                         <outlet property="saveButton" destination="msU-SQ-Ttl" id="S7y-Yd-eV7"/>
                         <outlet property="titleLable" destination="Aqm-Gb-MVf" id="CMQ-6y-TKf"/>
                         <outlet property="titoloText" destination="bTD-LU-R0Q" id="e00-02-aIa"/>
@@ -818,6 +823,133 @@
         <image name="evidenzia@2x.png" width="400" height="65"/>
         <image name="strisciaGialla@2x.png" width="617" height="66"/>
     </resources>
+    <classes>
+        <class className="ATPhotoScrollView" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ATPhotoScrollView.h"/>
+        </class>
+        <class className="AlbumCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AlbumCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="copertinaImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="countLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="dateLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="AlbumViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AlbumViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addAlbumAction:"/>
+                <relationship kind="action" name="editButtonAction:"/>
+                <relationship kind="outlet" name="addAlbumAction" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="addAlbumButtonAction" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="toolBar" candidateClass="UIToolbar"/>
+            </relationships>
+        </class>
+        <class className="EditSketchInfoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditSketchInfoViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addToAlbumAction:"/>
+                <relationship kind="action" name="selectKidButtonAction:"/>
+                <relationship kind="outlet" name="addBambinoButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="albumNameLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="HomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="creaDefaultAlbum:"/>
+                <relationship kind="action" name="infoButtonAction:"/>
+                <relationship kind="action" name="removeInfoButtonAction:"/>
+                <relationship kind="action" name="selectPreferitiAction:"/>
+                <relationship kind="outlet" name="addFavoriteButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="albumTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="albumToolbar" candidateClass="UIToolbar"/>
+                <relationship kind="outlet" name="infoButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="mainView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="navigationBar" candidateClass="UINavigationBar"/>
+                <relationship kind="outlet" name="removeInfoButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="MyTabBarViewController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MyTabBarViewController.h"/>
+        </class>
+        <class className="SelectAlbumViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SelectAlbumViewController.h"/>
+        </class>
+        <class className="SelectKidViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SelectKidViewController.h"/>
+        </class>
+        <class className="TakePictureViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TakePictureViewController.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="adjustButtonAction:"/>
+                <relationship kind="action" name="cancelButtonAction:"/>
+                <relationship kind="action" name="deleteButtonAction:"/>
+                <relationship kind="action" name="editInfoButton:"/>
+                <relationship kind="action" name="frameButtonAction:"/>
+                <relationship kind="action" name="saveButtonAction:"/>
+                <relationship kind="action" name="sharebuttonAction:"/>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="adjustButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="fintaNavigationBar" candidateClass="UINavigationBar"/>
+                <relationship kind="outlet" name="frameButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="frameImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="mainImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="mainView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="penButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="ATPhotoScrollView"/>
+                <relationship kind="outlet" name="shareButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="toolBar" candidateClass="UIToolbar"/>
+                <relationship kind="outlet" name="trashButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="kidCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/kidCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="fotoImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="nomeLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="kidsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/kidsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="enableEditButton:"/>
+                <relationship kind="outlet" name="editButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="hint2Label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hintLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mainView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="toolBar" candidateClass="UIToolbar"/>
+            </relationships>
+        </class>
+        <class className="newAlbumViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/newAlbumViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancelButtonAction:"/>
+                <relationship kind="action" name="saveButtonAction:"/>
+                <relationship kind="outlet" name="noteText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="saveButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="titleLable" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="titoloText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="toolBar" candidateClass="UINavigationBar"/>
+            </relationships>
+        </class>
+        <class className="newKidViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/newKidViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancelButtonAction:"/>
+                <relationship kind="action" name="saveButtonAction:"/>
+                <relationship kind="outlet" name="nomeText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="toolBar" candidateClass="UINavigationBar"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -28,6 +28,9 @@
 -(Sketch*)saveSketch:(UIImage*)finalImage
 {
     
+
+   
+    
     DataManager *dm =[DataManager sharedDataManager];
     
     Sketch *sketch = (Sketch *)[NSEntityDescription insertNewObjectForEntityForName:@"Sketch" inManagedObjectContext:dm.managedObjectContext];
@@ -142,6 +145,12 @@
 
 -(void)CustomOverlaydidDone{
     
+        
+    [self dismissModalViewControllerAnimated:NO];
+
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.mode = MBProgressHUDModeIndeterminate;
+    hud.labelText = NSLocalizedString(@"SALVANDO", nil);
     
     //Salva tutte le immagini
     for (UIImage * i in tempPictureArray) {
@@ -149,8 +158,11 @@
         [self saveSketch:i];
     }
     
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+
     
-    [self dismissModalViewControllerAnimated:NO];
+    
+    
     [self.delegate TakePictureViewControllerDidAddSomePhoto:self];
 
 }

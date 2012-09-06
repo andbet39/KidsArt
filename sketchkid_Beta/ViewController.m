@@ -231,21 +231,27 @@
 
 -(void)saveSketchToDisk
 {
-
-    UIImage *image = self.mainImageView.image;
-    NSData *imageData = UIImageJPEGRepresentation(image, 1);
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.mainView animated:YES];
+    hud.mode = MBProgressHUDModeIndeterminate;
+    hud.labelText = NSLocalizedString(@"SALVANDO", nil);
     
+    UIImage *image = self.mainImageView.image;
+
+    UIImage  * smallSketch = [self.mainImageView.image scaledCopyOfSize:CGSizeMake(floor(image.size.width/scale_factor), floor(image.size.height/scale_factor))];
+    
+    NSData *imageData = UIImageJPEGRepresentation(image, 1);
+    NSData *imageDataSmall = UIImageJPEGRepresentation(smallSketch, 0.5);
+
     // Write out the data.
     [imageData writeToFile:currentSketch.pathFull atomically:NO];
-    
-    
-    //Salva il file dell' immmagine piccola
-    UIImage *smallSketch = [image scaleToSize:CGSizeMake(image.size.width/scale_factor, image.size.height/scale_factor)];
-    NSData *imageDataSmall = UIImageJPEGRepresentation(smallSketch, 0.5);
+    [imageDataSmall writeToFile:currentSketch.pathSmall atomically:NO];
     
    
-    [imageDataSmall writeToFile:currentSketch.pathSmall atomically:NO];
+    
+    
 
+
+    [MBProgressHUD hideHUDForView:self.mainView animated:YES];
 
 }
 

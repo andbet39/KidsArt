@@ -31,6 +31,7 @@
     
     
     Sketch * selectedSketch;
+    Sketch * _toRemoveSketch;
     
 
 }

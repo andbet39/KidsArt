@@ -17,7 +17,8 @@
 {
 
     NSMutableArray * albumArray;
-
+    bool isEditing;
+    Album * toDelete;
 
 }
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
@@ -27,6 +28,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 - (IBAction)addAlbumAction:(id)sender;
 
+- (IBAction)editButtonAction:(id)sender;
 
 -(void)reloadData;
 

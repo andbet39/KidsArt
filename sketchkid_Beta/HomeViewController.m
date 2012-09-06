@@ -172,7 +172,7 @@
 - (IBAction)selectPreferitiAction:(id)sender{
 
     if ([_gmGridView isEditing]) {
-        _gmGridView.editing=TRUE;
+        _gmGridView.editing=FALSE;
 
     }else{
         _gmGridView.editing=TRUE;
@@ -281,23 +281,72 @@
 
 - (void)GMGridView:(GMGridView *)gridView processDeleteActionForItemAtIndex:(NSInteger)index
 {
+    DataManager *dm = [DataManager sharedDataManager];
+
     
- 
+    Sketch * toRemoveSketch = [sketchArray objectAtIndex:index];
+    
+    if ([toRemoveSketch.album count]==1) {
+        
+        _toRemoveSketch=toRemoveSketch;
+        _lastDeleteItemIndexAsked=index;
+        UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"ALLERT", nil) message:NSLocalizedString(@"OPERAZIONE_CANCELLA_DISEGNO", nil) delegate:self cancelButtonTitle:NSLocalizedString(@"ANNULLA", nil) otherButtonTitles:@"OK", nil];
+        [alertView show];
+    }else{
+    
+    
+    [currentAlbum removeAlbum2sketchObject:toRemoveSketch];
+    
+    NSManagedObjectContext *moc = [dm managedObjectContext];
+    
+    //[moc deleteObject:[sketchArray objectAtIndex:_lastDeleteItemIndexAsked]];
+    
+    // Save the context.
+    NSError *error = nil;
+    if (![moc save:&error]) {
+        // Replace this implementation with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        abort();
+    }
+
+    [gridView removeObjectAtIndex:index animated:YES];
+    [sketchArray removeObjectAtIndex:index];
+
+    [_gmGridView setEditing:FALSE];
+        AlbumManager *am = [AlbumManager sharedAlbumManager];
+        
+        [am.istanceOfAlbumViewController reloadData];
+    }
+
 }
 
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    if (buttonIndex == 1)
-    {
+
+
+- (void)alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex{
+    if(buttonIndex == 0){
+        // È stato premuto il bottone Cancel
+    } else if (buttonIndex == 1){
+        
+        
+        NSFileManager *fileMgr = [NSFileManager defaultManager];
+        NSError *error;
+        
         DataManager *dm = [DataManager sharedDataManager];
         
         
         NSManagedObjectContext *moc = [dm managedObjectContext];
         
-        [moc deleteObject:[sketchArray objectAtIndex:_lastDeleteItemIndexAsked]];
+        
+        if ([fileMgr removeItemAtPath:_toRemoveSketch.pathFull error:&error] != YES)
+            NSLog(@"Unable to delete file: %@", [error localizedDescription]);
+        if ([fileMgr removeItemAtPath:_toRemoveSketch.pathSmall error:&error] != YES)
+            NSLog(@"Unable to delete file: %@", [error localizedDescription]);
+        
+        
+        [moc deleteObject:_toRemoveSketch];
         
         // Save the context.
-        NSError *error = nil;
         if (![moc save:&error]) {
             // Replace this implementation with code to handle the error appropriately.
             // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
@@ -305,14 +354,19 @@
             abort();
         }
         
+        
+        
+        [_gmGridView removeObjectAtIndex:_lastDeleteItemIndexAsked animated:YES];
         [sketchArray removeObjectAtIndex:_lastDeleteItemIndexAsked];
-        [_gmGridView removeObjectAtIndex:_lastDeleteItemIndexAsked withAnimation:GMGridViewItemAnimationFade];
         
-    //TODO: Va rimosso anche il file
         
+       // [_gmGridView setEditing:FALSE];
+        AlbumManager *am = [AlbumManager sharedAlbumManager];
+
+        [am.istanceOfAlbumViewController reloadData];
+
     }
 }
-
 
 
 @end

@@ -38,3 +38,6 @@
 "ALLERT_CANCELLA_DISEGNO"="Sei sicuro di voler cancellare il disegno ?";
 "ALLERT"="Attenzione";
 "ANNULLA"="Annulla";
+
+
+"OPERAZIONE_CANCELLA_DISEGNO" ="Questa operazione cancellerà il disegno definitivamente";

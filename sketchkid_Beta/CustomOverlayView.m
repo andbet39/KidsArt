@@ -68,18 +68,20 @@
         [self.counterBadge setValue:0];
         [self addSubview:self.counterBadge];
         
-
+      
     }
-    return self;
+        return self;
 }
 
 -(void)doneButtonAction:(id)sender
 {
 
     self.pictureButton.enabled=FALSE;
+    
     [self.delegate CustomOverlaydidDone];
 
 }
+
 
 -(void)cancelButtonAction:(id)sender
 {
