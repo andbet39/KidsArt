@@ -71,5 +71,6 @@
 "TITOLO_ALBUM"="Titolo";
 "NOTA_ALBUM"="Nota";
 
+"SFONDO_ALBUM"="Sfondo per l' album";
 "SUCCESS_TWEET" = "Tweet inviato con successo.";
 "CANCELLED_TWEET" = "Tweet cancellato.";

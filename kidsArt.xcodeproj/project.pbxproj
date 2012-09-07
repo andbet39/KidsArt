@@ -70,6 +70,7 @@
 		65F9D59F15FA09B100A15B7D /* facebookIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F9D59C15FA09B000A15B7D /* facebookIcon@2x.png */; };
 		65F9D5A015FA09B100A15B7D /* mailcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F9D59D15FA09B000A15B7D /* mailcon@2x.png */; };
 		65F9D5A115FA09B100A15B7D /* twitterIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F9D59E15FA09B000A15B7D /* twitterIcon@2x.png */; };
+		65F9D5A415FA0E2E00A15B7D /* selectCopertinaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F9D5A315FA0E2E00A15B7D /* selectCopertinaViewController.m */; };
 		65FA966C15CD263900AC0CCD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA966B15CD263900AC0CCD /* UIKit.framework */; };
 		65FA966E15CD263900AC0CCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA966D15CD263900AC0CCD /* Foundation.framework */; };
 		65FA967015CD263900AC0CCD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA966F15CD263900AC0CCD /* CoreGraphics.framework */; };
@@ -179,6 +180,7 @@
 		65631E6D15F9303E00353D4F /* AlbumInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumInfoView.h; sourceTree = "<group>"; };
 		65631E6E15F9303E00353D4F /* AlbumInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumInfoView.m; sourceTree = "<group>"; };
 		65631E7215F9440F00353D4F /* backCaption@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backCaption@2x.png"; sourceTree = "<group>"; };
+		65B2255315FA42C600C0F8EA /* it */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = it; path = it.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		65B7289815D564AF0025D692 /* SelectAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectAlbumViewController.h; sourceTree = "<group>"; };
 		65B7289915D564AF0025D692 /* SelectAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectAlbumViewController.m; sourceTree = "<group>"; };
 		65B7289B15D569E50025D692 /* newAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newAlbumViewController.h; sourceTree = "<group>"; };
@@ -210,11 +212,12 @@
 		65F9D58F15F9F2B700A15B7D /* tabella@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabella@2x.png"; sourceTree = "<group>"; };
 		65F9D59315F9FEF600A15B7D /* kidCellBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kidCellBack@2x.png"; sourceTree = "<group>"; };
 		65F9D59715FA040000A15B7D /* contrastIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contrastIcon@2x.png"; sourceTree = "<group>"; };
-		65F9D59915FA045400A15B7D /* it */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = it; path = it.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		65F9D59A15FA05BA00A15B7D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		65F9D59C15FA09B000A15B7D /* facebookIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebookIcon@2x.png"; sourceTree = "<group>"; };
 		65F9D59D15FA09B000A15B7D /* mailcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mailcon@2x.png"; sourceTree = "<group>"; };
 		65F9D59E15FA09B000A15B7D /* twitterIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitterIcon@2x.png"; sourceTree = "<group>"; };
+		65F9D5A215FA0E2E00A15B7D /* selectCopertinaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = selectCopertinaViewController.h; sourceTree = "<group>"; };
+		65F9D5A315FA0E2E00A15B7D /* selectCopertinaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = selectCopertinaViewController.m; sourceTree = "<group>"; };
 		65FA966715CD263900AC0CCD /* kidsArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kidsArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65FA966B15CD263900AC0CCD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		65FA966D15CD263900AC0CCD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -517,6 +520,8 @@
 				65B7289C15D569E50025D692 /* newAlbumViewController.m */,
 				B5075FB415D6BCC400B28FA1 /* SelectKidViewController.h */,
 				B5075FB515D6BCC400B28FA1 /* SelectKidViewController.m */,
+				65F9D5A215FA0E2E00A15B7D /* selectCopertinaViewController.h */,
+				65F9D5A315FA0E2E00A15B7D /* selectCopertinaViewController.m */,
 			);
 			name = viewController;
 			path = ..;
@@ -752,6 +757,7 @@
 				652C0AFE15F7C1DE008A794D /* Frame.m in Sources */,
 				652C0B0A15F7E733008A794D /* Album.m in Sources */,
 				65631E6F15F9303E00353D4F /* AlbumInfoView.m in Sources */,
+				65F9D5A415FA0E2E00A15B7D /* selectCopertinaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,7 +786,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				65FA967E15CD263900AC0CCD /* en */,
-				65F9D59915FA045400A15B7D /* it */,
+				65B2255315FA42C600C0F8EA /* it */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
