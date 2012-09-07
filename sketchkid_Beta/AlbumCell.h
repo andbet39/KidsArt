@@ -13,10 +13,10 @@
 @interface AlbumCell : UITableViewCell
 
 
-@property(nonatomic,weak)IBOutlet UILabel *nameLabel;
-@property(nonatomic,weak)IBOutlet UILabel *countLabel;
-@property(nonatomic,weak)IBOutlet UIImageView *copertinaImage;
-@property(nonatomic,weak)IBOutlet UILabel *dateLabel;
+@property(nonatomic,strong)IBOutlet UILabel *nameLabel;
+@property(nonatomic,strong)IBOutlet UILabel *countLabel;
+@property(nonatomic,strong)IBOutlet UIImageView *copertinaImage;
+@property(nonatomic,strong)IBOutlet UILabel *dateLabel;
 
 -(void)initWithAlbum:(Album*)album;
 @end

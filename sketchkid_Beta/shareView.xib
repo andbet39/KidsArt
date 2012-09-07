@@ -41,6 +41,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrameSize">{320, 170}</string>
 						<reference key="NSSuperview" ref="932748050"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="193469757"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -52,8 +53,9 @@
 					<object class="IBUIButton" id="193469757">
 						<reference key="NSNextResponder" ref="932748050"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{3, 32}, {125, 45}}</string>
+						<string key="NSFrame">{{0, 35}, {122, 40}}</string>
 						<reference key="NSSuperview" ref="932748050"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="1009026356"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -75,7 +77,7 @@
 						</object>
 						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">shareFB@2x.png</string>
+							<string key="NSResourceName">facebookIcon@2x.png</string>
 						</object>
 						<object class="IBUIFontDescription" key="IBUIFontDescription" id="718372557">
 							<int key="type">2</int>
@@ -90,8 +92,9 @@
 					<object class="IBUIButton" id="1009026356">
 						<reference key="NSNextResponder" ref="932748050"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{130, 32}, {102, 45}}</string>
+						<string key="NSFrame">{{127, 35}, {101, 40}}</string>
 						<reference key="NSSuperview" ref="932748050"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="491758897"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -106,7 +109,7 @@
 						<reference key="IBUINormalTitleShadowColor" ref="183202277"/>
 						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">shareTwitter@2x.png</string>
+							<string key="NSResourceName">twitterIcon@2x.png</string>
 						</object>
 						<reference key="IBUIFontDescription" ref="718372557"/>
 						<reference key="IBUIFont" ref="645642135"/>
@@ -114,8 +117,9 @@
 					<object class="IBUIButton" id="491758897">
 						<reference key="NSNextResponder" ref="932748050"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{234, 32}, {74, 45}}</string>
+						<string key="NSFrame">{{234, 32}, {80, 44.5}}</string>
 						<reference key="NSSuperview" ref="932748050"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -130,7 +134,7 @@
 						<reference key="IBUINormalTitleShadowColor" ref="183202277"/>
 						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">shareMail@2x.png</string>
+							<string key="NSResourceName">mailcon@2x.png</string>
 						</object>
 						<reference key="IBUIFontDescription" ref="718372557"/>
 						<reference key="IBUIFont" ref="645642135"/>
@@ -138,6 +142,7 @@
 				</array>
 				<string key="NSFrameSize">{320, 170}</string>
 				<reference key="NSSuperview"/>
+				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="909013251"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
@@ -148,6 +153,14 @@
 		</array>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
 			<array class="NSMutableArray" key="connectionRecords">
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">mailButtonAction</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="491758897"/>
+					</object>
+					<int key="connectionID">13</int>
+				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">FBshareButtonAction:</string>
@@ -165,6 +178,15 @@
 						<int key="IBEventType">7</int>
 					</object>
 					<int key="connectionID">12</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">mailButtonAction:</string>
+						<reference key="source" ref="491758897"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">14</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -191,8 +213,8 @@
 						<reference key="object" ref="932748050"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="909013251"/>
-							<reference ref="193469757"/>
 							<reference ref="1009026356"/>
+							<reference ref="193469757"/>
 							<reference ref="491758897"/>
 						</array>
 						<reference key="parent" ref="0"/>
@@ -235,9 +257,50 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">12</int>
+			<int key="maxID">14</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
+		<object class="IBClassDescriber" key="IBDocument.Classes">
+			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">ShareView</string>
+					<string key="superclassName">UIView</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="FBshareButtonAction:">id</string>
+						<string key="TWshareButtonAction:">id</string>
+						<string key="mailButtonAction:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="FBshareButtonAction:">
+							<string key="name">FBshareButtonAction:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="TWshareButtonAction:">
+							<string key="name">TWshareButtonAction:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="mailButtonAction:">
+							<string key="name">mailButtonAction:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<object class="NSMutableDictionary" key="outlets">
+						<string key="NS.key.0">mailButtonAction</string>
+						<string key="NS.object.0">UIButton</string>
+					</object>
+					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<string key="NS.key.0">mailButtonAction</string>
+						<object class="IBToOneOutletInfo" key="NS.object.0">
+							<string key="name">mailButtonAction</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/ShareView.h</string>
+					</object>
+				</object>
+			</array>
+		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
@@ -248,9 +311,9 @@
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="backgroundSubView@2x.png">{640, 405}</string>
-			<string key="shareFB@2x.png">{189, 70}</string>
-			<string key="shareMail@2x.png">{150, 70}</string>
-			<string key="shareTwitter@2x.png">{166, 70}</string>
+			<string key="facebookIcon@2x.png">{185, 60}</string>
+			<string key="mailcon@2x.png">{146, 60}</string>
+			<string key="twitterIcon@2x.png">{149, 60}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">1498</string>
 	</data>

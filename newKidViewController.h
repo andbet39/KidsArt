@@ -24,6 +24,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *nomeText;
 @property (weak, nonatomic) IBOutlet UINavigationBar *toolBar;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 - (IBAction)saveButtonAction:(id)sender;
 - (IBAction)cancelButtonAction:(id)sender;

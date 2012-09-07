@@ -17,6 +17,9 @@
 @end
 
 @implementation HomeViewController
+@synthesize nameLabel;
+@synthesize dateLabel;
+@synthesize noteLabel;
 @synthesize removeInfoButton;
 
 @synthesize mainView;
@@ -67,6 +70,7 @@
     _gmGridView.centerGrid = TRUE;
     _gmGridView.actionDelegate = self;
     _gmGridView.dataSource = self;
+    _gmGridView.showsVerticalScrollIndicator=FALSE;
     
     
     
@@ -95,8 +99,32 @@
     
     [albumTitleLabel setText:currentAlbum.titolo];
 
-    sketchArray= [[NSMutableArray alloc ]initWithArray:[currentAlbum.album2sketch allObjects]];
-
+    [nameLabel setFont:[UIFont fontWithName:@"Helvetica Rounded LT Std" size:26 ]];
+    [noteLabel setFont:[UIFont fontWithName:@"Helvetica Rounded LT Std" size:18]];
+    [dateLabel setFont:[UIFont fontWithName:@"Helvetica Rounded LT Std" size:18]];
+    
+    [nameLabel setText:currentAlbum.titolo];
+    [noteLabel setText:currentAlbum.note];
+    
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"dd/MM/yyyy"];
+    
+    NSDate *dataCreazione = currentAlbum.dataCreazione;
+    
+    NSString *theDate = [dateFormat stringFromDate:dataCreazione];
+    
+    NSString * datalabel = [NSString stringWithFormat:@"%@%@",NSLocalizedString(@"CREATO_IL_INFO", nil),theDate];
+    
+    [dateLabel setText:datalabel];
+    
+    
+    
+    NSArray *sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"saveDate" ascending:NO]];
+    
+    NSArray *sortedSketch = [[currentAlbum.album2sketch allObjects] sortedArrayUsingDescriptors:sortDescriptors];
+    
+    sketchArray = [[NSMutableArray alloc]initWithArray:sortedSketch];
+    
     [_gmGridView reloadData];
 
 }
@@ -112,8 +140,10 @@
     
     currentAlbum = am.selectedAlbum;
 
-    sketchArray= [NSMutableArray arrayWithArray:[currentAlbum.album2sketch allObjects]];
-
+    //sketchArray= [NSMutableArray arrayWithArray:[currentAlbum.album2sketch allObjects]];
+    [self reloadAlbumData];
+    
+    
     isPageRolled=FALSE;
     
     [self creaGridView];
@@ -136,6 +166,9 @@
     [self setAlbumTitleLabel:nil];
     [self setInfoButton:nil];
     [self setRemoveInfoButton:nil];
+    [self setNameLabel:nil];
+    [self setDateLabel:nil];
+    [self setNoteLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -160,7 +193,7 @@
 
     }else{
         mainView.partialCurlDuration=1.0;
-        mainView.partialCurlPercent=0.618;
+        mainView.partialCurlPercent=0.6;
         isPageRolled=TRUE;
         
         [mainView animationPartialCurlUp];
@@ -168,6 +201,16 @@
     }
     
 }
+-(void)viewWillDisappear:(BOOL)animated{
+
+    [super viewWillDisappear:animated];
+    if (isPageRolled) {
+        [mainView animationPartialCurlDown];
+        isPageRolled=FALSE;
+    }
+
+}
+
 
 - (IBAction)selectPreferitiAction:(id)sender{
 
@@ -196,7 +239,7 @@
 {
     
     
-    return CGSizeMake(140 , 150);
+    return CGSizeMake(140 , 120);
     
     
 }
@@ -229,22 +272,22 @@
 
 
     
-    CGRect corniceRect= CGRectMake(0, 0, 140, 150);
+    CGRect corniceRect= CGRectMake(0, 0, 140, 123);
     
     
     UIImageView *cornice =[[UIImageView alloc]initWithFrame:corniceRect];
-    [cornice setImage:[UIImage imageNamed:@"corniceBimbo.png"]];
+    [cornice setImage:[UIImage imageNamed:@"cornicefoto"]];
     [cell.contentView addSubview:cornice];
     
     
     
     
-    CGRect fotoRect= CGRectMake(13,15, 114, 102);
+    CGRect fotoRect= CGRectMake(16,12, 108, 80);
     
     
     NSData *data = [[NSData alloc] initWithContentsOfFile:currentSketch.pathSmall];
     
-    UIImage *foto = [[UIImage alloc] initWithData:data];
+    UIImage *foto = [[UIImage alloc] initWithData:data];// croppedImage:fotoRect];
     
     UIImageView *fotoView =[[UIImageView alloc]initWithFrame:fotoRect];
     [fotoView setImage:foto];

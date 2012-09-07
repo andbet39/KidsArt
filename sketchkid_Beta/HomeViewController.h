@@ -38,6 +38,9 @@
 - (IBAction)removeInfoButtonAction:(id)sender;
 - (IBAction)infoButtonAction:(id)sender;
 - (IBAction)creaDefaultAlbum:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *noteLabel;
 
 - (IBAction)selectPreferitiAction:(id)sender;
 

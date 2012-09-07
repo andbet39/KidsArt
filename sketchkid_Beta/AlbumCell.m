@@ -18,6 +18,15 @@
 
 -(void)initWithAlbum:(Album *)album
 {
+    
+    
+    [nameLabel setFont:[UIFont fontWithName:@"Helvetica Rounded LT Std" size:22 ]];
+    [countLabel setFont:[UIFont fontWithName:@"Helvetica Rounded LT Std" size:16]];
+    [dateLabel setFont:[UIFont fontWithName:@"Helvetica Rounded LT Std" size:16]];
+    
+    
+    
+    
     [nameLabel setText:album.titolo];
     [countLabel setText:album.note];
     
@@ -31,26 +40,20 @@
     
     NSString *theDate = [dateFormat stringFromDate:dataCreazione];
     
-    NSString * datalabel = [NSString stringWithFormat:@"%@ %@",NSLocalizedString(@"CREATO_IL", nil),theDate];
+    NSString * datalabel = [NSString stringWithFormat:@"%@%@",NSLocalizedString(@"CREATO_IL", nil),theDate];
     
     [dateLabel setText:datalabel];
     if ([album.album2sketch count]>0) {
     
-        NSArray * sketchArray = [[album.album2sketch allObjects]sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
-            
-            Sketch * sk1 = (Sketch*)obj1;
-            Sketch * sk2 = (Sketch*)obj2;
-            
-            if (sk1.saveDate > sk2.saveDate) {
-                return (NSComparisonResult)NSOrderedDescending;
-            }
-            
-            if (sk1.saveDate < sk2.saveDate) {
-                return (NSComparisonResult)NSOrderedAscending;
-            }
-            return (NSComparisonResult)NSOrderedSame;
-            
-        } ];
+       // NSMutableArray * sketchArray = [[NSMutableArray alloc]initWithArray:[album.album2sketch allObjects]];
+        
+        
+        NSArray *sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"saveDate" ascending:NO]];
+        
+        NSArray *sortedSketch = [[album.album2sketch allObjects] sortedArrayUsingDescriptors:sortDescriptors];
+        
+        NSMutableArray * sketchArray = [[NSMutableArray alloc]initWithArray:sortedSketch];
+        
         
         Sketch *copertina = [sketchArray objectAtIndex:0];
         
@@ -61,6 +64,10 @@
         UIImage *currentSketch = [[UIImage alloc] initWithData:data];
         [copertinaImage setImage:currentSketch];
         
+    }else{
+    
+        [copertinaImage setImage:nil];
+
     }
 }
 

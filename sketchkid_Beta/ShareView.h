@@ -24,6 +24,8 @@
 
 
 - (IBAction)TWshareButtonAction:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *mailButtonAction;
 @property (strong,nonatomic) id <ShareViewDelegate> delegate;
+- (IBAction)mailButtonAction:(id)sender;
 
 @end

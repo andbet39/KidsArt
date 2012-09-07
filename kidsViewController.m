@@ -7,6 +7,7 @@
 //
 
 #import "kidsViewController.h"
+#define RGB(r, g, b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
 
 @interface kidsViewController ()
 
@@ -35,8 +36,8 @@
     [hint2Label setText:NSLocalizedString(@"HINT2_KID", nil)];
     
     [titleLabel setFont:[UIFont fontWithName:@"Snickles" size:28]];
-    [hintLabel setFont:[UIFont fontWithName:@"Snickles" size:20]];
-    [hint2Label setFont:[UIFont fontWithName:@"Snickles" size:20]];
+    [hintLabel setFont:[UIFont fontWithName:@"Helvetica Rounded LT Std" size:18]];
+    [hint2Label setFont:[UIFont fontWithName:@"Helvetica Rounded LT Std" size:18]];
     
 
 }
@@ -172,9 +173,10 @@
     label.text = (NSString *)currentKid.nome;
     label.textAlignment = UITextAlignmentCenter;
     label.backgroundColor = [UIColor clearColor];
-    label.textColor = [UIColor blackColor];
-    label.highlightedTextColor = [UIColor whiteColor];
-    label.font = [UIFont boldSystemFontOfSize:20];
+    
+    label.textColor = RGB(0, 32, 64);
+
+    label.font = [UIFont fontWithName:@"Helvetica Rounded LT Std" size:20];
     [cell.contentView addSubview:label];
     
     
@@ -223,8 +225,12 @@
     Kid * selectedKid= [kidsArray objectAtIndex:position];
     
     Album *disegniDiAlbum = (Album *)[NSEntityDescription insertNewObjectForEntityForName:@"Album" inManagedObjectContext:dm.TempManagedObjectContext];
-    disegniDiAlbum.titolo=[NSString stringWithFormat:@"Disegni di %@",selectedKid.nome];
+    
+    
+    
+    disegniDiAlbum.titolo=[NSString stringWithFormat:@"%@ %@",NSLocalizedString(@"DISEGNI_DI", nil),selectedKid.nome];
     disegniDiAlbum.order=[NSDecimalNumber numberWithInt:1000];
+    disegniDiAlbum.note = [NSString stringWithFormat:@"%@ %@",NSLocalizedString(@"TUTTI_DISEGNI_DI", nil),selectedKid.nome];
     disegniDiAlbum.dataCreazione=[NSDate date];
     
     
@@ -264,7 +270,7 @@
 
 - (void)GMGridView:(GMGridView *)gridView processDeleteActionForItemAtIndex:(NSInteger)index
 {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Confirm" message:@"Are you sure you want to delete this item?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Delete", nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"ALLERT", nil) message:NSLocalizedString(@"SICURO_DELETE_BAMBINO", nil) delegate:self cancelButtonTitle:NSLocalizedString(@"ANNULLA", nil) otherButtonTitles:NSLocalizedString(@"ELIMINA", nil), nil];
     
     [alert show];
     

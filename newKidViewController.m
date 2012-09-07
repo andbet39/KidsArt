@@ -18,12 +18,18 @@
 @implementation newKidViewController
 @synthesize nomeText;
 @synthesize toolBar;
+@synthesize titleLabel;
 
 -(void)creaNavigationBar{
     
     
     [toolBar setBackgroundImage:[UIImage imageNamed:@"navigationBar.png"] forBarMetrics:UIBarMetricsDefault];
     
+    [titleLabel setText:NSLocalizedString(@"NUOVO_BAMBINO", nil)];
+    
+    [titleLabel setFont:[UIFont fontWithName:@"Snickles" size:32]];
+    
+    nomeText.placeholder = NSLocalizedString(@"NOME", nil);
     
 }
 
@@ -47,6 +53,7 @@
 {
     [self setNomeText:nil];
     [self setToolBar:nil];
+    [self setTitleLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -62,7 +69,7 @@
     Kid *kid = (Kid *)[NSEntityDescription insertNewObjectForEntityForName:@"Kid" inManagedObjectContext:dm.managedObjectContext];
     
     [kid setNome:nomeText.text];
-    
+    [kid setPhotoPath:@"bambinoDefault"];
     
     [self.delegate NewKidViewController:self DidAddKid:kid];
 }

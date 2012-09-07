@@ -7,6 +7,7 @@
 //
 #import <Twitter/Twitter.h>
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 #import "Sketch.h"
 #import "SketchManager.h"
 #import "EditSketchInfoViewController.h"
@@ -20,7 +21,7 @@
 #import "AppDelegate.h"
 #import "ATPhotoScrollView.h"
 
-@interface ViewController : UIViewController<AdjustViewDelegate,ShareViewDelegate,ATPhotoScrollViewDelegate,FrameSelectViewDelegate>
+@interface ViewController : UIViewController<AdjustViewDelegate,ShareViewDelegate,ATPhotoScrollViewDelegate,FrameSelectViewDelegate,MFMailComposeViewControllerDelegate>
 {
 
 

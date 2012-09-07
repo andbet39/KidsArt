@@ -38,6 +38,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Snickles.ttf</string>
+		<string>HelveticaRoundedLTStd-Bd.otf</string>
 	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>MainStoryboard</string>

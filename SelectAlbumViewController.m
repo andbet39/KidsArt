@@ -20,6 +20,9 @@
 
     
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationBar.png"] forBarMetrics:UIBarMetricsDefault];
+    
+    self.navigationController.navigationItem.leftBarButtonItem.tintColor = [UIColor colorWithRed:0.1f green:0.66f blue:0.26f alpha:0.7];
+
 }
 
 

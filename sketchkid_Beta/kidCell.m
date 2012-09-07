@@ -15,9 +15,9 @@
 -(void)initWithKid:(Kid*)kid{
 
     [nomeLabel setText:kid.nome];
-    
-    NSData *data = [[NSData alloc] initWithContentsOfFile:kid.photoPath];
-    UIImage *fotoBimbo = [[UIImage alloc] initWithData:data];
+    [nomeLabel setFont:[UIFont fontWithName:@"Helvetica Rounded LT Std" size:22 ]];
+    [nomeLabel setTextColor:RGB(0, 32, 64)];
+    UIImage *fotoBimbo = [UIImage imageNamed:kid.photoPath];
     [fotoImage setImage:fotoBimbo];
 
 

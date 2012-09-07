@@ -33,6 +33,11 @@
         [prefs setBool:1 forKey:@"isFirstRun"];
         [prefs synchronize];
     }
+    
+    
+    [[UIBarButtonItem appearance] setTintColor:RGB(117, 24, 154)];
+    [[UITextField appearance]setFont:[UIFont fontWithName:@"Helvetica Rounded LT Std" size:18]];
+    [[UITextField appearance]setTextColor:RGB(0, 32, 64)];
     return YES;
 }
 							
@@ -76,8 +81,9 @@
     Album *defaultAlbum = (Album *)[NSEntityDescription insertNewObjectForEntityForName:@"Album" inManagedObjectContext:dm.managedObjectContext];
     
     
-    [defaultAlbum setTitolo:@"Default"];
+    [defaultAlbum setTitolo:NSLocalizedString(@"NOME_DEFAULT_ALBUM",nil)];
     [defaultAlbum setOrder:[NSDecimalNumber numberWithInt:0]];
+    [defaultAlbum setNote:NSLocalizedString(@"NOTA_DEFAULT_ALBUM",nil)];
     [defaultAlbum setDataCreazione:[NSDate date]];
     [defaultAlbum setIsDefault:[NSNumber numberWithInt:1]];
     //[defaultAlbum setCopertinaPath:]

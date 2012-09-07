@@ -30,7 +30,8 @@
 
     [titleLable setFont:[UIFont fontWithName:@"Snickles" size:32]];
 
-
+    titoloText.placeholder=NSLocalizedString(@"TITOLO_ALBUM", nil);
+    noteText.placeholder=NSLocalizedString(@"NOTA_ALBUM", nil);
 
 }
 - (void)viewDidLoad

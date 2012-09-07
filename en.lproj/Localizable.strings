@@ -16,17 +16,20 @@
 "HINT2_KID" = "all the picture from him";
 
 
-"NUOVO_ALBUM" = "Make a new album";
+"NUOVO_ALBUM" = " Create a new album";
 "DISEGNO_DI" ="Made by ";
-
-"CREATO_IL" = "Made on";
-
+"DISEGNI_DI" ="Sketch of";
+"CREATO_IL" = "";
+"CREATO_IL_INFO" = "Made on ";
 
 "CONDIVIDENDO" = "Uploading on Facebbok";
 "FOTOSHARED" ="Sketch shared";
 "ERRORE" = "Error";
 "SUCCESSOFBPOST" ="Facebook upload succesfully";
 "SUCCESSO" = "Success";
+"CANCELLED"= "Cancelled";
+
+
 
 "DISEGNO_KIDART" = "This sketch is made with KidsArt for iPhone";
 "DISEGNO_FATTO_DA"= "This sketch was made by ";
@@ -35,6 +38,37 @@
 "ALLERT"="Alert";
 
 "ANNULLA"="Cancel";
-
+"ELIMINA" = "Delete";
 
 "OPERAZIONE_CANCELLA_DISEGNO" ="This operation will remove definetly the sketch";
+
+"SICURO_DELETE_BAMBINO" = "Are you sure to delete this kid ?";
+
+"NOME_DEFAULT_ALBUM" = "Photo Lab";
+"NOTA_DEFAULT_ALBUM" = "Sketch to be edited";
+
+
+"TUTTI_DISEGNI_IN_DEFAULT" = "All sketchs will be moved in default album";
+
+"ALLERT_CANCELLA_ALBUM_DISEGNO"  ="You cannote remove the Photo Lab album";
+"NUOVO_BAMBINO" = " Add new Kid";
+
+
+"TUTTI_DISEGNI_DI" = "All the sketch made by";
+
+"MODIFICA_INFO_DISEGNO" = "Sketch info";
+
+"FATTO_IL"="Made on";
+
+"INFO_NOTE" = "What is?";
+
+"AGGIUNGI_AD_ALBUM"="Add to an album";
+
+"NOME"="Name";
+
+"TITOLO_ALBUM"="Title";
+"NOTA_ALBUM"="Note";
+
+
+"SUCCESS_TWEET" = "Tweet send with success.";
+"CANCELLED_TWEET" = "Tweet cancelled.";

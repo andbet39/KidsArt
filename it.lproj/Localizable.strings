@@ -18,11 +18,13 @@
 
 
 
-"NUOVO_ALBUM" = "Crea un nuovo album";
+"NUOVO_ALBUM" = " Crea un nuovo album";
 
 "DISEGNO_DI" ="Disegno di ";
+"DISEGNI_DI" ="Disegni di ";
 
-"CREATO_IL"= "Creato il";
+"CREATO_IL"= "";
+"CREATO_IL_INFO" = "Creato il ";
 
 
 "CONDIVIDENDO" = "Caricando su Facebook";
@@ -30,6 +32,7 @@
 "ERRORE" = "Errore";
 "SUCCESSOFBPOST" ="Caricamento su facebook completato";
 "SUCCESSO" = "Successo";
+"CANCELLED"= "Cancellato";
 
 "DISEGNO_KIDART" = "Questo disegno è stato fatto con KidsArt per iPhone";
 "DISEGNO_FATTO_DA"= "Questo disegno è stato fatto da ";
@@ -38,6 +41,35 @@
 "ALLERT_CANCELLA_DISEGNO"="Sei sicuro di voler cancellare il disegno ?";
 "ALLERT"="Attenzione";
 "ANNULLA"="Annulla";
+"ELIMINA" = "Cancellato";
 
 
 "OPERAZIONE_CANCELLA_DISEGNO" ="Questa operazione cancellerà il disegno definitivamente";
+
+"SICURO_DELETE_BAMBINO" = "Sei sicuro di voler eliminare il bambino ?";
+
+"NOME_DEFAULT_ALBUM" = "Laboratorio";
+"NOTA_DEFAULT_ALBUM" = "Tutti i disegni da elaborare";
+
+"ALLERT_CANCELLA_ALBUM_DISEGNO"  ="Non puoi rimuovere l' album laboratorio";
+
+"TUTTI_DISEGNI_IN_DEFAULT" = "Tutti i disegni saranno spostati nell' album di default";
+
+"NUOVO_BAMBINO" = "Nuovo Bambino";
+
+
+"MODIFICA_INFO_DISEGNO" = "Note disegno";
+"TUTTI_DISEGNI_DI" = "Tutti i disegni di";
+"FATTO_IL"="Fatto il";
+
+"INFO_NOTE" = "Cos'è ?";
+
+"AGGIUNGI_AD_ALBUM"="Aggiungi ad un album";
+"NOME"="Nome";
+
+
+"TITOLO_ALBUM"="Titolo";
+"NOTA_ALBUM"="Nota";
+
+"SUCCESS_TWEET" = "Tweet inviato con successo.";
+"CANCELLED_TWEET" = "Tweet cancellato.";

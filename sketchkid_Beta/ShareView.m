@@ -11,6 +11,7 @@
 
 
 @implementation ShareView
+@synthesize mailButtonAction;
 @synthesize delegate;
 
 
@@ -40,5 +41,8 @@
 }
 - (IBAction)TWshareButtonAction:(id)sender {
     [delegate shareViewdidTwitter:self];
+}
+- (IBAction)mailButtonAction:(id)sender {
+    [delegate shareViewdidMail:self];
 }
 @end

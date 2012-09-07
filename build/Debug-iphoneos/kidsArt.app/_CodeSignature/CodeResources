@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AlbumInfoView.nib</key>
+		<data>
+		lh6HOfXx7k5lU9MilNs2jEY9kCo=
+		</data>
 		<key>CameraOverlayView.nib</key>
 		<data>
 		Ev22qRt5D2gquBm5RLnDuM2/9Mg=
@@ -72,6 +76,10 @@
 		<data>
 		kL+ijjVVseoKHkp+/g6w7snPgsg=
 		</data>
+		<key>HelveticaRoundedLTStd-Bd.otf</key>
+		<data>
+		PX7KN8sRkL0r/kpg0BK/W2px0Po=
+		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
@@ -86,7 +94,7 @@
 		</data>
 		<key>adjustView.nib</key>
 		<data>
-		lbd+UXEcWuVT1coVJOOs+OL+PzE=
+		Gt1LkfTFQXsKoH6BQwzWhlA7dwk=
 		</data>
 		<key>albumBar@2x.png</key>
 		<data>
@@ -99,6 +107,10 @@
 		<key>backAlbumCell.png</key>
 		<data>
 		rpv2d7vunQ9EIRvLiUYePG2UkHM=
+		</data>
+		<key>backCaption@2x.png</key>
+		<data>
+		GNCy6gIG8vuFMHluiCFj6V+rs0o=
 		</data>
 		<key>backHome@2x.png</key>
 		<data>
@@ -148,9 +160,17 @@
 		<data>
 		6qNhL+3idAd2G6fKXeZda3KbXEQ=
 		</data>
+		<key>contrastIcon@2x.png</key>
+		<data>
+		aSf5yByqaVpbVew9L0lQK6rr7YE=
+		</data>
 		<key>corniceBimbo@2x.png</key>
 		<data>
 		vQ1RztuRFYWgU6ZQrJ1wi1E3DLY=
+		</data>
+		<key>cornicefoto@2x.png</key>
+		<data>
+		uMJUypB0tEa7D/bwHQG0jUc5vfw=
 		</data>
 		<key>deleteIcon@2x.png</key>
 		<data>
@@ -166,83 +186,95 @@
 		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<data>
-		UVIhUhmpxsnRq/gV1Xemc6kd23E=
+		bX8wxDz40f2Puyamb9KZCvYBwSo=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/2-view-3.nib</key>
 		<data>
-		t7Yu+Ps5qcUP5B+dgLeY1EoKjN4=
+		2xYJG2KHpoFWaE2QcCqJDevh9No=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/6YJ-xl-Uxc-view-0eA-4o-xhg.nib</key>
 		<data>
-		xgf1eT4V9jP344x1lZbhRvXKIjo=
+		b3F54s7JemWQn6DP0pmc5tu9rWo=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/8Ea-gE-c9f-view-KIl-es-cYL.nib</key>
 		<data>
-		JVZL8jgqVQe8339l3OAV28vf0pw=
+		B9bv+4VgWez1WwIm1RWUE9OyLFY=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/9oc-5O-Z59-view-mcZ-iJ-dbw.nib</key>
 		<data>
-		2s/btK47E8R4wPrm20uYj6z+B5o=
+		Fsu3iyOQ+Oj97XBPF+V7hY6P0jc=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/DZX-cU-oRx-view-zpu-WO-3o2.nib</key>
 		<data>
-		ouZ2/hOVbD8p50yFPT77utue1l0=
+		mv9Hl28xy+fcqWXhN3BBJ/2Kr5k=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/E14-3j-3Bj-view-hhX-6V-Xp1.nib</key>
 		<data>
-		aGi7UeAAwmS3txvjIDyh+m9G124=
+		XGBLgBvS2WWufhGv1arcqQKu7aY=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/FG6-eg-QOy-view-IvM-tn-I0j.nib</key>
 		<data>
-		GhsSklscyi4Rkcq9j3SAkgcO9yA=
+		CgSoPY8kqW533E/+Ah/jXOCBpqA=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/IeE-Hz-Y0C-view-jj7-XM-dGt.nib</key>
 		<data>
-		lVi27uw92kx/Lrjb3VoPiNcRXJY=
+		HJbG4zyL7QvD9iXEcAta6HK2t2o=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-9oc-5O-Z59.nib</key>
 		<data>
-		o1wfUvvyRZ/qTHL+xgDpVHwTmyo=
+		lc80LMBsbVRMZ76KBCS9Jwos3A8=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-E14-3j-3Bj.nib</key>
 		<data>
-		hE6uXd9P8uV3Vtj7pZcgVOOBlpA=
+		rTcMu66ylfQtTai+SRzvaKVzdpc=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-EkR-17-Hb7.nib</key>
 		<data>
-		sGoLHX+cIKpUKlcgcv83yMXLcaE=
+		/l/cLzIXDFvReWm1jee7/Ct36vI=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-FG6-eg-QOy.nib</key>
 		<data>
-		PO3oU7HLL1iDQz9xBHHTgWFYwwU=
+		SfuKPzeShOuxYmboP8gmR3DTjwc=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-IeE-Hz-Y0C.nib</key>
 		<data>
-		+ebSvkvC/TmOd/c5NOIYxPgAdgc=
+		FH/XRJCj7S4ag+lK5AsPYfML2rU=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-eCh-QQ-g85.nib</key>
 		<data>
-		wCcp5CTzdGZD+VpdamLAVbURjiE=
+		rldHHTjxA3RATRFLo7E6iVJCC0Q=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-gBi-dk-WUA.nib</key>
+		<data>
+		uomcnrl68IIfMdKyJ6haNwjkD74=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-kA9-g3-87Z.nib</key>
 		<data>
-		jcdtFUURgXoOX7kPEFX/ME06E6o=
+		Iru23Fpk+/SVibVLVN4EB+FEyqA=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-roJ-jj-mcN.nib</key>
 		<data>
-		5oeNjZ0tlMAk3DKqEnOMXlVWQno=
+		fF6HD9Yfikp5leZDq/FHgYT/DeI=
+		</data>
+		<key>en.lproj/MainStoryboard.storyboardc/gBi-dk-WUA-view-4Ha-8w-R05.nib</key>
+		<data>
+		o5+DeToajQv6ijnDThQhvzr5rmA=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/kA9-g3-87Z-view-NcS-ko-PdB.nib</key>
 		<data>
-		juPR0bA/ku+ibuloPkIZUMsQmXM=
+		H/jhT0ktiRij4uJw6VTzFOxiydU=
 		</data>
 		<key>en.lproj/MainStoryboard.storyboardc/roJ-jj-mcN-view-Z9s-6F-yIR.nib</key>
 		<data>
-		l2vvlJA71b8ry4IXizKlcCep/TM=
+		oHvlK/Pj6bxcWLiZSK5wXqpVO2Q=
 		</data>
 		<key>evidenzia@2x.png</key>
 		<data>
 		3JWeDuJcBMT3p89vwst3uNc9waw=
+		</data>
+		<key>facebookIcon@2x.png</key>
+		<data>
+		295UhZvnp4z28hYxc4nUwUXUWYQ=
 		</data>
 		<key>frameIcon@2x.png</key>
 		<data>
@@ -266,83 +298,99 @@
 		</data>
 		<key>it.lproj/Localizable.strings</key>
 		<data>
-		NyaSEQ2kf91JjmJlP/z++du/Q9E=
+		OgQrZTeNj7OdeYDLLzLY0Qo/idc=
 		</data>
 		<key>it.lproj/MainStoryboard.storyboardc/2-view-3.nib</key>
 		<data>
-		/mxODKvrvaH8tG13Ir7QIy66IPQ=
+		LAZo8GXb13WC/2S92nuR8bC55GE=
 		</data>
 		<key>it.lproj/MainStoryboard.storyboardc/6YJ-xl-Uxc-view-0eA-4o-xhg.nib</key>
 		<data>
-		ByQjlG4hV8xZGanw9QI14fUMz80=
+		lQ4HtY/P/JsllLvWLdLQqHUccLU=
 		</data>
 		<key>it.lproj/MainStoryboard.storyboardc/8Ea-gE-c9f-view-KIl-es-cYL.nib</key>
 		<data>
-		lXQ8/pEuxmYTREdz/BPKlz0YPJY=
+		KukmiazBdKFktNRzOS1+By0z+YQ=
 		</data>
 		<key>it.lproj/MainStoryboard.storyboardc/9oc-5O-Z59-view-mcZ-iJ-dbw.nib</key>
 		<data>
-		y3eKOjXnmG4obWm2mFNxjjNJ2yk=
+		W7nJ6ppYDhWPILc+p4D+c+HabTw=
 		</data>
 		<key>it.lproj/MainStoryboard.storyboardc/DZX-cU-oRx-view-zpu-WO-3o2.nib</key>
 		<data>
-		rxl7k/2eqpY/XKKY8m2ZUY1HG7E=
+		8nyTr9HJF2GmOG3rbJr1H1DogC0=
 		</data>
 		<key>it.lproj/MainStoryboard.storyboardc/E14-3j-3Bj-view-hhX-6V-Xp1.nib</key>
 		<data>
-		mNPjMndc7Ta1ntxnKZTQ2+3spLU=
+		71igcYk0S7itd0jnH8eLVcO4NSM=
 		</data>
 		<key>it.lproj/MainStoryboard.storyboardc/FG6-eg-QOy-view-IvM-tn-I0j.nib</key>
 		<data>
-		71WAD1m+I2DrgTnoZ8Ssxdo5MPg=
+		oCyXOr21HpQBD3rj3yK5mlzhknk=
 		</data>
 		<key>it.lproj/MainStoryboard.storyboardc/IeE-Hz-Y0C-view-jj7-XM-dGt.nib</key>
 		<data>
-		kkscC91W2q4XZWQqhMLvdukgDvk=
+		FRGLmtZ/YsiSaJKzSSIdqqU6OwA=
 		</data>
 		<key>it.lproj/MainStoryboard.storyboardc/UIViewController-9oc-5O-Z59.nib</key>
 		<data>
-		cZZV2XYXnmi0OzGIDSvCfhimo20=
+		vJar5P3l3ZDozxmIZfQzEx81z4A=
 		</data>
 		<key>it.lproj/MainStoryboard.storyboardc/UIViewController-E14-3j-3Bj.nib</key>
 		<data>
-		uNa21b9YgJhhnJdPuHm2pjw9J1A=
+		wN4NSck3d1q1EPZBsqRF0OJiOBg=
 		</data>
 		<key>it.lproj/MainStoryboard.storyboardc/UIViewController-EkR-17-Hb7.nib</key>
 		<data>
-		AJngqhq3US5Kwhh5v2d327g24tw=
+		k3jzgp1KrH47TAAlXjI4AR3gFfM=
 		</data>
 		<key>it.lproj/MainStoryboard.storyboardc/UIViewController-FG6-eg-QOy.nib</key>
 		<data>
-		4OFEUo+M8PpPATQWE8N2KqvUZD0=
+		7NeFcc1ryuPhbTID4fiPBCPApmw=
 		</data>
 		<key>it.lproj/MainStoryboard.storyboardc/UIViewController-IeE-Hz-Y0C.nib</key>
 		<data>
-		spaKnOgHYTsyWH3bxcFtK6OdLaI=
+		9j1j2e/f6m89tAVqGOEptgx2WLM=
 		</data>
 		<key>it.lproj/MainStoryboard.storyboardc/UIViewController-eCh-QQ-g85.nib</key>
 		<data>
-		BKjBev6ofCFVda6MF8QxkvFzgAA=
+		8czb1JvR8wYcdNbkeQkH00cDmQ4=
+		</data>
+		<key>it.lproj/MainStoryboard.storyboardc/UIViewController-gBi-dk-WUA.nib</key>
+		<data>
+		rk9F2pHx9Ohxze84GuwU6e6YDdY=
 		</data>
 		<key>it.lproj/MainStoryboard.storyboardc/UIViewController-kA9-g3-87Z.nib</key>
 		<data>
-		XWL1V8BW3vaN/wwfZaXtrOp+BYg=
+		Q/WBHMToPFpiGRudeHsvdGftl90=
 		</data>
 		<key>it.lproj/MainStoryboard.storyboardc/UIViewController-roJ-jj-mcN.nib</key>
 		<data>
-		GxLC4f2ErNnYofoYieTOfR+ZynA=
+		uuDKRmXViuv/bsKxF45JSZrr8Qo=
+		</data>
+		<key>it.lproj/MainStoryboard.storyboardc/gBi-dk-WUA-view-4Ha-8w-R05.nib</key>
+		<data>
+		N/zuZf82m0A+Z6Lzk9qFSnuM3tY=
 		</data>
 		<key>it.lproj/MainStoryboard.storyboardc/kA9-g3-87Z-view-NcS-ko-PdB.nib</key>
 		<data>
-		yjitUasfNrWru4eTOLebVe/OU6M=
+		5siQbZcqQfKQhG+lSOhgWY8A/7E=
 		</data>
 		<key>it.lproj/MainStoryboard.storyboardc/roJ-jj-mcN-view-Z9s-6F-yIR.nib</key>
 		<data>
-		irBVAVnGyauHbA+hQYfXX4YeY8s=
+		lv0drJQDozlLmObLqJA+nXMP7wY=
+		</data>
+		<key>kidCellBack@2x.png</key>
+		<data>
+		TCnxfrNu9eWGZCwvwXNgXqqyG0E=
 		</data>
 		<key>kidsIcon@2x.png</key>
 		<data>
 		1CLWn5eznGDFoVrLUxoWHipSIEk=
+		</data>
+		<key>mailcon@2x.png</key>
+		<data>
+		Tu3UTMcbpMeInHwAt2mx8bbguKo=
 		</data>
 		<key>navigationBar@2x.png</key>
 		<data>
@@ -382,7 +430,7 @@
 		</data>
 		<key>shareView.nib</key>
 		<data>
-		lcGPKygRjjKADGCQMLrb92RZya0=
+		EVBEvC8OwHROzQp9Nl4Gr0cseWQ=
 		</data>
 		<key>sketchkidModel.momd/sketchkidModel.mom</key>
 		<data>
@@ -408,6 +456,10 @@
 		<data>
 		KuZEw1daQvM7AyA0Nrl1X8OJnIo=
 		</data>
+		<key>tabella@2x.png</key>
+		<data>
+		nYc8KozS+37u4a641uVnGAo7R64=
+		</data>
 		<key>tick.aiff</key>
 		<data>
 		IMeIXHQ2ITF+Ma8lzmuMqVMfIWA=
@@ -419,6 +471,10 @@
 		<key>toolBarBack@2x.png</key>
 		<data>
 		Fug8hFPU715ArbGiYEYaYmnLhug=
+		</data>
+		<key>twitterIcon@2x.png</key>
+		<data>
+		CHp5N+lrqFeO1WpZrwOJOEqtz1U=
 		</data>
 		<key>verde.png</key>
 		<data>

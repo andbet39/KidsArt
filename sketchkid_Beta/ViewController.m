@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 
-#define kVIEW_BASE 290
+#define kVIEW_BASE 300
 
 
 @interface ViewController ()
@@ -203,14 +203,14 @@
     DataManager *dm = [DataManager  sharedDataManager];
     
     
-    NSManagedObjectContext *context = [dm managedObjectContext];
+    NSManagedObjectContext *_context = [dm managedObjectContext];
     
     [self saveSketchToDisk];
     
     
     // Save the context.
     NSError *error = nil;
-    if (![context save:&error]){
+    if (![_context save:&error]){
         NSLog(@"Error on save");
     }
 
@@ -573,14 +573,14 @@
                             
         if(res == TWTweetComposeViewControllerResultDone) {
                         
-                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Success" message:@"The Tweet was posted successfully." delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles: nil];
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:NSLocalizedString(@"SUCCESSO", nil) message:NSLocalizedString(@"SUCCESS_TWEET", nil) delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
                                                       
                 [alert show];
                                                       
         }
        if(res == TWTweetComposeViewControllerResultCancelled) {
        
-           UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Cancelled" message:@"You Cancelled posting the Tweet." delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles: nil];
+           UIAlertView *alert = [[UIAlertView alloc]initWithTitle:NSLocalizedString(@"CANCELLED", nil) message:NSLocalizedString(@"CANCELLED_TWEET", nil) delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
                                                                                 
         [alert show];    
                                                                                 
@@ -592,6 +592,51 @@
 
 }
 
+-(void)shareViewdidMail:(ShareView *)sender
+{
+
+    MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
+    picker.mailComposeDelegate = self;
+    
+    NSString *mess;
+    
+    if (currentSketch.kid==nil) {
+        mess = NSLocalizedString(@"DISEGNO_KIDART", nil );
+        
+    }else{
+        mess = [NSString stringWithFormat:@"%@ %@",NSLocalizedString(@"DISEGNO_FATTO_DA", nil),currentSketch.kid.nome];
+    }
+    
+    // Set the subject of email
+    [picker setSubject:mess];
+    
+   
+    // Fill out the email body text
+    NSString *emailBody = @"";
+    
+    // This is not an HTML formatted email
+    [picker setMessageBody:emailBody isHTML:YES];
+    
+    // Create NSData object as PNG image data from camera image
+    NSData *data = UIImagePNGRepresentation(mainImageView.image);
+    
+    // Attach image data to the email
+    // 'CameraImage.png' is the file name that will be attached to the email
+    [picker addAttachmentData:data mimeType:@"image/png" fileName:@"Sketch"];
+    
+    // Show email view
+    [self presentModalViewController:picker animated:YES];
+    
+    
+
+}
+
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
+{
+    // Called once the email is sent
+    // Remove the email view controller
+    [self dismissModalViewControllerAnimated:YES];
+}
 #pragma mark Facebook method
 - (void)sendFBRequests {
 
