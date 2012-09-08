@@ -7,6 +7,8 @@
 //
 
 #import "newAlbumViewController.h"
+#import "selectCopertinaViewController.h"
+
 
 @interface newAlbumViewController ()
 
@@ -18,8 +20,18 @@
 @synthesize titoloText;
 @synthesize noteText;
 @synthesize toolBar;
+@synthesize copertinaImage;
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
 
+    if ([segue.identifier isEqualToString:@"selectBack"])
+    {
+        selectCopertinaViewController * selectBackView=(selectCopertinaViewController*) [segue destinationViewController];
+        [selectBackView setDelegate:self];
+    }
+    
+
+}
 
 -(void) configuraView
 {
@@ -46,6 +58,7 @@
     [self setSaveButton:nil];
     [self setTitleLable:nil];
     [self setNoteText:nil];
+    [self setCopertinaImage:nil];
     [super viewDidUnload];
 }
 
@@ -68,6 +81,11 @@
     [album setDataCreazione:[NSDate date]];
     [album setOrder:[NSDecimalNumber numberWithInt: [am getMaxOrder]+1]];
     
+    if (selectedBackImage) {
+        
+        [album setCopertinaPath:selectedBackImage];
+        
+    }
     
     [self.delegate newAlbumViewController:self DidAddAlbum:album];
 
@@ -78,4 +96,28 @@
     
     [self.delegate newAlbumViewControllerDidCancel:self];
 }
+
+- (IBAction)selectBackbuttonAction:(id)sender {
+    
+    [self performSegueWithIdentifier:@"selectBack" sender:self];
+}
+
+
+#pragma mark selectCopertinaViewControllerDelegate
+
+-(void)selectCopertinaDidCancel
+{
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+-(void)selectCopertina:(selectCopertinaViewController *)sender didSelectBackGround:(BackAlbum *)back
+{
+
+    [self.copertinaImage setImage:[UIImage imageNamed:back.thumb]];
+    selectedBackImage=back.image;
+    [self dismissModalViewControllerAnimated:YES];
+
+}
+
+
 @end

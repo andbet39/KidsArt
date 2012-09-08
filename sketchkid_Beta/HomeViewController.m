@@ -20,6 +20,8 @@
 @synthesize nameLabel;
 @synthesize dateLabel;
 @synthesize noteLabel;
+@synthesize backImage;
+@synthesize masterBackImage;
 @synthesize removeInfoButton;
 
 @synthesize mainView;
@@ -125,6 +127,13 @@
     
     sketchArray = [[NSMutableArray alloc]initWithArray:sortedSketch];
     
+    if (currentAlbum.copertinaPath != nil) {
+        [backImage setImage:[UIImage imageNamed:currentAlbum.copertinaPath]];
+        [masterBackImage setImage:[UIImage imageNamed:currentAlbum.copertinaPath]];
+  
+    }
+   
+    
     [_gmGridView reloadData];
 
 }
@@ -169,6 +178,8 @@
     [self setNameLabel:nil];
     [self setDateLabel:nil];
     [self setNoteLabel:nil];
+    [self setBackImage:nil];
+    [self setMasterBackImage:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

@@ -39,30 +39,17 @@
     
     int toolbarheight=82;
 
-    [toolBar setFrame:CGRectMake(0, self.view.frame.size.height-toolbarheight, 320, toolbarheight)];
-    [toolBar setBackgroundImage:[UIImage imageNamed:@"toolBarBack.png"] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
+    [toolBar setFrame:CGRectMake(0, self.view.frame.size.height-toolbarheight, 320, toolbarheight)];     
+    [toolBar setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"toolBarBack.png"]]];
     
     
     
-    [penButton setBackgroundVerticalPositionAdjustment:15.0f forBarMetrics:UIBarMetricsDefault];
-    [penButton setBackgroundImage:[UIImage imageNamed:@"pen_icon.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    
-    [shareButton setBackgroundImage:[UIImage imageNamed:@"shareIcon.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    [shareButton setBackgroundVerticalPositionAdjustment:15.0f forBarMetrics:UIBarMetricsDefault];
-    
-    [trashButton setBackgroundImage:[UIImage imageNamed:@"deleteIcon.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    [trashButton setBackgroundVerticalPositionAdjustment:15.0f forBarMetrics:UIBarMetricsDefault];
-    
-    
-    [frameButton setBackgroundImage:[UIImage imageNamed:@"frameIcon.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    [frameButton setBackgroundVerticalPositionAdjustment:15.0f forBarMetrics:UIBarMetricsDefault];
-    
-    
-    [adjustButton setBackgroundImage:[UIImage imageNamed:@"colorIcon.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    [adjustButton setBackgroundVerticalPositionAdjustment:15.0f forBarMetrics:UIBarMetricsDefault];
-    
-    
-    
+    [shareButton setBackgroundImage:[UIImage imageNamed:@"share_hover.png"] forState:UIControlStateHighlighted];
+    [penButton setBackgroundImage:[UIImage imageNamed:@"caption_hover.png"] forState:UIControlStateHighlighted];
+    [trashButton setBackgroundImage:[UIImage imageNamed:@"trash_hover.png"] forState:UIControlStateHighlighted];
+    [adjustButton setBackgroundImage:[UIImage imageNamed:@"img_edit_hover.png"] forState:UIControlStateHighlighted];
+    [frameButton setBackgroundImage:[UIImage imageNamed:@"frame_hover.png"] forState:UIControlStateHighlighted];
+       
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationBar.png"] forBarMetrics:UIBarMetricsDefault];
 
     
@@ -246,10 +233,6 @@
     [imageData writeToFile:currentSketch.pathFull atomically:NO];
     [imageDataSmall writeToFile:currentSketch.pathSmall atomically:NO];
     
-   
-    
-    
-
 
     [MBProgressHUD hideHUDForView:self.mainView animated:YES];
 
@@ -444,18 +427,13 @@
         
         // Save the context.
         if (![moc save:&error]) {
-            // Replace this implementation with code to handle the error appropriately.
-            // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+             NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
             abort();
         }
         
-        
-        
+
         AlbumManager *am = [AlbumManager sharedAlbumManager];
-        
-        //[am setSelectedAlbum:[am defaultAlbum]];
-        
+                
         [am.istanceOfHomeViewController reloadAlbumData];
         [am.istanceOfAlbumViewController reloadData];
         
@@ -536,10 +514,7 @@
                                                                                 cancelButtonTitle:@"OK"
                                                                                 otherButtonTitles:nil];
                                           [alert show];
-                                          // if otherwise we check to see if the session is open, an alternative to
-                                          // to the FB_ISSESSIONOPENWITHSTATE helper-macro would be to check the isOpen
-                                          // property of the session object; the macros are useful, however, for more
-                                          // detailed state checking for FBSession objects
+                                
                                       } else  {
                                           // send our requests if we successfully logged in
                                           [self sendFBRequests];

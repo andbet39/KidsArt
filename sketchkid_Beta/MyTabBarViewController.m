@@ -79,19 +79,20 @@
     [self.view addSubview:backView];
     
     
-    UIImage *btnImage = [UIImage imageNamed:@"kidsIcon.png"];
+    UIImage *btnImage = [UIImage imageNamed:@"kids"];
     UIImage *btnImageSelected = [UIImage imageNamed:@"kidsIcon.png"];
 
     imgView1=[[UIImageView alloc]initWithImage:btnImage];
     imgView1.frame=CGRectMake(15, 420, 80, 55);
 
-    btn1 = [UIButton buttonWithType:UIButtonTypeCustom]; 
+    btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
+    
     btn1.frame = CGRectMake(8, 415, 90, 70);
     [btn1 setTag:0]; 
     [btn1 setSelected:true]; 
 
-    btnImage = [UIImage imageNamed:@"cameraIcon.png"];
-    btnImageSelected = [UIImage imageNamed:@"cameraIcon.png"];
+    btnImage = [UIImage imageNamed:@"camera.png"];
+    btnImageSelected = [UIImage imageNamed:@"camera.png"];
     
     imgView2=[[UIImageView alloc]initWithImage:btnImage];
     imgView2.frame=CGRectMake(133, 415, 57, 42);
@@ -100,8 +101,8 @@
     btn2.frame = CGRectMake(115, 410, 90, 70);
     [btn2 setTag:1];
     
-    btnImage = [UIImage imageNamed:@"albumIcon.png"];
-    btnImageSelected = [UIImage imageNamed:@"albumIcon.png"];
+    btnImage = [UIImage imageNamed:@"album.png"];
+    btnImageSelected = [UIImage imageNamed:@"album.png"];
     
     imgView3=[[UIImageView alloc]initWithImage:btnImage];
     imgView3.frame=CGRectMake(225, 422, 80 , 55);
@@ -134,21 +135,36 @@
     switch(tabID)
     {
         case 0:
+            [imgView1 setImage:[UIImage imageNamed:@"kids_hover"]];
+            [imgView2 setImage:[UIImage imageNamed:@"camera"]];
+            [imgView3 setImage:[UIImage imageNamed:@"album"]];
             [btn1 setSelected:true];
             [btn2 setSelected:false];
             [btn3 setSelected:false];
             break;
         case 1:
+            [imgView1 setImage:[UIImage imageNamed:@"kids"]];
+            [imgView2 setImage:[UIImage imageNamed:@"camera_active"]];
+            [imgView3 setImage:[UIImage imageNamed:@"album"]];
+
             [btn1 setSelected:false];
             [btn2 setSelected:true];
             [btn3 setSelected:false];
             break;
         case 2:
+            [imgView1 setImage:[UIImage imageNamed:@"kids"]];
+            [imgView2 setImage:[UIImage imageNamed:@"camera"]];
+            [imgView3 setImage:[UIImage imageNamed:@"album_hover"]];
+
             [btn1 setSelected:false];
             [btn2 setSelected:false];
             [btn3 setSelected:true];
             break;
         case 3:
+            //[imgView1 setImage:[UIImage imageNamed:@"kids"]];
+            //[imgView2 setImage:[UIImage imageNamed:@"camera"]];
+            //[imgView3 setImage:[UIImage imageNamed:@"album"]];
+
             [btn1 setSelected:false];
             [btn2 setSelected:false];
             [btn3 setSelected:false];

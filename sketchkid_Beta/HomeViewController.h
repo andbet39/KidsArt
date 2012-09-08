@@ -46,6 +46,8 @@
 
 -(void)reloadAlbumData;
 
+@property (weak, nonatomic) IBOutlet UIImageView *backImage;
+@property (weak, nonatomic) IBOutlet UIImageView *masterBackImage;
 
 
 @property (weak, nonatomic) IBOutlet UIButton *removeInfoButton;

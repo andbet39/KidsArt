@@ -7,9 +7,29 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BackAlbum.h"
+@class  selectCopertinaViewController;
 
-@interface selectCopertinaViewController : UIViewController
+@protocol selectCopertinaViewControllerDelegate <NSObject>
+
+-(void)selectCopertinaDidCancel;
+-(void)selectCopertina:(selectCopertinaViewController*)sender didSelectBackGround:(BackAlbum*)back;
+@end
+
+@interface selectCopertinaViewController : UIViewController<GMGridViewDataSource,GMGridViewActionDelegate>
+{
+    GMGridView *_gmGridView;
+    NSMutableArray * backgroundsArray;
+    
+
+
+}
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UINavigationBar *toolBar;
+@property (weak, nonatomic) IBOutlet UIView *mainView;
+
+- (IBAction)cancelButtonAction:(id)sender;
+
+@property (weak,nonatomic) id <selectCopertinaViewControllerDelegate> delegate;
 
 @end

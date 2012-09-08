@@ -50,12 +50,12 @@
 @property (strong, nonatomic) IBOutlet ATPhotoScrollView *scrollView;
 
 @property (weak, nonatomic) IBOutlet UIView *mainView;
-@property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *penButton;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *shareButton;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *trashButton;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *frameButton;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *adjustButton;
+@property (weak, nonatomic) IBOutlet UIView *toolBar;
+@property (weak, nonatomic) IBOutlet UIButton *penButton;
+@property (weak, nonatomic) IBOutlet UIButton *shareButton;
+@property (weak, nonatomic) IBOutlet UIButton *trashButton;
+@property (weak, nonatomic) IBOutlet UIButton *frameButton;
+@property (weak, nonatomic) IBOutlet UIButton *adjustButton;
 
 @property (weak, nonatomic) IBOutlet UINavigationBar *fintaNavigationBar;
 
