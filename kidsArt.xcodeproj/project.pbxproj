@@ -1113,6 +1113,7 @@
 		65FA968715CD263A00AC0CCD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Documents/FacebookSDK\"",
@@ -1127,6 +1128,7 @@
 					"-lsqlite3.0",
 				);
 				PRODUCT_NAME = kidsArt;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				USER_HEADER_SEARCH_PATHS = "/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView/**";
 				WRAPPER_EXTENSION = app;
 			};
