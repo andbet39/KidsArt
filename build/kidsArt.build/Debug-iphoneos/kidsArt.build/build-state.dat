@@ -5,27 +5,29 @@ cCheck dependencies
 cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ResourceRules.plist build/Debug-iphoneos/kidsArt.app/ResourceRules.plist
 cProcessInfoPlistFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/Info.plist sketchkid_Beta/kidsArt-Info.plist
 cCompileXIB /Users/andrea/Desktop/kidsArt/sketchkid_Beta/adjustView.xib
-cDataModelVersionCompile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/sketchkidModel.momd /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../sketchkidModel.xcdatamodeld
 cProcessPCH /var/folders/sv/2_vrrchj7978cgnc9q4djfqm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/kidsArt-Prefix-dbyuxbrxvdflhqawkmecjadvsbng/kidsArt-Prefix.pch.pth sketchkid_Beta/kidsArt-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cDataModelVersionCompile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/sketchkidModel.momd /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../sketchkidModel.xcdatamodeld
 cProcessPCH /var/folders/sv/2_vrrchj7978cgnc9q4djfqm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/kidsArt-Prefix-ejihxiekwpbtbhadwjcmcqvsgowh/kidsArt-Prefix.pch.pth sketchkid_Beta/kidsArt-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/kidCell.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/kidCell.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/ShareView.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/ShareView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/AlbumInfoView.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/AlbumInfoView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/Frame.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/Frame.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/AlbumCell.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/AlbumCell.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/UIToolbar+extension.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/UIToolbar+extension.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/DataManager.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/DataManager.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/AdjustView-4C4EBB5A668770B5.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/AdjustView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/UIView+Animation.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/UIView+Animation.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/AdjustView-4C4EBB5A668770B5.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/AdjustView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/main.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/AppDelegate.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/UIToolbar+extension.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/UIToolbar+extension.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/ViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../sketchkid_Beta/ViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/UIImage+Scale.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/UIImage+Scale.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/UIView+PartialCurl.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/UIView+PartialCurl.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/ViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../sketchkid_Beta/ViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/HomeViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../sketchkid_Beta/HomeViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/newKidViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../newKidViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/kidsViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../kidsViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/HomeViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../sketchkid_Beta/HomeViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/DataManager.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/DataManager.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/Kid.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../Kid.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/MyTabBarViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../sketchkid_Beta/MyTabBarViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/TakePictureViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../TakePictureViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/newKidViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../newKidViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/SegueWithNoAnimation.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/SegueWithNoAnimation.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/TakePictureViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../TakePictureViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/MyTabBarViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../sketchkid_Beta/MyTabBarViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/AlbumManager.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/AlbumManager.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/AlbumViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../AlbumViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/SketchManager.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/SketchManager.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -35,84 +37,81 @@ cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/MKNumberBadgeView.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/MKNumberBadgeView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/SelectKidViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../SelectKidViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/newAlbumViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../newAlbumViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/kidCell.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/kidCell.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/Sketch.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/Sketch.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/FrameSelectView.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/FrameSelectView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/ShareView.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/ShareView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/MBProgressHUD.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/MBProgressHUD.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/FrameSelectView.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/FrameSelectView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/ATScrollView.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/ATScrollView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/Frame.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/Frame.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/ImageScrollView.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/ImageScrollView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/ATPhotoScrollView.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/ATPhotoScrollView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/Album.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/Album.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/AlbumInfoView.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/AlbumInfoView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/ImageScrollView.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/ImageScrollView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/BackAlbum.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/BackAlbum.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/selectCopertinaViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../selectCopertinaViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/selectFaccinaViewController.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../selectFaccinaViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cLd /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/kidsArt normal armv7
 cGenerateDSYMFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app.dSYM /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/kidsArt
-cCompileXIB /Users/andrea/Desktop/kidsArt/sketchkid_Beta/adjustView.xib
-cCopyStringsFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/en.lproj/InfoPlist.strings sketchkid_Beta/en.lproj/InfoPlist.strings
-cCompileStoryboard /Users/andrea/Desktop/kidsArt/sketchkid_Beta/it.lproj/MainStoryboard.storyboard
 cCompileStoryboard /Users/andrea/Desktop/kidsArt/sketchkid_Beta/en.lproj/MainStoryboard.storyboard
+cCompileXIB /Users/andrea/Desktop/kidsArt/sketchkid_Beta/adjustView.xib
+cCompileStoryboard /Users/andrea/Desktop/kidsArt/sketchkid_Beta/it.lproj/MainStoryboard.storyboard
+cCopyStringsFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/en.lproj/InfoPlist.strings sketchkid_Beta/en.lproj/InfoPlist.strings
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/toolBarBack@2x.png toolBarBack@2x.png
-cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/toolBackHome@2x.png toolBackHome@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/pen_icon@2x.png pen_icon@2x.png
+cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/toolBackHome@2x.png toolBackHome@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/backHome@2x.png backHome@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/cameraIcon@2x.png cameraIcon@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/albumIcon@2x.png albumIcon@2x.png
-cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/navigationBar@2x.png navigationBar@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/kidsIcon@2x.png kidsIcon@2x.png
-cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/sampleSketch.png sampleSketch.png
+cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/navigationBar@2x.png navigationBar@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/albumBar@2x.png albumBar@2x.png
+cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/sampleSketch.png sampleSketch.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/addFavorites@2x.png addFavorites@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/greyBar@2x.png greyBar@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/backKidsViola.png backKidsViola.png
-cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/corniceBimbo@2x.png corniceBimbo@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/strisciaGialla@2x.png strisciaGialla@2x.png
-cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/bottoneSalva@2x.png bottoneSalva@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/bckInserimento@2x.png bckInserimento@2x.png
+cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/corniceBimbo@2x.png corniceBimbo@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/evidenzia@2x.png evidenzia@2x.png
-cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/bambinoDefault@2x.png bambinoDefault@2x.png
+cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/bottoneSalva@2x.png bottoneSalva@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/close_x.png close_x.png
+cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/bambinoDefault@2x.png bambinoDefault@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/bambinoDefault2@2x.png bambinoDefault2@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/backAlbumCell.png backAlbumCell.png
-cCpResource tick.aiff build/Debug-iphoneos/kidsArt.app/tick.aiff
 cCpResource home.jpg build/Debug-iphoneos/kidsArt.app/home.jpg
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/cancelCameraIcon@2x.png cancelCameraIcon@2x.png
-cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/savePhotosIcon@2x.png savePhotosIcon@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/colorIcon@2x.png colorIcon@2x.png
+cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/savePhotosIcon@2x.png savePhotosIcon@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/frameIcon@2x.png frameIcon@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/deleteIcon@2x.png deleteIcon@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/shareIcon@2x.png shareIcon@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/backgroundSubView@2x.png backgroundSubView@2x.png
-cCompileXIB /Users/andrea/Desktop/kidsArt/sketchkid_Beta/frameSelectView.xib
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/brightnessIcon@2x.png brightnessIcon@2x.png
-cCopyPlistFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/frameList.plist sketchkid_Beta/frameList.plist
+cCompileXIB /Users/andrea/Desktop/kidsArt/sketchkid_Beta/frameSelectView.xib
 cCopyStringsFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/en.lproj/Localizable.strings sketchkid_Beta/../en.lproj/Localizable.strings
+cCopyPlistFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/frameList.plist sketchkid_Beta/frameList.plist
 cCopyStringsFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/it.lproj/Localizable.strings sketchkid_Beta/../it.lproj/Localizable.strings
-cCpResource Snickles.ttf build/Debug-iphoneos/kidsArt.app/Snickles.ttf
 cCpResource ../../Documents/FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle build/Debug-iphoneos/kidsArt.app/FacebookSDKResources.bundle
-cCompileXIB /Users/andrea/Desktop/kidsArt/sketchkid_Beta/shareView.xib
-cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/shareMail@2x.png shareMail@2x.png
-cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/shareTwitter@2x.png shareTwitter@2x.png
+cCpResource Snickles.ttf build/Debug-iphoneos/kidsArt.app/Snickles.ttf
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/shareFB@2x.png shareFB@2x.png
-cCpResource HelveticaRoundedLTStd-Bd.otf build/Debug-iphoneos/kidsArt.app/HelveticaRoundedLTStd-Bd.otf
+cCompileXIB /Users/andrea/Desktop/kidsArt/sketchkid_Beta/shareView.xib
+cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/shareTwitter@2x.png shareTwitter@2x.png
+cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/shareMail@2x.png shareMail@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/cornicefoto@2x.png cornicefoto@2x.png
+cCpResource HelveticaRoundedLTStd-Bd.otf build/Debug-iphoneos/kidsArt.app/HelveticaRoundedLTStd-Bd.otf
 cCompileXIB /Users/andrea/Desktop/kidsArt/sketchkid_Beta/AlbumInfoView.xib
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/backCaption@2x.png backCaption@2x.png
-cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/tabella@2x.png tabella@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/kidCellBack@2x.png kidCellBack@2x.png
-cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/facebookIcon@2x.png facebookIcon@2x.png
+cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/tabella@2x.png tabella@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/contrastIcon@2x.png contrastIcon@2x.png
+cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/facebookIcon@2x.png facebookIcon@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/mailcon@2x.png mailcon@2x.png
+cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/twitterIcon@2x.png twitterIcon@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/caption_hover@2x.png caption_hover@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/caption@2x.png caption@2x.png
-cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/twitterIcon@2x.png twitterIcon@2x.png
-cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/frame@2x.png frame@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/frame_hover@2x.png frame_hover@2x.png
+cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/frame@2x.png frame@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/img_edit_hover@2x.png img_edit_hover@2x.png
-cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/share_hover@2x.png share_hover@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/img_edit@2x.png img_edit@2x.png
+cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/share_hover@2x.png share_hover@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/share@2x.png share@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/trash@2x.png trash@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/trash_hover@2x.png trash_hover@2x.png
@@ -123,34 +122,34 @@ cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/came
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/kids_hover@2x.png kids_hover@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/kids@2x.png kids@2x.png
 cCpResource blu_diamond.jpg build/Debug-iphoneos/kidsArt.app/blu_diamond.jpg
+cCpResource green_diamond.jpg build/Debug-iphoneos/kidsArt.app/green_diamond.jpg
 cCpResource green_pois.jpg build/Debug-iphoneos/kidsArt.app/green_pois.jpg
 cCpResource green_star.jpg build/Debug-iphoneos/kidsArt.app/green_star.jpg
-cCpResource green_diamond.jpg build/Debug-iphoneos/kidsArt.app/green_diamond.jpg
-cCpResource pink_pois.jpg build/Debug-iphoneos/kidsArt.app/pink_pois.jpg
 cCpResource mixstar.jpg build/Debug-iphoneos/kidsArt.app/mixstar.jpg
+cCpResource pink_pois.jpg build/Debug-iphoneos/kidsArt.app/pink_pois.jpg
 cCpResource violet_square.jpg build/Debug-iphoneos/kidsArt.app/violet_square.jpg
-cCpResource violetsoft_lines.jpg build/Debug-iphoneos/kidsArt.app/violetsoft_lines.jpg
 cCpResource violet_star.jpg build/Debug-iphoneos/kidsArt.app/violet_star.jpg
 cCpResource blu_diamond_t.jpg build/Debug-iphoneos/kidsArt.app/blu_diamond_t.jpg
-cCpResource green_diamond_t.jpg build/Debug-iphoneos/kidsArt.app/green_diamond_t.jpg
-cCpResource green_star_t.jpg build/Debug-iphoneos/kidsArt.app/green_star_t.jpg
+cCpResource violetsoft_lines.jpg build/Debug-iphoneos/kidsArt.app/violetsoft_lines.jpg
 cCpResource green_pois_t.jpg build/Debug-iphoneos/kidsArt.app/green_pois_t.jpg
+cCpResource green_diamond_t.jpg build/Debug-iphoneos/kidsArt.app/green_diamond_t.jpg
 cCpResource mixstar_t.jpg build/Debug-iphoneos/kidsArt.app/mixstar_t.jpg
+cCpResource green_star_t.jpg build/Debug-iphoneos/kidsArt.app/green_star_t.jpg
 cCpResource pink_pois_t.jpg build/Debug-iphoneos/kidsArt.app/pink_pois_t.jpg
 cCpResource violet_square_t.jpg build/Debug-iphoneos/kidsArt.app/violet_square_t.jpg
 cCpResource violet_star_t.jpg build/Debug-iphoneos/kidsArt.app/violet_star_t.jpg
 cCpResource violetsoft_lines_t.jpg build/Debug-iphoneos/kidsArt.app/violetsoft_lines_t.jpg
 cCopyPlistFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/albumBackground.plist albumBackground.plist
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/Default.png Default.png
-cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/Default@2x.png Default@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/bambini_03.png bambini_03.png
+cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/Default@2x.png Default@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/bambini_06.png bambini_06.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/bambini_15.png bambini_15.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/bambini_17.png bambini_17.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/bambini_19.png bambini_19.png
 cCopyPlistFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/faccineList.plist faccineList.plist
-cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/1.png 1.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/bambini_09.png bambini_09.png
+cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/1.png 1.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/2.png 2.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/4.png 4.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/3.png 3.png
@@ -164,6 +163,7 @@ cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/4_t.
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/5_t.png 5_t.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/6_t.png 6_t.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/7_t.png 7_t.png
+cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/bottoneGrande@2x.png bottoneGrande@2x.png
 cCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/editButton@2x.png editButton@2x.png
 cProcessProductPackaging "/Users/andrea/Library/MobileDevice/Provisioning Profiles/1A5818D6-C1E2-4A1F-B0F1-F50DD0A8B56D.mobileprovision" /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/embedded.mobileprovision
 cProcessProductPackaging "/Users/andrea/Library/MobileDevice/Provisioning Profiles/1A5818D6-C1E2-4A1F-B0F1-F50DD0A8B56D.mobileprovision" /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/embedded.mobileprovision
@@ -581,6 +581,11 @@ c00000000504A1ACA0000000000002C61
 t1347033802
 s11361
 
+N/Users/andrea/Desktop/kidsArt/bottoneGrande@2x.png
+c00000000504FA25D0000000000000E49
+t1347396189
+s3657
+
 N/Users/andrea/Desktop/kidsArt/bottoneSalva@2x.png
 c00000000501FF4D00000000000000D5D
 t1344271568
@@ -592,11 +597,11 @@ t1346147536
 s1502
 
 N/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app
-t1347300192
+t1347300463
 s4352
 
 N/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app.dSYM
-t1347300190
+t1347300457
 s102
 
 N/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/1.png
@@ -791,6 +796,10 @@ N/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/blu_diamond_t.jp
 t1347095048
 s11361
 
+N/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/bottoneGrande@2x.png
+t2
+s0
+
 N/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/bottoneSalva@2x.png
 t1347300120
 s4179
@@ -944,7 +953,7 @@ t1347115017
 s1894
 
 N/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/it.lproj/MainStoryboard.storyboardc
-t1347300191
+t1347300462
 s850
 
 N/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/kidCellBack@2x.png
@@ -956,7 +965,7 @@ t1347300124
 s12036
 
 N/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/kidsArt
-t1347300192
+t1347300463
 s1034432
 
 N/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/kidsIcon@2x.png
@@ -1617,14 +1626,14 @@ t1346882169
 s5745
 
 N/Users/andrea/Desktop/kidsArt/sketchkid_Beta/../en.lproj/Localizable.strings
-c00000000504B517A00000000000006AB
-t1347113338
-s1707
+c00000000504FA07600000000000006C1
+t1347395702
+s1729
 
 N/Users/andrea/Desktop/kidsArt/sketchkid_Beta/../it.lproj/Localizable.strings
-c00000000504B517B0000000000000732
-t1347113339
-s1842
+c00000000504FA076000000000000072F
+t1347395702
+s1839
 
 N/Users/andrea/Desktop/kidsArt/sketchkid_Beta/../kidsViewController.h
 c00000000504E25C80000000000000407
@@ -1997,9 +2006,9 @@ t1344073401
 s45
 
 N/Users/andrea/Desktop/kidsArt/sketchkid_Beta/en.lproj/MainStoryboard.storyboard
-c00000000504E25C800000000000192F2
-t1347298760
-s103154
+c00000000504FA2EB000000000001C0E4
+t1347396331
+s114916
 
 N/Users/andrea/Desktop/kidsArt/sketchkid_Beta/frameList.plist
 c00000000504E1F6500000000000006BA
@@ -2012,9 +2021,9 @@ t1347297162
 s9149
 
 N/Users/andrea/Desktop/kidsArt/sketchkid_Beta/it.lproj/MainStoryboard.storyboard
-c00000000504E2C66000000000001C23D
-t1347300454
-s115261
+c00000000504FA2EB00000000000191AF
+t1347396331
+s102831
 
 N/Users/andrea/Desktop/kidsArt/sketchkid_Beta/kidCell.h
 c00000000503CAC59000000000000016D
@@ -2400,16 +2409,16 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies7f4cffe863feb541^177fffe863feb541^---0#1#0#--18"Check dependencies36"BEACC993-83CD-4915-A6A3-198992D0171A-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesde3acb9bdbffb541^39d6819cdbffb541^---0#1#0#--18"Check dependencies36"F529BCCE-30AC-4F8B-A918-128F8CCF2CB1-
 
 CCodeSign /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app
-s368993262.188497
-e368993263.211649
+s369089442.305233
+e369089446.373376
 r1
 xCodeSign
 x/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app
 o/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app: replacing existing signature
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"CodeSign build/Debug-iphoneos/kidsArt.app2b4f30ee63feb541^382f36ef63feb541^-92"/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app: replacing existing signature-0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/0000000000000000^752"CodeSign build/Debug-iphoneos/kidsArt.app    cd /Users/andrea/Desktop/kidsArt    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign b57dcf24ec9c753c319c2c92909a43c9bcceab23 --resource-rules=/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/ResourceRules.plist --entitlements /Users/andrea/Desktop/kidsArt/build/kidsArt.build/Debug-iphoneos/kidsArt.build/kidsArt.xcent /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app36"5E3461F0-156E-4635-9DFD-B63E38CB8A43-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"CodeSign build/Debug-iphoneos/kidsArt.appe8314ea2dbffb541^6c965fa6dbffb541^-92"/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app: replacing existing signature-0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/0000000000000000^752"CodeSign build/Debug-iphoneos/kidsArt.app    cd /Users/andrea/Desktop/kidsArt    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign b57dcf24ec9c753c319c2c92909a43c9bcceab23 --resource-rules=/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/ResourceRules.plist --entitlements /Users/andrea/Desktop/kidsArt/build/kidsArt.build/Debug-iphoneos/kidsArt.build/kidsArt.xcent /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app36"B666C4E3-345C-46B0-8DA6-1CF434066F03-
 
 CCompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/ATPhotoScrollView.o /Users/andrea/Desktop/kidsArt/sketchkid_Beta/ATPhotoScrollView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s368992915.655968
@@ -3091,20 +3100,20 @@ o2 warnings generated.
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../selectFaccinaViewController.m2b33f99362feb541^f722169462feb541^-674"/Users/andrea/Desktop/kidsArt/sketchkid_Beta/../selectFaccinaViewController.m:37:32: warning: incompatible pointer types assigning to 'NSObject<GMGridViewActionDelegate> *' from 'selectFaccinaViewController *const __strong' [-Wincompatible-pointer-types]    _gmGridView.actionDelegate = self;                               ^ ~~~~/Users/andrea/Desktop/kidsArt/sketchkid_Beta/../selectFaccinaViewController.m:38:28: warning: incompatible pointer types assigning to 'NSObject<GMGridViewDataSource> *' from 'selectFaccinaViewController *const __strong' [-Wincompatible-pointer-types]    _gmGridView.dataSource = self;                           ^ ~~~~2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@129"Incompatible pointer types assigning to 'NSObject<GMGridViewActionDelegate> *' from 'selectFaccinaViewController *const __strong'-368992916#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@75"file://localhost/Users/andrea/Desktop/kidsArt/selectFaccinaViewController.m0000000000000000^36#31#36#31#978#0#14"Semantic Issue1(3@75"file://localhost/Users/andrea/Desktop/kidsArt/selectFaccinaViewController.m0000000000000000^36#33#36#37#980#0#-2@125"Incompatible pointer types assigning to 'NSObject<GMGridViewDataSource> *' from 'selectFaccinaViewController *const __strong'-368992916#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@75"file://localhost/Users/andrea/Desktop/kidsArt/selectFaccinaViewController.m0000000000000000^37#27#37#27#1013#0#14"Semantic Issue1(3@75"file://localhost/Users/andrea/Desktop/kidsArt/selectFaccinaViewController.m0000000000000000^37#29#37#33#1015#0#-0#0#0#-19%DVTDocumentLocation4@93"file://localhost/Users/andrea/Desktop/kidsArt/sketchkid_Beta/../selectFaccinaViewController.m0000000000000000^3215"CompileC build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/selectFaccinaViewController.o sketchkid_Beta/../selectFaccinaViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/andrea/Desktop/kidsArt    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=5.1 -iquote /Users/andrea/Desktop/kidsArt/build/kidsArt.build/Debug-iphoneos/kidsArt.build/kidsArt-generated-files.hmap -I/Users/andrea/Desktop/kidsArt/build/kidsArt.build/Debug-iphoneos/kidsArt.build/kidsArt-own-target-headers.hmap -I/Users/andrea/Desktop/kidsArt/build/kidsArt.build/Debug-iphoneos/kidsArt.build/kidsArt-all-target-headers.hmap -iquote /Users/andrea/Desktop/kidsArt/build/kidsArt.build/Debug-iphoneos/kidsArt.build/kidsArt-project-headers.hmap -iquote/Users/andrea/Desktop/gmoledina-GMGridView-1d9ad9d/GMGridView -I/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/include -IGMGridView -I/Users/andrea/Desktop/kidsArt/build/kidsArt.build/Debug-iphoneos/kidsArt.build/DerivedSources/armv7 -I/Users/andrea/Desktop/kidsArt/build/kidsArt.build/Debug-iphoneos/kidsArt.build/DerivedSources -F/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos -F/Users/andrea/Desktop/kidsArt/../../Documents/FacebookSDK -include /var/folders/sv/2_vrrchj7978cgnc9q4djfqm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/kidsArt-Prefix-dbyuxbrxvdflhqawkmecjadvsbng/kidsArt-Prefix.pch -MMD -MT dependencies -MF /Users/andrea/Desktop/kidsArt/build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/selectFaccinaViewController.d --serialize-diagnostics /Users/andrea/Desktop/kidsArt/build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/selectFaccinaViewController.dia -c /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../selectFaccinaViewController.m -o /Users/andrea/Desktop/kidsArt/build/kidsArt.build/Debug-iphoneos/kidsArt.build/Objects-normal/armv7/selectFaccinaViewController.o36"E9CAEBF7-0CCD-4EE3-A853-2510374F94DF-
 
 CCompileStoryboard /Users/andrea/Desktop/kidsArt/sketchkid_Beta/en.lproj/MainStoryboard.storyboard
-s368992918.758054
-e368992923.257070
+s369089437.251253
+e369089442.184351
 r1
 xCompileStoryboard
 x/Users/andrea/Desktop/kidsArt/sketchkid_Beta/en.lproj/MainStoryboard.storyboard
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"CompileStoryboard sketchkid_Beta/en.lproj/MainStoryboard.storyboard8621c29662feb541^53d0419b62feb541^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/andrea/Desktop/kidsArt/sketchkid_Beta/en.lproj/MainStoryboard.storyboard0000000000000000^858"CompileStoryboard sketchkid_Beta/en.lproj/MainStoryboard.storyboard    cd /Users/andrea/Desktop/kidsArt    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/en.lproj/MainStoryboard.storyboardc /Users/andrea/Desktop/kidsArt/sketchkid_Beta/en.lproj/MainStoryboard.storyboard --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk36"DEE12777-6752-4123-908C-8A93171E71AB-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"CompileStoryboard sketchkid_Beta/en.lproj/MainStoryboard.storyboardd462409ddbffb541^3e3c2fa2dbffb541^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/andrea/Desktop/kidsArt/sketchkid_Beta/en.lproj/MainStoryboard.storyboard0000000000000000^858"CompileStoryboard sketchkid_Beta/en.lproj/MainStoryboard.storyboard    cd /Users/andrea/Desktop/kidsArt    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/en.lproj/MainStoryboard.storyboardc /Users/andrea/Desktop/kidsArt/sketchkid_Beta/en.lproj/MainStoryboard.storyboard --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk36"5019BAA8-EBBC-4113-82F7-17964DFC9B7C-
 
 CCompileStoryboard /Users/andrea/Desktop/kidsArt/sketchkid_Beta/it.lproj/MainStoryboard.storyboard
-s368993257.239529
-e368993262.144004
+s369089437.251330
+e369089442.199442
 r1
 xCompileStoryboard
 x/Users/andrea/Desktop/kidsArt/sketchkid_Beta/it.lproj/MainStoryboard.storyboard
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"CompileStoryboard sketchkid_Beta/it.lproj/MainStoryboard.storyboard465f3de963feb541^d9e824ee63feb541^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/andrea/Desktop/kidsArt/sketchkid_Beta/it.lproj/MainStoryboard.storyboard0000000000000000^858"CompileStoryboard sketchkid_Beta/it.lproj/MainStoryboard.storyboard    cd /Users/andrea/Desktop/kidsArt    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/it.lproj/MainStoryboard.storyboardc /Users/andrea/Desktop/kidsArt/sketchkid_Beta/it.lproj/MainStoryboard.storyboard --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk36"48844764-025C-4BA9-9076-C5729C6A09C1-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"CompileStoryboard sketchkid_Beta/it.lproj/MainStoryboard.storyboard1f65409ddbffb541^c63033a2dbffb541^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/andrea/Desktop/kidsArt/sketchkid_Beta/it.lproj/MainStoryboard.storyboard0000000000000000^858"CompileStoryboard sketchkid_Beta/it.lproj/MainStoryboard.storyboard    cd /Users/andrea/Desktop/kidsArt    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/it.lproj/MainStoryboard.storyboardc /Users/andrea/Desktop/kidsArt/sketchkid_Beta/it.lproj/MainStoryboard.storyboard --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk36"E2091124-C2A2-4C75-A9D3-58A13C3AD302-
 
 CCompileXIB /Users/andrea/Desktop/kidsArt/sketchkid_Beta/AlbumInfoView.xib
 s368992921.668685
@@ -3463,6 +3472,15 @@ xCopyPNGFile
 x/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/bckInserimento@2x.png
 xbckInserimento@2x.png
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"CopyPNGFile build/Debug-iphoneos/kidsArt.app/bckInserimento@2x.png bckInserimento@2x.pngc6fbf59762feb541^53054f9862feb541^---0#0#0#-19%DVTDocumentLocation2@67"file://localhost/Users/andrea/Desktop/kidsArt/bckInserimento@2x.png0000000000000000^654"CopyPNGFile "build/Debug-iphoneos/kidsArt.app/bckInserimento@2x.png" "bckInserimento@2x.png"    cd /Users/andrea/Desktop/kidsArt    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/andrea/Desktop/kidsArt/bckInserimento@2x.png" "/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/bckInserimento@2x.png"36"2FEDCE9E-00D5-4B60-B4FB-27C7D9F5893D-
+
+CCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/bottoneGrande@2x.png bottoneGrande@2x.png
+s369089437.420077
+e369089437.988505
+r1
+xCopyPNGFile
+x/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/bottoneGrande@2x.png
+xbottoneGrande@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"CopyPNGFile build/Debug-iphoneos/kidsArt.app/bottoneGrande@2x.png bottoneGrande@2x.pnga2996b9ddbffb541^bb25fd9ddbffb541^---0#0#0#-19%DVTDocumentLocation2@66"file://localhost/Users/andrea/Desktop/kidsArt/bottoneGrande@2x.png0000000000000000^650"CopyPNGFile "build/Debug-iphoneos/kidsArt.app/bottoneGrande@2x.png" "bottoneGrande@2x.png"    cd /Users/andrea/Desktop/kidsArt    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/PrivatePlugIns/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/andrea/Desktop/kidsArt/bottoneGrande@2x.png" "/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/bottoneGrande@2x.png"36"246D06BD-5322-489E-8752-EAD09A67254A-
 
 CCopyPNGFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/bottoneSalva@2x.png bottoneSalva@2x.png
 s368992920.310025
@@ -3960,22 +3978,22 @@ xsketchkid_Beta/en.lproj/InfoPlist.strings
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Copy sketchkid_Beta/en.lproj/InfoPlist.strings8f8ed7f274d0b541^bb0ed9f274d0b541^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/andrea/Desktop/kidsArt/sketchkid_Beta/en.lproj/InfoPlist.strings0000000000000000^550"CopyStringsFile build/Debug-iphoneos/kidsArt.app/en.lproj/InfoPlist.strings sketchkid_Beta/en.lproj/InfoPlist.strings    cd /Users/andrea/Desktop/kidsArt    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/en.lproj -- sketchkid_Beta/en.lproj/InfoPlist.strings36"FC40E883-86B6-4687-A77B-1B1FC41BA767-
 
 CCopyStringsFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/en.lproj/Localizable.strings sketchkid_Beta/../en.lproj/Localizable.strings
-s368807817.029355
-e368807817.303317
+s369089437.274026
+e369089437.368140
 r1
 xCopyStringsFile
 x/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/en.lproj/Localizable.strings
 xsketchkid_Beta/../en.lproj/Localizable.strings
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy sketchkid_Beta/../en.lproj/Localizable.strings7d9607898ffbb541^2fc14d898ffbb541^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/andrea/Desktop/kidsArt/sketchkid_Beta/../en.lproj/Localizable.strings0000000000000000^592"CopyStringsFile build/Debug-iphoneos/kidsArt.app/en.lproj/Localizable.strings sketchkid_Beta/../en.lproj/Localizable.strings    cd /Users/andrea/Desktop/kidsArt    setenv PATH "/Volumes/Xcode 4.5 DP4/Xcode45-DP4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Xcode 4.5 DP4/Xcode45-DP4.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/en.lproj -- sketchkid_Beta/../en.lproj/Localizable.strings36"B85DA853-AC78-405B-A060-FDB190FC83E9-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy sketchkid_Beta/../en.lproj/Localizable.stringsf835469ddbffb541^d13e5e9ddbffb541^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/andrea/Desktop/kidsArt/sketchkid_Beta/../en.lproj/Localizable.strings0000000000000000^562"CopyStringsFile build/Debug-iphoneos/kidsArt.app/en.lproj/Localizable.strings sketchkid_Beta/../en.lproj/Localizable.strings    cd /Users/andrea/Desktop/kidsArt    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/en.lproj -- sketchkid_Beta/../en.lproj/Localizable.strings36"B1BA47BA-1960-4396-A42F-34D2258A86E8-
 
 CCopyStringsFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/it.lproj/Localizable.strings sketchkid_Beta/../it.lproj/Localizable.strings
-s368807817.030577
-e368807817.303510
+s369089437.275260
+e369089437.368361
 r1
 xCopyStringsFile
 x/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/it.lproj/Localizable.strings
 xsketchkid_Beta/../it.lproj/Localizable.strings
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy sketchkid_Beta/../it.lproj/Localizable.strings87e107898ffbb541^44c44d898ffbb541^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/andrea/Desktop/kidsArt/sketchkid_Beta/../it.lproj/Localizable.strings0000000000000000^592"CopyStringsFile build/Debug-iphoneos/kidsArt.app/it.lproj/Localizable.strings sketchkid_Beta/../it.lproj/Localizable.strings    cd /Users/andrea/Desktop/kidsArt    setenv PATH "/Volumes/Xcode 4.5 DP4/Xcode45-DP4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Xcode 4.5 DP4/Xcode45-DP4.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/it.lproj -- sketchkid_Beta/../it.lproj/Localizable.strings36"0B5BE2F0-8190-471C-8EEF-CB74CCA98BB8-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy sketchkid_Beta/../it.lproj/Localizable.strings6685469ddbffb541^054e5e9ddbffb541^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/andrea/Desktop/kidsArt/sketchkid_Beta/../it.lproj/Localizable.strings0000000000000000^562"CopyStringsFile build/Debug-iphoneos/kidsArt.app/it.lproj/Localizable.strings sketchkid_Beta/../it.lproj/Localizable.strings    cd /Users/andrea/Desktop/kidsArt    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/it.lproj -- sketchkid_Beta/../it.lproj/Localizable.strings36"53004DBF-0673-4EDD-8E67-3EEFCA1EE0EC-
 
 CCpResource "/Volumes/Xcode 4.5 DP4/Xcode45-DP4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/ResourceRules.plist" build/Debug-iphoneos/kidsArt.app/ResourceRules.plist
 s368722456.028486
@@ -4224,13 +4242,13 @@ o/Users/andrea/Desktop/kidsArt/sketchkid_Beta/../sketchkidModel.xcdatamodeld/ske
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection122"DataModelVersionCompile build/Debug-iphoneos/kidsArt.app/sketchkidModel.momd sketchkid_Beta/../sketchkidModel.xcdatamodeld5c93fa8762feb541^c005318f62feb541^--1(21%IDEActivityLogMessage2@33"Sketch.kid should have an inverse-368992908#18446744073709551615#0#-1#-23%DVTTextDocumentLocation3@119"file://localhost/Users/andrea/Desktop/kidsArt/sketchkid_Beta/../sketchkidModel.xcdatamodeld/sketchkidModel.xcdatamodel/0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#22"Misconfigured Property--0#0#0#-19%DVTDocumentLocation4@92"file://localhost/Users/andrea/Desktop/kidsArt/sketchkid_Beta/../sketchkidModel.xcdatamodeld/0000000000000000^743"DataModelVersionCompile build/Debug-iphoneos/kidsArt.app/sketchkidModel.momd sketchkid_Beta/../sketchkidModel.xcdatamodeld    cd /Users/andrea/Desktop/kidsArt    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/usr/bin/momc -XD_MOMC_SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk -MOMC_PLATFORMS iphonesimulator -MOMC_PLATFORMS iphoneos /Users/andrea/Desktop/kidsArt/sketchkid_Beta/../sketchkidModel.xcdatamodeld /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/sketchkidModel.momd36"FAD77739-A984-4F9E-99EC-23635F8BD97D-
 
 CGenerateDSYMFile /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app.dSYM /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/kidsArt
-s368993257.068669
-e368993257.231081
+s369089436.623114
+e369089437.242523
 r1
 xGenerateDSYMFile
 x/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app.dSYM
 x/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/kidsArt
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Generating /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app.dSYM48a411e963feb541^a6283be963feb541^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app.dSYM/0000000000000000^563"GenerateDSYMFile build/Debug-iphoneos/kidsArt.app.dSYM build/Debug-iphoneos/kidsArt.app/kidsArt    cd /Users/andrea/Desktop/kidsArt    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/kidsArt -o /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app.dSYM36"2A1C4DA9-D721-401A-B7A4-2510422B81DF-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Generating /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app.dSYMda909f9cdbffb541^61163e9ddbffb541^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app.dSYM/0000000000000000^563"GenerateDSYMFile build/Debug-iphoneos/kidsArt.app.dSYM build/Debug-iphoneos/kidsArt.app/kidsArt    cd /Users/andrea/Desktop/kidsArt    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/kidsArt -o /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app.dSYM36"2DEA36A0-FDCE-4569-949D-F3AE19C0CE50-
 
 CLd /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app/kidsArt normal armv7
 s368992916.092755
@@ -4551,10 +4569,10 @@ x/Users/andrea/Desktop/kidsArt/build/kidsArt.build/Debug-iphoneos/kidsArt.build/
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection207"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist build/kidsArt.build/Debug-iphoneos/kidsArt.build/kidsArt.xcent2178e09f62feb541^c4eae79f62feb541^---0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Users/andrea/Desktop/kidsArt/build/kidsArt.build/Debug-iphoneos/kidsArt.build/kidsArt.xcent0000000000000000^712"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist build/kidsArt.build/Debug-iphoneos/kidsArt.build/kidsArt.xcent    cd /Users/andrea/Desktop/kidsArt    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/Entitlements.plist -entitlements -format xml -o /Users/andrea/Desktop/kidsArt/build/kidsArt.build/Debug-iphoneos/kidsArt.build/kidsArt.xcent36"FE81805C-5368-4365-AC80-ABFD2D5D6AE1-
 
 CTouch /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app
-s368993262.168191
-e368993262.173379
+s369089442.224275
+e369089442.289083
 r1
 xTouch
 x/Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Touch /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.appa01a2bee63feb541^ae632cee63feb541^---0#0#0#--349"Touch build/Debug-iphoneos/kidsArt.app    cd /Users/andrea/Desktop/kidsArt    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app36"622CDC4C-A59B-4806-B9A1-EBBE634E98AB-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Touch /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.appf77839a2dbffb541^21024aa2dbffb541^---0#0#0#--349"Touch build/Debug-iphoneos/kidsArt.app    cd /Users/andrea/Desktop/kidsArt    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/andrea/Desktop/kidsArt/build/Debug-iphoneos/kidsArt.app36"F2753FBC-F296-4A24-BB61-04B227EFF39A-
 
