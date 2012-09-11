@@ -25,6 +25,7 @@
 		6514085615FE5093004FB155 /* 6_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 6514084F15FE5093004FB155 /* 6_t.png */; };
 		6514085715FE5093004FB155 /* 7_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 6514085015FE5093004FB155 /* 7_t.png */; };
 		6514085915FE5800004FB155 /* editButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6514085815FE5800004FB155 /* editButton@2x.png */; };
+		651408A315FFD9F7004FB155 /* bottoneGrande@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 651408A215FFD9F7004FB155 /* bottoneGrande@2x.png */; };
 		65148E1415EFD1FC00D8458C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65148E1615EFD1FC00D8458C /* Localizable.strings */; };
 		65148E1915EFD5AD00D8458C /* Snickles.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65148E1815EFD5AD00D8458C /* Snickles.ttf */; };
 		65148E4215F1345500D8458C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65148E4115F1345500D8458C /* FacebookSDK.framework */; };
@@ -199,7 +200,8 @@
 		6514084F15FE5093004FB155 /* 6_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6_t.png; sourceTree = "<group>"; };
 		6514085015FE5093004FB155 /* 7_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7_t.png; sourceTree = "<group>"; };
 		6514085815FE5800004FB155 /* editButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "editButton@2x.png"; sourceTree = "<group>"; };
-		6514085A15FE62D8004FB155 /* it */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = it; path = it.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		651408A115FFD90E004FB155 /* it */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = it; path = it.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		651408A215FFD9F7004FB155 /* bottoneGrande@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bottoneGrande@2x.png"; sourceTree = "<group>"; };
 		65148E1515EFD1FC00D8458C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		65148E1715EFD42C00D8458C /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		65148E1815EFD5AD00D8458C /* Snickles.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Snickles.ttf; sourceTree = "<group>"; };
@@ -648,6 +650,7 @@
 				655C7A9615ECBDFC00FEEFF4 /* editIcon */,
 				B5FF1BF915D63F0A004D42AF /* cancelCameraIcon@2x.png */,
 				B5FF1BFA15D63F0A004D42AF /* savePhotosIcon@2x.png */,
+				651408A215FFD9F7004FB155 /* bottoneGrande@2x.png */,
 				65D4624615D302FE00B79679 /* backAlbumCell.png */,
 				65F9D58F15F9F2B700A15B7D /* tabella@2x.png */,
 				65631E6915F92CE600353D4F /* cornicefoto@2x.png */,
@@ -951,6 +954,7 @@
 				6514085615FE5093004FB155 /* 6_t.png in Resources */,
 				6514085715FE5093004FB155 /* 7_t.png in Resources */,
 				6514085915FE5800004FB155 /* editButton@2x.png in Resources */,
+				651408A315FFD9F7004FB155 /* bottoneGrande@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1031,7 +1035,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				65FA967E15CD263900AC0CCD /* en */,
-				6514085A15FE62D8004FB155 /* it */,
+				651408A115FFD90E004FB155 /* it */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";

@@ -1,66 +1,66 @@
-/* 
-  Localizable.strings
-  kidsArt
-
-  Created by Andrea Terzani on 30/08/12.
-  Copyright (c) 2012 Andrea Terzani. All rights reserved.
-*/
+/*
+ Localizable.strings
+ kidsArt
+ 
+ Created by Andrea Terzani on 30/08/12.
+ Copyright (c) 2012 Andrea Terzani. All rights reserved.
+ */
 
 
 "BAMBINI" = "Kids";
-"DISEGNO" = "Sketch";
+"DISEGNO" = "Drawing";
 "ALBUM" = "Album";
 "ALBUMS" = "Albums";
 
-"HINT_KID" = "Click on a kid photo to see";
-"HINT2_KID" = "all the picture from him";
+"HINT_KID" = "Click on the picture of a kid";
+"HINT2_KID" = "to see all of his/her drawings";
 
 
 "NUOVO_ALBUM" = " Create a new album";
 "DISEGNO_DI" ="Made by ";
-"DISEGNI_DI" ="Sketch of";
+"DISEGNI_DI" ="Drawings of";
 "CREATO_IL" = "";
 "CREATO_IL_INFO" = "Made on ";
 
-"CONDIVIDENDO" = "Uploading on Facebbok";
-"FOTOSHARED" ="Sketch shared";
+"CONDIVIDENDO" = "Uploading to Facebook";
+"FOTOSHARED" ="Drawing shared";
 "ERRORE" = "Error";
-"SUCCESSOFBPOST" ="Facebook upload succesfully";
+"SUCCESSOFBPOST" ="Facebook upload completed";
 "SUCCESSO" = "Success";
 "CANCELLED"= "Cancelled";
 
 
 
-"DISEGNO_KIDART" = "This sketch is made with KidsArt for iPhone";
-"DISEGNO_FATTO_DA"= "This sketch was made by ";
+"DISEGNO_KIDART" = "Drawing made with KidsArt for iPhone";
+"DISEGNO_FATTO_DA"= "This drawing was made by ";
 
-"ALLERT_CANCELLA_DISEGNO"="Are you sure delete this sketch ?";
+"ALLERT_CANCELLA_DISEGNO"="Are you sure you want to delete this drawing ?";
 "ALLERT"="Alert";
 
 "ANNULLA"="Cancel";
 "ELIMINA" = "Delete";
 
-"OPERAZIONE_CANCELLA_DISEGNO" ="This operation will remove definetly the sketch";
+"OPERAZIONE_CANCELLA_DISEGNO" ="This operation will delete the drawing permanently";
 
-"SICURO_DELETE_BAMBINO" = "Are you sure to delete this kid ?";
+"SICURO_DELETE_BAMBINO" = "Are you sure you want to delete this profile ?";
 
 "NOME_DEFAULT_ALBUM" = "Photo Lab";
-"NOTA_DEFAULT_ALBUM" = "Sketch to be edited";
+"NOTA_DEFAULT_ALBUM" = "Drawings waiting for editing";
 
 
-"TUTTI_DISEGNI_IN_DEFAULT" = "All sketchs will be moved in default album";
+"TUTTI_DISEGNI_IN_DEFAULT" = "All drawings will be moved in the Photo Lab";
 
 "ALLERT_CANCELLA_ALBUM_DISEGNO"  ="You cannote remove the Photo Lab album";
 "NUOVO_BAMBINO" = " Add new Kid";
 
 
-"TUTTI_DISEGNI_DI" = "All the sketch made by";
+"TUTTI_DISEGNI_DI" = "All drawings by";
 
-"MODIFICA_INFO_DISEGNO" = "Sketch info";
+"MODIFICA_INFO_DISEGNO" = "Drawing info";
 
 "FATTO_IL"="Made on";
 
-"INFO_NOTE" = "What is?";
+"INFO_NOTE" = "What is it?";
 
 "AGGIUNGI_AD_ALBUM"="Add to an album";
 
@@ -70,7 +70,7 @@
 "NOTA_ALBUM"="Note";
 "SFONDO_ALBUM"="Album background";
 
-"FACCINA_BIMBO" ="Kids portraits";
+"FACCINA_BIMBO" ="Kid portraits";
 
-"SUCCESS_TWEET" = "Tweet send with success.";
-"CANCELLED_TWEET" = "Tweet cancelled.";
+"SUCCESS_TWEET" = "Tweet sent!";
+"CANCELLED_TWEET" = "Tweet cancelled";

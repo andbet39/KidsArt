@@ -1,10 +1,10 @@
-/* 
-  Localizable.strings
-  kidsArt
-
-  Created by Andrea Terzani on 30/08/12.
-  Copyright (c) 2012 Andrea Terzani. All rights reserved.
-*/
+/*
+ Localizable.strings
+ kidsArt
+ 
+ Created by Andrea Terzani on 30/08/12.
+ Copyright (c) 2012 Andrea Terzani. All rights reserved.
+ */
 
 "BAMBINI" = "Bambini";
 "DISEGNO" = "Disegno";
@@ -30,7 +30,7 @@
 "CONDIVIDENDO" = "Caricando su Facebook";
 "FOTOSHARED" ="Disegno condiviso";
 "ERRORE" = "Errore";
-"SUCCESSOFBPOST" ="Caricamento su facebook completato";
+"SUCCESSOFBPOST" ="Caricamento su Facebook completato";
 "SUCCESSO" = "Successo";
 "CANCELLED"= "Cancellato";
 
@@ -41,12 +41,12 @@
 "ALLERT_CANCELLA_DISEGNO"="Sei sicuro di voler cancellare il disegno ?";
 "ALLERT"="Attenzione";
 "ANNULLA"="Annulla";
-"ELIMINA" = "Cancellato";
+"ELIMINA" = "Cancella";
 
 
 "OPERAZIONE_CANCELLA_DISEGNO" ="Questa operazione cancellerà il disegno definitivamente";
 
-"SICURO_DELETE_BAMBINO" = "Sei sicuro di voler eliminare il bambino ?";
+"SICURO_DELETE_BAMBINO" = "Sei sicuro di voler cancellare questo profilo ?";
 
 "NOME_DEFAULT_ALBUM" = "Laboratorio";
 "NOTA_DEFAULT_ALBUM" = "Tutti i disegni da elaborare";
@@ -69,10 +69,10 @@
 
 
 "TITOLO_ALBUM"="Titolo";
-"NOTA_ALBUM"="Nota";
+"NOTA_ALBUM"="Note";
 
-"SFONDO_ALBUM"="Sfondo per l' album";
-"SUCCESS_TWEET" = "Tweet inviato con successo.";
-"CANCELLED_TWEET" = "Tweet cancellato.";
+"SFONDO_ALBUM"="Sfondo per l'album";
+"SUCCESS_TWEET" = "Tweet inviato con successo";
+"CANCELLED_TWEET" = "Tweet cancellato";
 
 "FACCINA_BIMBO" ="Faccine bimbi";
