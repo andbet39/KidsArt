@@ -15,5 +15,6 @@
 
 - (UIImage *)scaledCopyOfSize:(CGSize)newSize ;
 - (UIImage*)overlayWith:(UIImage*)overlayImage;
-
+- (UIImage *)imageRotatedByDegrees:(CGFloat)degrees;
+- (UIImage*)addFrame:(UIImage*)overlayImage inPoint:(CGPoint)point;
 @end

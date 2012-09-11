@@ -33,6 +33,7 @@
     [titleLabel setText:NSLocalizedString(@"ALBUMS", nil)];
     
     [titleLabel setFont:[UIFont fontWithName:@"Snickles" size:28]];
+    [addAlbumAction setTintColor:RGB(175, 175, 175)];
     
 }
 

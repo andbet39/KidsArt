@@ -19,6 +19,18 @@
 @synthesize nomeText;
 @synthesize toolBar;
 @synthesize titleLabel;
+@synthesize imageFaccina;
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if ([segue.identifier isEqualToString:@"selectFaccina"])
+    {
+        selectFaccinaViewController * selectFaccinaView=(selectFaccinaViewController*) [segue destinationViewController];
+        [selectFaccinaView setDelegate:self];
+    }
+    
+    
+}
 
 -(void)creaNavigationBar{
     
@@ -54,6 +66,7 @@
     [self setNomeText:nil];
     [self setToolBar:nil];
     [self setTitleLabel:nil];
+    [self setImageFaccina:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -63,13 +76,25 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction)selectFaccinaButtonAction:(id)sender {
+    
+    [self performSegueWithIdentifier:@"selectFaccina" sender:self];
+    
+}
+
 - (IBAction)saveButtonAction:(id)sender {
     DataManager *dm =[DataManager sharedDataManager];
     
     Kid *kid = (Kid *)[NSEntityDescription insertNewObjectForEntityForName:@"Kid" inManagedObjectContext:dm.managedObjectContext];
     
     [kid setNome:nomeText.text];
-    [kid setPhotoPath:@"bambinoDefault"];
+    if (imageFaccinaString) {
+        [kid setPhotoPath:imageFaccinaString];
+
+    }else{
+        [kid setPhotoPath:@"bambinoDefault"];
+    }
+    
     
     [self.delegate NewKidViewController:self DidAddKid:kid];
 }
@@ -78,4 +103,24 @@
     
     [self.delegate NewKidViewControllerDidCancel:self];
 }
+
+
+#pragma mark selectCopertinaViewControllerDelegate
+
+-(void)selectFaccinaDidCancel
+{
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+-(void)selectFaccina:(selectFaccinaViewController *)sender didSelectFaccina:(NSString *)faccinaPath
+{
+    
+    [self.imageFaccina setImage:[UIImage imageNamed:faccinaPath]];
+    imageFaccinaString=faccinaPath;
+    
+    [self dismissModalViewControllerAnimated:YES];
+    
+}
+
+
 @end

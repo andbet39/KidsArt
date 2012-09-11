@@ -4,27 +4,82 @@
 <dict>
 	<key>frames</key>
 	<dict>
-		<key>Stelle</key>
+		<key>1</key>
 		<dict>
 			<key>image_v</key>
-			<string>stelle_v.png</string>
+			<string></string>
 			<key>sample</key>
-			<string>stelle_sample.png</string>
+			<string>1_t.png</string>
 			<key>name</key>
-			<string>Stelle</string>
+			<string></string>
 			<key>image_o</key>
-			<string>stelle.png</string>
+			<string>1.png</string>
 		</dict>
-		<key>Verde</key>
+		<key>2</key>
 		<dict>
-			<key>name</key>
-			<string>Verde</string>
-			<key>image_o</key>
-			<string>verde.png</string>
 			<key>image_v</key>
-			<string>verde.png</string>
+			<string></string>
 			<key>sample</key>
-			<string>verde_sample.png</string>
+			<string>2_t.png</string>
+			<key>name</key>
+			<string></string>
+			<key>image_o</key>
+			<string>2.png</string>
+		</dict>
+		<key>3</key>
+		<dict>
+			<key>image_v</key>
+			<string></string>
+			<key>sample</key>
+			<string>3_t.png</string>
+			<key>name</key>
+			<string></string>
+			<key>image_o</key>
+			<string>3.png</string>
+		</dict>
+		<key>4</key>
+		<dict>
+			<key>image_v</key>
+			<string></string>
+			<key>sample</key>
+			<string>4_t.png</string>
+			<key>name</key>
+			<string></string>
+			<key>image_o</key>
+			<string>4.png</string>
+		</dict>
+		<key>5</key>
+		<dict>
+			<key>image_v</key>
+			<string></string>
+			<key>sample</key>
+			<string>5_t.png</string>
+			<key>name</key>
+			<string></string>
+			<key>image_o</key>
+			<string>5.png</string>
+		</dict>
+		<key>6</key>
+		<dict>
+			<key>image_v</key>
+			<string></string>
+			<key>sample</key>
+			<string>6_t.png</string>
+			<key>name</key>
+			<string></string>
+			<key>image_o</key>
+			<string>6.png</string>
+		</dict>
+		<key>7</key>
+		<dict>
+			<key>image_v</key>
+			<string></string>
+			<key>sample</key>
+			<string>7_t.png</string>
+			<key>name</key>
+			<string></string>
+			<key>image_o</key>
+			<string>7.png</string>
 		</dict>
 	</dict>
 </dict>

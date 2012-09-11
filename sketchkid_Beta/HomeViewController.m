@@ -38,8 +38,11 @@
 
     [albumToolbar setBackgroundImage:[UIImage imageNamed:@"greyBar.png"] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
     
-    [addFavoriteButton setBackgroundVerticalPositionAdjustment:0.0f forBarMetrics:UIBarMetricsDefault];
-    [addFavoriteButton setBackgroundImage:[UIImage imageNamed:@"addFavorites.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
+   // [addFavoriteButton setBackgroundImage:[UIImage imageNamed:@"editButton.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [addFavoriteButton setTintColor:RGB(175, 175, 175)];
+    [infoButton setTintColor:RGB(175, 175, 175)];
+    
     
     [albumTitleLabel setText:currentAlbum.titolo];
     [albumTitleLabel setFont:[UIFont fontWithName:@"Snickles" size:28]];
@@ -131,6 +134,10 @@
         [backImage setImage:[UIImage imageNamed:currentAlbum.copertinaPath]];
         [masterBackImage setImage:[UIImage imageNamed:currentAlbum.copertinaPath]];
   
+    }else{
+        [backImage setImage:[UIImage imageNamed:@"backHome.png"]];
+        [masterBackImage setImage:[UIImage imageNamed:@"backHome.png"]];
+        
     }
    
     
@@ -225,12 +232,15 @@
 
 - (IBAction)selectPreferitiAction:(id)sender{
 
-    if ([_gmGridView isEditing]) {
+    if([_gmGridView isEditing]){
+        [addFavoriteButton setTitle:@"Edit"];
         _gmGridView.editing=FALSE;
-
+        
     }else{
+        [addFavoriteButton setTitle:@"Done"];
         _gmGridView.editing=TRUE;
     }
+
 
 }
 

@@ -15,6 +15,7 @@
 
 @implementation kidsViewController
 @synthesize editButton;
+@synthesize addButton;
 @synthesize hintLabel;
 @synthesize hint2Label;
 @synthesize mainView;
@@ -39,7 +40,9 @@
     [hintLabel setFont:[UIFont fontWithName:@"Helvetica Rounded LT Std" size:18]];
     [hint2Label setFont:[UIFont fontWithName:@"Helvetica Rounded LT Std" size:18]];
     
-
+    [editButton setTintColor:RGB(175, 175, 175)];
+    [addButton setTintColor:RGB(175, 175, 175)];
+    
 }
 
 -(void)creaGridView{
@@ -193,12 +196,10 @@
     
     //TODO: aggiustare con le foto salvate nel modello kid... Valutare se permettere fotografia
     
-    if(index%2==0){
-        [fotoView setImage:[UIImage imageNamed:@"bambinoDefault.png"]];
-    }else{
-        [fotoView setImage:[UIImage imageNamed:@"bambinoDefault2.png"]];
+    
+        [fotoView setImage:[UIImage imageNamed:currentKid.photoPath]];
 
-    }
+   
     [cell.contentView addSubview:fotoView];
     
     return cell;
@@ -363,6 +364,7 @@
     [self setEditButton:nil];
     [self setHintLabel:nil];
     [self setHint2Label:nil];
+    [self setAddButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

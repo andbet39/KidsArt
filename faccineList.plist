@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Faccine</key>
+	<dict>
+		<key>1</key>
+		<dict>
+			<key>image</key>
+			<string>bambini_03.png</string>
+		</dict>
+		<key>2</key>
+		<dict>
+			<key>image</key>
+			<string>bambini_06.png</string>
+		</dict>
+		<key>3</key>
+		<dict>
+			<key>image</key>
+			<string>bambini_09.png</string>
+		</dict>
+		<key>4</key>
+		<dict>
+			<key>image</key>
+			<string>bambini_15.png</string>
+		</dict>
+		<key>5</key>
+		<dict>
+			<key>image</key>
+			<string>bambini_17.png</string>
+		</dict>
+		<key>6</key>
+		<dict>
+			<key>image</key>
+			<string>bambini_19.png</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

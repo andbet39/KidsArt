@@ -8,7 +8,11 @@
 
 #import "UIImage+Scale.h"
 
+CGFloat DegreesToRadians(CGFloat degrees) {return degrees * M_PI / 180;};
+
 @implementation UIImage (Scale)
+
+
 -(UIImage*)scaleToSize:(CGSize)size
 {
     // Create a bitmap graphics context
@@ -250,4 +254,54 @@
 	return combinedImage;
 }
 
+- (UIImage*)addFrame:(UIImage*)overlayImage inPoint:(CGPoint)point {
+    
+	// size is taken from the background image
+	UIGraphicsBeginImageContext(overlayImage.size);
+    
+	[self drawAtPoint:point];
+    //overlayImage = [overlayImage scaleToSize:self.size];
+    
+	[overlayImage drawAtPoint:CGPointZero];
+    
+	/*
+     // If Image Artifacts appear, replace the "overlayImage drawAtPoint" , method with the following
+     // Yes, it's a workaround, yes I filed a bug report
+     CGRect imageRect = CGRectMake(0, 0, self.size.width, self.size.height);
+     [overlayImage drawInRect:imageRect blendMode:kCGBlendModeOverlay alpha:0.999999999];
+     */
+    
+	UIImage *combinedImage = UIGraphicsGetImageFromCurrentImageContext();
+	UIGraphicsEndImageContext();
+    
+	return combinedImage;
+}
+
+- (UIImage *)imageRotatedByDegrees:(CGFloat)degrees
+{
+    // calculate the size of the rotated view's containing box for our drawing space
+    UIView *rotatedViewBox = [[UIView alloc] initWithFrame:CGRectMake(0,0,self.size.width, self.size.height)];
+    CGAffineTransform t = CGAffineTransformMakeRotation(DegreesToRadians(degrees));
+    rotatedViewBox.transform = t;
+    CGSize rotatedSize = rotatedViewBox.frame.size;
+    
+    // Create the bitmap context
+    UIGraphicsBeginImageContext(rotatedSize);
+    CGContextRef bitmap = UIGraphicsGetCurrentContext();
+    
+    // Move the origin to the middle of the image so we will rotate and scale around the center.
+    CGContextTranslateCTM(bitmap, rotatedSize.width/2, rotatedSize.height/2);
+    
+    //   // Rotate the image context
+    CGContextRotateCTM(bitmap, DegreesToRadians(degrees));
+    
+    // Now, draw the rotated/scaled image into the context
+    CGContextScaleCTM(bitmap, 1.0, -1.0);
+    CGContextDrawImage(bitmap, CGRectMake(-self.size.width / 2, -self.size.height / 2, self.size.width, self.size.height), [self CGImage]);
+    
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+    
+}
 @end

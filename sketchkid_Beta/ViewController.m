@@ -479,16 +479,21 @@
     if (isFrameVisible) {
         
         [frameView moveTo:CGPointMake(0, 500) duration:0.5 option:UIViewAnimationCurveEaseOut];
-        isShareVisible=FALSE;
+        isFrameVisible=FALSE;
     }
     
-    
-    [UIImage imageNamed:frame.image_v];
+                       
     if (mainImageView.image.size.width>mainImageView.image.size.height) {
-        mainImageView.image= [mainImageView.image overlayWith:[UIImage imageNamed:frame.image_o]];
+        UIImage *sketch = [mainImageView.image scaleToSize:CGSizeMake(660, 485)];
+
+        mainImageView.image= [sketch addFrame:[UIImage imageNamed:frame.image_o] inPoint:CGPointMake(70, 70)];
 
     }else{
-        mainImageView.image= [mainImageView.image overlayWith:[UIImage imageNamed:frame.image_v]];
+        UIImage *sketch = [mainImageView.image scaleToSize:CGSizeMake(485, 660)];
+
+        UIImage *cornice =[[UIImage imageNamed:frame.image_o]imageRotatedByDegrees:90];
+        mainImageView.image= [sketch addFrame:cornice inPoint:CGPointMake(70, 70)];
+
     }
 
 }

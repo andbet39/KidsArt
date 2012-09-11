@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Kid.h"
+#import "selectFaccinaViewController.h"
 
 @class  newKidViewController;
 
@@ -17,14 +18,19 @@
 @end
 
 
-@interface newKidViewController : UIViewController <UITextFieldDelegate>
+@interface newKidViewController : UIViewController <UITextFieldDelegate,selectFaccinaViewControllerDelegate>
+{
+    NSString *imageFaccinaString;
 
+}
 
 @property (strong,nonatomic) id <NewKidViewControllerDelegate> delegate;
 
 @property (weak, nonatomic) IBOutlet UITextField *nomeText;
 @property (weak, nonatomic) IBOutlet UINavigationBar *toolBar;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *imageFaccina;
+- (IBAction)selectFaccinaButtonAction:(id)sender;
 
 - (IBAction)saveButtonAction:(id)sender;
 - (IBAction)cancelButtonAction:(id)sender;
